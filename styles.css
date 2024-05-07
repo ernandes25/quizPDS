@@ -1,0 +1,231 @@
+@import url("https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(50,50,112,1) 35%, rgba(0,212,255,1) 100%);
+  list-style: none;
+  text-decoration: none;
+}
+
+
+header {
+  
+  position: fixed;
+  margin-top: 0;
+  width: 100%;
+  top: 0;
+       
+}
+
+ul{
+  display: flex;
+  flex-direction: row;
+  margin-left: 300px;
+  justify-content: space-around;
+  font-size: 40px;
+
+}
+
+#logo{
+  margin-bottom: -70px;
+  border-radius: 100px 300px;
+  
+}
+
+li{
+  color: black;
+}
+  
+
+.button {
+  display: flex;
+  margin-top: 80px;
+  margin-bottom: 200px;
+  flex-direction: column;
+  align-items: center;
+  
+}
+
+.sobre {
+  margin-top: 400px;
+  width: 100%;
+  height: 120px;
+  flex-direction: column;
+  
+}
+
+h1 {
+  color: rgb(167, 139, 103);
+  text-align: center;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+p {
+  
+  text-align: center;
+  color: #fff;
+  font-size: 25px;
+}
+
+button {
+  margin-top: auto;
+  width: 520px;
+  height: 120px;
+  background-color: blue;
+  font-size: 20px;
+  color: white;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+footer {
+  height: 250px;
+  margin-top: 60px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+
+span {
+  color: #fff;
+  font-family: "Kdam Thmor Pro", sans-serif;
+  margin-top: -100px;
+  font-size: 10px;
+}
+
+.img_footer {
+  height: 50px;
+  border-radius: 100px 300px;
+}
+
+/* ELEMENTOS DE FORMULÁRIO */
+
+form {
+  background-color: rgba(55, 41, 145, 0.2);
+  padding: 15px;
+  border-radius: 10px;
+}
+
+form label {
+  display: block;
+  width: fit-content;
+  font-size: 0.8em;
+  font-weight: 100;
+  background-color: rgba(55, 41, 145, 0.2);
+  padding: 3px 7px;
+  margin-top: 10px;
+  margin-bottom: 0px;
+  border-radius: 5px;
+}
+
+input[type="text"],
+[type="number"],
+select,
+input[type="date"],
+input[type="date"],
+input[type="datetime"],
+input[type="email"],
+input[type="month"],
+input[type="password"],
+input[type="range"],
+input[type="tel"],
+input[type="time"],
+input[type="week"] {
+  width: 100%;
+  padding: 12px 20px;
+  font-size: 1em;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  background-color: cadetblue;
+}
+
+input[type="submit"] {
+  width: 100%;
+  background-color: #4caf50;
+  font-size: 1em;
+  color: white;
+  padding: 10px 20px;
+  margin: 5px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover {
+  background-color: #45a049;
+}
+
+input[type="reset"] {
+  width: 100%;
+  background-color: #eb9903;
+  font-size: 1em;
+  color: white;
+  padding: 10px 20px;
+  margin: 5px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type="reset"]:hover {
+  background-color: #c27013;
+}
+
+/* input[type="button"],
+button {
+  width: 100%;
+  background-color: #372991;
+  font-size: 1em;
+  color: white;
+  padding: 10px 20px;
+  margin: 5px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+} */
+
+input[type="button"]:hover,
+button:hover {
+  
+}
+
+fieldset {
+  border: 0.5px dotted #372991;
+}
+
+fieldset > legend {
+  font-size: 0.8em;
+  font-weight: 100;
+  background-color: rgba(55, 41, 145, 0.2);
+  padding: 3px 7px;
+  border-radius: 5px;
+}
+
+input[type="radio"] + label,
+input[type="checkbox"] + label {
+  display: inline-block;
+  font-size: 1em;
+  background-color: rgba(0, 0, 0, 0);
+}
+
+section {
+  display: flex;
+  
+  flex-direction: column;
+  
+  justify-content: center;
+  background-color: white;
+  align-items: center;
+  padding: 15px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.502);
+  max-width: 400px;
+  margin: auto;
+}
