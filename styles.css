@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap');
 
-
 * {
   margin: 0;
   padding: 0;
@@ -8,16 +7,11 @@
   text-decoration: none;
 }
 
-
 body {
-
   background-color: #537e91;
-
 }
 
-
 header {
-
   position: fixed;
   width: 100%;
   top: 0;
@@ -29,26 +23,18 @@ header {
   margin-top: -20px;
 }
 
-
-
 nav {
   padding: 10px;
   margin-top: 0;
-
   background-color: #457286;
   width: 100%;
   height: 160px;
   border-radius: 10px;
-
-
 }
 
 #logo {
-
   border-radius: 100px 300px;
 }
-
-
 
 ul {
   display: flex;
@@ -57,7 +43,6 @@ ul {
   justify-content: space-around;
   font-size: 40px;
   margin-top: -70px;
-
 }
 
 li {
@@ -72,7 +57,6 @@ a :hover {
   transition: 0.5s;
   opacity: 0.7;
 }
-
 
 .button {
   display: flex;
@@ -100,8 +84,6 @@ button {
   text-transform: uppercase;
 }
 
-
-
 .sobre {
   margin-top: 400px;
   width: 100%;
@@ -117,12 +99,10 @@ h1 {
   margin-left: 400px;
 }
 
-.cadastro{
-display: flex;
-justify-content: center;
-padding-top: 30px;
-
-
+.cadastro {
+  display: flex;
+  justify-content: center;
+  padding-top: 30px;
 }
 
 .title_cad {
@@ -132,11 +112,6 @@ padding-top: 30px;
   margin-top: 20px;
   text-align: center;
   margin: 0;
-  
-  
-  
-  
-
 }
 
 p {
@@ -246,8 +221,6 @@ input[type="reset"]:hover {
   background-color: #c27013;
 }
 
-
-
 fieldset {
   border: 0.5px dotted #372991;
 }
@@ -267,14 +240,12 @@ input[type="checkbox"]+label {
   background-color: rgba(0, 0, 0, 0);
 }
 
-.form{
+.form {
   display: flex;
   align-items: center;
   justify-content: center;
   margin-top: 200px;
 }
-
-
 
 section {
   display: flex;
