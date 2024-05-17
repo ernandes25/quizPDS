@@ -10,14 +10,14 @@
 
 <body>
     <header>
-        <h1>Resultado do processamento</h1>
+        <h1 class="title_php">Cadastro concluído</h1>
     </header>
-    <main>
+    <main class="main">
         <?php
         $nome = $_GET["nome"] ?? "sem nome";
         $email = $_GET["email"] ?? "desconhecido";
         $telefone = $_GET["telefone"] ?? "desconhecido";
-        echo "<p> É um prazer te conhecer, <strong> $nome $email $telefone!</strong> Este é o meu site!";
+        echo "<p> É um prazer te conhecer, <br> <br><strong> $nome $email $telefone!</strong> Este é o meu site!";
 
         ?>
         <p><a href="javascript:history.go(-1)"> Voltar para a página anterior </a></p>
