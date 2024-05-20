@@ -5,22 +5,55 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Resultado</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <header>
-        <h1 class="title_php">Cadastro concluído</h1>
+    <header id="header-php">
+        <h1 id="title-php">Cadastro concluído</h1>
     </header>
     <main class="main">
         <?php
         $nome = $_GET["nome"] ?? "sem nome";
+        
+        echo "<br>";
+
+
         $email = $_GET["email"] ?? "desconhecido";
+        echo nl2br("<br>");
+        echo "<br>";
+
+
         $telefone = $_GET["telefone"] ?? "desconhecido";
-        echo "<p> É um prazer te conhecer, <br> <br><strong> $nome $email $telefone!</strong> Este é o meu site!";
+
+        
+        echo nl2br("<br>");
+        echo "<br>";
+
+
+
+        echo "<p> É um prazer te conhecer, <br> <br>
+        <strong> $nome</strong> 
+
+        <br>
+        
+        
+
+        <strong>  $email</strong> 
+        <br>
+        
+        <strong> $telefone!</strong> 
+        <br>
+        
+        Bem vindo a teste PDS!";
+        echo nl2br("<br>");
+        echo "<br>";
+
 
         ?>
-        <p><a href="javascript:history.go(-1)"> Voltar para a página anterior </a></p>
+        <p> <a class="start-test" href="quiz.html"> Vamos começar o teste! </a></p>
     </main>
+    <script src="scripts.js"></script>
 </body>
+
 </html>
