@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Questionário</title>
     <link rel="stylesheet" href="./style.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 </head>
 
 <body>
@@ -34,325 +35,327 @@
         <h2 class="h2_quiz"> Vamos começar</h2>
     </header>
 
-    <div class="container-quiz">
-        <div class="row">
-            <div class="two-thirds column">
 
+    
+    <div id="progress_container">
+        <div id="progress_bar"></div>
+    </div>
 
-                <div id="progress_bar"></div>
+    <form id="questions_box">
 
-                <form class="questions_box">
+        <div class="question active" id="question1">
 
-                    <div id="question-1">
+            <h2>Questão 1</h2>
+            <h3>Penso muito frequentemente em sexo.</h3>
 
-                        <h2>Questão 1</h2>
-                        <h3>Penso muito frequentemente em sexo.</h3>
+            <input id="value-quiz" type="radio" name="q1" value="1"> 1
+            <input id="value-quiz" type="radio" name="q1" value="2"> 2
+            <input id="value-quiz" type="radio" name="q1" value="3"> 3
+            <input id="value-quiz" type="radio" name="q1" value="4"> 4
+            <input id="value-quiz" type="radio" name="q1" value="5"> 5
+            <input id="value-quiz" type="radio" name="q1" value="6"> 6
+            <input id="value-quiz" type="radio" name="q1" value="7"> 7
+            <input id="value-quiz" type="radio" name="q1" value="8"> 8
+            <input id="value-quiz" type="radio" name="q1" value="9"> 9
+            <button type="button" id="next1" disabled>Avançar</button>
 
-                        <input id="question-1" type="radio" name="favelang" value="1"> 1
-                        <input id="question-1" type="radio" name="favelang" value="2"> 2
-                        <input id="question-1" type="radio" name="favelang" value="3"> 3
-                        <input id="question-1" type="radio" name="favelang" value="4"> 4
-                        <input id="question-1" type="radio" name="favelang" value="5"> 5
-                        <input id="question-1" type="radio" name="favelang" value="6"> 6
-                        <input id="question-1" type="radio" name="favelang" value="7"> 7
-                        <input id="question-1" type="radio" name="favelang" value="8"> 8
-                        <input id="question-1" type="radio" name="favelang" value="9"> 9
-                        <div id="submit1" class="button-submmit">Enviar Resposta</div>
 
-                        <div class="clearfix"></div>
-
-                    </div>
-
-
-                    <div id="question-2">
-
-                        <h2>Questão 2</h2>
-                        <h3>O sexo geralmente não é muito satisfatório para mim.</h3>
-
-                        <input id="value-quiz" type="radio" name="favelang" value="1"> 1
-                        <input id="value-quiz" type="radio" name="favelang" value="2"> 2
-                        <input id="value-quiz" type="radio" name="favelang" value="3"> 3
-                        <input id="value-quiz" type="radio" name="favelang" value="4"> 4
-                        <input id="value-quiz" type="radio" name="favelang" value="5"> 5
-                        <input id="value-quiz" type="radio" name="favelang" value="6"> 6
-                        <input id="value-quiz" type="radio" name="favelang" value="7"> 7
-                        <input id="value-quiz" type="radio" name="favelang" value="8"> 8
-                        <input id="value-quiz" type="radio" name="favelang" value="9"> 9
-                        <div id="submit2" class="button-submmit">Enviar Resposta</div>
-                        <div class="clearfix"></div>
-
-                    </div>
-
-                    <div id="question-3">
-
-                        <h2>Questão 3</h2>
-                        <h3>Nunca tomo a iniciativa de fazer sexo.</h3>
-
-                        <input id="value-quiz" type="radio" name="favelang" value="1"> 1
-                        <input id="value-quiz" type="radio" name="favelang" value="2"> 2
-                        <input id="value-quiz" type="radio" name="favelang" value="3"> 3
-                        <input id="value-quiz" type="radio" name="favelang" value="4"> 4
-                        <input id="value-quiz" type="radio" name="favelang" value="5"> 5
-                        <input id="value-quiz" type="radio" name="favelang" value="6"> 6
-                        <input id="value-quiz" type="radio" name="favelang" value="7"> 7
-                        <input id="value-quiz" type="radio" name="favelang" value="8"> 8
-                        <input id="value-quiz" type="radio" name="favelang" value="9"> 9
-                        <div id="submit3" class="button-submmit">Enviar Resposta</div>
-                        <div class="clearfix"></div>
-
-                    </div>
-
-                    <div id="question-4">
-
-                        <h2>Questão 4</h2>
-                        <h3>Frequentemente frustro as tentativas do cônjuge de fazer sexo.</h3>
-
-                        <input id="value-quiz" type="radio" name="favelang" value="1"> 1
-                        <input id="value-quiz" type="radio" name="favelang" value="2"> 2
-                        <input id="value-quiz" type="radio" name="favelang" value="3"> 3
-                        <input id="value-quiz" type="radio" name="favelang" value="4"> 4
-                        <input id="value-quiz" type="radio" name="favelang" value="5"> 5
-                        <input id="value-quiz" type="radio" name="favelang" value="6"> 6
-                        <input id="value-quiz" type="radio" name="favelang" value="7"> 7
-                        <input id="value-quiz" type="radio" name="favelang" value="8"> 8
-                        <input id="value-quiz" type="radio" name="favelang" value="9"> 9
-                        <div id="submit4" class="button-submmit">Enviar Resposta</div>
-                        <div class="clearfix"></div>
-
-                    </div>
-
-                    <div id="question-5">
-
-                        <h2>Questão 5</h2>
-                        <h3>Mesmo quando o cônjuge tenta ser romântico, tenho dificuldade em entrar
-                            no clima.</h3>
-
-                        <input id="value-quiz" type="radio" name="favelang" value="1"> 1
-                        <input id="value-quiz" type="radio" name="favelang" value="2"> 2
-                        <input id="value-quiz" type="radio" name="favelang" value="3"> 3
-                        <input id="value-quiz" type="radio" name="favelang" value="4"> 4
-                        <input id="value-quiz" type="radio" name="favelang" value="5"> 5
-                        <input id="value-quiz" type="radio" name="favelang" value="6"> 6
-                        <input id="value-quiz" type="radio" name="favelang" value="7"> 7
-                        <input id="value-quiz" type="radio" name="favelang" value="8"> 8
-                        <input id="value-quiz" type="radio" name="favelang" value="9"> 9
-                        <div id="submit5" class="button-submmit">Enviar Resposta</div>
-                        <div class="clearfix"></div>
-
-                    </div>
-
-                    <div id="question-6">
-
-                        <h2>Questão 6</h2>
-                        <h3>Geralmente considero-me pouco atraente ou desejável.</h3>
-
-                        <input id="value-quiz" type="radio" name="favelang" value="1"> 1
-                        <input id="value-quiz" type="radio" name="favelang" value="2"> 2
-                        <input id="value-quiz" type="radio" name="favelang" value="3"> 3
-                        <input id="value-quiz" type="radio" name="favelang" value="4"> 4
-                        <input id="value-quiz" type="radio" name="favelang" value="5"> 5
-                        <input id="value-quiz" type="radio" name="favelang" value="6"> 6
-                        <input id="value-quiz" type="radio" name="favelang" value="7"> 7
-                        <input id="value-quiz" type="radio" name="favelang" value="8"> 8
-                        <input id="value-quiz" type="radio" name="favelang" value="9"> 9
-                        <div id="submit6" class="button-submmit">Enviar Resposta</div>
-                        <div class="clearfix"></div>
-
-                    </div>
-
-                    <div id="question-7">
-
-                        <h2>Questão 7</h2>
-                        <h3>Nunca fico excitado(a) e com vontade de me masturbar.</h3>
-
-                        <input id="value-quiz" type="radio" name="favelang" value="1"> 1
-                        <input id="value-quiz" type="radio" name="favelang" value="2"> 2
-                        <input id="value-quiz" type="radio" name="favelang" value="3"> 3
-                        <input id="value-quiz" type="radio" name="favelang" value="4"> 4
-                        <input id="value-quiz" type="radio" name="favelang" value="5"> 5
-                        <input id="value-quiz" type="radio" name="favelang" value="6"> 6
-                        <input id="value-quiz" type="radio" name="favelang" value="7"> 7
-                        <input id="value-quiz" type="radio" name="favelang" value="8"> 8
-                        <input id="value-quiz" type="radio" name="favelang" value="9"> 9
-                        <div id="submit7" class="button-submmit">Enviar Resposta</div>
-                        <div class="clearfix"></div>
-
-                    </div>
-
-                    <div id="question-8">
-
-                        <h2>Questão 8</h2>
-                        <h3>Quando estou fazendo amor, quase sempre fico distraído(a) ou desligado(a).</h3>
-
-                        <input id="value-quiz" type="radio" name="favelang" value="1"> 1
-                        <input id="value-quiz" type="radio" name="favelang" value="2"> 2
-                        <input id="value-quiz" type="radio" name="favelang" value="3"> 3
-                        <input id="value-quiz" type="radio" name="favelang" value="4"> 4
-                        <input id="value-quiz" type="radio" name="favelang" value="5"> 5
-                        <input id="value-quiz" type="radio" name="favelang" value="6"> 6
-                        <input id="value-quiz" type="radio" name="favelang" value="7"> 7
-                        <input id="value-quiz" type="radio" name="favelang" value="8"> 8
-                        <input id="value-quiz" type="radio" name="favelang" value="9"> 9
-                        <div id="submit8" class="button-submmit">Enviar Resposta</div>
-                        <div class="clearfix"></div>
-
-                    </div>
-
-
-                    <div id="question-9">
-
-                        <h2>Questão 9</h2>
-                        <h3>Não sou uma pessoa muita apaixonada.</h3>
-
-                        <input id="value-quiz" type="radio" name="favelang" value="1"> 1
-                        <input id="value-quiz" type="radio" name="favelang" value="2"> 2
-                        <input id="value-quiz" type="radio" name="favelang" value="3"> 3
-                        <input id="value-quiz" type="radio" name="favelang" value="4"> 4
-                        <input id="value-quiz" type="radio" name="favelang" value="5"> 5
-                        <input id="value-quiz" type="radio" name="favelang" value="6"> 6
-                        <input id="value-quiz" type="radio" name="favelang" value="7"> 7
-                        <input id="value-quiz" type="radio" name="favelang" value="8"> 8
-                        <input id="value-quiz" type="radio" name="favelang" value="9"> 9
-                        <div id="submit9" class="button-submmit">Enviar Resposta</div>
-                        <div class="clearfix"></div>
-
-                    </div>
-
-                    <div id="question-10">
-
-                        <h2>Questão 10</h2>
-                        <h3>O impulso sexual do meu cônjuge é muito mais forte do que o meu.</h3>
-
-                        <input id="value-quiz" type="radio" name="favelang" value="1"> 1
-                        <input id="value-quiz" type="radio" name="favelang" value="2"> 2
-                        <input id="value-quiz" type="radio" name="favelang" value="3"> 3
-                        <input id="value-quiz" type="radio" name="favelang" value="4"> 4
-                        <input id="value-quiz" type="radio" name="favelang" value="5"> 5
-                        <input id="value-quiz" type="radio" name="favelang" value="6"> 6
-                        <input id="value-quiz" type="radio" name="favelang" value="7"> 7
-                        <input id="value-quiz" type="radio" name="favelang" value="8"> 8
-                        <input id="value-quiz" type="radio" name="favelang" value="9"> 9
-                        <div id="submit10" class="button-submmit">Enviar Resposta</div>
-                        <div class="clearfix"></div>
-
-                    </div>
-
-                    <div id="question-11">
-
-                        <h2>Questão 11</h2>
-                        <h3>Eu ficaria muito satisfeito(a) em deixar o sexo fora do nosso
-                            relacionamento, se achasse que isso não causaria problemas.</h3>
-
-                        <input id="value-quiz" type="radio" name="favelang" value="1"> 1
-                        <input id="value-quiz" type="radio" name="favelang" value="2"> 2
-                        <input id="value-quiz" type="radio" name="favelang" value="3"> 3
-                        <input id="value-quiz" type="radio" name="favelang" value="4"> 4
-                        <input id="value-quiz" type="radio" name="favelang" value="5"> 5
-                        <input id="value-quiz" type="radio" name="favelang" value="6"> 6
-                        <input id="value-quiz" type="radio" name="favelang" value="7"> 7
-                        <input id="value-quiz" type="radio" name="favelang" value="8"> 8
-                        <input id="value-quiz" type="radio" name="favelang" value="9"> 9
-                        <div id="submit11" class="button-submmit">Enviar Resposta</div>
-                        <div class="clearfix"></div>
-
-                    </div>
-
-                    <div id="question-12">
-
-                        <h2>Questão 12</h2>
-                        <h3>Nunca tenho fantasias sexuais.</h3>
-                        <input id="value-quiz" type="radio" name="favelang" value="1"> 1
-                        <input id="value-quiz" type="radio" name="favelang" value="2"> 2
-                        <input id="value-quiz" type="radio" name="favelang" value="3"> 3
-                        <input id="value-quiz" type="radio" name="favelang" value="4"> 4
-                        <input id="value-quiz" type="radio" name="favelang" value="5"> 5
-                        <input id="value-quiz" type="radio" name="favelang" value="6"> 6
-                        <input id="value-quiz" type="radio" name="favelang" value="7"> 7
-                        <input id="value-quiz" type="radio" name="favelang" value="8"> 8
-                        <input id="value-quiz" type="radio" name="favelang" value="9"> 9
-                        <div id="submit12" class="button-submmit">Enviar Resposta</div>
-                        <div class="clearfix"></div>
-
-                    </div>
-
-                    <div id="question-13">
-
-                        <h2>Questão 13</h2>
-                        <h3>Discordâncias em relação à nossa frequência sexual são comuns em nosso
-                            relacionamento e, muitas vezes, geram discussões ou mágoas.</h3>
-                        <input id="value-quiz" type="radio" name="favelang" value="1"> 1
-                        <input id="value-quiz" type="radio" name="favelang" value="2"> 2
-                        <input id="value-quiz" type="radio" name="favelang" value="3"> 3
-                        <input id="value-quiz" type="radio" name="favelang" value="4"> 4
-                        <input id="value-quiz" type="radio" name="favelang" value="5"> 5
-                        <input id="value-quiz" type="radio" name="favelang" value="6"> 6
-                        <input id="value-quiz" type="radio" name="favelang" value="7"> 7
-                        <input id="value-quiz" type="radio" name="favelang" value="8"> 8
-                        <input id="value-quiz" type="radio" name="favelang" value="9"> 9
-                        <div id="submit13" class="button-submmit">Enviar Resposta</div>
-                        <div class="clearfix"></div>
-
-                    </div>
-
-                    <div id="question-14">
-
-                        <h2>Questão 14</h2>
-                        <h3>Não é raro para mim inventar desculpas (como, por exemplo, “Não me sinto
-                            bem”) para evitar fazer sexo.</h3>
-
-                        <input id="value-quiz" type="radio" name="favelang" value="1"> 1
-                        <input id="value-quiz" type="radio" name="favelang" value="2"> 2
-                        <input id="value-quiz" type="radio" name="favelang" value="3"> 3
-                        <input id="value-quiz" type="radio" name="favelang" value="4"> 4
-                        <input id="value-quiz" type="radio" name="favelang" value="5"> 5
-                        <input id="value-quiz" type="radio" name="favelang" value="6"> 6
-                        <input id="value-quiz" type="radio" name="favelang" value="7"> 7
-                        <input id="value-quiz" type="radio" name="favelang" value="8"> 8
-                        <input id="value-quiz" type="radio" name="favelang" value="9"> 9
-                        <div id="submit14" class="button-submmit">Enviar Resposta</div>
-                        <div class="clearfix"></div>
-
-                    </div>
-
-
-                    <div id="question-15">
-
-                        <h2>Questão 15</h2>
-                        <h3>Às vezes, à noite, finjo que estou dormindo para que o cônjuge não tente me
-                            convencer a fazer sexo.</h3>
-
-                        <input id="value-quiz" type="radio" name="favelang" value="1"> 1
-                        <input id="value-quiz" type="radio" name="favelang" value="2"> 2
-                        <input id="value-quiz" type="radio" name="favelang" value="3"> 3
-                        <input id="value-quiz" type="radio" name="favelang" value="4"> 4
-                        <input id="value-quiz" type="radio" name="favelang" value="5"> 5
-                        <input id="value-quiz" type="radio" name="favelang" value="6"> 6
-                        <input id="value-quiz" type="radio" name="favelang" value="7"> 7
-                        <input id="value-quiz" type="radio" name="favelang" value="8"> 8
-                        <input id="value-quiz" type="radio" name="favelang" value="9"> 9
-                        <div id="submit15" class="button-submmit">Enviar Resposta</div>
-                        <div class="clearfix"></div>
-
-                    </div>
-
-                    <div id="question-16">
-                        <h2>Obrigado por responder a pesquisa!</h2>
-                        <h3>O resultato é: </h3>
-                        <h1 id=printtotalscore></h1>
-                        <p id=printscoreinfo></p>
-                        <div class="clearfix"></div>
-
-                    </div>
-
-
-                </form>
-
-            </div>
+            <div class="clearfix"></div>
 
         </div>
 
-    </div>
-    <script src="scripts.js"></script>
+        <div class="question" id="question2">
+
+            <h2>Questão 2</h2>
+            <h3>O sexo geralmente não é muito satisfatório para mim.</h3>
+
+            <input id="value-quiz" type="radio" name="q2" value="1"> 1
+            <input id="value-quiz" type="radio" name="q2" value="2"> 2
+            <input id="value-quiz" type="radio" name="q2" value="3"> 3
+            <input id="value-quiz" type="radio" name="q2" value="4"> 4
+            <input id="value-quiz" type="radio" name="q2" value="5"> 5
+            <input id="value-quiz" type="radio" name="q2" value="6"> 6
+            <input id="value-quiz" type="radio" name="q2" value="7"> 7
+            <input id="value-quiz" type="radio" name="q2" value="8"> 8
+            <input id="value-quiz" type="radio" name="q2" value="9"> 9
+            <button type="button" id="next2" disabled>Avançar</button>
+            <div class="clearfix"></div>
+        </div>
+
+        <div class="question" id="question3">
+
+            <h2>Questão 3</h2>
+            <h3>Nunca tomo a iniciativa de fazer sexo.</h3>
+
+            <input id="value-quiz" type="radio" name="q3" value="1"> 1
+            <input id="value-quiz" type="radio" name="q3" value="2"> 2
+            <input id="value-quiz" type="radio" name="q3" value="3"> 3
+            <input id="value-quiz" type="radio" name="q3" value="4"> 4
+            <input id="value-quiz" type="radio" name="q3" value="5"> 5
+            <input id="value-quiz" type="radio" name="q3" value="6"> 6
+            <input id="value-quiz" type="radio" name="q3" value="7"> 7
+            <input id="value-quiz" type="radio" name="q3" value="8"> 8
+            <input id="value-quiz" type="radio" name="q3" value="9"> 9
+            <button type="button" id="next3" disabled>Avançar</button>
+            <div class="clearfix"></div>
+
+        </div>
+
+        <div class="question" id="question4">
+
+            <h2>Questão 4</h2>
+            <h3>Frequentemente frustro as tentativas do cônjuge de fazer sexo.</h3>
+
+            <input id="value-quiz" type="radio" name="q4" value="1"> 1
+            <input id="value-quiz" type="radio" name="q4" value="2"> 2
+            <input id="value-quiz" type="radio" name="q4" value="3"> 3
+            <input id="value-quiz" type="radio" name="q4" value="4"> 4
+            <input id="value-quiz" type="radio" name="q4" value="5"> 5
+            <input id="value-quiz" type="radio" name="q4" value="6"> 6
+            <input id="value-quiz" type="radio" name="q4" value="7"> 7
+            <input id="value-quiz" type="radio" name="q4" value="8"> 8
+            <input id="value-quiz" type="radio" name="q4" value="9"> 9
+            <button type="button" id="next4" disabled>Avançar</button>
+            <div class="clearfix"></div>
+
+        </div>
+
+        <div class="question" id="question5">
+
+            <h2>Questão 5</h2>
+            <h3>Mesmo quando o cônjuge tenta ser romântico, tenho dificuldade em entrar
+                no clima.</h3>
+
+            <input id="value-quiz" type="radio" name="q5" value="1"> 1
+            <input id="value-quiz" type="radio" name="q5" value="2"> 2
+            <input id="value-quiz" type="radio" name="q5" value="3"> 3
+            <input id="value-quiz" type="radio" name="q5" value="4"> 4
+            <input id="value-quiz" type="radio" name="q5" value="5"> 5
+            <input id="value-quiz" type="radio" name="q5" value="6"> 6
+            <input id="value-quiz" type="radio" name="q5" value="7"> 7
+            <input id="value-quiz" type="radio" name="q5" value="8"> 8
+            <input id="value-quiz" type="radio" name="q5" value="9"> 9
+            <button type="button" id="next5" disabled>Avançar</button>
+            <div class="clearfix"></div>
+
+        </div>
+
+        <div class="question" id="question6">
+
+            <h2>Questão 6</h2>
+            <h3>Geralmente considero-me pouco atraente ou desejável.</h3>
+
+            <input id="value-quiz" type="radio" name="q6" value="1"> 1
+            <input id="value-quiz" type="radio" name="q6" value="2"> 2
+            <input id="value-quiz" type="radio" name="q6" value="3"> 3
+            <input id="value-quiz" type="radio" name="q6" value="4"> 4
+            <input id="value-quiz" type="radio" name="q6" value="5"> 5
+            <input id="value-quiz" type="radio" name="q6" value="6"> 6
+            <input id="value-quiz" type="radio" name="q6" value="7"> 7
+            <input id="value-quiz" type="radio" name="q6" value="8"> 8
+            <input id="value-quiz" type="radio" name="q6" value="9"> 9
+            <button type="button" id="next6" disabled>Avançar</button>
+            <div class="clearfix"></div>
+
+        </div>
+
+        <div class="question" id="question7">
+
+            <h2>Questão 7</h2>
+            <h3>Nunca fico excitado(a) e com vontade de me masturbar.</h3>
+
+            <input id="value-quiz" type="radio" name="q7" value="1"> 1
+            <input id="value-quiz" type="radio" name="q7" value="2"> 2
+            <input id="value-quiz" type="radio" name="q7" value="3"> 3
+            <input id="value-quiz" type="radio" name="q7" value="4"> 4
+            <input id="value-quiz" type="radio" name="q7" value="5"> 5
+            <input id="value-quiz" type="radio" name="q7" value="6"> 6
+            <input id="value-quiz" type="radio" name="q7" value="7"> 7
+            <input id="value-quiz" type="radio" name="q7" value="8"> 8
+            <input id="value-quiz" type="radio" name="q7" value="9"> 9
+            <button type="button" id="next7" disabled>Avançar</button>
+            <div class="clearfix"></div>
+
+        </div>
+
+        <div class="question" id="question8">
+
+            <h2>Questão 8</h2>
+            <h3>Quando estou fazendo amor, quase sempre fico distraído(a) ou desligado(a).</h3>
+
+            <input id="value-quiz" type="radio" name="q8" value="1"> 1
+            <input id="value-quiz" type="radio" name="q8" value="2"> 2
+            <input id="value-quiz" type="radio" name="q8" value="3"> 3
+            <input id="value-quiz" type="radio" name="q8" value="4"> 4
+            <input id="value-quiz" type="radio" name="q8" value="5"> 5
+            <input id="value-quiz" type="radio" name="q8" value="6"> 6
+            <input id="value-quiz" type="radio" name="q8" value="7"> 7
+            <input id="value-quiz" type="radio" name="q8" value="8"> 8
+            <input id="value-quiz" type="radio" name="q8" value="9"> 9
+            <button type="button" id="next8" disabled>Avançar</button>
+            <div class="clearfix"></div>
+
+        </div>
+
+
+        <div class="question" id="question9">
+
+            <h2>Questão 9</h2>
+            <h3>Não sou uma pessoa muita apaixonada.</h3>
+
+            <input id="value-quiz" type="radio" name="q9" value="1"> 1
+            <input id="value-quiz" type="radio" name="q9" value="2"> 2
+            <input id="value-quiz" type="radio" name="q9" value="3"> 3
+            <input id="value-quiz" type="radio" name="q9" value="4"> 4
+            <input id="value-quiz" type="radio" name="q9" value="5"> 5
+            <input id="value-quiz" type="radio" name="q9" value="6"> 6
+            <input id="value-quiz" type="radio" name="q9" value="7"> 7
+            <input id="value-quiz" type="radio" name="q9" value="8"> 8
+            <input id="value-quiz" type="radio" name="q9" value="9"> 9
+            <button type="button" id="next9" disabled>Avançar</button>
+            <div class="clearfix"></div>
+
+        </div>
+
+        <div class="question" id="question10">
+
+            <h2>Questão 10</h2>
+            <h3>O impulso sexual do meu cônjuge é muito mais forte do que o meu.</h3>
+
+            <input id="value-quiz" type="radio" name="q10" value="1"> 1
+            <input id="value-quiz" type="radio" name="q10" value="2"> 2
+            <input id="value-quiz" type="radio" name="q10" value="3"> 3
+            <input id="value-quiz" type="radio" name="q10" value="4"> 4
+            <input id="value-quiz" type="radio" name="q10" value="5"> 5
+            <input id="value-quiz" type="radio" name="q10" value="6"> 6
+            <input id="value-quiz" type="radio" name="q10" value="7"> 7
+            <input id="value-quiz" type="radio" name="q10" value="8"> 8
+            <input id="value-quiz" type="radio" name="q10" value="9"> 9
+            <button type="button" id="next10" disabled>Avançar</button>
+            <div class="clearfix"></div>
+
+        </div>
+
+        <div class="question" id="question11">
+
+            <h2>Questão 11</h2>
+            <h3>Eu ficaria muito satisfeito(a) em deixar o sexo fora do nosso
+                relacionamento, se achasse que isso não causaria problemas.</h3>
+
+            <input id="value-quiz" type="radio" name="q11" value="1"> 1
+            <input id="value-quiz" type="radio" name="q11" value="2"> 2
+            <input id="value-quiz" type="radio" name="q11" value="3"> 3
+            <input id="value-quiz" type="radio" name="q11" value="4"> 4
+            <input id="value-quiz" type="radio" name="q11" value="5"> 5
+            <input id="value-quiz" type="radio" name="q11" value="6"> 6
+            <input id="value-quiz" type="radio" name="q11" value="7"> 7
+            <input id="value-quiz" type="radio" name="q11" value="8"> 8
+            <input id="value-quiz" type="radio" name="q11" value="9"> 9
+            <button type="button" id="next11" disabled>Avançar</button>
+            <div class="clearfix"></div>
+
+        </div>
+
+        <div class="question" id="question12">
+
+            <h2>Questão 12</h2>
+            <h3>Nunca tenho fantasias sexuais.</h3>
+            <input id="value-quiz" type="radio" name="q12" value="1"> 1
+            <input id="value-quiz" type="radio" name="q12" value="2"> 2
+            <input id="value-quiz" type="radio" name="q12" value="3"> 3
+            <input id="value-quiz" type="radio" name="q12" value="4"> 4
+            <input id="value-quiz" type="radio" name="q12" value="5"> 5
+            <input id="value-quiz" type="radio" name="q12" value="6"> 6
+            <input id="value-quiz" type="radio" name="q12" value="7"> 7
+            <input id="value-quiz" type="radio" name="q12" value="8"> 8
+            <input id="value-quiz" type="radio" name="q12" value="9"> 9
+            <button type="button" id="next12" disabled>Avançar</button>
+            <div class="clearfix"></div>
+
+        </div>
+
+        <div class="question" id="question13">
+
+            <h2>Questão 13</h2>
+            <h3>Discordâncias em relação à nossa frequência sexual são comuns em nosso
+                relacionamento e, muitas vezes, geram discussões ou mágoas.</h3>
+            <input id="value-quiz" type="radio" name="q13" value="1"> 1
+            <input id="value-quiz" type="radio" name="q13" value="2"> 2
+            <input id="value-quiz" type="radio" name="q13" value="3"> 3
+            <input id="value-quiz" type="radio" name="q13" value="4"> 4
+            <input id="value-quiz" type="radio" name="q13" value="5"> 5
+            <input id="value-quiz" type="radio" name="q13" value="6"> 6
+            <input id="value-quiz" type="radio" name="q13" value="7"> 7
+            <input id="value-quiz" type="radio" name="q13" value="8"> 8
+            <input id="value-quiz" type="radio" name="q13" value="9"> 9
+            <button type="button" id="next13" disabled>Avançar</button>
+            <div class="clearfix"></div>
+
+        </div>
+
+        <div class="question" id="question14">
+
+            <h2>Questão 14</h2>
+            <h3>Não é raro para mim inventar desculpas (como, por exemplo, “Não me sinto
+                bem”) para evitar fazer sexo.</h3>
+
+            <input id="value-quiz" type="radio" name="q14" value="1"> 1
+            <input id="value-quiz" type="radio" name="q14" value="2"> 2
+            <input id="value-quiz" type="radio" name="q14" value="3"> 3
+            <input id="value-quiz" type="radio" name="q14" value="4"> 4
+            <input id="value-quiz" type="radio" name="q14" value="5"> 5
+            <input id="value-quiz" type="radio" name="q14" value="6"> 6
+            <input id="value-quiz" type="radio" name="q14" value="7"> 7
+            <input id="value-quiz" type="radio" name="q14" value="8"> 8
+            <input id="value-quiz" type="radio" name="q14" value="9"> 9
+            <button type="button" id="next14" disabled>Avançar</button>
+            <div class="clearfix"></div>
+
+        </div>
+
+
+        <div class="question" id="question15">
+
+            <h2>Questão 15</h2>
+            <h3>Às vezes, à noite, finjo que estou dormindo para que o cônjuge não tente me
+                convencer a fazer sexo.</h3>
+
+            <input id="value-quiz" type="radio" name="q15" value="1"> 1
+            <input id="value-quiz" type="radio" name="q15" value="2"> 2
+            <input id="value-quiz" type="radio" name="q15" value="3"> 3
+            <input id="value-quiz" type="radio" name="q15" value="4"> 4
+            <input id="value-quiz" type="radio" name="q15" value="5"> 5
+            <input id="value-quiz" type="radio" name="q15" value="6"> 6
+            <input id="value-quiz" type="radio" name="q15" value="7"> 7
+            <input id="value-quiz" type="radio" name="q15" value="8"> 8
+            <input id="value-quiz" type="radio" name="q15" value="9"> 9
+            <button type="button" id="next15" disabled>Avançar</button>
+            <div class="clearfix"></div>
+
+        </div>
+
+
+        <div class="result" id="result">
+
+            <h2>Obrigado por responder a pesquisa!</h2>
+            <h3>Sua pontuação é: <span class="span_result" id="score"> </span> </h3> <br>
+
+            <p> <span class="span_result" id="result_score_info"> </span> </p>
+
+
+            <a id="restart-pds" href="quiz.html">
+                <button id="button-restart">Reiniciar PDS</button>
+            </a> 
+
+
+
+        </div>
+
+    </form>
+
+
+    <script src="script.js"></script>
+
 </body>
 
 </html>

@@ -22,9 +22,9 @@ header {
 }
 
 .img {
-  width: auto;
-  height: auto;
-  margin-top: -20px;
+  width: 200px;
+  height: 100px;
+  
 }
 
 .container-quiz {
@@ -41,8 +41,8 @@ header {
   clear: both;
 }
 
-
-.questions_box {
+#questions_box {
+  display: flex;
   width: 800px;
   background-color: rgba(50, 97, 68, 0.2);
   padding: 15px;
@@ -58,7 +58,6 @@ h3 {
   margin-top: 30px;
   margin-left: 50px;
 }
-
 
 nav {
   padding: 10px;
@@ -95,31 +94,29 @@ a :hover {
   opacity: 0.7;
 }
 
-
- #question-2,
-#question-3,
-#question-4,
-#question-5,
-#question-6,
-#question-7,
-#question-8,
-#question-9,
-#question-10,
-#question-11,
-#question-12,
-#question-13,
-#question-14,
-#question-15,
-#question-16 {
+.question,
+.result {
   display: none;
-} 
+}
 
-.button-init {
+.question.active {
+  display: block;
+
+}
+
+
+#restart-pds {
+  display: flex;
   width: 250px;
   height: 50px;
-  padding: 10px;
-  background-color: #325d70;
-  justify-content: center;
+  margin-left: 500px;
+  
+  
+  
+
+
+
+  animation: pulse 3s 3s ease-in-out infinite;
   border-radius: 10px;
   font-size: 20px;
   color: white;
@@ -128,12 +125,14 @@ a :hover {
   font-family: "Figtree:ital", sans-serif;
 }
 
-.button-submmit {
+button {
+
+  animation: pulse 3s 3s ease-in-out infinite;
   display: flex;
   width: 250px;
   height: 50px;
-  margin-top: 40px;
-  margin-left: 450px;
+  
+
   /* verificar */
   background-color: #325d70;
   justify-content: center;
@@ -146,25 +145,82 @@ a :hover {
   font-family: "Figtree:ital", sans-serif;
 }
 
+
+.button :hover {
+  animation: pulse 3s 3s ease-in-out infinite;
+  background-color: rgb(136, 179, 180);
+  transition: 0.5s;
+  opacity: 0.7;
+}
+
+#next1,
+#next2,
+#next3,
+#next4,
+#next5,
+#next6,
+#next7,
+#next8,
+#next9,
+#next10,
+#next11,
+#next12,
+#next13,
+#next14,
+#next15 {
+  display: flex;
+  width: 250px;
+  height: 50px;
+  margin-left: 460px;
+  margin-top: 40px;
+
+  /* verificar */
+  background-color: #325d70;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  font-size: 20px;
+  color: white;
+  cursor: pointer;
+  text-transform: uppercase;
+  font-family: "Figtree:ital", sans-serif;
+
+
+}
+
+
+#progress_container {
+  width: 100%;
+  background-color: #4caf50;
+
+}
+
 #progress_bar {
   background-color: #018fd0;
-  width: 6.67%;
+  width: 0;
   height: 10px;
   transition: all 100ms ease-in-out;
   margin-bottom: 20px;
 }
 
 a {
-  display: flex;
-  width: 220px;
-  margin-top: 50px;
+
+  margin-top: 20px;
+  margin-bottom: 20px;
+
+  animation: pulse 3s 3s ease-in-out infinite;
+  border-radius: 10px;
+  font-size: 20px;
+  color: white;
+  cursor: pointer;
+  text-transform: uppercase;
+  font-family: "Figtree:ital", sans-serif;
+
 }
 
-.button :hover {
-  background-color: rgb(136, 179, 180);
-  transition: 0.5s;
-  opacity: 0.7;
-}
+
+
+
 
 .sobre {
   display: flex;
@@ -173,15 +229,8 @@ a {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-}
 
-/* h1 {
-  font-family: "Figtree:ital", sans-serif;
-  width: 1200px;
-  color: rgb(167, 139, 103);
-  font-size: 30px;
-  margin-left: 400px;
-} */
+}
 
 .cadastro {
   display: flex;
@@ -189,15 +238,12 @@ a {
   padding-top: 30px;
 }
 
-
-
 .title_cad {
   font-family: "Figtree:ital", sans-serif;
   color: white;
   font-size: 30px;
   margin-top: 50px;
   text-align: center;
-
 }
 
 #title-php {
@@ -205,9 +251,6 @@ a {
   text-align: center;
   color: rgb(167, 139, 103);
   font-size: 30px;
-
-
-
 }
 
 #title-page-initial {
@@ -216,11 +259,7 @@ a {
   color: rgb(167, 139, 103);
   font-size: 30px;
   margin-left: 400px;
-
 }
-
-
-
 
 p {
   display: flex;
@@ -238,6 +277,11 @@ p {
   font-size: 25px;
 }
 
+
+
+
+
+
 footer {
   height: 250px;
   margin-top: 60px;
@@ -253,6 +297,16 @@ span {
   margin-top: -100px;
   font-size: 10px;
 }
+
+.span_result {
+  color: #fff;
+  font-family: "Figtree:ital", sans-serif;
+  font-size: 20px;
+  margin-top: 10px;
+
+}
+
+
 
 .img_footer {
   height: 50px;
