@@ -24,7 +24,7 @@ header {
 .img {
   width: 200px;
   height: 100px;
-  
+
 }
 
 .container-quiz {
@@ -104,18 +104,11 @@ a :hover {
 
 }
 
-
 #restart-pds {
   display: flex;
   width: 250px;
   height: 50px;
   margin-left: 500px;
-  
-  
-  
-
-
-
   animation: pulse 3s 3s ease-in-out infinite;
   border-radius: 10px;
   font-size: 20px;
@@ -126,14 +119,10 @@ a :hover {
 }
 
 button {
-
   animation: pulse 3s 3s ease-in-out infinite;
   display: flex;
   width: 250px;
   height: 50px;
-  
-
-  /* verificar */
   background-color: #325d70;
   justify-content: center;
   align-items: center;
@@ -144,7 +133,6 @@ button {
   text-transform: uppercase;
   font-family: "Figtree:ital", sans-serif;
 }
-
 
 .button :hover {
   animation: pulse 3s 3s ease-in-out infinite;
@@ -184,15 +172,12 @@ button {
   cursor: pointer;
   text-transform: uppercase;
   font-family: "Figtree:ital", sans-serif;
-
-
 }
 
 
 #progress_container {
   width: 100%;
   background-color: #4caf50;
-
 }
 
 #progress_bar {
@@ -215,12 +200,7 @@ a {
   cursor: pointer;
   text-transform: uppercase;
   font-family: "Figtree:ital", sans-serif;
-
 }
-
-
-
-
 
 .sobre {
   display: flex;
@@ -229,7 +209,6 @@ a {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-
 }
 
 .cadastro {
@@ -277,11 +256,6 @@ p {
   font-size: 25px;
 }
 
-
-
-
-
-
 footer {
   height: 250px;
   margin-top: 60px;
@@ -303,10 +277,7 @@ span {
   font-family: "Figtree:ital", sans-serif;
   font-size: 20px;
   margin-top: 10px;
-
 }
-
-
 
 .img_footer {
   height: 50px;
@@ -314,7 +285,6 @@ span {
 }
 
 /* ELEMENTOS DE FORMULÁRIO */
-
 
 form label {
   display: block;
