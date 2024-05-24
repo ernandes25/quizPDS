@@ -39,12 +39,14 @@ document.addEventListener('DOMContentLoaded', function () {
         if (nextButton) {
             nextButton.addEventListener('click', () => {
                 questionDiv.classList.remove('active');
+                
                 if (index < questions.length - 1) {
                     questions[index + 1].classList.add('active');
-
                     const progressPercentage = ((index + 1) / totalQuestions) * 100;
                     growProgressBar(progressPercentage + '%');
                 } else {
+                    growProgressBar('100%');
+
                     const score = calculateScore();
                     document.getElementById('score').innerText = score;
                     document.getElementById('result').classList.add('active');

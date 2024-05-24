@@ -8,30 +8,123 @@
 }
 
 body {
-  background-color: #537e91;
+  background-color: #718a94;
 }
 
 header {
+  
+  position: fixed;
+  display: flex;
   width: 100%;
+  height: 130px;
+  align-content: center;
+  z-index: 9;
   top: 0;
+  
+
 }
+
+
+
+nav {
+  display: flex;
+  background-color: black;
+  width: 100%;
+  border-radius: 10px;
+  justify-content: space-around;
+  align-items: center;
+}
+
+#logo {
+  width: 100px;
+  height: 100px;
+  border-radius: 100px 300px;
+
+}
+
+ul {
+  display: flex;
+  width: auto;
+  justify-content: space-around;
+  font-size: 40px;
+
+}
+
+li {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 18px;
+  line-height: 1.42857143;
+  color: white;
+  font-weight: bold;
+  text-transform: none;
+}
+
+
+
+
+.contato {
+  display: flex;
+  width: 1330px;
+  margin-top: 5px;
+  font-family: "Kdam Thmor Pro", sans-serif;
+  height: 120px;
+  background-image: linear-gradient(to right, rgb(57, 116, 150), blue);
+  align-items: center;
+  justify-content: center;
+  font-size: 30px;
+  border-radius: 10px;
+  margin-left: auto;
+  margin-right: auto;
+
+}
+
+.forma {
+  display: flex;
+  margin-top: 20px;
+  background-color: rgb(212, 212, 230);
+  width: 500px;
+  height: 450px;
+  flex-direction: column;
+  border: solid 10px rgb(128, 156, 189);
+  border-radius: 10px;
+  align-items: start;
+  padding-left: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  transition: 0.8s;
+
+}
+
+
+
+textarea {
+  
+  width: 97%;
+  height: 100px;
+  margin-top: 20px;
+  background-color: #e5e7d1;
+  border-radius: 10px;
+  font-size: 20px;
+  
+  
+  padding-left: 10px;
+  padding-top: 10px;
+
+}
+
 
 .h2_quiz {
   margin-top: 50px;
   padding-left: 10px;
 }
 
-.img {
+#img {
   width: 200px;
   height: 100px;
 
 }
 
-.container-quiz {
-  display: flex;
-  justify-content: center;
-  padding-top: 100px;
-}
+
 
 .container:after,
 .row:after,
@@ -43,10 +136,14 @@ header {
 
 #questions_box {
   display: flex;
-  width: 800px;
+  width: 910px;
+  height: 350px;
   background-color: rgba(50, 97, 68, 0.2);
-  padding: 15px;
+
   border-radius: 10px;
+  align-items: center;
+
+
 }
 
 h3 {
@@ -59,34 +156,8 @@ h3 {
   margin-left: 50px;
 }
 
-nav {
-  padding: 10px;
-  margin-top: 0;
-  background-color: #457286;
-  width: 100%;
-  height: 160px;
-  border-radius: 10px;
-}
 
-#logo {
-  border-radius: 100px 300px;
-}
 
-ul {
-  display: flex;
-  width: auto;
-  margin-left: 100px;
-  justify-content: space-around;
-  font-size: 40px;
-  margin-top: -120px;
-}
-
-li {
-  font-family: "Figtree:ital", sans-serif;
-  font-size: 20px;
-  list-style: none;
-  color: white
-}
 
 a :hover {
   color: black;
@@ -97,10 +168,14 @@ a :hover {
 .question,
 .result {
   display: none;
+  margin-left: 40px;
+  margin-top: 20px;
 }
 
 .question.active {
+  width: 850px;
   display: block;
+
 
 }
 
@@ -174,18 +249,31 @@ button {
   font-family: "Figtree:ital", sans-serif;
 }
 
+.container-quiz {
+  width: 850px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-top: 100px;
+  margin: auto;
+
+}
+
 
 #progress_container {
-  width: 100%;
+  height: 10px;
+  width: 910px;
   background-color: #4caf50;
+  padding: 0;
 }
 
 #progress_bar {
   background-color: #018fd0;
-  width: 0;
+  width: 910px;
   height: 10px;
   transition: all 100ms ease-in-out;
-  margin-bottom: 20px;
+  padding: 0;
+
 }
 
 a {
@@ -209,6 +297,7 @@ a {
   justify-content: center;
   align-items: center;
   flex-direction: column;
+
 }
 
 .cadastro {
@@ -235,9 +324,11 @@ a {
 #title-page-initial {
   font-family: "Figtree:ital", sans-serif;
   width: 1200px;
-  color: rgb(167, 139, 103);
+  color: black;
   font-size: 30px;
   margin-left: 400px;
+  margin-top: 100px;
+  margin-bottom: 100px;
 }
 
 p {
@@ -246,6 +337,7 @@ p {
   flex-direction: column;
   color: #fff;
   font-size: 25px;
+  margin-bottom: 50px;
 }
 
 .start-test {
@@ -279,10 +371,6 @@ span {
   margin-top: 10px;
 }
 
-.img_footer {
-  height: 50px;
-  border-radius: 100px 300px;
-}
 
 /* ELEMENTOS DE FORMULÁRIO */
 
@@ -388,7 +476,9 @@ input[type="checkbox"]+label {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-top: 100px;
+  margin-top: 150px;
+  transform: scale(1.1);
+
 }
 
 section {
