@@ -1,30 +1,103 @@
 document.addEventListener('DOMContentLoaded', function () {
+    const loginModal = document.getElementById('login-modal');
+    const loginForm = document.getElementById('login-form');
+    const buttonInit = document.getElementById('button-init');
+    const logoutButton = document.getElementById('logout');
+
+    function checkLogin() {
+        const user = localStorage.getItem('user');
+        if (user) {
+            logoutButton.style.display = 'block';
+            buttonInit.innerText = 'Continuar PDS';
+        } else {
+            logoutButton.style.display = 'none';
+        }
+    }
+
+    function startPDS() {
+        const user = localStorage.getItem('user');
+        if (user) {
+            window.location.href = 'quiz.html';
+        } else {
+            loginModal.style.display = 'block';
+        }
+    }
+
+    function logout() {
+        localStorage.removeItem('user');
+        logoutButton.style.display = 'none';
+        buttonInit.innerText = 'Iniciar PDS';
+        window.location.href = 'index.html';
+    }
+
+    loginForm.addEventListener('submit', function (event) {
+        event.preventDefault();
+        const formData = new FormData(loginForm);
+
+        fetch('cad.php', {
+            method: 'POST',
+            body: formData
+        })
+        .then(response => {
+            if (!response.ok) {
+                throw new Error('Network response was not ok');
+            }
+            return response.json();
+        })
+        .then(data => {
+            console.log(data); // Adicionado para depuração
+            if (data.status === 'success') {
+                localStorage.setItem('user', formData.get('usuario'));
+                alert(data.message);
+                window.location.href = 'quiz.html';
+            } else {
+                alert(data.message);
+            }
+        })
+        .catch(error => {
+            console.error('Erro:', error);
+            alert('Ocorreu um erro ao processar sua solicitação. Por favor, tente novamente mais tarde.');
+        });
+    });
+
+    checkLogin();
+    window.startPDS = startPDS;
+    window.logout = logout;
+});
+
+
+
+
+function growProgressBar(percentage_width) {
+    var bar = document.getElementById("progress_bar");
+    bar.style.width = percentage_width;
+}
+
+function calculateScore() {
+    let score = 0;
+    let score11to15 = 0;
+
     const questions = document.querySelectorAll('.question');
     const totalQuestions = questions.length;
 
-    function growProgressBar(percentage_width) {
-        var bar = document.getElementById("progress_bar");
-        bar.style.width = percentage_width;
-    }
-
-    function calculateScore() {
-        let score = 0;
-        let score11to15 = 0;
-
-        for (let i = 1; i <= totalQuestions; i++) {
-            const selectedOption = document.querySelector(`input[name="q${i}"]:checked`);
-            if (selectedOption) {
-                const value = parseInt(selectedOption.value, 10);
-                if (i <= 10) {
-                    score += value;
-                } else {
-                    score11to15 += value;
-                }
+    for (let i = 1; i <= totalQuestions; i++) {
+        const selectedOption = document.querySelector(`input[name="q${i}"]:checked`);
+        if (selectedOption) {
+            const value = parseInt(selectedOption.value, 10);
+            if (i <= 10) {
+                score += value;
+            } else {
+                score11to15 += value;
             }
         }
-
-        return score + (score11to15 * 2);
     }
+
+    return score + (score11to15 * 2);
+}
+
+document.addEventListener('DOMContentLoaded', function () {
+    const questions = document.querySelectorAll('.question');
+    const totalQuestions = questions.length;
 
     questions.forEach((questionDiv, index) => {
         const nextButton = questionDiv.querySelector('button[type="button"]');
@@ -39,7 +112,7 @@ document.addEventListener('DOMContentLoaded', function () {
         if (nextButton) {
             nextButton.addEventListener('click', () => {
                 questionDiv.classList.remove('active');
-                
+
                 if (index < questions.length - 1) {
                     questions[index + 1].classList.add('active');
                     const progressPercentage = ((index + 1) / totalQuestions) * 100;

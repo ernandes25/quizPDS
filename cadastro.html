@@ -1,83 +1,74 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Intereção com Formulários</title>
   <link rel="stylesheet" href="style.css" />
 </head>
-
 <body>
 
   <header>
-
     <nav>
-
-
-
       <ul>
         <img id="logo" src="logo.jpeg" />
       </ul>
-
       <ul>
         <a class="item" href=" ./index.html">
           <li>Início</li>
         </a>
       </ul>
-
       <ul>
         <a class="item" href=" ./Home">
           <li>Sobre nós</li>
         </a>
       </ul>
-
       <ul>
         <a class="item" href="./contato.html">
           <li>Contato</li>
         </a>
       </ul>
-
       <ul>
         <a class="item" href="cadastro.html">
           <li>Cadastro</li>
         </a>
       </ul>
-
+      <ul id="logout" style="display: none;">
+        <button onclick="logout()">Sair</button>
+      </ul>
     </nav>
   </header>
-
 
   <h1 class="title_cad">Apresente-se para nós</h1>
   </header>
   <div class="form">
     <section>
-      <form action="cad.php" method="get">
-
+      <form action="cad.php" method="post">
         <label for="nome">Nome:</label> <br />
         <input type="text" name="nome" id="idnome" />
 
         <label for="email">Email:</label> <br />
         <input type="email" name="email" id="idemail" />
 
-        <label for="fone">Celular:</label> <br />
+        <label for="telefone">Celular:</label> <br />
         <input type="tel" name="telefone" id="idtelefone" />
 
-        <input type="submit" value="Enviar" />
+        <label for="usuario">Usuário:</label> <br />
+        <input type="text" name="usuario" id="idusuario" />
 
+        <label for="senha">Senha:</label> <br />
+        <input type="password" name="senha" id="idsenha" />
+
+        <input type="submit" value="Enviar" />
       </form>
     </section>
-
   </div>
 
   <footer>
-
     <img id="logo" src="./logo.jpeg" />
     </div>
     <span>Todos os direitos reservados &copy;</span>
     <span>Desenvolvido por: Bay Software - H & E Silva</span>
   </footer>
-
 </body>
-
 </html>

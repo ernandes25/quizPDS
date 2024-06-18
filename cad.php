@@ -1,59 +1,89 @@
-<!DOCTYPE html>
-<html lang="pt-br">
+<?php
+session_start();
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Resultado</title>
-    <link rel="stylesheet" href="style.css">
-</head>
+header('Content-Type: application/json');
 
-<body>
-    <header id="header-php">
-        <h1 id="title-php">Cadastro concluído</h1>
-    </header>
-    <main class="main">
-        <?php
-        $nome = $_GET["nome"] ?? "sem nome";
-        
-        echo "<br>";
+// Função para ler os dados do arquivo JSON
+function readUsers() {
+    $usersFile = 'users.json';
+    if (!file_exists($usersFile)) {
+        file_put_contents($usersFile, json_encode([]));
+    }
+    $json = file_get_contents($usersFile);
+    return json_decode($json, true);
+}
 
+// Função para escrever os dados no arquivo JSON
+function writeUsers($users) {
+    $json = json_encode($users, JSON_PRETTY_PRINT);
+    file_put_contents('users.json', $json);
+}
 
-        $email = $_GET["email"] ?? "desconhecido";
-        echo nl2br("<br>");
-        echo "<br>";
+// Função para registrar logs
+function writeLog($message) {
+    file_put_contents('log.txt', date('Y-m-d H:i:s') . " - " . $message . PHP_EOL, FILE_APPEND);
+}
 
+function returnError($message) {
+    writeLog($message);
+    echo json_encode(['status' => 'error', 'message' => $message]);
+    exit;
+}
 
-        $telefone = $_GET["telefone"] ?? "desconhecido";
+writeLog("Arquivo cad.php acessado.");
 
-        
-        echo nl2br("<br>");
-        echo "<br>";
+if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+    $usuario = $_POST['usuario'] ?? '';
+    $senha = $_POST['senha'] ?? '';
+    $nome = $_POST['nome'] ?? '';
+    $email = $_POST['email'] ?? '';
+    $telefone = $_POST['telefone'] ?? '';
 
+    writeLog("Recebido POST: usuario=$usuario, senha=$senha, nome=$nome, email=$email, telefone=$telefone");
 
+    $users = readUsers();
+    writeLog("Usuários lidos: " . json_encode($users));
 
-        echo "<p> É um prazer te conhecer, <br> <br>
-        <strong> $nome</strong> 
+    if (!empty($usuario) && !empty($senha)) {
+        $userFound = false;
+        foreach ($users as $user) {
+            if ($user['usuario'] === $usuario) {
+                $userFound = true;
+                if (password_verify($senha, $user['senha'])) {
+                    $_SESSION['user'] = $usuario;
+                    writeLog("Login bem-sucedido para o usuário: $usuario");
+                    echo json_encode(['status' => 'success', 'message' => 'Login bem-sucedido']);
+                    exit;
+                } else {
+                    returnError("Senha incorreta para o usuário: $usuario");
+                }
+            }
+        }
 
-        <br>
-        
-        
-
-        <strong>  $email</strong> 
-        <br>
-        
-        <strong> $telefone!</strong> 
-        <br>
-        
-        Bem vindo a teste PDS!";
-        echo nl2br("<br>");
-        echo "<br>";
-
-
-        ?>
-        <p> <a class="start-test" href="quiz.html"> Vamos começar o teste! </a></p>
-    </main>
-    <script src="scripts.js"></script>
-</body>
-
-</html>
+        if (!$userFound) {
+            if (!empty($nome) && !empty($email)) {
+                $hashed_password = password_hash($senha, PASSWORD_DEFAULT);
+                $newUser = [
+                    'nome' => $nome,
+                    'email' => $email,
+                    'telefone' => $telefone,
+                    'usuario' => $usuario,
+                    'senha' => $hashed_password
+                ];
+                $users[] = $newUser;
+                writeUsers($users);
+                $_SESSION['user'] = $usuario;
+                writeLog("Cadastro e login bem-sucedidos para o usuário: $usuario");
+                echo json_encode(['status' => 'success', 'message' => 'Cadastro e login bem-sucedidos']);
+                exit;
+            } else {
+                returnError("Usuário não encontrado e dados de cadastro incompletos");
+            }
+        }
+    } else {
+        returnError("Usuário e senha são obrigatórios");
+    }
+} else {
+    returnError("Método de requisição não é POST.");
+}
+?>

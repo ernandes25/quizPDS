@@ -1,0 +1,24 @@
+2024-06-15 17:55:31 - Arquivo cad.php acessado.
+2024-06-15 17:55:31 - Recebido POST: usuario=ERNANDES, senha=250200, nome=, email=, telefone=
+2024-06-15 17:55:31 - Usuários lidos: []
+2024-06-15 17:55:31 - Usuário não encontrado e dados de cadastro incompletos
+2024-06-15 17:58:11 - Arquivo cad.php acessado.
+2024-06-15 17:58:11 - Recebido POST: usuario=ERNANDES, senha=250200, nome=, email=, telefone=
+2024-06-15 17:58:11 - Usuários lidos: []
+2024-06-15 17:58:11 - Usuário não encontrado e dados de cadastro incompletos
+2024-06-15 17:58:44 - Arquivo cad.php acessado.
+2024-06-15 17:58:44 - Recebido POST: usuario=ernandes, senha=250200, nome=ANTOONIO ERNANDES, email=antonioernandes25@gmal.com, telefone=(34) 99814-2525
+2024-06-15 17:58:44 - Usuários lidos: []
+2024-06-15 17:58:44 - Cadastro e login bem-sucedidos para o usuário: ernandes
+2024-06-15 17:59:49 - Arquivo cad.php acessado.
+2024-06-15 17:59:49 - Recebido POST: usuario=ernandes, senha=250200, nome=, email=, telefone=
+2024-06-15 17:59:49 - Usuários lidos: [{"nome":"ANTOONIO ERNANDES","email":"antonioernandes25@gmal.com","telefone":"(34) 99814-2525","usuario":"ernandes","senha":"$2y$10$lDDkiW2FA1fq\/7fX0\/6SievHzOnD59Y22wt9QbSCWVLE5GAI.ETq2"}]
+2024-06-15 17:59:49 - Login bem-sucedido para o usuário: ernandes
+2024-06-18 14:26:23 - Arquivo cad.php acessado.
+2024-06-18 14:26:23 - Recebido POST: usuario=ernandes, senha=250200, nome=, email=, telefone=
+2024-06-18 14:26:23 - Usuários lidos: [{"nome":"ANTOONIO ERNANDES","email":"antonioernandes25@gmal.com","telefone":"(34) 99814-2525","usuario":"ernandes","senha":"$2y$10$lDDkiW2FA1fq\/7fX0\/6SievHzOnD59Y22wt9QbSCWVLE5GAI.ETq2"}]
+2024-06-18 14:26:23 - Login bem-sucedido para o usuário: ernandes
+2024-06-18 14:29:56 - Arquivo cad.php acessado.
+2024-06-18 14:29:56 - Recebido POST: usuario=ernandes, senha=250200, nome=, email=, telefone=
+2024-06-18 14:29:56 - Usuários lidos: [{"nome":"ANTOONIO ERNANDES","email":"antonioernandes25@gmal.com","telefone":"(34) 99814-2525","usuario":"ernandes","senha":"$2y$10$lDDkiW2FA1fq\/7fX0\/6SievHzOnD59Y22wt9QbSCWVLE5GAI.ETq2"}]
+2024-06-18 14:29:57 - Login bem-sucedido para o usuário: ernandes
