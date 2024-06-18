@@ -22,3 +22,23 @@
 2024-06-18 14:29:56 - Recebido POST: usuario=ernandes, senha=250200, nome=, email=, telefone=
 2024-06-18 14:29:56 - Usuários lidos: [{"nome":"ANTOONIO ERNANDES","email":"antonioernandes25@gmal.com","telefone":"(34) 99814-2525","usuario":"ernandes","senha":"$2y$10$lDDkiW2FA1fq\/7fX0\/6SievHzOnD59Y22wt9QbSCWVLE5GAI.ETq2"}]
 2024-06-18 14:29:57 - Login bem-sucedido para o usuário: ernandes
+2024-06-18 15:29:04 - Arquivo cad.php acessado.
+2024-06-18 15:29:04 - Recebido POST: usuario=ernandes, senha=250200, nome=, email=, telefone=
+2024-06-18 15:29:04 - Usuários lidos: [{"nome":"ANTOONIO ERNANDES","email":"antonioernandes25@gmal.com","telefone":"(34) 99814-2525","usuario":"ernandes","senha":"$2y$10$lDDkiW2FA1fq\/7fX0\/6SievHzOnD59Y22wt9QbSCWVLE5GAI.ETq2"}]
+2024-06-18 15:29:04 - Login bem-sucedido para o usuário: ernandes
+2024-06-18 15:29:56 - Arquivo cad.php acessado.
+2024-06-18 15:29:56 - Recebido POST: usuario=ernandes, senha=250200, nome=, email=, telefone=
+2024-06-18 15:29:56 - Usuários lidos: [{"nome":"ANTOONIO ERNANDES","email":"antonioernandes25@gmal.com","telefone":"(34) 99814-2525","usuario":"ernandes","senha":"$2y$10$lDDkiW2FA1fq\/7fX0\/6SievHzOnD59Y22wt9QbSCWVLE5GAI.ETq2"}]
+2024-06-18 15:29:56 - Login bem-sucedido para o usuário: ernandes
+2024-06-18 15:49:48 - Arquivo cad.php acessado.
+2024-06-18 15:49:48 - Recebido POST: usuario=ernandes, senha=250200, nome=, email=, telefone=
+2024-06-18 15:49:48 - Usuários lidos: [{"nome":"ANTOONIO ERNANDES","email":"antonioernandes25@gmal.com","telefone":"(34) 99814-2525","usuario":"ernandes","senha":"$2y$10$lDDkiW2FA1fq\/7fX0\/6SievHzOnD59Y22wt9QbSCWVLE5GAI.ETq2"}]
+2024-06-18 15:49:48 - Login bem-sucedido para o usuário: ernandes
+2024-06-18 15:51:24 - Arquivo cad.php acessado.
+2024-06-18 15:51:24 - Recebido POST: usuario=ernandes, senha=250200, nome=, email=, telefone=
+2024-06-18 15:51:24 - Usuários lidos: [{"nome":"ANTOONIO ERNANDES","email":"antonioernandes25@gmal.com","telefone":"(34) 99814-2525","usuario":"ernandes","senha":"$2y$10$lDDkiW2FA1fq\/7fX0\/6SievHzOnD59Y22wt9QbSCWVLE5GAI.ETq2"}]
+2024-06-18 15:51:24 - Login bem-sucedido para o usuário: ernandes
+2024-06-18 15:54:21 - Arquivo cad.php acessado.
+2024-06-18 15:54:21 - Recebido POST: usuario=ernandes, senha=250200, nome=, email=, telefone=
+2024-06-18 15:54:21 - Usuários lidos: [{"nome":"ANTOONIO ERNANDES","email":"antonioernandes25@gmal.com","telefone":"(34) 99814-2525","usuario":"ernandes","senha":"$2y$10$lDDkiW2FA1fq\/7fX0\/6SievHzOnD59Y22wt9QbSCWVLE5GAI.ETq2"}]
+2024-06-18 15:54:21 - Login bem-sucedido para o usuário: ernandes

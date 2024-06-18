@@ -7,12 +7,20 @@ document.addEventListener('DOMContentLoaded', function () {
     function checkLogin() {
         const user = localStorage.getItem('user');
         if (user) {
-            logoutButton.style.display = 'block';
-            buttonInit.innerText = 'Continuar PDS';
+
+            if (logoutButton) {
+                logoutButton.style.display = 'block';
+
+            } if (buttonInit) {
+                logoutInit.innerText = 'Continuar pds';
+            }
         } else {
-            logoutButton.style.display = 'none';
+            if (logoutButton) {
+                logoutButton.style.display = 'none;'
+            }
         }
     }
+
 
     function startPDS() {
         const user = localStorage.getItem('user');
@@ -25,40 +33,45 @@ document.addEventListener('DOMContentLoaded', function () {
 
     function logout() {
         localStorage.removeItem('user');
-        logoutButton.style.display = 'none';
-        buttonInit.innerText = 'Iniciar PDS';
+        if (logoutButton) {
+            logoutButton.style.display = 'none';
+        }
+        if (buttonInit) {
+            buttonInit.innerText = 'Iniciar PDS';
+        }
         window.location.href = 'index.html';
     }
+    if (loginForm) {
+        loginForm.addEventListener('submit', function (event) {
+            event.preventDefault();
+            const formData = new FormData(loginForm);
 
-    loginForm.addEventListener('submit', function (event) {
-        event.preventDefault();
-        const formData = new FormData(loginForm);
-
-        fetch('cad.php', {
-            method: 'POST',
-            body: formData
-        })
-        .then(response => {
-            if (!response.ok) {
-                throw new Error('Network response was not ok');
-            }
-            return response.json();
-        })
-        .then(data => {
-            console.log(data); // Adicionado para depuração
-            if (data.status === 'success') {
-                localStorage.setItem('user', formData.get('usuario'));
-                alert(data.message);
-                window.location.href = 'quiz.html';
-            } else {
-                alert(data.message);
-            }
-        })
-        .catch(error => {
-            console.error('Erro:', error);
-            alert('Ocorreu um erro ao processar sua solicitação. Por favor, tente novamente mais tarde.');
+            fetch('cad.php', {
+                method: 'POST',
+                body: formData
+            })
+                .then(response => {
+                    if (!response.ok) {
+                        throw new Error('Network response was not ok');
+                    }
+                    return response.json();
+                })
+                .then(data => {
+                    console.log(data); // Adicionado para depuração
+                    if (data.status === 'success') {
+                        localStorage.setItem('user', formData.get('usuario'));
+                        alert(data.message);
+                        window.location.href = 'quiz.html';
+                    } else {
+                        alert(data.message);
+                    }
+                })
+                .catch(error => {
+                    console.error('Erro:', error);
+                    alert('Ocorreu um erro ao processar sua solicitação. Por favor, tente novamente mais tarde.');
+                });
         });
-    });
+    }
 
     checkLogin();
     window.startPDS = startPDS;
