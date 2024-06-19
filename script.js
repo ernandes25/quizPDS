@@ -3,6 +3,7 @@ document.addEventListener('DOMContentLoaded', function () {
     const loginForm = document.getElementById('login-form');
     const buttonInit = document.getElementById('button-init');
     const logoutButton = document.getElementById('logout');
+    const additionalFields = document.getElementById('additional-fields');
 
     function checkLogin() {
         const user = localStorage.getItem('user');
@@ -20,7 +21,6 @@ document.addEventListener('DOMContentLoaded', function () {
             }
         }
     }
-
 
     function startPDS() {
         const user = localStorage.getItem('user');
@@ -41,6 +41,7 @@ document.addEventListener('DOMContentLoaded', function () {
         }
         window.location.href = 'index.html';
     }
+
     if (loginForm) {
         loginForm.addEventListener('submit', function (event) {
             event.preventDefault();
@@ -61,9 +62,15 @@ document.addEventListener('DOMContentLoaded', function () {
                     if (data.status === 'success') {
                         localStorage.setItem('user', formData.get('usuario'));
                         alert(data.message);
+                        //Ocultar campos adicionais após login bem-sucedido
+                        additionalFields.style.display = 'none';
                         window.location.href = 'quiz.html';
                     } else {
                         alert(data.message);
+                        //Mostrar campos adicionais se necessário
+                        if (data.message.includes('dados de cadastros incompletos')) {
+                            additionalFields.style.display = 'block';
+                        }
                     }
                 })
                 .catch(error => {
@@ -77,9 +84,6 @@ document.addEventListener('DOMContentLoaded', function () {
     window.startPDS = startPDS;
     window.logout = logout;
 });
-
-
-
 
 function growProgressBar(percentage_width) {
     var bar = document.getElementById("progress_bar");

@@ -42,3 +42,51 @@
 2024-06-18 15:54:21 - Recebido POST: usuario=ernandes, senha=250200, nome=, email=, telefone=
 2024-06-18 15:54:21 - Usuários lidos: [{"nome":"ANTOONIO ERNANDES","email":"antonioernandes25@gmal.com","telefone":"(34) 99814-2525","usuario":"ernandes","senha":"$2y$10$lDDkiW2FA1fq\/7fX0\/6SievHzOnD59Y22wt9QbSCWVLE5GAI.ETq2"}]
 2024-06-18 15:54:21 - Login bem-sucedido para o usuário: ernandes
+2024-06-19 15:07:47 - Arquivo cad.php acessado.
+2024-06-19 15:07:47 - Recebido POST: usuario=ernandes, senha=250200, nome=, email=, telefone=
+2024-06-19 15:07:47 - Usuários lidos: [{"nome":"ANTOONIO ERNANDES","email":"antonioernandes25@gmal.com","telefone":"(34) 99814-2525","usuario":"ernandes","senha":"$2y$10$lDDkiW2FA1fq\/7fX0\/6SievHzOnD59Y22wt9QbSCWVLE5GAI.ETq2"}]
+2024-06-19 15:07:47 - Login bem-sucedido para o usuário: ernandes
+2024-06-19 15:08:23 - Arquivo cad.php acessado.
+2024-06-19 15:08:23 - Recebido POST: usuario=ernandes, senha=250200, nome=, email=, telefone=
+2024-06-19 15:08:23 - Usuários lidos: [{"nome":"ANTOONIO ERNANDES","email":"antonioernandes25@gmal.com","telefone":"(34) 99814-2525","usuario":"ernandes","senha":"$2y$10$lDDkiW2FA1fq\/7fX0\/6SievHzOnD59Y22wt9QbSCWVLE5GAI.ETq2"}]
+2024-06-19 15:08:23 - Login bem-sucedido para o usuário: ernandes
+2024-06-19 15:08:53 - Arquivo cad.php acessado.
+2024-06-19 15:08:53 - Recebido POST: usuario=ernandes, senha=250200, nome=, email=, telefone=
+2024-06-19 15:08:53 - Usuários lidos: [{"nome":"ANTOONIO ERNANDES","email":"antonioernandes25@gmal.com","telefone":"(34) 99814-2525","usuario":"ernandes","senha":"$2y$10$lDDkiW2FA1fq\/7fX0\/6SievHzOnD59Y22wt9QbSCWVLE5GAI.ETq2"}]
+2024-06-19 15:08:53 - Login bem-sucedido para o usuário: ernandes
+2024-06-19 15:18:24 - Arquivo cad.php acessado.
+2024-06-19 15:18:24 - Recebido POST: usuario=ernandes, senha=250200, nome=, email=, telefone=
+2024-06-19 15:18:24 - Usuários lidos: [{"nome":"ANTOONIO ERNANDES","email":"antonioernandes25@gmal.com","telefone":"(34) 99814-2525","usuario":"ernandes","senha":"$2y$10$lDDkiW2FA1fq\/7fX0\/6SievHzOnD59Y22wt9QbSCWVLE5GAI.ETq2"}]
+2024-06-19 15:18:24 - Login bem-sucedido para o usuário: ernandes
+2024-06-19 15:19:51 - Arquivo cad.php acessado.
+2024-06-19 15:19:51 - Recebido POST: usuario=ernandes, senha=250200, nome=, email=, telefone=
+2024-06-19 15:19:51 - Usuários lidos: [{"nome":"ANTOONIO ERNANDES","email":"antonioernandes25@gmal.com","telefone":"(34) 99814-2525","usuario":"ernandes","senha":"$2y$10$lDDkiW2FA1fq\/7fX0\/6SievHzOnD59Y22wt9QbSCWVLE5GAI.ETq2"}]
+2024-06-19 15:19:51 - Login bem-sucedido para o usuário: ernandes
+2024-06-19 15:24:22 - Arquivo cad.php acessado.
+2024-06-19 15:24:22 - Recebido POST: usuario=ernandes, senha=250200, nome=, email=, telefone=
+2024-06-19 15:24:22 - Usuários lidos: [{"nome":"ANTOONIO ERNANDES","email":"antonioernandes25@gmal.com","telefone":"(34) 99814-2525","usuario":"ernandes","senha":"$2y$10$lDDkiW2FA1fq\/7fX0\/6SievHzOnD59Y22wt9QbSCWVLE5GAI.ETq2"}]
+2024-06-19 15:24:22 - Login bem-sucedido para o usuário: ernandes
+2024-06-19 15:24:58 - Arquivo cad.php acessado.
+2024-06-19 15:24:58 - Recebido POST: usuario=ernandes, senha=250200, nome=, email=, telefone=
+2024-06-19 15:24:58 - Usuários lidos: [{"nome":"ANTOONIO ERNANDES","email":"antonioernandes25@gmal.com","telefone":"(34) 99814-2525","usuario":"ernandes","senha":"$2y$10$lDDkiW2FA1fq\/7fX0\/6SievHzOnD59Y22wt9QbSCWVLE5GAI.ETq2"}]
+2024-06-19 15:24:58 - Login bem-sucedido para o usuário: ernandes
+2024-06-19 15:25:28 - Arquivo cad.php acessado.
+2024-06-19 15:25:28 - Recebido POST: usuario=todos, senha=250200, nome=, email=, telefone=
+2024-06-19 15:25:28 - Usuários lidos: [{"nome":"ANTOONIO ERNANDES","email":"antonioernandes25@gmal.com","telefone":"(34) 99814-2525","usuario":"ernandes","senha":"$2y$10$lDDkiW2FA1fq\/7fX0\/6SievHzOnD59Y22wt9QbSCWVLE5GAI.ETq2"}]
+2024-06-19 15:25:28 - Usuário não encontrado e dados de cadastro incompletos
+2024-06-19 15:25:49 - Arquivo cad.php acessado.
+2024-06-19 15:25:49 - Recebido POST: usuario=todos, senha=250200, nome=eu, email=antonioernandes25@gmal.com, telefone=(34) 99814-2525
+2024-06-19 15:25:49 - Usuários lidos: [{"nome":"ANTOONIO ERNANDES","email":"antonioernandes25@gmal.com","telefone":"(34) 99814-2525","usuario":"ernandes","senha":"$2y$10$lDDkiW2FA1fq\/7fX0\/6SievHzOnD59Y22wt9QbSCWVLE5GAI.ETq2"}]
+2024-06-19 15:25:49 - Cadastro e login bem-sucedidos para o usuário: todos
+2024-06-19 15:26:05 - Arquivo cad.php acessado.
+2024-06-19 15:26:05 - Recebido POST: usuario=todos, senha=250200, nome=, email=, telefone=
+2024-06-19 15:26:05 - Usuários lidos: [{"nome":"ANTOONIO ERNANDES","email":"antonioernandes25@gmal.com","telefone":"(34) 99814-2525","usuario":"ernandes","senha":"$2y$10$lDDkiW2FA1fq\/7fX0\/6SievHzOnD59Y22wt9QbSCWVLE5GAI.ETq2"},{"nome":"eu","email":"antonioernandes25@gmal.com","telefone":"(34) 99814-2525","usuario":"todos","senha":"$2y$10$mxf17Lk67rXoNkY2bGNbW.4x.3ZEkltJn0Xi6Wsk.eC1Yjj6rOjyi"}]
+2024-06-19 15:26:05 - Login bem-sucedido para o usuário: todos
+2024-06-19 15:27:17 - Arquivo cad.php acessado.
+2024-06-19 15:27:17 - Recebido POST: usuario=todos, senha=250200, nome=, email=, telefone=
+2024-06-19 15:27:17 - Usuários lidos: [{"nome":"ANTOONIO ERNANDES","email":"antonioernandes25@gmal.com","telefone":"(34) 99814-2525","usuario":"ernandes","senha":"$2y$10$lDDkiW2FA1fq\/7fX0\/6SievHzOnD59Y22wt9QbSCWVLE5GAI.ETq2"},{"nome":"eu","email":"antonioernandes25@gmal.com","telefone":"(34) 99814-2525","usuario":"todos","senha":"$2y$10$mxf17Lk67rXoNkY2bGNbW.4x.3ZEkltJn0Xi6Wsk.eC1Yjj6rOjyi"}]
+2024-06-19 15:27:17 - Login bem-sucedido para o usuário: todos
+2024-06-19 21:28:32 - Arquivo cad.php acessado.
+2024-06-19 21:28:32 - Recebido POST: usuario=ernandes, senha=250200, nome=, email=, telefone=
+2024-06-19 21:28:32 - Usuários lidos: [{"nome":"ANTOONIO ERNANDES","email":"antonioernandes25@gmal.com","telefone":"(34) 99814-2525","usuario":"ernandes","senha":"$2y$10$lDDkiW2FA1fq\/7fX0\/6SievHzOnD59Y22wt9QbSCWVLE5GAI.ETq2"},{"nome":"eu","email":"antonioernandes25@gmal.com","telefone":"(34) 99814-2525","usuario":"todos","senha":"$2y$10$mxf17Lk67rXoNkY2bGNbW.4x.3ZEkltJn0Xi6Wsk.eC1Yjj6rOjyi"}]
+2024-06-19 21:28:32 - Login bem-sucedido para o usuário: ernandes
