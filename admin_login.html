@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Administração</title>
+</head>
+
+<body>
+
+    <nav>
+
+        <ul>
+            <img id="logo" src="logo.jpeg" />
+        </ul>
+
+        <ul>
+            <a class="item" href="index.html">
+                <li>Início</li>
+            </a>
+        </ul>
+
+        <ul>
+            <a class="item" href="Home">
+                <li>Sobre nós</li>
+            </a>
+        </ul>
+
+        <ul>
+            <a class="item" href="contato.html">
+                <li>Contato</li>
+            </a>
+        </ul>
+
+        <ul>
+            <a class="item" href="cadastro.html">
+                <li>Cadastro</li>
+            </a>
+        </ul>
+
+        <ul>
+            <a class="item" href="admin_login.html">
+                <li>Administração</li>
+            </a>
+        </ul>
+
+        <ul id="logout" style="display: none;">
+            <button onclick="logout()">Sair</button>
+        </ul>
+    </nav>
+    <div class="form">
+        <form id="adminLoginForm" method="POST" action="admin_login.php">
+            <label for="adminPassword">Senha:</label>
+            <input type="password" id="adminPassword" name="adminPassword" required><br>
+            <button type="submit">Entrar</button>
+        </form>
+
+    </div>
+</body>
+
+</html>

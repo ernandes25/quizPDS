@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contato</title>
     <link rel="stylesheet" href="./style.css" />
 </head>
+
 <body>
     <header>
         <nav>
@@ -32,19 +34,27 @@
                     <li>Cadastro</li>
                 </a>
             </ul>
+
+            <ul>
+                <a class="item" href="admin_login.html">
+                    <li>Administração</li>
+                </a>
+            </ul>
+
         </nav>
     </header>
     <h1 class="title_cad">Envie sua mensagem</h1>
     <div class="form">
         <section>
-            <form action="cad.php" method="post">
+            <form action="send_contact.php" method="post">
                 <label for="nome">Nome:</label> <br />
                 <input type="text" name="nome" id="idnome" />
                 <label for="email">Email:</label> <br />
                 <input type="email" name="email" id="idemail" />
                 <label for="telefone">Celular:</label> <br />
                 <input type="tel" name="telefone" id="idtelefone" />
-                <textarea name="mensagem" id="mensagem" placeholder="Digite sua mensagem" maxlength="150" rows="20"></textarea> <br>
+                <textarea name="mensagem" id="mensagem" placeholder="Digite sua mensagem" maxlength="150"
+                    rows="20"></textarea> <br>
                 <input type="submit" value="Enviar" />
             </form>
         </section>
@@ -56,4 +66,5 @@
         <span>Desenvolvido por: Bay Software - H & E Silva</span>
     </footer>
 </body>
+
 </html>
