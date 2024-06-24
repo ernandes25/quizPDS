@@ -8,16 +8,15 @@ document.addEventListener('DOMContentLoaded', function () {
     function checkLogin() {
         const user = localStorage.getItem('user');
         if (user) {
-
             if (logoutButton) {
                 logoutButton.style.display = 'block';
-
-            } if (buttonInit) {
-                logoutInit.innerText = 'Continuar pds';
+            }
+            if (buttonInit) {
+                buttonInit.innerText = 'Continuar PDS';
             }
         } else {
             if (logoutButton) {
-                logoutButton.style.display = 'none;'
+                logoutButton.style.display = 'none';
             }
         }
     }
@@ -62,14 +61,16 @@ document.addEventListener('DOMContentLoaded', function () {
                     if (data.status === 'success') {
                         localStorage.setItem('user', formData.get('usuario'));
                         alert(data.message);
-                        //Ocultar campos adicionais após login bem-sucedido
-                        additionalFields.style.display = 'none';
+                        // Ocultar o modal de login
+                        loginModal.style.display = 'none';
+                        // Redirecionar para a página do quiz
                         window.location.href = 'quiz.html';
                     } else {
                         alert(data.message);
-                        //Mostrar campos adicionais se necessário
-                        if (data.message.includes('dados de cadastros incompletos')) {
+                        // Mostrar campos adicionais se necessário
+                        if (data.message.includes('dados de cadastro incompletos')) {
                             additionalFields.style.display = 'block';
+                            loginModal.style.display = 'block';
                         }
                     }
                 })
@@ -84,6 +85,7 @@ document.addEventListener('DOMContentLoaded', function () {
     window.startPDS = startPDS;
     window.logout = logout;
 });
+
 
 function growProgressBar(percentage_width) {
     var bar = document.getElementById("progress_bar");

@@ -3,6 +3,13 @@ session_start();
 
 header('Content-Type: application/json');
 
+// Incluir o autoloader do Composer
+require 'vendor/autoload.php';
+
+// Usar PHPMailer
+use PHPMailer\PHPMailer\PHPMailer;
+use PHPMailer\PHPMailer\Exception;
+
 // Função para ler os dados do arquivo JSON
 function readUsers() {
     $usersFile = 'users.json';
@@ -22,6 +29,39 @@ function writeUsers($users) {
 // Função para registrar logs
 function writeLog($message) {
     file_put_contents('log.txt', date('Y-m-d H:i:s') . " - " . $message . PHP_EOL, FILE_APPEND);
+}
+
+// Função para enviar email ao administrador usando PHPMailer
+function sendAdminEmail($userData) {
+    $mail = new PHPMailer(true);
+    try {
+        // Configurações do servidor
+        $mail->isSMTP();
+        $mail->Host = 'smtp.gmail.com'; // Substitua pelo seu servidor SMTP
+        $mail->SMTPAuth = true;
+        $mail->Username = 'contato@ercont.com.br'; // Substitua pelo seu email
+        $mail->Password = '250200er25*'; // Substitua pela sua senha
+        $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
+        $mail->Port = 587;
+
+        // Destinatários
+        $mail->setFrom('no-reply@example.com', 'No Reply');
+        $mail->addAddress('contato@ercont.com.br', 'Administrador'); // Substitua pelo email do administrador
+
+        // Conteúdo do email
+        $mail->isHTML(true);
+        $mail->Subject = 'Novo usuário cadastrado';
+        $mail->Body    = "Novo usuário cadastrado:<br><br>" .
+                         "Nome: " . $userData['nome'] . "<br>" .
+                         "Email: " . $userData['email'] . "<br>" .
+                         "Telefone: " . $userData['telefone'] . "<br>" .
+                         "Usuário: " . $userData['usuario'];
+
+        $mail->send();
+        writeLog('Email enviado com sucesso para o administrador.');
+    } catch (Exception $e) {
+        writeLog("Falha ao enviar email para o administrador. Erro: {$mail->ErrorInfo}");
+    }
 }
 
 function returnError($message) {
@@ -74,6 +114,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                 writeUsers($users);
                 $_SESSION['user'] = $usuario;
                 writeLog("Cadastro e login bem-sucedidos para o usuário: $usuario");
+                sendAdminEmail($newUser); // Enviar email ao administrador
                 echo json_encode(['status' => 'success', 'message' => 'Cadastro e login bem-sucedidos']);
                 exit;
             } else {
