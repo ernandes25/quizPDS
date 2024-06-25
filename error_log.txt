@@ -953,3 +953,25 @@
 
 [2024-06-25 23:09:36] - Usuário: fgfg, Senha: 1234
 [2024-06-25 23:09:36] - Resposta JSON: {"status":"user_not_found","message":"Usu\u00e1rio n\u00e3o encontrado, redirecionando para cadastro"}
+[2024-06-25 23:11:28] - Conteúdo completo de $_POST: Array
+(
+    [usuario] => fgfg
+    [senha] => 1234
+    [nome] => 
+    [email] => 
+    [telefone] => 
+)
+
+[2024-06-25 23:11:28] - Usuário: fgfg, Senha: 1234
+[2024-06-25 23:11:28] - Resposta JSON: {"status":"user_not_found","message":"Usu\u00e1rio n\u00e3o encontrado, redirecionando para cadastro"}
+[2024-06-25 23:11:54] - Conteúdo completo de $_POST: Array
+(
+    [usuario] => gafa
+    [senha] => 1234
+    [nome] => 
+    [email] => 
+    [telefone] => 
+)
+
+[2024-06-25 23:11:54] - Usuário: gafa, Senha: 1234
+[2024-06-25 23:11:54] - Resposta JSON: {"status":"success","message":"Login bem-sucedido"}

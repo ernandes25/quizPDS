@@ -9,7 +9,7 @@ use PHPMailer\PHPMailer\Exception;
 // Carregar as configurações de email do administrador
 $emailConfig = json_decode(file_get_contents('email_config.json'), true);
 $adminEmail = $emailConfig['email'];
-$adminPassword = $emailConfig['password'];
+$adminPassword = $emailConfig['senha']; // Certifique-se de que o campo correto é usado
 
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $nome = $_POST['nome'] ?? '';
@@ -40,7 +40,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
             // Destinatários
             $mail->setFrom('no-reply@example.com', 'No Reply');
-            $mail->addAddress('contato@ercont.com.br', 'Administrador'); // Substitua pelo email do administrador
+            $mail->addAddress($adminEmail, 'Administrador'); // Usar o email do administrador
 
             // Conteúdo do email
             $mail->isHTML(true);
