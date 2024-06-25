@@ -1,1 +1,318 @@
-[{"nome":"ANTONIO ERNANDES SILVA FILHO","email":"antonioernandes25@gmal.com","telefone":"(34) 99814-2525"},{"nome":"CAMPO","email":"antonioernandes25@gmail.com","telefone":"(34) 99814-2525"},{"nome":"CAMPO","email":"antonioernandes25@gmail.com","telefone":"(34) 99814-2525"},{"usuario":"EU","senha":"2502","nome":"","email":"","telefone":""},{"usuario":"EU","senha":"1234","nome":"","email":"","telefone":""},{"usuario":"pedro","senha":"2502","nome":"","email":"","telefone":""},{"usuario":"carlos","senha":"1234","nome":"","email":"","telefone":""},{"usuario":"JOSE","senha":"1234","nome":"","email":"","telefone":""},{"usuario":"EU","senha":"1234","nome":"ANTONIO ERNANDES SILVA FILHO","email":"antonioernandes25@gmal.com","telefone":"(34) 99814-2525"},{"usuario":"EU","senha":"1234","nome":"ANTONIO ERNANDES SILVA FILHO","email":"antonioernandes25@gmal.com","telefone":"(34) 99814-2525"},{"usuario":"momomo","senha":"1234","nome":"momomo","email":"antonioernandes25@gmal.com","telefone":"(34) 99814-2525"},{"usuario":"nini","senha":"1234","nome":"ANTONIO ERNANDES SILVA FILHO","email":"antonioernandes25@gmail.com","telefone":"(34) 99814-2525"},{"usuario":"baba","senha":"1234","nome":"ANTONIO ERNANDES SILVA FILHO","email":"antonioernandes25@gmail.com","telefone":"(34) 99814-2525"},{"usuario":"bibi","senha":"1234","nome":"ANTONIO ERNANDES SILVA FILHO","email":"antonioernandes25@gmal.com","telefone":"(34) 99814-2525"},{"nome":"ANTONIO ERNANDES SILVA FILHO","email":"antonioernandes25@gmail.com","telefone":"(34) 99814-2525","usuario":"mama","senha":"1234"},{"nome":"ANTONIO ERNANDES SILVA FILHO","email":"antonioernandes25@gmail.com","telefone":"(34) 99814-2525","usuario":"dodo","senha":"1234"},{"nome":"ANTONIO ERNANDES SILVA FILHO","email":"antonioernandes25@gmal.com","telefone":"(34) 99814-2525","usuario":"poli","senha":"1234"},{"nome":"ANTONIO ERNANDES SILVA FILHO","email":"antonioernandes25@gmail.com","telefone":"(34) 99814-2525","usuario":"biro","senha":"1234"},{"nome":"A. E. SILVA FILHO CONTABILIDADE","email":"doricassia@gmail.com","telefone":"(34) 99814-2525","usuario":"deco","senha":"1234"},{"nome":"A. E. SILVA FILHO CONTABILIDADE","email":"antonioernandes25@gmal.com","telefone":"(34) 99814-2525","usuario":"gao","senha":"1234"},{"nome":"A. E. SILVA FILHO CONTABILIDADE","email":"antonioernandes25@gmal.com","telefone":"(34) 99814-2525","usuario":"gao","senha":"1234"},{"nome":"ANTONIO ERNANDES SILVA FILHO","email":"antonioernandes25@gmal.com","telefone":"(34) 99814-2525","usuario":"bao","senha":"1234"},{"nome":"ANTONIO ERNANDES SILVA FILHO","email":"antonioernandes25@gmail.com","telefone":"(34) 99814-2525","usuario":"vfvf","senha":"1234"},{"nome":"ANTONIO ERNANDES SILVA FILHO","email":"antonioernandes25@gmail.com","telefone":"(34) 99814-2525","usuario":"veve","senha":"1234"},{"nome":"ANTONIO ERNANDES SILVA FILHO","email":"antonioernandes25@gmail.com","telefone":"(34) 99814-2525","usuario":"bababo","senha":"1234"},{"nome":"ANTONIO ERNANDES SILVA FILHO","email":"antonioernandes25@gmal.com","telefone":"(34) 99814-2525","usuario":"gafa","senha":"1234"},{"nome":"ANTONIO ERNANDES SILVA FILHO","email":"antonioernandes25@gmail.com","telefone":"(34) 99814-2525","usuario":"antonio","senha":"$2y$10$GJDA18YS9cek0TmYZBEFvO7eu3JAgLwNPaoNtAlc4ReeHerOKCK.G"}]
+[
+    {
+        "nome": "ANTONIO ERNANDES SILVA FILHO",
+        "email": "antonioernandes25@gmal.com",
+        "telefone": "(34) 99814-2525"
+    },
+    {
+        "nome": "CAMPO",
+        "email": "antonioernandes25@gmail.com",
+        "telefone": "(34) 99814-2525"
+    },
+    {
+        "nome": "CAMPO",
+        "email": "antonioernandes25@gmail.com",
+        "telefone": "(34) 99814-2525"
+    },
+    {
+        "usuario": "EU",
+        "senha": "2502",
+        "nome": "",
+        "email": "",
+        "telefone": ""
+    },
+    {
+        "usuario": "EU",
+        "senha": "1234",
+        "nome": "",
+        "email": "",
+        "telefone": ""
+    },
+    {
+        "usuario": "pedro",
+        "senha": "2502",
+        "nome": "",
+        "email": "",
+        "telefone": ""
+    },
+    {
+        "usuario": "carlos",
+        "senha": "1234",
+        "nome": "",
+        "email": "",
+        "telefone": ""
+    },
+    {
+        "usuario": "JOSE",
+        "senha": "1234",
+        "nome": "",
+        "email": "",
+        "telefone": ""
+    },
+    {
+        "usuario": "EU",
+        "senha": "1234",
+        "nome": "ANTONIO ERNANDES SILVA FILHO",
+        "email": "antonioernandes25@gmal.com",
+        "telefone": "(34) 99814-2525"
+    },
+    {
+        "usuario": "EU",
+        "senha": "1234",
+        "nome": "ANTONIO ERNANDES SILVA FILHO",
+        "email": "antonioernandes25@gmal.com",
+        "telefone": "(34) 99814-2525"
+    },
+    {
+        "usuario": "momomo",
+        "senha": "1234",
+        "nome": "momomo",
+        "email": "antonioernandes25@gmal.com",
+        "telefone": "(34) 99814-2525"
+    },
+    {
+        "usuario": "nini",
+        "senha": "1234",
+        "nome": "ANTONIO ERNANDES SILVA FILHO",
+        "email": "antonioernandes25@gmail.com",
+        "telefone": "(34) 99814-2525"
+    },
+    {
+        "usuario": "baba",
+        "senha": "1234",
+        "nome": "ANTONIO ERNANDES SILVA FILHO",
+        "email": "antonioernandes25@gmail.com",
+        "telefone": "(34) 99814-2525"
+    },
+    {
+        "usuario": "bibi",
+        "senha": "1234",
+        "nome": "ANTONIO ERNANDES SILVA FILHO",
+        "email": "antonioernandes25@gmal.com",
+        "telefone": "(34) 99814-2525"
+    },
+    {
+        "nome": "ANTONIO ERNANDES SILVA FILHO",
+        "email": "antonioernandes25@gmail.com",
+        "telefone": "(34) 99814-2525",
+        "usuario": "mama",
+        "senha": "1234"
+    },
+    {
+        "nome": "ANTONIO ERNANDES SILVA FILHO",
+        "email": "antonioernandes25@gmail.com",
+        "telefone": "(34) 99814-2525",
+        "usuario": "dodo",
+        "senha": "1234"
+    },
+    {
+        "nome": "ANTONIO ERNANDES SILVA FILHO",
+        "email": "antonioernandes25@gmal.com",
+        "telefone": "(34) 99814-2525",
+        "usuario": "poli",
+        "senha": "1234"
+    },
+    {
+        "nome": "ANTONIO ERNANDES SILVA FILHO",
+        "email": "antonioernandes25@gmail.com",
+        "telefone": "(34) 99814-2525",
+        "usuario": "biro",
+        "senha": "1234"
+    },
+    {
+        "nome": "A. E. SILVA FILHO CONTABILIDADE",
+        "email": "doricassia@gmail.com",
+        "telefone": "(34) 99814-2525",
+        "usuario": "deco",
+        "senha": "1234"
+    },
+    {
+        "nome": "A. E. SILVA FILHO CONTABILIDADE",
+        "email": "antonioernandes25@gmal.com",
+        "telefone": "(34) 99814-2525",
+        "usuario": "gao",
+        "senha": "1234"
+    },
+    {
+        "nome": "A. E. SILVA FILHO CONTABILIDADE",
+        "email": "antonioernandes25@gmal.com",
+        "telefone": "(34) 99814-2525",
+        "usuario": "gao",
+        "senha": "1234"
+    },
+    {
+        "nome": "ANTONIO ERNANDES SILVA FILHO",
+        "email": "antonioernandes25@gmal.com",
+        "telefone": "(34) 99814-2525",
+        "usuario": "bao",
+        "senha": "1234"
+    },
+    {
+        "nome": "ANTONIO ERNANDES SILVA FILHO",
+        "email": "antonioernandes25@gmail.com",
+        "telefone": "(34) 99814-2525",
+        "usuario": "vfvf",
+        "senha": "1234"
+    },
+    {
+        "nome": "ANTONIO ERNANDES SILVA FILHO",
+        "email": "antonioernandes25@gmail.com",
+        "telefone": "(34) 99814-2525",
+        "usuario": "veve",
+        "senha": "1234"
+    },
+    {
+        "nome": "ANTONIO ERNANDES SILVA FILHO",
+        "email": "antonioernandes25@gmail.com",
+        "telefone": "(34) 99814-2525",
+        "usuario": "bababo",
+        "senha": "1234"
+    },
+    {
+        "nome": "ANTONIO ERNANDES SILVA FILHO",
+        "email": "antonioernandes25@gmal.com",
+        "telefone": "(34) 99814-2525",
+        "usuario": "gafa",
+        "senha": "1234"
+    },
+    {
+        "nome": "ANTONIO ERNANDES SILVA FILHO",
+        "email": "antonioernandes25@gmail.com",
+        "telefone": "(34) 99814-2525",
+        "usuario": "antonio",
+        "senha": "$2y$10$GJDA18YS9cek0TmYZBEFvO7eu3JAgLwNPaoNtAlc4ReeHerOKCK.G"
+    },
+    {
+        "nome": "ANTONIO ERNANDES SILVA FILHO",
+        "email": "contato@ercont.com.br",
+        "telefone": "(34) 99814-2525",
+        "usuario": "calo",
+        "senha": "$2y$10$Xq2uMjvopGwgOuwwiQ9Y0uV18nzCFe84IjcGaZZ0.\/Ceq8hD4XnlK"
+    },
+    {
+        "nome": "ANTONIO ERNANDES SILVA FILHO",
+        "email": "antonioernandes25@gmail.com",
+        "telefone": "(34) 99814-2525",
+        "usuario": "tiro",
+        "senha": "$2y$10$9AqFw5uH6.AEdOqHLEXgoO3XFGNzhPz16W\/IUW4m\/.gkdhm0gIOea"
+    },
+    {
+        "nome": "ANTONIO ERNANDES SILVA FILHO",
+        "email": "antonioernandes25@gmail.com",
+        "telefone": "(34) 99814-2525",
+        "usuario": "bago",
+        "senha": "$2y$10$mC\/0Ga7uqpJ0pXw\/AwlTIepM\/h0lu4d2mGZJbtMMMVH6yipKsFSfC"
+    },
+    {
+        "nome": "ANTONIO ERNANDES SILVA FILHO",
+        "email": "antonioernandes25@gmail.com",
+        "telefone": "(34) 99814-2525",
+        "usuario": "teri",
+        "senha": "$2y$10$8MNQq0h4TY8qFMskZPtqz.juTO9hGIMwp\/3VpNSsn\/DJKwUnuzShO"
+    },
+    {
+        "nome": "ANTONIO ERNANDES SILVA FILHO",
+        "email": "antonioernandes25@gmail.com",
+        "telefone": "(34) 99814-2525",
+        "usuario": "bacu",
+        "senha": "$2y$10$gXZqXSxXUXwinUyvpS87\/Ory7H.ObZJUZYIIRldX7k.oMPEryIqia"
+    },
+    {
+        "nome": "ANTONIO ERNANDES SILVA FILHO",
+        "email": "antonioernandes25@gmail.com",
+        "telefone": "(34) 99814-2525",
+        "usuario": "bacu",
+        "senha": "$2y$10$D836K4bmD9oro7teQVT9IO\/37VvSkOu1VT\/Za0MwGxkmXHM\/thmmS"
+    },
+    {
+        "nome": "ANTONIO ERNANDES SILVA FILHO",
+        "email": "antonioernandes25@gmail.com",
+        "telefone": "(34) 99814-2525",
+        "usuario": "badu",
+        "senha": "$2y$10$tFBVcG2My3CtDgvA8aeScuaLvAn8ILV3f0RyNHTZ59wvkyvR6Wm6S"
+    },
+    {
+        "nome": "ANTONIO ERNANDES SILVA FILHO",
+        "email": "antonioernandes25@gmail.com",
+        "telefone": "(34) 99814-2525",
+        "usuario": "bete",
+        "senha": "$2y$10$PINwnwgEZd8KR4XavPuUUu1URI0CjApWCfcqnzkVx9hFzgzk0TKpK"
+    },
+    {
+        "nome": "ANTONIO ERNANDES SILVA FILHO",
+        "email": "antonioernandes25@gmail.com",
+        "telefone": "(34) 99814-2525",
+        "usuario": "tury",
+        "senha": "$2y$10$bj7Lu1lj0Cc05q6fZ9zRgOeXKuigK579WOUXJfCZUIAXsO2b9b6BO"
+    },
+    {
+        "nome": "ANTONIO ERNANDES SILVA FILHO",
+        "email": "antonioernandes25@gmail.com",
+        "telefone": "(34) 99814-2525",
+        "usuario": "ghgh",
+        "senha": "$2y$10$C36OVA.A3bmorcgD6hZ1xuDKhqTMotFe2PjMcaavVbVvco38Tmyfe"
+    },
+    {
+        "nome": "ANTONIO ERNANDES SILVA FILHO",
+        "email": "antonioernandes25@gmail.com",
+        "telefone": "(34) 99814-2525",
+        "usuario": "vcvc",
+        "senha": "$2y$10$t3AVTXCsE1odJPWXpCH0zuzCwby0MCrJ\/Q93qLiWXXTF\/mc\/UhJe2"
+    },
+    {
+        "nome": "ANTONIO ERNANDES SILVA FILHO",
+        "email": "antonioernandes25@gmail.com",
+        "telefone": "(34) 99814-2525",
+        "usuario": "hhhh",
+        "senha": "$2y$10$otSp7Z..QqD0MFmNqXrgp.hCm9d0K23YEziUSJfVjTgUaim\/gIqmq"
+    },
+    {
+        "nome": "ANTONIO ERNANDES SILVA FILHO",
+        "email": "antonioernandes25@gmail.com",
+        "telefone": "(34) 99814-2525",
+        "usuario": "jkjk",
+        "senha": "$2y$10$\/Mt3MCD4IWtTzjYrk\/.mE.nE40FPt195dOr9f9QE4kUIrnx0RLKxm"
+    },
+    {
+        "nome": "ANTONIO ERNANDES SILVA FILHO",
+        "email": "antonioernandes25@gmail.com",
+        "telefone": "(34) 99814-2525",
+        "usuario": "jkjk",
+        "senha": "$2y$10$jRQ0B0s3MG9fuXsYt3zRp.eUriIeE3fVdQwjbcfmW0gKvKJxtf9uu"
+    },
+    {
+        "nome": "ANTONIO ERNANDES SILVA FILHO",
+        "email": "antonioernandes25@gmail.com",
+        "telefone": "(34) 99814-2525",
+        "usuario": "klkl",
+        "senha": "$2y$10$WsVt77i22SkC\/4t6AEM.a.qkNPdqLMw4F0Y1Y4gZb0QAU7RQpQLc6"
+    },
+    {
+        "nome": "ANTONIO ERNANDES SILVA FILHO",
+        "email": "antonioernandes25@gmail.com",
+        "telefone": "(34) 99814-2525",
+        "usuario": "lklk",
+        "senha": "$2y$10$4mUHntzW94qAOSsuWZ1W1eFqbWe1pULkiG3YWfZbqByP1r7K.QIXO"
+    },
+    {
+        "nome": "ANTONIO ERNANDES SILVA FILHO",
+        "email": "antonioernandes25@gmail.com",
+        "telefone": "(34) 99814-2525",
+        "usuario": "ioio",
+        "senha": "$2y$10$QUB8QO70NVySfNvqHOmdR.XuRDtxdUFElZmIA9ySWsDdyK69lUQLi"
+    },
+    {
+        "nome": "ANTONIO ERNANDES SILVA FILHO",
+        "email": "antonioernandes25@gmail.com",
+        "telefone": "(34) 99814-2525",
+        "usuario": "bvbv",
+        "senha": "$2y$10$BKeMYPtd\/trzmiDxmI6JkOs1Gvl5A7y3Cqp88n27ZnMjBDHoFbOlW"
+    },
+    {
+        "nome": "ANTONIO ERNANDES SILVA FILHO",
+        "email": "antonioernandes25@gmail.com",
+        "telefone": "(34) 99814-2525",
+        "usuario": "fgfg",
+        "senha": "$2y$10$aUWK22kzi8hne2\/4XVt8feppcCIjGkZk1.4eUc3ztY4\/AiGLWOGT6"
+    }
+]

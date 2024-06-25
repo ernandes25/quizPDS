@@ -1,8 +1,9 @@
 document.addEventListener('DOMContentLoaded', function () {
-    const loginUserForm = document.getElementById('login-user-form');
-    const adminLoginForm = document.getElementById('admin-login-form');
+    const loginModal = document.getElementById('login-modal');
+    const loginForm = document.getElementById('login-form');
     const buttonInit = document.getElementById('button-init');
     const logoutButton = document.getElementById('logout');
+    const additionalFields = document.getElementById('additional-fields');
 
     function checkLogin() {
         const user = localStorage.getItem('user');
@@ -25,7 +26,7 @@ document.addEventListener('DOMContentLoaded', function () {
         if (user) {
             window.location.href = 'quiz.html';
         } else {
-            window.location.href = 'login_usuario.html';
+            loginModal.style.display = 'block';
         }
     }
 
@@ -40,36 +41,10 @@ document.addEventListener('DOMContentLoaded', function () {
         window.location.href = 'index.html';
     }
 
-    if (adminLoginForm) {
-        adminLoginForm.addEventListener('submit', function (event) {
+    if (loginForm) {
+        loginForm.addEventListener('submit', function (event) {
             event.preventDefault();
-            const formData = new FormData(adminLoginForm);
-
-            fetch('admin_login.php', {
-                method: 'POST',
-                body: formData
-            })
-                .then(response => response.json())
-                .then(data => {
-                    console.log(data); // Para depuração
-                    if (data.status === 'success') {
-                        alert(data.message);
-                        window.location.href = 'admin_dashboard.html'; // Página para redirecionar após o login bem-sucedido
-                    } else {
-                        alert(data.message);
-                    }
-                })
-                .catch(error => {
-                    console.error('Erro:', error);
-                    alert('Ocorreu um erro ao processar sua solicitação. Por favor, tente novamente mais tarde.');
-                });
-        });
-    }
-
-    if (loginUserForm) {
-        loginUserForm.addEventListener('submit', function (event) {
-            event.preventDefault();
-            const formData = new FormData(loginUserForm);
+            const formData = new FormData(loginForm);
 
             fetch('login_process.php', {
                 method: 'POST',
@@ -86,10 +61,56 @@ document.addEventListener('DOMContentLoaded', function () {
                     if (data.status === 'success') {
                         localStorage.setItem('user', formData.get('usuario'));
                         alert(data.message);
+                        // Ocultar o modal de login
+                        loginModal.style.display = 'none';
+                        // Redirecionar para a página do quiz
                         window.location.href = 'quiz.html';
                     } else if (data.status === 'user_not_found') {
+                        // Redirecionar para a página de cadastro
                         alert(data.message);
-                        window.location.href = `cadastro.html?usuario=${encodeURIComponent(formData.get('usuario'))}&senha=${encodeURIComponent(formData.get('senha'))}`;
+                        window.location.href = 'cadastro.html';
+                    } else {
+                        alert(data.message);
+                        // Mostrar campos adicionais se necessário
+                        if (data.message.includes('dados de cadastro incompletos')) {
+                            additionalFields.style.display = 'block';
+                            loginModal.style.display = 'block';
+                        }
+                    }
+                })
+                .catch(error => {
+                    console.error('Erro:', error);
+                    alert('Ocorreu um erro ao processar sua solicitação. Por favor, tente novamente mais tarde.');
+                });
+        });
+    }
+
+    // Para o cadastro de novo usuário
+    const cadastroForm = document.getElementById('cadastro-form');
+    if (cadastroForm) {
+        cadastroForm.addEventListener('submit', function (event) {
+            event.preventDefault();
+            const formData = new FormData(cadastroForm);
+
+            fetch('process_form.php', {
+                method: 'POST',
+                body: formData
+            })
+                .then(response => {
+                    if (!response.ok) {
+                        throw new Error('Network response was not ok');
+                    }
+                    return response.json();
+                })
+                .then(data => {
+                    console.log(data); // Adicionado para depuração
+                    if (data.status === 'success') {
+                        localStorage.setItem('user', formData.get('usuario'));
+                        alert('Cadastro realizado com sucesso! Redirecionando para o Quiz PDS...');
+                        // Redirecionar para a página do quiz
+                        setTimeout(() => {
+                            window.location.href = 'quiz.html';
+                        }, 3000); // Redireciona após 3 segundos
                     } else {
                         alert(data.message);
                     }
@@ -105,6 +126,8 @@ document.addEventListener('DOMContentLoaded', function () {
     window.startPDS = startPDS;
     window.logout = logout;
 });
+
+
 
 
 function growProgressBar(percentage_width) {

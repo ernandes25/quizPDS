@@ -31,7 +31,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         try {
             // Configurações do servidor
             $mail->isSMTP();
-            $mail->Host = 'smtp.example.com'; // Substitua pelo seu servidor SMTP
+            $mail->Host = 'smtp.gmail.com'; // Substitua pelo seu servidor SMTP
             $mail->SMTPAuth = true;
             $mail->Username = $adminEmail;
             $mail->Password = $adminPassword;

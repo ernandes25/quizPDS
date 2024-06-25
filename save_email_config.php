@@ -1,25 +1,19 @@
 <?php
-header('Content-Type: application/json');
+if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+    $email = $_POST['email'] ?? '';
+    $senha = $_POST['senha'] ?? '';
 
-// Verifique se os dados foram enviados corretamente
-if (!isset($_POST['email']) || !isset($_POST['senha'])) {
-    echo json_encode(["status" => "error", "message" => "Email e senha são necessários."]);
-    exit;
-}
+    if (empty($email) || empty($senha)) {
+        echo json_encode(["status" => "error", "message" => "Email e senha são necessários."]);
+        exit();
+    }
 
-$email = $_POST['email'];
-$senha = password_hash($_POST['senha'], PASSWORD_BCRYPT);
+    $config = [
+        'email' => $email,
+        'senha' => $senha // Não criptografar a senha
+    ];
 
-$emailConfig = [
-    'email' => $email,
-    'senha' => $senha,
-];
-
-$emailConfigFile = 'email_config.json';
-
-if (file_put_contents($emailConfigFile, json_encode($emailConfig))) {
+    file_put_contents('email_config.json', json_encode($config));
     echo json_encode(["status" => "success", "message" => "Configurações de email salvas com sucesso!"]);
-} else {
-    echo json_encode(["status" => "error", "message" => "Falha ao salvar as configurações de email."]);
 }
 ?>

@@ -1,29 +1,38 @@
 <?php
-header('Content-Type: application/json');
+session_start();
 
-// Verifique se os dados foram enviados corretamente
-if (!isset($_POST['email']) || !isset($_POST['senha'])) {
-    echo json_encode(["status" => "error", "message" => "Email e senha são necessários."]);
-    exit;
-}
+if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+    $email = $_POST['email'] ?? '';
+    $senha = $_POST['senha'] ?? '';
 
-$email = $_POST['email'];
-$senha = $_POST['senha'];
+    // Adicionar log para verificar se o email e a senha foram recebidos corretamente
+    file_put_contents('error_log.txt', date('Y-m-d H:i:s') . " - Email: $email, Senha: $senha" . PHP_EOL, FILE_APPEND);
 
-$emailConfigFile = 'email_config.json';
+    if (empty($email) || empty($senha)) {
+        echo json_encode(["status" => "error", "message" => "Email e senha são necessários."]);
+        exit();
+    }
 
-if (!file_exists($emailConfigFile)) {
-    echo json_encode(["status" => "error", "message" => "Configuração de email não encontrada."]);
-    exit;
-}
+    // Ler configurações de email do administrador
+    $configFile = 'email_config.json';
+    if (!file_exists($configFile)) {
+        echo json_encode(["status" => "error", "message" => "Configurações de email não encontradas."]);
+        exit();
+    }
 
-$emailConfig = json_decode(file_get_contents($emailConfigFile), true);
+    $config = json_decode(file_get_contents($configFile), true);
+    $adminEmail = $config['email'];
+    $adminPassword = $config['senha']; // Senha não criptografada
 
-if ($email === $emailConfig['email'] && password_verify($senha, $emailConfig['senha'])) {
-    session_start();
-    $_SESSION['admin_logged_in'] = true;
-    echo json_encode(["status" => "success", "message" => "Login bem-sucedido."]);
-} else {
-    echo json_encode(["status" => "error", "message" => "Email ou senha inválidos."]);
+    // Adicionar log para verificar os valores do email e senha do administrador
+    file_put_contents('error_log.txt', date('Y-m-d H:i:s') . " - Admin Email: $adminEmail, Admin Senha: $adminPassword" . PHP_EOL, FILE_APPEND);
+
+    // Verificar se o email e a senha estão corretos
+    if ($email === $adminEmail && $senha === $adminPassword) {
+        $_SESSION['admin_logged_in'] = true;
+        echo json_encode(["status" => "success", "message" => "Login bem-sucedido."]);
+    } else {
+        echo json_encode(["status" => "error", "message" => "Email ou senha incorretos."]);
+    }
 }
 ?>

@@ -738,3 +738,218 @@
 
 [2024-06-25 21:23:21] - Usuário: antonio, Senha: 1234
 [2024-06-25 21:23:21] - Resposta JSON: {"status":"user_not_found","message":"Usu\u00e1rio n\u00e3o encontrado, redirecionando para cadastro"}
+[2024-06-25 21:33:32] - Conteúdo completo de $_POST: Array
+(
+    [usuario] => calo
+    [senha] => 1234
+)
+
+[2024-06-25 21:33:32] - Usuário: calo, Senha: 1234
+[2024-06-25 21:33:32] - Resposta JSON: {"status":"user_not_found","message":"Usu\u00e1rio n\u00e3o encontrado, redirecionando para cadastro"}
+[2024-06-25 21:39:31] - Conteúdo completo de $_POST: Array
+(
+    [usuario] => tiro
+    [senha] => 1234
+)
+
+[2024-06-25 21:39:31] - Usuário: tiro, Senha: 1234
+[2024-06-25 21:39:31] - Resposta JSON: {"status":"user_not_found","message":"Usu\u00e1rio n\u00e3o encontrado, redirecionando para cadastro"}
+[2024-06-25 21:39:55] - Falha ao enviar email para o administrador. Erro: SMTP Error: Could not authenticate.SMTP server error: QUIT command failed
+[2024-06-25 21:43:20] - Conteúdo completo de $_POST: Array
+(
+    [usuario] => bago
+    [senha] => 1234
+)
+
+[2024-06-25 21:43:20] - Usuário: bago, Senha: 1234
+[2024-06-25 21:43:20] - Resposta JSON: {"status":"user_not_found","message":"Usu\u00e1rio n\u00e3o encontrado, redirecionando para cadastro"}
+[2024-06-25 21:43:44] - Falha ao enviar email para o administrador. Erro: SMTP Error: Could not authenticate.
+[2024-06-25 21:46:51] - Conteúdo completo de $_POST: Array
+(
+    [usuario] => teri
+    [senha] => 1234
+)
+
+[2024-06-25 21:46:51] - Usuário: teri, Senha: 1234
+[2024-06-25 21:46:51] - Resposta JSON: {"status":"user_not_found","message":"Usu\u00e1rio n\u00e3o encontrado, redirecionando para cadastro"}
+[2024-06-25 21:47:06] - Falha ao enviar email para o administrador. Erro: SMTP Error: Could not authenticate.
+[2024-06-25 21:49:11] - Conteúdo completo de $_POST: Array
+(
+    [usuario] => bacu
+    [senha] => 1234
+)
+
+[2024-06-25 21:49:11] - Usuário: bacu, Senha: 1234
+[2024-06-25 21:49:11] - Resposta JSON: {"status":"user_not_found","message":"Usu\u00e1rio n\u00e3o encontrado, redirecionando para cadastro"}
+[2024-06-25 21:49:24] - Falha ao enviar email para o administrador. Erro: SMTP Error: Could not authenticate.
+[2024-06-25 21:59:56] - Falha ao enviar email para o administrador. Erro: SMTP Error: Could not authenticate.
+2024-06-25 22:01:20 - Falha ao enviar email. Erro: SMTP Error: Could not authenticate.
+2024-06-25 22:01:27 - Falha ao enviar email. Erro: SMTP Error: Could not authenticate.
+[2024-06-25 22:02:19] - Conteúdo completo de $_POST: Array
+(
+    [usuario] => badu
+    [senha] => 1234
+)
+
+[2024-06-25 22:02:19] - Usuário: badu, Senha: 1234
+[2024-06-25 22:02:19] - Resposta JSON: {"status":"user_not_found","message":"Usu\u00e1rio n\u00e3o encontrado, redirecionando para cadastro"}
+2024-06-25 22:03:20 - Falha ao enviar email. Erro: SMTP Error: Could not authenticate.
+2024-06-25 22:03:26 - Falha ao enviar email para o administrador. Erro: SMTP Error: Could not authenticate.
+[2024-06-25 22:15:20] - Conteúdo completo de $_POST: Array
+(
+    [usuario] => bete
+    [senha] => 1234
+)
+
+[2024-06-25 22:15:20] - Usuário: bete, Senha: 1234
+[2024-06-25 22:15:20] - Resposta JSON: {"status":"user_not_found","message":"Usu\u00e1rio n\u00e3o encontrado, redirecionando para cadastro"}
+2024-06-25 22:18:48 - Email: , Senha: 
+2024-06-25 22:18:48 - Admin Email: , Admin Senha: 
+2024-06-25 22:18:59 - Email: , Senha: 
+2024-06-25 22:18:59 - Admin Email: , Admin Senha: 
+2024-06-25 22:22:23 - Email: contato@ercont.com.br, Senha: 250200er25*
+2024-06-25 22:22:23 - Admin Email: contato@ercont.com.br, Admin Senha: 250200er25*
+[2024-06-25 22:22:43] - Conteúdo completo de $_POST: Array
+(
+    [usuario] => tury
+    [senha] => 1234
+)
+
+[2024-06-25 22:22:43] - Usuário: tury, Senha: 1234
+[2024-06-25 22:22:43] - Resposta JSON: {"status":"user_not_found","message":"Usu\u00e1rio n\u00e3o encontrado, redirecionando para cadastro"}
+2024-06-25 22:29:43 - Email: contato@ercont.com.br, Senha: 250200er25*
+2024-06-25 22:29:43 - Admin Email: contato@ercont.com.br, Admin Senha: 250200er25*
+[2024-06-25 22:30:06] - Conteúdo completo de $_POST: Array
+(
+    [usuario] => vaso
+    [senha] => 1234
+    [nome] => 
+    [email] => 
+    [telefone] => 
+)
+
+[2024-06-25 22:30:06] - Usuário: vaso, Senha: 1234
+[2024-06-25 22:30:06] - Resposta JSON: {"status":"user_not_found","message":"Usu\u00e1rio n\u00e3o encontrado, redirecionando para cadastro"}
+[2024-06-25 22:32:16] - Conteúdo completo de $_POST: Array
+(
+    [usuario] => trin
+    [senha] => 1234
+    [nome] => 
+    [email] => 
+    [telefone] => 
+)
+
+[2024-06-25 22:32:16] - Usuário: trin, Senha: 1234
+[2024-06-25 22:32:16] - Resposta JSON: {"status":"user_not_found","message":"Usu\u00e1rio n\u00e3o encontrado, redirecionando para cadastro"}
+[2024-06-25 22:43:13] - Conteúdo completo de $_POST: Array
+(
+    [usuario] => ghgh
+    [senha] => 1234
+    [nome] => 
+    [email] => 
+    [telefone] => 
+)
+
+[2024-06-25 22:43:13] - Usuário: ghgh, Senha: 1234
+[2024-06-25 22:43:13] - Resposta JSON: {"status":"user_not_found","message":"Usu\u00e1rio n\u00e3o encontrado, redirecionando para cadastro"}
+[2024-06-25 22:46:09] - Conteúdo completo de $_POST: Array
+(
+    [usuario] => vcvc
+    [senha] => 1234
+    [nome] => 
+    [email] => 
+    [telefone] => 
+)
+
+[2024-06-25 22:46:09] - Usuário: vcvc, Senha: 1234
+[2024-06-25 22:46:09] - Resposta JSON: {"status":"user_not_found","message":"Usu\u00e1rio n\u00e3o encontrado, redirecionando para cadastro"}
+[2024-06-25 22:48:30] - Conteúdo completo de $_POST: Array
+(
+    [usuario] => vfvf
+    [senha] => 1234
+    [nome] => 
+    [email] => 
+    [telefone] => 
+)
+
+[2024-06-25 22:48:30] - Usuário: vfvf, Senha: 1234
+[2024-06-25 22:48:30] - Resposta JSON: {"status":"success","message":"Login bem-sucedido"}
+[2024-06-25 22:48:46] - Conteúdo completo de $_POST: Array
+(
+    [usuario] => hhhh
+    [senha] => 1234
+    [nome] => 
+    [email] => 
+    [telefone] => 
+)
+
+[2024-06-25 22:48:46] - Usuário: hhhh, Senha: 1234
+[2024-06-25 22:48:46] - Resposta JSON: {"status":"user_not_found","message":"Usu\u00e1rio n\u00e3o encontrado, redirecionando para cadastro"}
+[2024-06-25 22:53:30] - Conteúdo completo de $_POST: Array
+(
+    [usuario] => jkjk
+    [senha] => 1234
+    [nome] => 
+    [email] => 
+    [telefone] => 
+)
+
+[2024-06-25 22:53:30] - Usuário: jkjk, Senha: 1234
+[2024-06-25 22:53:30] - Resposta JSON: {"status":"user_not_found","message":"Usu\u00e1rio n\u00e3o encontrado, redirecionando para cadastro"}
+[2024-06-25 22:58:02] - Conteúdo completo de $_POST: Array
+(
+    [usuario] => klkl
+    [senha] => 1234
+    [nome] => 
+    [email] => 
+    [telefone] => 
+)
+
+[2024-06-25 22:58:02] - Usuário: klkl, Senha: 1234
+[2024-06-25 22:58:02] - Resposta JSON: {"status":"user_not_found","message":"Usu\u00e1rio n\u00e3o encontrado, redirecionando para cadastro"}
+2024-06-25 22:59:09 - Email: contato@ercont.com.br, Senha: 250200er25*
+2024-06-25 22:59:09 - Admin Email: contato@ercont.com.br, Admin Senha: 250200er25*
+[2024-06-25 22:59:23] - Conteúdo completo de $_POST: Array
+(
+    [usuario] => lklk
+    [senha] => 1234
+    [nome] => 
+    [email] => 
+    [telefone] => 
+)
+
+[2024-06-25 22:59:23] - Usuário: lklk, Senha: 1234
+[2024-06-25 22:59:23] - Resposta JSON: {"status":"user_not_found","message":"Usu\u00e1rio n\u00e3o encontrado, redirecionando para cadastro"}
+[2024-06-25 23:03:05] - Conteúdo completo de $_POST: Array
+(
+    [usuario] => ioio
+    [senha] => 1234
+    [nome] => 
+    [email] => 
+    [telefone] => 
+)
+
+[2024-06-25 23:03:05] - Usuário: ioio, Senha: 1234
+[2024-06-25 23:03:05] - Resposta JSON: {"status":"user_not_found","message":"Usu\u00e1rio n\u00e3o encontrado, redirecionando para cadastro"}
+[2024-06-25 23:08:04] - Conteúdo completo de $_POST: Array
+(
+    [usuario] => bvbv
+    [senha] => 1234
+    [nome] => 
+    [email] => 
+    [telefone] => 
+)
+
+[2024-06-25 23:08:04] - Usuário: bvbv, Senha: 1234
+[2024-06-25 23:08:04] - Resposta JSON: {"status":"user_not_found","message":"Usu\u00e1rio n\u00e3o encontrado, redirecionando para cadastro"}
+[2024-06-25 23:09:36] - Conteúdo completo de $_POST: Array
+(
+    [usuario] => fgfg
+    [senha] => 1234
+    [nome] => 
+    [email] => 
+    [telefone] => 
+)
+
+[2024-06-25 23:09:36] - Usuário: fgfg, Senha: 1234
+[2024-06-25 23:09:36] - Resposta JSON: {"status":"user_not_found","message":"Usu\u00e1rio n\u00e3o encontrado, redirecionando para cadastro"}
