@@ -1,13 +1,11 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contato</title>
+    <title>Configurar Email do Administrador</title>
     <link rel="stylesheet" href="./style.css" />
 </head>
-
 <body>
     <header>
         <nav>
@@ -15,12 +13,12 @@
                 <img id="logo" src="logo.jpeg" />
             </ul>
             <ul>
-                <a class="item" href=" ./index.html">
+                <a class="item" href="./index.html">
                     <li>Início</li>
                 </a>
             </ul>
             <ul>
-                <a class="item" href=" ./Home">
+                <a class="item" href="./Home">
                     <li>Sobre nós</li>
                 </a>
             </ul>
@@ -34,41 +32,33 @@
                     <li>Cadastro</li>
                 </a>
             </ul>
-
             <ul class="dropdown">
                 <a class="item" href="#">
-                  <li>Administração</li>
+                    <li>Administração</li>
                 </a>
                 <div class="dropdown-content">
-                  <a href="config_email.html">Cadastrar Email</a>
-                  <a href="admin_login.html">Login do Administrador</a>
+                    <a href="config_email.html">Cadastrar Email</a>
+                    <a href="admin_login.html">Login do Administrador</a>
                 </div>
-              </ul>
-
+            </ul>
         </nav>
     </header>
-    <h1 class="title_cad">Envie sua mensagem</h1>
+    <h1 class="title_cad">Configurar Email do Administrador</h1>
     <div class="form">
         <section>
-            <form action="send_contact.php" method="post">
-                <label for="nome">Nome:</label> <br />
-                <input type="text" name="nome" id="idnome" />
-                <label for="email">Email:</label> <br />
-                <input type="email" name="email" id="idemail" />
-                <label for="telefone">Celular:</label> <br />
-                <input type="tel" name="telefone" id="idtelefone" />
-                <textarea name="mensagem" id="mensagem" placeholder="Digite sua mensagem" maxlength="150"
-                    rows="20"></textarea> <br>
-                <input type="submit" value="Enviar" />
+            <form action="save_email_config.php" method="post">
+                <label for="admin_email">Email:</label> <br />
+                <input type="email" name="admin_email" id="admin_email" required /><br />
+                <label for="admin_password">Senha:</label> <br />
+                <input type="password" name="admin_password" id="admin_password" required /><br />
+                <input type="submit" value="Salvar">
             </form>
         </section>
     </div>
     <footer>
         <img id="logo" src="./logo.jpeg" />
-        </div>
         <span>Todos os direitos reservados &copy;</span>
         <span>Desenvolvido por: Bay Software - H & E Silva</span>
     </footer>
 </body>
-
 </html>

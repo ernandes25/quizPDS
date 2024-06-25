@@ -1,63 +1,75 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="pt-BR">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./style.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Administração</title>
+    <link rel="stylesheet" href="./style.css">
 </head>
-
 <body>
+    <header>
+        <nav>
 
-    <nav>
-
-        <ul>
-            <img id="logo" src="logo.jpeg" />
-        </ul>
-
-        <ul>
-            <a class="item" href="index.html">
+            <ul>
+              <img id="logo" src="logo.jpeg" />
+            </ul>
+      
+            <ul>
+              <a class="item" href="index.html">
                 <li>Início</li>
-            </a>
-        </ul>
-
-        <ul>
-            <a class="item" href="Home">
+              </a>
+            </ul>
+      
+            <ul>
+              <a class="item" href="Home">
                 <li>Sobre nós</li>
-            </a>
-        </ul>
-
-        <ul>
-            <a class="item" href="contato.html">
+              </a>
+            </ul>
+      
+            <ul>
+              <a class="item" href="contato.html">
                 <li>Contato</li>
-            </a>
-        </ul>
-
-        <ul>
-            <a class="item" href="cadastro.html">
+              </a>
+            </ul>
+      
+            <ul>
+              <a class="item" href="cadastro.html">
                 <li>Cadastro</li>
-            </a>
-        </ul>
-
-        <ul>
-            <a class="item" href="admin_login.html">
+              </a>
+            </ul>
+      
+            <ul class="dropdown">
+              <a class="item" href="#">
                 <li>Administração</li>
-            </a>
-        </ul>
-
-        <ul id="logout" style="display: none;">
-            <button onclick="logout()">Sair</button>
-        </ul>
-    </nav>
+              </a>
+              <div class="dropdown-content">
+                <a href="config_email.html">Cadastrar Email</a>
+                <a href="admin_login.html">Login do Administrador</a>
+              </div>
+            </ul>
+      
+      
+            <ul id="logout" style="display: none;">
+              <button onclick="logout()">Sair</button>
+            </ul>
+          </nav>
+    </header>
+    <h1 class="title_cad">Área do Administrador</h1>
     <div class="form">
-        <form id="adminLoginForm" method="POST" action="admin_login.php">
-            <label for="adminPassword">Senha:</label>
-            <input type="password" id="adminPassword" name="adminPassword" required><br>
-            <button type="submit">Entrar</button>
-        </form>
-
+        <section>
+            <form id="login-form" method="post" action="admin_process.php">
+                <label for="usuario">Usuário:</label> <br>
+                <input type="text" name="usuario" id="usuario" required><br>
+                <label for="senha">Senha:</label> <br>
+                <input type="password" name="senha" id="senha" required><br>
+                <input type="submit" value="Entrar">
+            </form>
+        </section>
     </div>
+    <footer>
+        <img id="logo" src="./logo.jpeg">
+        <span>Todos os direitos reservados &copy;</span>
+        <span>Desenvolvido por: Bay Software - H & E Silva</span>
+    </footer>
 </body>
-
 </html>

@@ -6,6 +6,11 @@ require 'vendor/autoload.php';
 use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\Exception;
 
+// Carregar as configurações de email do administrador
+$emailConfig = json_decode(file_get_contents('email_config.json'), true);
+$adminEmail = $emailConfig['email'];
+$adminPassword = $emailConfig['password'];
+
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $nome = $_POST['nome'] ?? '';
     $email = $_POST['email'] ?? '';
@@ -21,15 +26,15 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     ];
 
     // Função para enviar email ao administrador usando PHPMailer
-    function sendAdminEmail($contactData) {
+    function sendAdminEmail($contactData, $adminEmail, $adminPassword) {
         $mail = new PHPMailer(true);
         try {
             // Configurações do servidor
             $mail->isSMTP();
-            $mail->Host = 'smtp.gmail.com'; // Substitua pelo seu servidor SMTP
+            $mail->Host = 'smtp.example.com'; // Substitua pelo seu servidor SMTP
             $mail->SMTPAuth = true;
-            $mail->Username = 'contato@ercont.com.br'; // Substitua pelo seu email
-            $mail->Password = ''; // Substitua pela sua senha
+            $mail->Username = $adminEmail;
+            $mail->Password = $adminPassword;
             $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
             $mail->Port = 587;
 
@@ -54,7 +59,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     }
 
     // Enviar email ao administrador
-    $result = sendAdminEmail($contactData);
+    $result = sendAdminEmail($contactData, $adminEmail, $adminPassword);
     echo $result;
 } else {
     echo "Método de requisição inválido.";

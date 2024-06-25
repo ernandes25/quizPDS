@@ -1,9 +1,7 @@
 document.addEventListener('DOMContentLoaded', function () {
-    const loginModal = document.getElementById('login-modal');
-    const loginForm = document.getElementById('login-form');
+    const loginUserForm = document.getElementById('login-user-form');
     const buttonInit = document.getElementById('button-init');
     const logoutButton = document.getElementById('logout');
-    const additionalFields = document.getElementById('additional-fields');
 
     function checkLogin() {
         const user = localStorage.getItem('user');
@@ -26,7 +24,7 @@ document.addEventListener('DOMContentLoaded', function () {
         if (user) {
             window.location.href = 'quiz.html';
         } else {
-            loginModal.style.display = 'block';
+            window.location.href = 'login_usuario.html';
         }
     }
 
@@ -41,12 +39,18 @@ document.addEventListener('DOMContentLoaded', function () {
         window.location.href = 'index.html';
     }
 
-    if (loginForm) {
-        loginForm.addEventListener('submit', function (event) {
+    if (loginUserForm) {
+        loginUserForm.addEventListener('submit', function (event) {
             event.preventDefault();
-            const formData = new FormData(loginForm);
+            const formData = new FormData(loginUserForm);
 
-            fetch('cad.php', {
+            console.log('Dados do formulário:', formData.get('usuario'), formData.get('senha'));
+
+            for (let [key, value] of formData.entries()) {
+                console.log(`${key}: ${value}`);
+            }
+
+            fetch('login_process.php', {
                 method: 'POST',
                 body: formData
             })
@@ -54,24 +58,26 @@ document.addEventListener('DOMContentLoaded', function () {
                     if (!response.ok) {
                         throw new Error('Network response was not ok');
                     }
-                    return response.json();
+                    return response.text(); // Mudança para texto para permitir análise manual
                 })
-                .then(data => {
-                    console.log(data); // Adicionado para depuração
-                    if (data.status === 'success') {
-                        localStorage.setItem('user', formData.get('usuario'));
-                        alert(data.message);
-                        // Ocultar o modal de login
-                        loginModal.style.display = 'none';
-                        // Redirecionar para a página do quiz
-                        window.location.href = 'quiz.html';
-                    } else {
-                        alert(data.message);
-                        // Mostrar campos adicionais se necessário
-                        if (data.message.includes('dados de cadastro incompletos')) {
-                            additionalFields.style.display = 'block';
-                            loginModal.style.display = 'block';
+                .then(text => {
+                    console.log('Resposta recebida:', text);
+                    try {
+                        const data = JSON.parse(text);
+                        console.log(data);
+                        if (data.status === 'success') {
+                            localStorage.setItem('user', formData.get('usuario'));
+                            alert(data.message);
+                            window.location.href = 'quiz.html';
+                        } else if (data.status === 'user_not_found') {
+                            alert(data.message);
+                            window.location.href = `cadastro.html?usuario=${encodeURIComponent(formData.get('usuario'))}&senha=${encodeURIComponent(formData.get('senha'))}`;
+                        } else {
+                            alert(data.message);
                         }
+                    } catch (error) {
+                        console.error('Erro ao analisar JSON:', error, text);
+                        alert('Ocorreu um erro ao processar sua solicitação. Por favor, tente novamente mais tarde.');
                     }
                 })
                 .catch(error => {
@@ -85,6 +91,9 @@ document.addEventListener('DOMContentLoaded', function () {
     window.startPDS = startPDS;
     window.logout = logout;
 });
+
+
+
 
 
 function growProgressBar(percentage_width) {

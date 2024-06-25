@@ -1,0 +1,701 @@
+[2024-06-24 23:36:50] - Dados POST recebidos: Array
+(
+    [usuario] => EU
+    [senha] => 1234
+    [nome] => 
+    [email] => 
+    [telefone] => 
+)
+
+[2024-06-24 23:37:06] - Dados POST recebidos: Array
+(
+    [usuario] => EU
+    [senha] => 1234
+    [nome] => 
+    [email] => 
+    [telefone] => 
+)
+
+[2024-06-24 23:40:09] - Dados POST recebidos: Array
+(
+    [usuario] => EU
+    [senha] => 1234
+    [nome] => 
+    [email] => 
+    [telefone] => 
+)
+
+[2024-06-24 23:40:25] - Dados POST recebidos: Array
+(
+    [usuario] => EU
+    [senha] => 1234
+    [nome] => 
+    [email] => 
+    [telefone] => 
+)
+
+[2024-06-24 23:41:49] - Dados POST recebidos: Array
+(
+    [usuario] => EU
+    [senha] => 1234
+    [nome] => 
+    [email] => 
+    [telefone] => 
+)
+
+[2024-06-24 23:41:49] - Dados POST recebidos: Array
+(
+    [usuario] => EU
+    [senha] => 1234
+    [nome] => 
+    [email] => 
+    [telefone] => 
+)
+
+[2024-06-24 23:44:15] - Dados POST recebidos: Array
+(
+    [usuario] => EU
+    [senha] => 1234
+    [nome] => 
+    [email] => 
+    [telefone] => 
+)
+
+[2024-06-24 23:45:05] - Dados POST recebidos: Array
+(
+    [usuario] => pedro
+    [senha] => 2502
+    [nome] => 
+    [email] => 
+    [telefone] => 
+)
+
+[2024-06-24 23:46:56] - Dados POST recebidos: Array
+(
+    [usuario] => EU
+    [senha] => 1234
+    [nome] => 
+    [email] => 
+    [telefone] => 
+)
+
+[2024-06-24 23:47:20] - Dados POST recebidos: Array
+(
+    [usuario] => carlos
+    [senha] => 1234
+    [nome] => 
+    [email] => 
+    [telefone] => 
+)
+
+[2024-06-24 23:48:18] - Dados POST recebidos: Array
+(
+    [usuario] => JOSE
+    [senha] => 1234
+    [nome] => 
+    [email] => 
+    [telefone] => 
+)
+
+[2024-06-24 23:52:47] - Dados POST recebidos: Array
+(
+    [usuario] => EU
+    [senha] => 1234
+    [nome] => 
+    [email] => 
+    [telefone] => 
+)
+
+[2024-06-25 00:01:16] - Dados POST recebidos: Array
+(
+    [nome] => ANTONIO ERNANDES SILVA FILHO
+    [email] => antonioernandes25@gmal.com
+    [telefone] => (34) 99814-2525
+    [usuario] => EU
+    [senha] => 1234
+)
+
+[2024-06-25 00:03:34] - Dados POST recebidos: Array
+(
+    [nome] => ANTONIO ERNANDES SILVA FILHO
+    [email] => antonioernandes25@gmal.com
+    [telefone] => (34) 99814-2525
+    [usuario] => EU
+    [senha] => 1234
+)
+
+[2024-06-25 00:05:27] - Dados POST recebidos: Array
+(
+    [usuario] => EU
+    [senha] => 1234
+    [nome] => 
+    [email] => 
+    [telefone] => 
+)
+
+[2024-06-25 00:05:27] - Dados de cadastro incompletos.
+[2024-06-25 00:05:27] - Dados de cadastro incompletos.
+[2024-06-25 00:08:56] - Dados POST recebidos: Array
+(
+    [usuario] => EU
+    [senha] => 1234
+    [nome] => 
+    [email] => 
+    [telefone] => 
+)
+
+[2024-06-25 00:08:56] - Usuário ou senha do administrador incorretos.
+[2024-06-25 00:13:19] - Dados POST recebidos: Array
+(
+    [nome] => ANTONIO ERNANDES SILVA FILHO
+    [email] => antonioernandes25@gmal.com
+    [telefone] => (34) 99814-2525
+    [usuario] => EU
+    [senha] => 1234
+)
+
+[2024-06-25 00:17:28] - Dados POST recebidos: Array
+(
+    [usuario] => dificil
+    [senha] => 1234
+)
+
+[2024-06-25 00:19:20] - Dados POST recebidos: Array
+(
+    [usuario] => EU
+    [senha] => 1234
+)
+
+[2024-06-25 00:19:29] - Dados POST recebidos: Array
+(
+    [usuario] => jose
+    [senha] => 1234
+)
+
+[2024-06-25 00:19:34] - Dados POST recebidos: Array
+(
+    [usuario] => EU
+    [senha] => 1234
+)
+
+[2024-06-25 00:21:37] - Dados POST recebidos: Array
+(
+    [usuario] => dito
+    [senha] => 1234
+)
+
+[2024-06-25 00:25:17] - Dados POST recebidos: Array
+(
+    [usuario] => tato
+    [senha] => 1234
+)
+
+[2024-06-25 00:27:09] - Dados POST recebidos: Array
+(
+    [usuario] => zito
+    [senha] => 1234
+)
+
+[2024-06-25 00:28:23] - Dados POST recebidos: Array
+(
+    [usuario] => cacoi
+    [senha] => 1234
+)
+
+[2024-06-25 00:28:23] - Conteúdo completo de $_POST: Array
+(
+    [usuario] => cacoi
+    [senha] => 1234
+)
+
+[2024-06-25 00:30:25] - Conteúdo completo de $_POST: Array
+(
+    [usuario] => didi
+    [senha] => 1234
+)
+
+[2024-06-25 00:32:46] - Conteúdo completo de $_POST: Array
+(
+    [usuario] => EU
+    [senha] => 1234
+)
+
+[2024-06-25 00:35:24] - Conteúdo completo de $_POST: Array
+(
+    [usuario] => EU
+    [senha] => 1234
+)
+
+[2024-06-25 00:35:45] - Conteúdo completo de $_POST: Array
+(
+    [usuario] => caso
+    [senha] => 1234
+)
+
+[2024-06-25 00:37:51] - Conteúdo completo de $_POST: Array
+(
+    [usuario] => dididi
+    [senha] => 1234
+)
+
+[2024-06-25 00:39:23] - Conteúdo completo de $_POST: Array
+(
+    [usuario] => baba
+    [senha] => 1234
+)
+
+[2024-06-25 00:39:23] - Usuário: baba, Senha: 1234
+[2024-06-25 00:41:47] - Conteúdo completo de $_POST: Array
+(
+    [usuario] => baba
+    [senha] => 1234
+)
+
+[2024-06-25 00:41:47] - Usuário: baba, Senha: 1234
+[2024-06-25 00:41:55] - Conteúdo completo de $_POST: Array
+(
+    [usuario] => EU
+    [senha] => 1234
+)
+
+[2024-06-25 00:41:55] - Usuário: EU, Senha: 1234
+[2024-06-25 00:43:45] - Conteúdo completo de $_POST: Array
+(
+    [usuario] => BAGUEU
+    [senha] => 1234
+)
+
+[2024-06-25 00:43:45] - Usuário: BAGUEU, Senha: 1234
+[2024-06-25 00:44:12] - Conteúdo completo de $_POST: Array
+(
+    [usuario] => DIDIDIDI
+    [senha] => 1234
+)
+
+[2024-06-25 00:44:12] - Usuário: DIDIDIDI, Senha: 1234
+[2024-06-25 00:47:09] - Conteúdo completo de $_POST: Array
+(
+    [usuario] => memo
+    [senha] => 1234
+)
+
+[2024-06-25 00:47:09] - Usuário: memo, Senha: 1234
+[2024-06-25 00:48:31] - Conteúdo completo de $_POST: Array
+(
+    [usuario] => vava
+    [senha] => 1234
+)
+
+[2024-06-25 00:48:31] - Usuário: vava, Senha: 1234
+[2024-06-25 00:50:20] - Conteúdo completo de $_POST: Array
+(
+    [usuario] => fufu
+    [senha] => 1234
+)
+
+[2024-06-25 00:50:20] - Usuário: fufu, Senha: 1234
+[2024-06-25 00:52:22] - Conteúdo completo de $_POST: Array
+(
+    [usuario] => tutu
+    [senha] => 1234
+)
+
+[2024-06-25 00:52:22] - Usuário: tutu, Senha: 1234
+[2024-06-25 00:53:23] - Conteúdo completo de $_POST: Array
+(
+    [usuario] => bebe
+    [senha] => 1234
+)
+
+[2024-06-25 00:53:23] - Usuário: bebe, Senha: 1234
+[2024-06-25 00:54:54] - Conteúdo completo de $_POST: Array
+(
+    [usuario] => gigi
+    [senha] => 1234
+)
+
+[2024-06-25 00:54:54] - Usuário: gigi, Senha: 1234
+[2024-06-25 00:57:14] - Conteúdo completo de $_POST: Array
+(
+    [usuario] => babi
+    [senha] => 1234
+)
+
+[2024-06-25 00:57:14] - Usuário: babi, Senha: 1234
+[2024-06-25 00:58:39] - Conteúdo completo de $_POST: Array
+(
+    [usuario] => beber
+    [senha] => 1234
+)
+
+[2024-06-25 00:58:39] - Usuário: beber, Senha: 1234
+[2024-06-25 01:00:28] - Conteúdo completo de $_POST: Array
+(
+    [usuario] => tade
+    [senha] => 1234
+)
+
+[2024-06-25 01:00:28] - Usuário: tade, Senha: 1234
+[2024-06-25 01:02:23] - Conteúdo completo de $_POST: Array
+(
+    [usuario] => nana
+    [senha] => 1234
+)
+
+[2024-06-25 01:02:23] - Usuário: nana, Senha: 1234
+[2024-06-25 01:04:22] - Conteúdo completo de $_POST: Array
+(
+    [usuario] => haha
+    [senha] => 1234
+)
+
+[2024-06-25 01:04:22] - Usuário: haha, Senha: 1234
+[2024-06-25 01:06:04] - Conteúdo completo de $_POST: Array
+(
+    [usuario] => bobobo
+    [senha] => 1234
+)
+
+[2024-06-25 01:06:04] - Usuário: bobobo, Senha: 1234
+[2024-06-25 01:08:46] - Conteúdo completo de $_POST: Array
+(
+    [usuario] => mama
+    [senha] => 1234
+)
+
+[2024-06-25 01:08:46] - Usuário: mama, Senha: 1234
+[2024-06-25 01:10:48] - Conteúdo completo de $_POST: Array
+(
+    [usuario] => EU
+    [senha] => 1234
+)
+
+[2024-06-25 01:10:48] - Usuário: EU, Senha: 1234
+[2024-06-25 01:11:07] - Conteúdo completo de $_POST: Array
+(
+    [usuario] => EU
+    [senha] => 1234
+)
+
+[2024-06-25 01:11:07] - Usuário: EU, Senha: 1234
+[2024-06-25 01:12:30] - Conteúdo completo de $_POST: Array
+(
+    [usuario] => EU
+    [senha] => 1234
+)
+
+[2024-06-25 01:12:30] - Usuário: EU, Senha: 1234
+[2024-06-25 01:14:18] - Conteúdo completo de $_POST: Array
+(
+    [usuario] => ERNANDES
+    [senha] => 250200
+)
+
+[2024-06-25 01:14:18] - var_dump de $_POST: array(2) {
+  ["usuario"]=>
+  string(8) "ERNANDES"
+  ["senha"]=>
+  string(6) "250200"
+}
+
+[2024-06-25 01:14:18] - Usuário: ERNANDES, Senha: 250200
+[2024-06-25 01:16:07] - Conteúdo completo de $_POST: Array
+(
+    [usuario] => nono
+    [senha] => 1234
+)
+
+[2024-06-25 01:16:07] - var_dump de $_POST: array(2) {
+  ["usuario"]=>
+  string(4) "nono"
+  ["senha"]=>
+  string(4) "1234"
+}
+
+[2024-06-25 01:16:07] - Usuário: nono, Senha: 1234
+[2024-06-25 01:16:07] - Resposta JSON: {"status":"user_not_found","message":"Usu\u00e1rio n\u00e3o encontrado, redirecionando para cadastro"}
+[2024-06-25 01:17:58] - Conteúdo completo de $_POST: Array
+(
+    [usuario] => momomo
+    [senha] => 1234
+)
+
+[2024-06-25 01:17:58] - var_dump de $_POST: array(2) {
+  ["usuario"]=>
+  string(6) "momomo"
+  ["senha"]=>
+  string(4) "1234"
+}
+
+[2024-06-25 01:17:58] - Usuário: momomo, Senha: 1234
+[2024-06-25 01:17:58] - Resposta JSON: {"status":"user_not_found","message":"Usu\u00e1rio n\u00e3o encontrado, redirecionando para cadastro"}
+[2024-06-25 01:18:24] - Dados POST recebidos: Array
+(
+    [nome] => momomo
+    [email] => antonioernandes25@gmal.com
+    [telefone] => (34) 99814-2525
+    [usuario] => momomo
+    [senha] => 1234
+)
+
+[2024-06-25 01:19:54] - Conteúdo completo de $_POST: Array
+(
+    [usuario] => ninini
+    [senha] => 1234
+)
+
+[2024-06-25 01:19:54] - Usuário: ninini, Senha: 1234
+[2024-06-25 01:19:54] - Resposta JSON: {"status":"user_not_found","message":"Usu\u00e1rio n\u00e3o encontrado, redirecionando para cadastro"}
+[2024-06-25 01:20:05] - Dados POST recebidos: Array
+(
+    [nome] => ANTONIO ERNANDES SILVA FILHO
+    [email] => antonioernandes25@gmail.com
+    [telefone] => (34) 99814-2525
+    [usuario] => nini
+    [senha] => 1234
+)
+
+[2024-06-25 01:21:18] - Conteúdo completo de $_POST: Array
+(
+    [usuario] => baba
+    [senha] => 1234
+)
+
+[2024-06-25 01:21:18] - Usuário: baba, Senha: 1234
+[2024-06-25 01:21:18] - Resposta JSON: {"status":"user_not_found","message":"Usu\u00e1rio n\u00e3o encontrado, redirecionando para cadastro"}
+[2024-06-25 01:21:26] - Dados POST recebidos: Array
+(
+    [nome] => ANTONIO ERNANDES SILVA FILHO
+    [email] => antonioernandes25@gmail.com
+    [telefone] => (34) 99814-2525
+    [usuario] => baba
+    [senha] => 1234
+)
+
+[2024-06-25 01:23:40] - Conteúdo completo de $_POST: Array
+(
+    [usuario] => vovo
+    [senha] => 1234
+)
+
+[2024-06-25 01:23:40] - Usuário: vovo, Senha: 1234
+[2024-06-25 01:23:40] - Resposta JSON: {"status":"user_not_found","message":"Usu\u00e1rio n\u00e3o encontrado, redirecionando para cadastro"}
+[2024-06-25 01:23:56] - Dados POST recebidos: Array
+(
+    [nome] => ANTONIO ERNANDES SILVA FILHO
+    [email] => antonioernandes25@gmail.com
+    [telefone] => (34) 99814-2525
+    [usuario] => 
+    [senha] => 
+)
+
+[2024-06-25 01:23:56] - Usuário ou senha não fornecidos.
+[2024-06-25 01:23:56] - Usuário ou senha não fornecidos.
+[2024-06-25 01:26:20] - Conteúdo completo de $_POST: Array
+(
+    [usuario] => bibi
+    [senha] => 1234
+)
+
+[2024-06-25 01:26:20] - Usuário: bibi, Senha: 1234
+[2024-06-25 01:26:20] - Resposta JSON: {"status":"user_not_found","message":"Usu\u00e1rio n\u00e3o encontrado, redirecionando para cadastro"}
+[2024-06-25 01:26:30] - Dados POST recebidos: Array
+(
+    [nome] => ANTONIO ERNANDES SILVA FILHO
+    [email] => antonioernandes25@gmal.com
+    [telefone] => (34) 99814-2525
+    [usuario] => bibi
+    [senha] => 1234
+)
+
+[2024-06-25 01:27:11] - Conteúdo completo de $_POST: Array
+(
+    [usuario] => bibi
+    [senha] => 1234
+)
+
+[2024-06-25 01:27:11] - Usuário: bibi, Senha: 1234
+[2024-06-25 01:27:11] - Resposta JSON: {"status":"success","message":"Login bem-sucedido"}
+[2024-06-25 01:28:19] - Conteúdo completo de $_POST: Array
+(
+    [usuario] => bibi
+    [senha] => 1234
+)
+
+[2024-06-25 01:28:19] - Usuário: bibi, Senha: 1234
+[2024-06-25 01:28:19] - Resposta JSON: {"status":"success","message":"Login bem-sucedido"}
+[2024-06-25 01:28:35] - Conteúdo completo de $_POST: Array
+(
+    [usuario] => mama
+    [senha] => 1234
+)
+
+[2024-06-25 01:28:35] - Usuário: mama, Senha: 1234
+[2024-06-25 01:28:35] - Resposta JSON: {"status":"user_not_found","message":"Usu\u00e1rio n\u00e3o encontrado, redirecionando para cadastro"}
+[2024-06-25 01:28:49] - Dados POST recebidos: Array
+(
+    [nome] => ANTONIO ERNANDES SILVA FILHO
+    [email] => antonioernandes25@gmail.com
+    [telefone] => (34) 99814-2525
+    [usuario] => mama
+    [senha] => 1234
+)
+
+[2024-06-25 01:28:49] - Dados armazenados com sucesso.
+[2024-06-25 01:30:29] - Conteúdo completo de $_POST: Array
+(
+    [usuario] => dodo
+    [senha] => 1234
+)
+
+[2024-06-25 01:30:29] - Usuário: dodo, Senha: 1234
+[2024-06-25 01:30:29] - Resposta JSON: {"status":"user_not_found","message":"Usu\u00e1rio n\u00e3o encontrado, redirecionando para cadastro"}
+[2024-06-25 01:30:38] - Dados POST recebidos: Array
+(
+    [nome] => ANTONIO ERNANDES SILVA FILHO
+    [email] => antonioernandes25@gmail.com
+    [telefone] => (34) 99814-2525
+    [usuario] => dodo
+    [senha] => 1234
+)
+
+[2024-06-25 01:30:38] - Dados armazenados com sucesso.
+[2024-06-25 01:33:13] - Conteúdo completo de $_POST: Array
+(
+    [usuario] => poli
+    [senha] => 1234
+)
+
+[2024-06-25 01:33:13] - Usuário: poli, Senha: 1234
+[2024-06-25 01:33:13] - Resposta JSON: {"status":"user_not_found","message":"Usu\u00e1rio n\u00e3o encontrado, redirecionando para cadastro"}
+[2024-06-25 01:33:23] - Dados POST recebidos: Array
+(
+    [nome] => ANTONIO ERNANDES SILVA FILHO
+    [email] => antonioernandes25@gmal.com
+    [telefone] => (34) 99814-2525
+    [usuario] => poli
+    [senha] => 1234
+)
+
+[2024-06-25 01:33:23] - Dados armazenados com sucesso.
+[2024-06-25 01:35:21] - Conteúdo completo de $_POST: Array
+(
+    [usuario] => biro
+    [senha] => 1234
+)
+
+[2024-06-25 01:35:21] - Usuário: biro, Senha: 1234
+[2024-06-25 01:35:21] - Resposta JSON: {"status":"user_not_found","message":"Usu\u00e1rio n\u00e3o encontrado, redirecionando para cadastro"}
+[2024-06-25 01:35:30] - Dados POST recebidos: Array
+(
+    [nome] => ANTONIO ERNANDES SILVA FILHO
+    [email] => antonioernandes25@gmail.com
+    [telefone] => (34) 99814-2525
+    [usuario] => biro
+    [senha] => 1234
+)
+
+[2024-06-25 01:35:30] - Dados armazenados com sucesso.
+[2024-06-25 01:38:32] - Conteúdo completo de $_POST: Array
+(
+    [usuario] => deco
+    [senha] => 1234
+)
+
+[2024-06-25 01:38:32] - Usuário: deco, Senha: 1234
+[2024-06-25 01:38:32] - Resposta JSON: {"status":"user_not_found","message":"Usu\u00e1rio n\u00e3o encontrado, redirecionando para cadastro"}
+[2024-06-25 01:39:05] - Dados POST recebidos: Array
+(
+    [nome] => A. E. SILVA FILHO CONTABILIDADE
+    [email] => doricassia@gmail.com
+    [telefone] => (34) 99814-2525
+    [usuario] => deco
+    [senha] => 1234
+)
+
+[2024-06-25 01:39:05] - Dados armazenados com sucesso.
+[2024-06-25 01:45:21] - Conteúdo completo de $_POST: Array
+(
+    [usuario] => gao
+    [senha] => 1234
+)
+
+[2024-06-25 01:45:21] - Usuário: gao, Senha: 1234
+[2024-06-25 01:45:21] - Resposta JSON: {"status":"user_not_found","message":"Usu\u00e1rio n\u00e3o encontrado, redirecionando para cadastro"}
+[2024-06-25 01:47:09] - Conteúdo completo de $_POST: Array
+(
+    [usuario] => gao
+    [senha] => 1234
+)
+
+[2024-06-25 01:47:09] - Usuário: gao, Senha: 1234
+[2024-06-25 01:47:09] - Resposta JSON: {"status":"success","message":"Login bem-sucedido"}
+[2024-06-25 01:50:47] - Conteúdo completo de $_POST: Array
+(
+    [usuario] => gao
+    [senha] => 1234
+)
+
+[2024-06-25 01:50:47] - Usuário: gao, Senha: 1234
+[2024-06-25 01:50:47] - Resposta JSON: {"status":"success","message":"Login bem-sucedido"}
+[2024-06-25 01:50:59] - Conteúdo completo de $_POST: Array
+(
+    [usuario] => bao
+    [senha] => 1234
+)
+
+[2024-06-25 01:50:59] - Usuário: bao, Senha: 1234
+[2024-06-25 01:50:59] - Resposta JSON: {"status":"user_not_found","message":"Usu\u00e1rio n\u00e3o encontrado, redirecionando para cadastro"}
+[2024-06-25 01:52:53] - Conteúdo completo de $_POST: Array
+(
+    [usuario] => EU
+    [senha] => 1234
+)
+
+[2024-06-25 01:52:53] - Usuário: EU, Senha: 1234
+[2024-06-25 01:52:53] - Resposta JSON: {"status":"success","message":"Login bem-sucedido"}
+[2024-06-25 01:53:02] - Conteúdo completo de $_POST: Array
+(
+    [usuario] => vfvf
+    [senha] => 1234
+)
+
+[2024-06-25 01:53:02] - Usuário: vfvf, Senha: 1234
+[2024-06-25 01:53:02] - Resposta JSON: {"status":"user_not_found","message":"Usu\u00e1rio n\u00e3o encontrado, redirecionando para cadastro"}
+[2024-06-25 01:54:25] - Conteúdo completo de $_POST: Array
+(
+    [usuario] => veve
+    [senha] => 1234
+)
+
+[2024-06-25 01:54:25] - Usuário: veve, Senha: 1234
+[2024-06-25 01:54:25] - Resposta JSON: {"status":"user_not_found","message":"Usu\u00e1rio n\u00e3o encontrado, redirecionando para cadastro"}
+[2024-06-25 01:59:02] - Dados POST recebidos: Array
+(
+    [usuario] => contato@ercont.com.br
+    [senha] => 250200er25*
+)
+
+[2024-06-25 01:59:02] - Usuário ou senha do administrador incorretos.
+[2024-06-25 01:59:18] - Dados POST recebidos: Array
+(
+    [usuario] => ERNANDES
+    [senha] => 250200
+)
+
+[2024-06-25 01:59:18] - Usuário ou senha do administrador incorretos.
+[2024-06-25 01:59:54] - Dados POST recebidos: Array
+(
+    [usuario] => contato@ercont.com.br
+    [senha] => 250200er25*
+)
+
+[2024-06-25 01:59:54] - Usuário ou senha do administrador incorretos.
+[2024-06-25 02:03:55] - Conteúdo completo de $_POST: Array
+(
+    [usuario] => bababo
+    [senha] => 1234
+)
+
+[2024-06-25 02:03:55] - Usuário: bababo, Senha: 1234
+[2024-06-25 02:03:55] - Resposta JSON: {"status":"user_not_found","message":"Usu\u00e1rio n\u00e3o encontrado, redirecionando para cadastro"}
