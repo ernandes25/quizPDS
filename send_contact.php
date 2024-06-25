@@ -52,7 +52,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                              "Mensagem: " . nl2br(htmlspecialchars($contactData['mensagem']));
 
             $mail->send();
-            return 'Email enviado com sucesso para o administrador.';
+            return 'success';
         } catch (Exception $e) {
             return "Falha ao enviar email para o administrador. Erro: {$mail->ErrorInfo}";
         }
@@ -60,7 +60,12 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
     // Enviar email ao administrador
     $result = sendAdminEmail($contactData, $adminEmail, $adminPassword);
-    echo $result;
+    if ($result === 'success') {
+        header('Location: contact_success.html');
+        exit;
+    } else {
+        echo $result;
+    }
 } else {
     echo "Método de requisição inválido.";
 }
