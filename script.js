@@ -1,5 +1,6 @@
 document.addEventListener('DOMContentLoaded', function () {
     const loginUserForm = document.getElementById('login-user-form');
+    const adminLoginForm = document.getElementById('admin-login-form');
     const buttonInit = document.getElementById('button-init');
     const logoutButton = document.getElementById('logout');
 
@@ -39,16 +40,36 @@ document.addEventListener('DOMContentLoaded', function () {
         window.location.href = 'index.html';
     }
 
+    if (adminLoginForm) {
+        adminLoginForm.addEventListener('submit', function (event) {
+            event.preventDefault();
+            const formData = new FormData(adminLoginForm);
+
+            fetch('admin_login.php', {
+                method: 'POST',
+                body: formData
+            })
+                .then(response => response.json())
+                .then(data => {
+                    console.log(data); // Para depuração
+                    if (data.status === 'success') {
+                        alert(data.message);
+                        window.location.href = 'admin_dashboard.html'; // Página para redirecionar após o login bem-sucedido
+                    } else {
+                        alert(data.message);
+                    }
+                })
+                .catch(error => {
+                    console.error('Erro:', error);
+                    alert('Ocorreu um erro ao processar sua solicitação. Por favor, tente novamente mais tarde.');
+                });
+        });
+    }
+
     if (loginUserForm) {
         loginUserForm.addEventListener('submit', function (event) {
             event.preventDefault();
             const formData = new FormData(loginUserForm);
-
-            console.log('Dados do formulário:', formData.get('usuario'), formData.get('senha'));
-
-            for (let [key, value] of formData.entries()) {
-                console.log(`${key}: ${value}`);
-            }
 
             fetch('login_process.php', {
                 method: 'POST',
@@ -58,26 +79,19 @@ document.addEventListener('DOMContentLoaded', function () {
                     if (!response.ok) {
                         throw new Error('Network response was not ok');
                     }
-                    return response.text(); // Mudança para texto para permitir análise manual
+                    return response.json();
                 })
-                .then(text => {
-                    console.log('Resposta recebida:', text);
-                    try {
-                        const data = JSON.parse(text);
-                        console.log(data);
-                        if (data.status === 'success') {
-                            localStorage.setItem('user', formData.get('usuario'));
-                            alert(data.message);
-                            window.location.href = 'quiz.html';
-                        } else if (data.status === 'user_not_found') {
-                            alert(data.message);
-                            window.location.href = `cadastro.html?usuario=${encodeURIComponent(formData.get('usuario'))}&senha=${encodeURIComponent(formData.get('senha'))}`;
-                        } else {
-                            alert(data.message);
-                        }
-                    } catch (error) {
-                        console.error('Erro ao analisar JSON:', error, text);
-                        alert('Ocorreu um erro ao processar sua solicitação. Por favor, tente novamente mais tarde.');
+                .then(data => {
+                    console.log(data); // Adicionado para depuração
+                    if (data.status === 'success') {
+                        localStorage.setItem('user', formData.get('usuario'));
+                        alert(data.message);
+                        window.location.href = 'quiz.html';
+                    } else if (data.status === 'user_not_found') {
+                        alert(data.message);
+                        window.location.href = `cadastro.html?usuario=${encodeURIComponent(formData.get('usuario'))}&senha=${encodeURIComponent(formData.get('senha'))}`;
+                    } else {
+                        alert(data.message);
                     }
                 })
                 .catch(error => {
@@ -91,9 +105,6 @@ document.addEventListener('DOMContentLoaded', function () {
     window.startPDS = startPDS;
     window.logout = logout;
 });
-
-
-
 
 
 function growProgressBar(percentage_width) {

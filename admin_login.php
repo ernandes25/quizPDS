@@ -1,21 +1,29 @@
 <?php
-session_start();
+header('Content-Type: application/json');
 
-if ($_SERVER['REQUEST_METHOD'] === 'POST') {
-    if (isset($_POST['adminPassword'])) {
-        // Processo de login do administrador
-        $adminPassword = $_POST['adminPassword'] ?? '';
+// Verifique se os dados foram enviados corretamente
+if (!isset($_POST['email']) || !isset($_POST['senha'])) {
+    echo json_encode(["status" => "error", "message" => "Email e senha são necessários."]);
+    exit;
+}
 
-        // Substitua pela senha real que seu cliente usará
-        $correctPassword = 'senha_do_cliente';
+$email = $_POST['email'];
+$senha = $_POST['senha'];
 
-        if ($adminPassword === $correctPassword) {
-            $_SESSION['admin_logged_in'] = true;
-            header('Location: admin_dashboard.php');
-            exit();
-        } else {
-            echo "Senha incorreta.";
-        }
-    }
+$emailConfigFile = 'email_config.json';
+
+if (!file_exists($emailConfigFile)) {
+    echo json_encode(["status" => "error", "message" => "Configuração de email não encontrada."]);
+    exit;
+}
+
+$emailConfig = json_decode(file_get_contents($emailConfigFile), true);
+
+if ($email === $emailConfig['email'] && password_verify($senha, $emailConfig['senha'])) {
+    session_start();
+    $_SESSION['admin_logged_in'] = true;
+    echo json_encode(["status" => "success", "message" => "Login bem-sucedido."]);
+} else {
+    echo json_encode(["status" => "error", "message" => "Email ou senha inválidos."]);
 }
 ?>

@@ -699,3 +699,42 @@
 
 [2024-06-25 02:03:55] - Usuário: bababo, Senha: 1234
 [2024-06-25 02:03:55] - Resposta JSON: {"status":"user_not_found","message":"Usu\u00e1rio n\u00e3o encontrado, redirecionando para cadastro"}
+[2024-06-25 19:35:26] - Conteúdo completo de $_POST: Array
+(
+    [usuario] => EU
+    [senha] => 1234
+)
+
+[2024-06-25 19:35:26] - Usuário: EU, Senha: 1234
+[2024-06-25 19:35:26] - Resposta JSON: {"status":"success","message":"Login bem-sucedido"}
+[2024-06-25 19:35:35] - Conteúdo completo de $_POST: Array
+(
+    [usuario] => EU
+    [senha] => 1234
+)
+
+[2024-06-25 19:35:35] - Usuário: EU, Senha: 1234
+[2024-06-25 19:35:35] - Resposta JSON: {"status":"success","message":"Login bem-sucedido"}
+[2024-06-25 19:35:52] - Conteúdo completo de $_POST: Array
+(
+    [usuario] => gafa
+    [senha] => 1234
+)
+
+[2024-06-25 19:35:52] - Usuário: gafa, Senha: 1234
+[2024-06-25 19:35:52] - Resposta JSON: {"status":"user_not_found","message":"Usu\u00e1rio n\u00e3o encontrado, redirecionando para cadastro"}
+[2024-06-25 19:38:54] - Dados POST recebidos: Array
+(
+    [usuario] => contato@ercont.com.br
+    [senha] => 1234
+)
+
+[2024-06-25 19:38:54] - Usuário ou senha do administrador incorretos.
+[2024-06-25 21:23:21] - Conteúdo completo de $_POST: Array
+(
+    [usuario] => antonio
+    [senha] => 1234
+)
+
+[2024-06-25 21:23:21] - Usuário: antonio, Senha: 1234
+[2024-06-25 21:23:21] - Resposta JSON: {"status":"user_not_found","message":"Usu\u00e1rio n\u00e3o encontrado, redirecionando para cadastro"}

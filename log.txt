@@ -576,3 +576,11 @@ X-Mailer: PHP/8.2.12
   'senha' => '1234',
 )
 [2024-06-25 02:04:05] - Dados armazenados com sucesso.
+[2024-06-25 19:36:03] - Dados POST recebidos: array (
+  'nome' => 'ANTONIO ERNANDES SILVA FILHO',
+  'email' => 'antonioernandes25@gmal.com',
+  'telefone' => '(34) 99814-2525',
+  'usuario' => 'gafa',
+  'senha' => '1234',
+)
+[2024-06-25 19:36:03] - Dados armazenados com sucesso.

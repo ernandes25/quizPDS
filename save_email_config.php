@@ -1,18 +1,25 @@
 <?php
-if ($_SERVER['REQUEST_METHOD'] === 'POST') {
-    $adminEmail = $_POST['admin_email'] ?? '';
-    $adminPassword = $_POST['admin_password'] ?? '';
+header('Content-Type: application/json');
 
-    // Dados do email do administrador
-    $emailConfig = [
-        'email' => $adminEmail,
-        'password' => $adminPassword
-    ];
+// Verifique se os dados foram enviados corretamente
+if (!isset($_POST['email']) || !isset($_POST['senha'])) {
+    echo json_encode(["status" => "error", "message" => "Email e senha são necessários."]);
+    exit;
+}
 
-    // Salvar a configuração em um arquivo JSON
-    file_put_contents('email_config.json', json_encode($emailConfig, JSON_PRETTY_PRINT));
-    echo "Configurações de email salvas com sucesso!";
+$email = $_POST['email'];
+$senha = password_hash($_POST['senha'], PASSWORD_BCRYPT);
+
+$emailConfig = [
+    'email' => $email,
+    'senha' => $senha,
+];
+
+$emailConfigFile = 'email_config.json';
+
+if (file_put_contents($emailConfigFile, json_encode($emailConfig))) {
+    echo json_encode(["status" => "success", "message" => "Configurações de email salvas com sucesso!"]);
 } else {
-    echo "Método de requisição inválido.";
+    echo json_encode(["status" => "error", "message" => "Falha ao salvar as configurações de email."]);
 }
 ?>
