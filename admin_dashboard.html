@@ -1,38 +1,42 @@
+<?php
+session_start();
+
+if (!isset($_SESSION['admin_logged_in']) || !$_SESSION['admin_logged_in']) {
+    header('Location: admin_login.html');
+    exit();
+}
+
+// Ler os dados do arquivo JSON
+$dataFile = 'users_data.json';
+if (!file_exists($dataFile)) {
+    echo "Nenhum dado encontrado.";
+    exit();
+}
+$json = file_get_contents($dataFile);
+$usersData = json_decode($json, true);
+?>
+
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Painel do Administrador</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Dashboard de Administração</title>
 </head>
 <body>
-    <header>
-        <nav>
-            <ul>
-                <img id="logo" src="logo.jpeg" alt="Logo" />
-            </ul>
-            <ul>
-                <a class="item" href="index.html">
-                    <li>Início</li>
-                </a>
-            </ul>
-            <ul>
-                <a class="item" href="admin_logout.php">
-                    <li>Sair</li>
-                </a>
-            </ul>
-        </nav>
-    </header>
-    <h1>Bem-vindo ao Painel do Administrador</h1>
-    <p>Aqui você pode gerenciar as configurações e visualizar os dados.</p>
-    <div class="admin-links">
-        <a href="admin_data.php">Ver Dados dos Usuários</a>
-    </div>
-    <footer>
-        <img id="logo" src="./logo.jpeg" alt="Logo" />
-        <span>Todos os direitos reservados &copy;</span>
-        <span>Desenvolvido por: Bay Software - H & E Silva</span>
-    </footer>
+    <h1>Dados dos Usuários</h1>
+    <table border="1">
+        <tr>
+            <th>Nome</th>
+            <th>Email</th>
+            <th>Telefone</th>
+        </tr>
+        <?php foreach ($usersData as $user): ?>
+            <tr>
+                <td><?php echo htmlspecialchars($user['nome']); ?></td>
+                <td><?php echo htmlspecialchars($user['email']); ?></td>
+                <td><?php echo htmlspecialchars($user['telefone']); ?></td>
+            </tr>
+        <?php endforeach; ?>
+    </table>
+    <a href="admin_logout.php">Sair</a>
 </body>
 </html>

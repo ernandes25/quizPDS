@@ -1,6 +1,7 @@
 <?php
 // Incluir o autoloader do Composer
 require 'vendor/autoload.php';
+require 'config.php'; // Incluir o arquivo config.php para carregar a variável de ambiente
 
 // Usar PHPMailer
 use PHPMailer\PHPMailer\PHPMailer;
@@ -9,7 +10,7 @@ use PHPMailer\PHPMailer\Exception;
 // Carregar as configurações de email do administrador
 $emailConfig = json_decode(file_get_contents('email_config.json'), true);
 $adminEmail = $emailConfig['email'];
-$adminPassword = $emailConfig['senha']; // Certifique-se de que o campo correto é usado
+$adminPassword = getenv('ADMIN_EMAIL_PASSWORD'); // Obter a senha do email a partir da variável de ambiente
 
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $nome = $_POST['nome'] ?? '';
@@ -40,7 +41,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
             // Destinatários
             $mail->setFrom('no-reply@example.com', 'No Reply');
-            $mail->addAddress($adminEmail, 'Administrador'); // Usar o email do administrador
+            $mail->addAddress($adminEmail, 'Administrador'); // Substitua pelo email do administrador
 
             // Conteúdo do email
             $mail->isHTML(true);
@@ -60,12 +61,14 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
     // Enviar email ao administrador
     $result = sendAdminEmail($contactData, $adminEmail, $adminPassword);
+
+    // Redirecionar para a página de sucesso
     if ($result === 'success') {
-        header('Location: contact_success.html');
-        exit;
+        header("Location: contact_success.html");
     } else {
-        echo $result;
+        echo "Falha ao enviar email: " . $result;
     }
+    exit();
 } else {
     echo "Método de requisição inválido.";
 }

@@ -1,70 +1,76 @@
 <?php
-header('Content-Type: application/json');
+// Incluir o arquivo de configuração
+require 'config.php';
+
+// Incluir o autoloader do Composer
+require 'vendor/autoload.php';
+
+// Usar PHPMailer
+use PHPMailer\PHPMailer\PHPMailer;
+use PHPMailer\PHPMailer\Exception;
+
+// Carregar as configurações de email do administrador
+$emailConfig = json_decode(file_get_contents('email_config.json'), true);
+$adminEmail = $emailConfig['email'];
+$adminPassword = getenv('ADMIN_EMAIL_PASSWORD');
 
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $nome = $_POST['nome'] ?? '';
     $email = $_POST['email'] ?? '';
     $telefone = $_POST['telefone'] ?? '';
     $usuario = $_POST['usuario'] ?? '';
-    $senha = $_POST['senha'] ?? '';
+    $senha = password_hash($_POST['senha'] ?? '', PASSWORD_BCRYPT);
 
-    if (empty($nome) || empty($email) || empty($telefone) || empty($usuario) || empty($senha)) {
-        echo json_encode(["status" => "error", "message" => "Todos os campos são necessários."]);
-        exit();
-    }
-
-    $usersDataFile = 'users_data.json';
-    $usersData = file_exists($usersDataFile) ? json_decode(file_get_contents($usersDataFile), true) : [];
-
-    $novoUsuario = [
+    // Dados do formulário
+    $userData = [
         'nome' => $nome,
         'email' => $email,
         'telefone' => $telefone,
         'usuario' => $usuario,
-        'senha' => password_hash($senha, PASSWORD_DEFAULT)
+        'senha' => $senha
     ];
 
-    $usersData[] = $novoUsuario;
-    file_put_contents($usersDataFile, json_encode($usersData, JSON_PRETTY_PRINT));
+    // Salvar os dados do usuário no arquivo JSON
+    $usersData = json_decode(file_get_contents('users_data.json'), true);
+    $usersData[] = $userData;
+    file_put_contents('users_data.json', json_encode($usersData));
 
-    // Enviar email para o administrador
-    $adminDataFile = 'email_config.json';
-    $adminData = file_exists($adminDataFile) ? json_decode(file_get_contents($adminDataFile), true) : null;
+    // Função para enviar email ao administrador usando PHPMailer
+    function sendAdminEmail($userData, $adminEmail, $adminPassword) {
+        $mail = new PHPMailer(true);
+        try {
+            // Configurações do servidor
+            $mail->isSMTP();
+            $mail->Host = 'smtp.gmail.com'; // Substitua pelo seu servidor SMTP
+            $mail->SMTPAuth = true;
+            $mail->Username = $adminEmail;
+            $mail->Password = $adminPassword;
+            $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
+            $mail->Port = 587;
 
-    if ($adminData) {
-        $adminEmail = $adminData['email'];
-        $adminPassword = $adminData['senha'];
+            // Destinatários
+            $mail->setFrom('no-reply@example.com', 'No Reply');
+            $mail->addAddress($adminEmail, 'Administrador'); // Substitua pelo email do administrador
 
-        require 'vendor/phpmailer/phpmailer/src/PHPMailer.php';
-        require 'vendor/phpmailer/phpmailer/src/SMTP.php';
-        require 'vendor/phpmailer/phpmailer/src/Exception.php';
+            // Conteúdo do email
+            $mail->isHTML(true);
+            $mail->Subject = 'Novo usuário cadastrado';
+            $mail->Body    = "Novo usuário cadastrado:<br><br>" .
+                             "Nome: " . htmlspecialchars($userData['nome']) . "<br>" .
+                             "Email: " . htmlspecialchars($userData['email']) . "<br>" .
+                             "Telefone: " . htmlspecialchars($userData['telefone']) . "<br>" .
+                             "Usuário: " . htmlspecialchars($userData['usuario']);
 
-        $mail = new PHPMailer\PHPMailer\PHPMailer();
-        $mail->isSMTP();
-        $mail->Host = 'smtp.example.com'; // Altere para o seu host SMTP
-        $mail->SMTPAuth = true;
-        $mail->Username = $adminEmail;
-        $mail->Password = 'sua_senha_de_app'; // Use a senha de app
-        $mail->SMTPSecure = PHPMailer\PHPMailer\PHPMailer::ENCRYPTION_STARTTLS;
-        $mail->Port = 587;
-
-        $mail->setFrom($adminEmail, 'Admin');
-        $mail->addAddress($adminEmail);
-
-        $mail->isHTML(true);
-        $mail->Subject = 'Novo usuário cadastrado';
-        $mail->Body = "Um novo usuário foi cadastrado:<br><br>Nome: $nome<br>Email: $email<br>Telefone: $telefone<br>Usuário: $usuario";
-
-        if (!$mail->send()) {
-            error_log("Falha ao enviar email para o administrador. Erro: " . $mail->ErrorInfo);
-            echo json_encode(["status" => "success", "message" => "Cadastro realizado com sucesso, mas falha ao enviar email ao administrador.", "usuario" => $usuario]);
-        } else {
-            echo json_encode(["status" => "success", "message" => "Cadastro realizado com sucesso e email enviado ao administrador.", "usuario" => $usuario]);
+            $mail->send();
+            return 'Email enviado com sucesso para o administrador.';
+        } catch (Exception $e) {
+            return "Falha ao enviar email para o administrador. Erro: {$mail->ErrorInfo}";
         }
-    } else {
-        echo json_encode(["status" => "error", "message" => "Configurações de email do administrador não encontradas."]);
     }
+
+    // Enviar email ao administrador
+    $result = sendAdminEmail($userData, $adminEmail, $adminPassword);
+    echo json_encode(['status' => 'success', 'message' => 'Cadastro realizado com sucesso e email enviado ao administrador.']);
 } else {
-    echo json_encode(["status" => "error", "message" => "Método não suportado."]);
+    echo json_encode(['status' => 'error', 'message' => 'Método de requisição inválido.']);
 }
-?>

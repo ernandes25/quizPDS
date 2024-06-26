@@ -975,3 +975,174 @@
 
 [2024-06-25 23:11:54] - Usuário: gafa, Senha: 1234
 [2024-06-25 23:11:54] - Resposta JSON: {"status":"success","message":"Login bem-sucedido"}
+2024-06-26 14:57:27 - Email: contato@gmail.com.br, Senha: 250200er25*
+2024-06-26 14:57:27 - Admin Email: contato@ercont.com.br, Admin Senha: 250200er25*
+2024-06-26 14:57:43 - Email: contato@ercont.com.br, Senha: 250200er25*
+2024-06-26 14:57:43 - Admin Email: contato@ercont.com.br, Admin Senha: 250200er25*
+2024-06-26 15:00:14 - Email: contato@ercont.com.br, Senha: 250200er25*
+2024-06-26 15:00:14 - Admin Email: contato@ercont.com.br, Admin Senha: 250200er25*
+[2024-06-26 15:02:56] - Conteúdo completo de $_POST: Array
+(
+    [usuario] => ernandes
+    [senha] => 1234
+    [nome] => 
+    [email] => 
+    [telefone] => 
+)
+
+[2024-06-26 15:02:56] - Usuário: ernandes, Senha: 1234
+[2024-06-26 15:02:56] - Resposta JSON: {"status":"user_not_found","message":"Usu\u00e1rio n\u00e3o encontrado, redirecionando para cadastro"}
+[2024-06-26 15:03:21] - Conteúdo completo de $_POST: Array
+(
+    [usuario] => ernandes
+    [senha] => 4545
+    [nome] => 
+    [email] => 
+    [telefone] => 
+)
+
+[2024-06-26 15:03:21] - Usuário: ernandes, Senha: 4545
+[2024-06-26 15:03:21] - Resposta JSON: {"status":"user_not_found","message":"Usu\u00e1rio n\u00e3o encontrado, redirecionando para cadastro"}
+[2024-06-26 15:04:31] - Conteúdo completo de $_POST: Array
+(
+    [usuario] => ernandes
+    [senha] => 4545
+    [nome] => 
+    [email] => 
+    [telefone] => 
+)
+
+[2024-06-26 15:04:31] - Usuário: ernandes, Senha: 4545
+[2024-06-26 15:04:31] - Resposta JSON: {"status":"user_not_found","message":"Usu\u00e1rio n\u00e3o encontrado, redirecionando para cadastro"}
+[2024-06-26 15:07:53] - Conteúdo completo de $_POST: Array
+(
+    [usuario] => ernandes25
+    [senha] => 1234
+    [nome] => 
+    [email] => 
+    [telefone] => 
+)
+
+[2024-06-26 15:07:53] - Usuário: ernandes25, Senha: 1234
+[2024-06-26 15:07:53] - Resposta JSON: {"status":"user_not_found","message":"Usu\u00e1rio n\u00e3o encontrado, redirecionando para cadastro"}
+[2024-06-26 15:09:06] - Conteúdo completo de $_POST: Array
+(
+    [usuario] => ernandes25
+    [senha] => 250200er25*
+    [nome] => 
+    [email] => 
+    [telefone] => 
+)
+
+[2024-06-26 15:09:06] - Usuário: ernandes25, Senha: 250200er25*
+[2024-06-26 15:09:06] - Resposta JSON: {"status":"user_not_found","message":"Usu\u00e1rio n\u00e3o encontrado, redirecionando para cadastro"}
+[2024-06-26 15:12:34] - Conteúdo completo de $_POST: Array
+(
+    [usuario] => ernandes25
+    [senha] => 1234
+    [nome] => 
+    [email] => 
+    [telefone] => 
+)
+
+[2024-06-26 15:12:34] - Usuário: ernandes25, Senha: 1234
+[2024-06-26 15:12:34] - Resposta JSON: {"status":"user_not_found","message":"Usu\u00e1rio n\u00e3o encontrado, redirecionando para cadastro"}
+[2024-06-26 15:13:14] - Conteúdo completo de $_POST: Array
+(
+    [usuario] => ernandes25
+    [senha] => 1234
+    [nome] => 
+    [email] => 
+    [telefone] => 
+)
+
+[2024-06-26 15:13:14] - Usuário: ernandes25, Senha: 1234
+[2024-06-26 15:13:14] - Resposta JSON: {"status":"user_not_found","message":"Usu\u00e1rio n\u00e3o encontrado, redirecionando para cadastro"}
+[2024-06-26 15:16:53] - Conteúdo completo de $_POST: Array
+(
+    [usuario] => ernandes22
+    [senha] => 1234
+    [nome] => 
+    [email] => 
+    [telefone] => 
+)
+
+[2024-06-26 15:16:53] - Usuário: ernandes22, Senha: 1234
+[2024-06-26 15:16:53] - Resposta JSON: {"status":"user_not_found","message":"Usu\u00e1rio n\u00e3o encontrado, redirecionando para cadastro"}
+[2024-06-26 15:17:42] - Conteúdo completo de $_POST: Array
+(
+    [usuario] => ernandes22
+    [senha] => 1234
+    [nome] => 
+    [email] => 
+    [telefone] => 
+)
+
+[2024-06-26 15:17:42] - Usuário: ernandes22, Senha: 1234
+[2024-06-26 15:17:42] - Resposta JSON: {"status":"success","message":"Login bem-sucedido"}
+[2024-06-26 15:21:39] - Conteúdo completo de $_POST: Array
+(
+    [usuario] => zizo
+    [senha] => 1234
+    [nome] => 
+    [email] => 
+    [telefone] => 
+)
+
+[2024-06-26 15:21:39] - Usuário: zizo, Senha: 1234
+[2024-06-26 15:21:39] - Resposta JSON: {"status":"success","message":"Login bem-sucedido"}
+[2024-06-26 15:41:09] - Conteúdo completo de $_POST: Array
+(
+    [usuario] => nanana
+    [senha] => 1234
+    [nome] => 
+    [email] => 
+    [telefone] => 
+)
+
+[2024-06-26 15:41:09] - Usuário: nanana, Senha: 1234
+[2024-06-26 15:41:09] - Resposta JSON: {"status":"success","message":"Login bem-sucedido"}
+[2024-06-26 16:06:29] - Conteúdo completo de $_POST: Array
+(
+    [usuario] => ERNANDES
+    [senha] => 250200
+    [nome] => 
+    [email] => 
+    [telefone] => 
+)
+
+[2024-06-26 16:06:29] - Usuário: ERNANDES, Senha: 250200
+[2024-06-26 16:06:29] - Resposta JSON: {"status":"user_not_found","message":"Usu\u00e1rio n\u00e3o encontrado, redirecionando para cadastro"}
+[2024-06-26 16:06:43] - Conteúdo completo de $_POST: Array
+(
+    [usuario] => bababa
+    [senha] => 250200
+    [nome] => 
+    [email] => 
+    [telefone] => 
+)
+
+[2024-06-26 16:06:43] - Usuário: bababa, Senha: 250200
+[2024-06-26 16:06:43] - Resposta JSON: {"status":"user_not_found","message":"Usu\u00e1rio n\u00e3o encontrado, redirecionando para cadastro"}
+[2024-06-26 16:31:10] - Conteúdo completo de $_POST: Array
+(
+    [usuario] => nero
+    [senha] => 1234
+    [nome] => 
+    [email] => 
+    [telefone] => 
+)
+
+[2024-06-26 16:31:10] - Usuário: nero, Senha: 1234
+[2024-06-26 16:31:10] - Resposta JSON: {"status":"user_not_found","message":"Usu\u00e1rio n\u00e3o encontrado, redirecionando para cadastro"}
+[2024-06-26 16:53:10] - Conteúdo completo de $_POST: Array
+(
+    [usuario] => jljl
+    [senha] => 1234
+    [nome] => 
+    [email] => 
+    [telefone] => 
+)
+
+[2024-06-26 16:53:10] - Usuário: jljl, Senha: 1234
+[2024-06-26 16:53:10] - Resposta JSON: {"status":"user_not_found","message":"Usu\u00e1rio n\u00e3o encontrado, redirecionando para cadastro"}
