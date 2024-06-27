@@ -243,12 +243,6 @@ document.addEventListener('DOMContentLoaded', function () {
     window.logout = logout;
 });
 
-
-
-
-
-
-
 function growProgressBar(percentage_width) {
     var bar = document.getElementById("progress_bar");
     bar.style.width = percentage_width;

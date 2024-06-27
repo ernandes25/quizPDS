@@ -1,3 +1,2 @@
-# Ignorar o arquivo config.php
-config.php
-
+# Ignorar o arquivo admin_email.php
+admin_email.json
