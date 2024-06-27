@@ -63,6 +63,39 @@
     <footer>
         <p>&copy; 2024 Seu Site. Todos os direitos reservados.</p>
     </footer>
+    
+    <script>
+    document.addEventListener('DOMContentLoaded', function () {
+        const logoutButton = document.getElementById('logout');
+        
+        function checkLogin() {
+            const user = localStorage.getItem('user');
+            if (user) {
+                if (logoutButton) {
+                    logoutButton.style.display = 'block';
+                }
+            } else {
+                if (logoutButton) {
+                    logoutButton.style.display = 'none';
+                }
+            }
+        }
+
+        function logout() {
+            localStorage.removeItem('user');
+            if (logoutButton) {
+                logoutButton.style.display = 'none';
+            }
+            window.location.href = 'index.html';
+        }
+
+        checkLogin();
+        if (logoutButton) {
+            logoutButton.addEventListener('click', logout);
+        }
+    });
+    </script>
+    
     <script>
         document.getElementById('contact-form').addEventListener('submit', function (event) {
             event.preventDefault();
