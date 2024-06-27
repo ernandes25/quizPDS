@@ -1,20 +1,25 @@
-
-document.addEventListener('DOMContentLoaded', function () {
+;document.addEventListener('DOMContentLoaded', function () {
     const loginModal = document.getElementById('login-modal');
     const loginForm = document.getElementById('login-form');
     const buttonInit = document.getElementById('button-init');
-    const logoutButton = document.getElementById('logout');
+    const logoutButtonHeader = document.getElementById('logout-button-header');
+    const logoutButtonMain = document.getElementById('logout-button-main');
     const additionalFields = document.getElementById('additional-fields');
     const adminEmailForm = document.getElementById('admin-email-form');
     const adminLoginForm = document.getElementById('admin-login-form');
     const loadUsersButton = document.getElementById('load-users');
     const usersTable = document.getElementById('users-table');
+    const logoutButton = document.getElementById('logout');
 
     function checkLogin() {
         const user = localStorage.getItem('user');
+        const admin = localStorage.getItem('admin');
         if (user) {
             if (logoutButton) {
                 logoutButton.style.display = 'block';
+            }
+            if (logoutButtonHeader) {
+                logoutButtonHeader.style.display = 'block';
             }
             if (buttonInit) {
                 buttonInit.innerText = 'Continuar PDS';
@@ -22,6 +27,18 @@ document.addEventListener('DOMContentLoaded', function () {
         } else {
             if (logoutButton) {
                 logoutButton.style.display = 'none';
+            }
+            if (logoutButtonHeader) {
+                logoutButtonHeader.style.display = 'none';
+            }
+        }
+        if (admin) {
+            if (logoutButtonMain) {
+                logoutButtonMain.style.display = 'block';
+            }
+        } else {
+            if (logoutButtonMain) {
+                logoutButtonMain.style.display = 'none';
             }
         }
     }
@@ -37,20 +54,21 @@ document.addEventListener('DOMContentLoaded', function () {
 
     function logout() {
         localStorage.removeItem('user');
-        if (logoutButton) {
-            logoutButton.style.display = 'none';
-        }
-        if (buttonInit) {
-            buttonInit.innerText = 'Iniciar PDS';
-        }
+        checkLogin();
         window.location.href = 'index.html';
+    }
+
+    function adminLogout() {
+        localStorage.removeItem('admin');
+        checkLogin();
+        window.location.href = 'admin_login.html';
     }
 
     if (loginForm) {
         loginForm.addEventListener('submit', function (event) {
             event.preventDefault();
             const formData = new FormData(loginForm);
-            formData.append('action', 'login'); // Adiciona a ação de login ao formData
+            formData.append('action', 'login');
 
             fetch('process_form.php', {
                 method: 'POST',
@@ -67,18 +85,14 @@ document.addEventListener('DOMContentLoaded', function () {
                     if (data.status === 'success') {
                         localStorage.setItem('user', formData.get('usuario'));
                         alert(data.message);
-                        // Ocultar o modal de login
                         loginModal.style.display = 'none';
-                        // Redirecionar para a página do quiz
                         window.location.href = data.redirect || 'quiz.html';
                     } else if (data.status === 'user_not_found') {
-                        // Redirecionar para a página de cadastro
                         alert(data.message);
                         window.location.href = data.redirect;
                     } else {
                         console.error('Erro:', data);
                         alert(data.message);
-                        // Mostrar campos adicionais se necessário
                         if (data.message.includes('dados de cadastro incompletos')) {
                             additionalFields.style.display = 'block';
                             loginModal.style.display = 'block';
@@ -92,13 +106,12 @@ document.addEventListener('DOMContentLoaded', function () {
         });
     }
 
-    // Para o cadastro de novo usuário
     const cadastroForm = document.getElementById('cadastro-form');
     if (cadastroForm) {
         cadastroForm.addEventListener('submit', function (event) {
             event.preventDefault();
             const formData = new FormData(cadastroForm);
-            formData.append('action', 'cadastro'); // Adiciona a ação de cadastro ao formData
+            formData.append('action', 'cadastro');
 
             fetch('process_form.php', {
                 method: 'POST',
@@ -115,7 +128,6 @@ document.addEventListener('DOMContentLoaded', function () {
                     if (data.status === 'success') {
                         localStorage.setItem('user', formData.get('novo_usuario'));
                         alert('Cadastro realizado com sucesso! Redirecionando para o Quiz PDS...');
-                        // Redirecionar para a página do quiz
                         setTimeout(() => {
                             window.location.href = 'quiz.html';
                         }, 3000); // Redireciona após 3 segundos
@@ -131,12 +143,11 @@ document.addEventListener('DOMContentLoaded', function () {
         });
     }
 
-    // Para cadastrar o email do administrador
     if (adminEmailForm) {
         adminEmailForm.addEventListener('submit', function (event) {
             event.preventDefault();
             const formData = new FormData(adminEmailForm);
-            formData.append('action', 'cadastrar_email_admin'); // Adiciona a ação de cadastro de email do administrador
+            formData.append('action', 'cadastrar_email_admin');
 
             fetch('process_form.php', {
                 method: 'POST',
@@ -164,12 +175,11 @@ document.addEventListener('DOMContentLoaded', function () {
         });
     }
 
-    // Para o login do administrador
     if (adminLoginForm) {
         adminLoginForm.addEventListener('submit', function (event) {
             event.preventDefault();
             const formData = new FormData(adminLoginForm);
-            formData.append('action', 'admin_login'); // Adiciona a ação de login do administrador ao formData
+            formData.append('action', 'admin_login');
 
             fetch('process_form.php', {
                 method: 'POST',
@@ -184,8 +194,8 @@ document.addEventListener('DOMContentLoaded', function () {
                 .then(data => {
                     console.log(data); // Adicionado para depuração
                     if (data.status === 'success') {
+                        localStorage.setItem('admin', formData.get('usuario'));
                         alert(data.message);
-                        // Redirecionar para a página do dashboard do administrador
                         window.location.href = data.redirect || 'admin_dashboard.html';
                     } else {
                         console.error('Erro:', data);
@@ -199,7 +209,6 @@ document.addEventListener('DOMContentLoaded', function () {
         });
     }
 
-    // Para carregar os dados dos usuários
     if (loadUsersButton) {
         loadUsersButton.addEventListener('click', function () {
             console.log('Botão carregar dados dos usuários clicado.'); // Adicionado para depuração
@@ -239,10 +248,26 @@ document.addEventListener('DOMContentLoaded', function () {
         });
     }
 
+    if (logoutButtonHeader) {
+        logoutButtonHeader.addEventListener('click', function() {
+            logout();
+        });
+    }
+
+    if (logoutButtonMain) {
+        logoutButtonMain.addEventListener('click', function() {
+            adminLogout();
+        });
+    }
+
     checkLogin();
     window.startPDS = startPDS;
     window.logout = logout;
 });
+
+
+
+
 
 function growProgressBar(percentage_width) {
     var bar = document.getElementById("progress_bar");
