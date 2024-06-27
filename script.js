@@ -122,7 +122,7 @@ document.addEventListener('DOMContentLoaded', function () {
             event.preventDefault();
             const formData = new FormData(cadastroForm);
             const senha = formData.get('nova_senha');
-            const email = formData.get('novo_usuario');
+            const email = formData.get('email');
 
             // Validação do campo senha
             if (!/^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8}$/.test(senha)) {
@@ -137,6 +137,7 @@ document.addEventListener('DOMContentLoaded', function () {
             }
 
             formData.append('action', 'cadastro');
+            formData.append('novo_usuario', email); // Define o email como o nome de usuário
 
             fetch('process_form.php', {
                 method: 'POST',
