@@ -72,9 +72,9 @@
       <label for="telefone">Telefone:</label>
       <input type="tel" id="telefone" name="telefone" required><br>
       <label for="usuario">Usuário:</label>
-      <input type="text" id="usuario" name="novo_usuario" required><br>
+      <input type="email" id="usuario" name="novo_usuario" required><br>
       <label for="senha">Senha:</label>
-      <input type="password" id="senha" name="nova_senha" required><br>
+      <input type="password" id="senha" name="nova_senha" required minlength="8" maxlength="8" pattern="^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8}$" title="A senha deve conter 8 caracteres, incluindo letras e números."><br>
       <input type="hidden" name="action" value="cadastro">
       <button type="submit">Cadastrar</button>
     </form>

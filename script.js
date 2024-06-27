@@ -26,7 +26,7 @@ document.addEventListener('DOMContentLoaded', function () {
                 buttonInit.innerText = 'Continuar PDS';
             }
             if (userGreeting) {
-                userGreeting.innerText = `Bem vindo, ${user}!!`;
+                userGreeting.innerText = `Bem vindo, ${user}`;
             }
         } else {
             if (logoutButton) {
@@ -44,7 +44,7 @@ document.addEventListener('DOMContentLoaded', function () {
                 logoutButtonMain.style.display = 'block';
             }
             if (userGreeting) {
-                userGreeting.innerHTML = 'Logado como<br> ADMINISTRADOR.';
+                userGreeting.innerText = 'Você está logado como ADMINISTRADOR.';
             }
         } else {
             if (logoutButtonMain) {
@@ -121,6 +121,21 @@ document.addEventListener('DOMContentLoaded', function () {
         cadastroForm.addEventListener('submit', function (event) {
             event.preventDefault();
             const formData = new FormData(cadastroForm);
+            const senha = formData.get('nova_senha');
+            const email = formData.get('novo_usuario');
+
+            // Validação do campo senha
+            if (!/^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8}$/.test(senha)) {
+                alert('A senha deve conter 8 caracteres, incluindo letras e números.');
+                return;
+            }
+
+            // Validação do campo email
+            if (!/\S+@\S+\.\S+/.test(email)) {
+                alert('Por favor, insira um endereço de email válido.');
+                return;
+            }
+
             formData.append('action', 'cadastro');
 
             fetch('process_form.php', {
@@ -246,6 +261,7 @@ document.addEventListener('DOMContentLoaded', function () {
                             `;
                             usersTableBody.appendChild(row);
                         });
+                            
                         usersTable.style.display = 'table';
                     } else {
                         alert(data.message);
