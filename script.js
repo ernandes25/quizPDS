@@ -1,3 +1,4 @@
+
 document.addEventListener('DOMContentLoaded', function () {
     const loginModal = document.getElementById('login-modal');
     const loginForm = document.getElementById('login-form');
