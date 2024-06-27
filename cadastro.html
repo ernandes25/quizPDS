@@ -10,17 +10,51 @@
     <header>
         <nav>
             <ul>
-                <li><a href="index.html">Início</a></li>
-                <li><a href="sobre.html">Sobre Nós</a></li>
-                <li><a href="contato.html">Contato</a></li>
-                <li><a href="cadastro.html">Cadastro</a></li>
-                <li><a href="login.html">Login</a></li>
+              <img id="logo" src="logo.jpeg" />
             </ul>
-        </nav>
+      
+            <ul>
+              <a class="item" href="index.html">
+                <li>Início</li>
+              </a>
+            </ul>
+      
+            <ul>
+              <a class="item" href="Home">
+                <li>Sobre nós</li>
+              </a>
+            </ul>
+      
+            <ul>
+              <a class="item" href="contato.html">
+                <li>Contato</li>
+              </a>
+            </ul>
+      
+            <ul>
+              <a class="item" href="cadastro.html">
+                <li>Cadastro</li>
+              </a>
+            </ul>
+      
+            <ul class="dropdown">
+              <a class="item" href="#">
+                <li>Administração</li>
+              </a>
+              <div class="dropdown-content">
+                <a href="config_email.html">Cadastrar Email</a>
+                <a href="admin_login.html">Login do Administrador</a>
+              </div>
+            </ul>
+      
+            <ul id="logout" style="display: none;">
+              <button onclick="logout()">Sair</button>
+            </ul>
+          </nav>
     </header>
     <main>
         <h1>Cadastro de Usuário</h1>
-        <form id="cadastro-form">
+        <form id="cadastro-form" action="process_form.php" method="POST">
             <label for="nome">Nome:</label>
             <input type="text" id="nome" name="nome" required><br>
             <label for="email">Email:</label>
@@ -28,15 +62,22 @@
             <label for="telefone">Telefone:</label>
             <input type="tel" id="telefone" name="telefone" required><br>
             <label for="usuario">Usuário:</label>
-            <input type="text" id="usuario" name="usuario" required><br>
+            <input type="text" id="usuario" name="novo_usuario" required><br>
             <label for="senha">Senha:</label>
-            <input type="password" id="senha" name="senha" required><br>
+            <input type="password" id="senha" name="nova_senha" required><br>
+            <input type="hidden" name="action" value="cadastro">
             <button type="submit">Cadastrar</button>
         </form>
     </main>
     <footer>
-        <p>&copy; 2024 Seu Site. Todos os direitos reservados.</p>
-    </footer>
+        <img id="logo" src="logo.jpeg" />
+        <span>Todos os direitos reservados &copy;</span>
+        <span>Desenvolvido por: Bay Software - H & E Silva</span>
+      </footer>
     <script src="script.js"></script>
 </body>
 </html>
+
+
+
+

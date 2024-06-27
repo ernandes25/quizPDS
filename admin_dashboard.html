@@ -1,42 +1,72 @@
-<?php
-session_start();
-
-if (!isset($_SESSION['admin_logged_in']) || !$_SESSION['admin_logged_in']) {
-    header('Location: admin_login.html');
-    exit();
-}
-
-// Ler os dados do arquivo JSON
-$dataFile = 'users_data.json';
-if (!file_exists($dataFile)) {
-    echo "Nenhum dado encontrado.";
-    exit();
-}
-$json = file_get_contents($dataFile);
-$usersData = json_decode($json, true);
-?>
-
 <!DOCTYPE html>
-<html>
+<html lang="pt-BR">
 <head>
-    <title>Dashboard de Administração</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Painel do Administrador</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
 </head>
 <body>
-    <h1>Dados dos Usuários</h1>
-    <table border="1">
-        <tr>
-            <th>Nome</th>
-            <th>Email</th>
-            <th>Telefone</th>
-        </tr>
-        <?php foreach ($usersData as $user): ?>
-            <tr>
-                <td><?php echo htmlspecialchars($user['nome']); ?></td>
-                <td><?php echo htmlspecialchars($user['email']); ?></td>
-                <td><?php echo htmlspecialchars($user['telefone']); ?></td>
-            </tr>
-        <?php endforeach; ?>
-    </table>
-    <a href="admin_logout.php">Sair</a>
+    <header>
+        <nav>
+            <ul>
+                <img id="logo" src="logo.jpeg" />
+            </ul>
+            <ul>
+                <a class="item" href="index.html">
+                    <li>Início</li>
+                </a>
+            </ul>
+            <ul>
+                <a class="item" href="Home">
+                    <li>Sobre nós</li>
+                </a>
+            </ul>
+            <ul>
+                <a class="item" href="contato.html">
+                    <li>Contato</li>
+                </a>
+            </ul>
+            <ul>
+                <a class="item" href="cadastro.html">
+                    <li>Cadastro</li>
+                </a>
+            </ul>
+            <ul class="dropdown">
+                <a class="item" href="#">
+                    <li>Administração</li>
+                </a>
+                <div class="dropdown-content">
+                    <a href="config_email.html">Cadastrar Email</a>
+                    <a href="admin_login.html">Login do Administrador</a>
+                </div>
+            </ul>
+            <ul id="logout" style="display: none;">
+                <button onclick="logout()">Sair</button>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Dados dos Usuários</h1>
+        <button id="load-users">Carregar Dados dos Usuários</button>
+        <table id="users-table" style="display:none;">
+            <thead>
+                <tr>
+                    <th>Nome</th>
+                    <th>Email</th>
+                    <th>Telefone</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Dados dos usuários serão carregados aqui -->
+            </tbody>
+        </table>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Seu Site. Todos os direitos reservados.</p>
+    </footer>
 </body>
 </html>

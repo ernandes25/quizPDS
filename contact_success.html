@@ -3,51 +3,58 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sucesso no Envio de Contato</title>
+    <title>Contato Enviado</title>
     <link rel="stylesheet" href="style.css">
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f4f4f4;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            margin: 0;
-        }
-        .container {
-            text-align: center;
-            background: white;
-            padding: 30px;
-            border-radius: 10px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        }
-        .container h1 {
-            color: #4CAF50;
-        }
-        .container p {
-            font-size: 18px;
-            color: #555;
-        }
-        .container button {
-            padding: 10px 20px;
-            background-color: #4CAF50;
-            color: white;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-            font-size: 16px;
-        }
-        .container button:hover {
-            background-color: #45a049;
-        }
-    </style>
 </head>
 <body>
-    <div class="container">
-        <h1>Contato enviado com sucesso!</h1>
-        <p>Sua mensagem foi enviada para o administrador. Obrigado por entrar em contato conosco.</p>
-        <button onclick="window.location.href='index.html'">Retornar à Página Inicial</button>
-    </div>
+    <header>
+        <nav>
+            <ul>
+                <img id="logo" src="logo.jpeg" />
+            </ul>
+            <ul>
+                <a class="item" href="index.html">
+                    <li>Início</li>
+                </a>
+            </ul>
+            <ul>
+                <a class="item" href="Home">
+                    <li>Sobre nós</li>
+                </a>
+            </ul>
+            <ul>
+                <a class="item" href="contato.html">
+                    <li>Contato</li>
+                </a>
+            </ul>
+            <ul>
+                <a class="item" href="cadastro.html">
+                    <li>Cadastro</li>
+                </a>
+            </ul>
+            <ul class="dropdown">
+                <a class="item" href="#">
+                    <li>Administração</li>
+                </a>
+                <div class="dropdown-content">
+                    <a href="config_email.html">Cadastrar Email</a>
+                    <a href="admin_login.html">Login do Administrador</a>
+                </div>
+            </ul>
+            <ul id="logout" style="display: none;">
+                <button onclick="logout()">Sair</button>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Mensagem Enviada</h1>
+        <p>Sua mensagem foi enviada com sucesso. Obrigado por entrar em contato conosco!</p>
+        <a href="index.html">Voltar para a página inicial</a>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Seu Site. Todos os direitos reservados.</p>
+    </footer>
 </body>
 </html>

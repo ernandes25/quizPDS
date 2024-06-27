@@ -1,9 +1,14 @@
+
 document.addEventListener('DOMContentLoaded', function () {
     const loginModal = document.getElementById('login-modal');
     const loginForm = document.getElementById('login-form');
     const buttonInit = document.getElementById('button-init');
     const logoutButton = document.getElementById('logout');
     const additionalFields = document.getElementById('additional-fields');
+    const adminEmailForm = document.getElementById('admin-email-form');
+    const adminLoginForm = document.getElementById('admin-login-form');
+    const loadUsersButton = document.getElementById('load-users');
+    const usersTable = document.getElementById('users-table');
 
     function checkLogin() {
         const user = localStorage.getItem('user');
@@ -45,8 +50,9 @@ document.addEventListener('DOMContentLoaded', function () {
         loginForm.addEventListener('submit', function (event) {
             event.preventDefault();
             const formData = new FormData(loginForm);
+            formData.append('action', 'login'); // Adiciona a ação de login ao formData
 
-            fetch('login_process.php', {
+            fetch('process_form.php', {
                 method: 'POST',
                 body: formData
             })
@@ -64,12 +70,13 @@ document.addEventListener('DOMContentLoaded', function () {
                         // Ocultar o modal de login
                         loginModal.style.display = 'none';
                         // Redirecionar para a página do quiz
-                        window.location.href = 'quiz.html';
+                        window.location.href = data.redirect || 'quiz.html';
                     } else if (data.status === 'user_not_found') {
                         // Redirecionar para a página de cadastro
                         alert(data.message);
-                        window.location.href = 'cadastro.html';
+                        window.location.href = data.redirect;
                     } else {
+                        console.error('Erro:', data);
                         alert(data.message);
                         // Mostrar campos adicionais se necessário
                         if (data.message.includes('dados de cadastro incompletos')) {
@@ -91,6 +98,7 @@ document.addEventListener('DOMContentLoaded', function () {
         cadastroForm.addEventListener('submit', function (event) {
             event.preventDefault();
             const formData = new FormData(cadastroForm);
+            formData.append('action', 'cadastro'); // Adiciona a ação de cadastro ao formData
 
             fetch('process_form.php', {
                 method: 'POST',
@@ -105,12 +113,121 @@ document.addEventListener('DOMContentLoaded', function () {
                 .then(data => {
                     console.log(data); // Adicionado para depuração
                     if (data.status === 'success') {
-                        localStorage.setItem('user', formData.get('usuario'));
+                        localStorage.setItem('user', formData.get('novo_usuario'));
                         alert('Cadastro realizado com sucesso! Redirecionando para o Quiz PDS...');
                         // Redirecionar para a página do quiz
                         setTimeout(() => {
                             window.location.href = 'quiz.html';
                         }, 3000); // Redireciona após 3 segundos
+                    } else {
+                        console.error('Erro:', data);
+                        alert(data.message);
+                    }
+                })
+                .catch(error => {
+                    console.error('Erro:', error);
+                    alert('Ocorreu um erro ao processar sua solicitação. Por favor, tente novamente mais tarde.');
+                });
+        });
+    }
+
+    // Para cadastrar o email do administrador
+    if (adminEmailForm) {
+        adminEmailForm.addEventListener('submit', function (event) {
+            event.preventDefault();
+            const formData = new FormData(adminEmailForm);
+            formData.append('action', 'cadastrar_email_admin'); // Adiciona a ação de cadastro de email do administrador
+
+            fetch('process_form.php', {
+                method: 'POST',
+                body: formData
+            })
+                .then(response => {
+                    if (!response.ok) {
+                        throw new Error('Network response was not ok');
+                    }
+                    return response.json();
+                })
+                .then(data => {
+                    console.log(data); // Adicionado para depuração
+                    if (data.status === 'success') {
+                        alert('Email do administrador cadastrado com sucesso!');
+                    } else {
+                        console.error('Erro:', data);
+                        alert(data.message);
+                    }
+                })
+                .catch(error => {
+                    console.error('Erro:', error);
+                    alert('Ocorreu um erro ao processar sua solicitação. Por favor, tente novamente mais tarde.');
+                });
+        });
+    }
+
+    // Para o login do administrador
+    if (adminLoginForm) {
+        adminLoginForm.addEventListener('submit', function (event) {
+            event.preventDefault();
+            const formData = new FormData(adminLoginForm);
+            formData.append('action', 'admin_login'); // Adiciona a ação de login do administrador ao formData
+
+            fetch('process_form.php', {
+                method: 'POST',
+                body: formData
+            })
+                .then(response => {
+                    if (!response.ok) {
+                        throw new Error('Network response was not ok');
+                    }
+                    return response.json();
+                })
+                .then(data => {
+                    console.log(data); // Adicionado para depuração
+                    if (data.status === 'success') {
+                        alert(data.message);
+                        // Redirecionar para a página do dashboard do administrador
+                        window.location.href = data.redirect || 'admin_dashboard.html';
+                    } else {
+                        console.error('Erro:', data);
+                        alert(data.message);
+                    }
+                })
+                .catch(error => {
+                    console.error('Erro:', error);
+                    alert('Ocorreu um erro ao processar sua solicitação. Por favor, tente novamente mais tarde.');
+                });
+        });
+    }
+
+    // Para carregar os dados dos usuários
+    if (loadUsersButton) {
+        loadUsersButton.addEventListener('click', function () {
+            console.log('Botão carregar dados dos usuários clicado.'); // Adicionado para depuração
+            fetch('process_form.php', {
+                method: 'POST',
+                body: new URLSearchParams({ action: 'get_users' })
+            })
+                .then(response => {
+                    if (!response.ok) {
+                        throw new Error('Network response was not ok');
+                    }
+                    return response.json();
+                })
+                .then(data => {
+                    console.log('Dados recebidos:', data); // Adicionado para depuração
+                    if (data.status === 'success') {
+                        const usersTableBody = usersTable.querySelector('tbody');
+                        usersTableBody.innerHTML = ''; // Limpar tabela antes de adicionar novos dados
+                        data.usuarios.forEach(user => {
+                            const row = document.createElement('tr');
+                            row.innerHTML = `
+                                <td>${user.nome}</td>
+                                <td>${user.email}</td>
+                                <td>${user.telefone}</td>
+                            `;
+                            usersTableBody.appendChild(row);
+                        });
+                        usersTable.style.display = 'table';
                     } else {
                         alert(data.message);
                     }
@@ -126,6 +243,10 @@ document.addEventListener('DOMContentLoaded', function () {
     window.startPDS = startPDS;
     window.logout = logout;
 });
+
+
+
+
 
 
 
