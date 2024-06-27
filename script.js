@@ -61,7 +61,7 @@
     function adminLogout() {
         localStorage.removeItem('admin');
         checkLogin();
-        window.location.href = 'admin_login.html';
+        window.location.href = 'index.html';
     }
 
     if (loginForm) {
