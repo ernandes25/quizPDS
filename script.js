@@ -1,4 +1,4 @@
-;document.addEventListener('DOMContentLoaded', function () {
+document.addEventListener('DOMContentLoaded', function () {
     const loginModal = document.getElementById('login-modal');
     const loginForm = document.getElementById('login-form');
     const buttonInit = document.getElementById('button-init');
@@ -10,6 +10,7 @@
     const loadUsersButton = document.getElementById('load-users');
     const usersTable = document.getElementById('users-table');
     const logoutButton = document.getElementById('logout');
+    const userGreeting = document.getElementById('user-greeting');
 
     function checkLogin() {
         const user = localStorage.getItem('user');
@@ -24,6 +25,9 @@
             if (buttonInit) {
                 buttonInit.innerText = 'Continuar PDS';
             }
+            if (userGreeting) {
+                userGreeting.innerText = `Bem vindo, ${user}!!`;
+            }
         } else {
             if (logoutButton) {
                 logoutButton.style.display = 'none';
@@ -31,10 +35,16 @@
             if (logoutButtonHeader) {
                 logoutButtonHeader.style.display = 'none';
             }
+            if (userGreeting) {
+                userGreeting.innerText = '';
+            }
         }
         if (admin) {
             if (logoutButtonMain) {
                 logoutButtonMain.style.display = 'block';
+            }
+            if (userGreeting) {
+                userGreeting.innerHTML = 'Logado como<br> ADMINISTRADOR.';
             }
         } else {
             if (logoutButtonMain) {
@@ -61,7 +71,7 @@
     function adminLogout() {
         localStorage.removeItem('admin');
         checkLogin();
-        window.location.href = 'index.html';
+        window.location.href = 'index.html'; // Redireciona para a página inicial
     }
 
     if (loginForm) {
@@ -264,7 +274,6 @@
     window.startPDS = startPDS;
     window.logout = logout;
 });
-
 
 
 

@@ -44,6 +44,7 @@ ul {
   width: auto;
   justify-content: space-around;
   font-size: 40px;
+  background-color: #018fd0;
 }
 
 li {
@@ -61,6 +62,47 @@ dropdown {
   font-family: "Figtree:ital", sans-serif;
 }
 
+header nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+}
+
+#user-greeting {
+  font-size: 18px;
+    font-weight: bold;
+    color: #fff;
+    margin: 0 auto; /* centraliza o elemento */
+  
+}
+
+header nav ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  align-items: center;
+}
+
+header nav ul li {
+  margin-right: 15px;
+}
+
+header nav ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+#logout {
+  display: none;
+}
+
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 10px 0;
+}
 
 .dropdown-content {
   display: none;
