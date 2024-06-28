@@ -51,7 +51,7 @@
     </header>
     <main>
         <h1>Cadastro de Usuário</h1>
-        <form id="cadastro-form">
+        <form id="cadastro-form" action="process_form.php" method="POST">
             <label for="nome">Nome:</label>
             <input type="text" id="nome" name="nome" required><br>
             <label for="email">Email:</label>
@@ -59,10 +59,11 @@
             <label for="telefone">Telefone:</label>
             <input type="tel" id="telefone" name="telefone" required><br>
             <label for="senha">Senha:</label>
-            <input type="password" id="senha" name="nova_senha" required minlength="8" maxlength="8" pattern="^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8}$" title="A senha deve conter 8 caracteres, incluindo letras e números."><br>
+            <input type="password" id="senha" name="nova_senha" required minlength="8" maxlength="8"><br>
             <input type="hidden" name="action" value="cadastro">
             <button type="submit">Cadastrar</button>
         </form>
+        
     </main>
     <footer>
         <img id="logo" src="logo.jpeg" />

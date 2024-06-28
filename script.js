@@ -1,6 +1,8 @@
 document.addEventListener('DOMContentLoaded', function () {
     const loginModal = document.getElementById('login-modal');
     const loginForm = document.getElementById('login-form');
+    const cadastroForm = document.getElementById('cadastro-form');
+    const contactForm = document.getElementById('contact-form');
     const buttonInit = document.getElementById('button-init');
     const logoutButtonHeader = document.getElementById('logout-button-header');
     const logoutButtonMain = document.getElementById('logout-button-main');
@@ -11,6 +13,8 @@ document.addEventListener('DOMContentLoaded', function () {
     const usersTable = document.getElementById('users-table');
     const logoutButton = document.getElementById('logout');
     const userGreeting = document.getElementById('user-greeting');
+    const loadingMessageCadastro = document.getElementById('loading-message-cadastro');
+    const loadingMessageContact = document.getElementById('loading-message-contact');
 
     function checkLogin() {
         const user = localStorage.getItem('user');
@@ -44,7 +48,7 @@ document.addEventListener('DOMContentLoaded', function () {
                 logoutButtonMain.style.display = 'block';
             }
             if (userGreeting) {
-                userGreeting.innerText = 'Você está logado como ADMINISTRADOR.';
+                userGreeting.innerHTML = 'Você está logado como<br>ADMINISTRADOR.';
             }
         } else {
             if (logoutButtonMain) {
@@ -71,7 +75,19 @@ document.addEventListener('DOMContentLoaded', function () {
     function adminLogout() {
         localStorage.removeItem('admin');
         checkLogin();
-        window.location.href = 'index.html'; // Redireciona para a página inicial
+        window.location.href = 'index.html';
+    }
+
+    function showLoadingMessage(messageElement) {
+        if (messageElement) {
+            messageElement.style.display = 'block';
+        }
+    }
+
+    function hideLoadingMessage(messageElement) {
+        if (messageElement) {
+            messageElement.style.display = 'none';
+        }
     }
 
     if (loginForm) {
@@ -116,7 +132,6 @@ document.addEventListener('DOMContentLoaded', function () {
         });
     }
 
-    const cadastroForm = document.getElementById('cadastro-form');
     if (cadastroForm) {
         cadastroForm.addEventListener('submit', function (event) {
             event.preventDefault();
@@ -139,11 +154,18 @@ document.addEventListener('DOMContentLoaded', function () {
             formData.append('action', 'cadastro');
             formData.append('novo_usuario', email); // Define o email como o nome de usuário
 
+            if (loadingMessageCadastro) {
+                showLoadingMessage(loadingMessageCadastro);
+            }
+
             fetch('process_form.php', {
                 method: 'POST',
                 body: formData
             })
                 .then(response => {
+                    if (loadingMessageCadastro) {
+                        hideLoadingMessage(loadingMessageCadastro);
+                    }
                     if (!response.ok) {
                         throw new Error('Network response was not ok');
                     }
@@ -155,7 +177,7 @@ document.addEventListener('DOMContentLoaded', function () {
                         localStorage.setItem('user', formData.get('novo_usuario'));
                         alert('Cadastro realizado com sucesso! Redirecionando para o Quiz PDS...');
                         setTimeout(() => {
-                            window.location.href = 'quiz.html';
+                            window.location.href = data.redirect || 'quiz.html';
                         }, 3000); // Redireciona após 3 segundos
                     } else {
                         console.error('Erro:', data);
@@ -163,8 +185,54 @@ document.addEventListener('DOMContentLoaded', function () {
                     }
                 })
                 .catch(error => {
+                    if (loadingMessageCadastro) {
+                        hideLoadingMessage(loadingMessageCadastro);
+                    }
                     console.error('Erro:', error);
                     alert('Ocorreu um erro ao processar sua solicitação. Por favor, tente novamente mais tarde.');
+                });
+        });
+    }
+
+    if (contactForm) {
+        contactForm.addEventListener('submit', function (event) {
+            event.preventDefault();
+            const formData = new FormData(contactForm);
+            formData.append('action', 'contato');
+
+            if (loadingMessageContact) {
+                showLoadingMessage(loadingMessageContact);
+            }
+
+            fetch('process_form.php', {
+                method: 'POST',
+                body: formData
+            })
+                .then(response => {
+                    if (loadingMessageContact) {
+                        hideLoadingMessage(loadingMessageContact);
+                    }
+                    if (!response.ok) {
+                        throw new Error('Network response was not ok');
+                    }
+                    return response.json();
+                })
+                .then(data => {
+                    console.log(data); // Adicionado para depuração
+                    if (data.status === 'success') {
+                        alert('Mensagem enviada com sucesso!');
+                        window.location.href = 'contact_success.html';
+                    } else {
+                        console.error('Erro:', data);
+                        alert('Erro ao enviar mensagem: ' + data.message);
+                    }
+                })
+                .catch(error => {
+                    if (loadingMessageContact) {
+                        hideLoadingMessage(loadingMessageContact);
+                    }
+                    console.error('Erro:', error);
+                    alert('Ocorreu um erro ao enviar sua mensagem. Por favor, tente novamente mais tarde.');
                 });
         });
     }
@@ -276,13 +344,13 @@ document.addEventListener('DOMContentLoaded', function () {
     }
 
     if (logoutButtonHeader) {
-        logoutButtonHeader.addEventListener('click', function() {
+        logoutButtonHeader.addEventListener('click', function () {
             logout();
         });
     }
 
     if (logoutButtonMain) {
-        logoutButtonMain.addEventListener('click', function() {
+        logoutButtonMain.addEventListener('click', function () {
             adminLogout();
         });
     }
