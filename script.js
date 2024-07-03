@@ -16,6 +16,39 @@ document.addEventListener('DOMContentLoaded', function () {
     const loadingMessageCadastro = document.getElementById('loading-message-cadastro');
     const loadingMessageContact = document.getElementById('loading-message-contact');
 
+    
+    if (contactForm) {
+        contactForm.addEventListener('submit', function (event) {
+            event.preventDefault();
+            const formData = new FormData(contactForm);
+            formData.append('action', 'contato');
+
+            fetch('process_form.php', {
+                method: 'POST',
+                body: formData
+            })
+                .then(response => {
+                    if (!response.ok) {
+                        throw new Error('Network response was not ok');
+                    }
+                    return response.json();
+                })
+                .then(data => {
+                    console.log(data); // Adicionado para depuração
+                    if (data.status === 'success') {
+                        alert('Mensagem enviada com sucesso!');
+                        window.location.href = 'contact_success.html';
+                    } else {
+                        alert('Erro ao enviar mensagem: ' + data.message);
+                    }
+                })
+                .catch(error => {
+                    console.error('Erro:', error);
+                    alert('Ocorreu um erro ao enviar sua mensagem. Por favor, tente novamente mais tarde.');
+                });
+        });
+    }
+
     function checkLogin() {
         const user = localStorage.getItem('user');
         const admin = localStorage.getItem('admin');
