@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Configuração de Email</title>
+    <title>Configuração de Email do Administrador</title>
     <link rel="stylesheet" href="style.css" />
     <script src="script.js" defer></script>
 </head>
@@ -49,18 +49,20 @@
     </header>
 
     <main>
-        <h1>Configuração de Email</h1>
-        <form id="admin-email-form">
-            <label for="admin-email">Email do Administrador:</label>
+        <h1>Configuração de Email do Administrador</h1>
+        <form id="admin-email-form" action = "process_form.php" method="POST">
+            <label for="admin-email">Email:</label>
             <input type="email" id="admin-email" name="email" required><br>
-            <label for="admin-password">Senha do Email:</label>
+            <label for="admin-password">Senha:</label>
             <input type="password" id="admin-password" name="senha" required><br>
-            <button type="submit">Cadastrar</button>
+            <input type="hidden" name="action" value="cadastrar_email_admin">
+            <button type="submit">Cadastrar Email</button>
         </form>
     </main>
 
     <footer>
         <p>&copy; 2024 Seu Site. Todos os direitos reservados.</p>
     </footer>
+    <script src="script.js"></script>
 </body>
 </html>

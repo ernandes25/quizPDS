@@ -75,7 +75,7 @@ document.addEventListener('DOMContentLoaded', function () {
     function adminLogout() {
         localStorage.removeItem('admin');
         checkLogin();
-        window.location.href = 'index.html';
+        window.location.href = 'index.html'; // Redireciona para a página inicial
     }
 
     function showLoadingMessage(messageElement) {
@@ -154,18 +154,14 @@ document.addEventListener('DOMContentLoaded', function () {
             formData.append('action', 'cadastro');
             formData.append('novo_usuario', email); // Define o email como o nome de usuário
 
-            if (loadingMessageCadastro) {
-                showLoadingMessage(loadingMessageCadastro);
-            }
+            showLoadingMessage(loadingMessageCadastro);
 
             fetch('process_form.php', {
                 method: 'POST',
                 body: formData
             })
                 .then(response => {
-                    if (loadingMessageCadastro) {
-                        hideLoadingMessage(loadingMessageCadastro);
-                    }
+                    hideLoadingMessage(loadingMessageCadastro);
                     if (!response.ok) {
                         throw new Error('Network response was not ok');
                     }
@@ -177,7 +173,7 @@ document.addEventListener('DOMContentLoaded', function () {
                         localStorage.setItem('user', formData.get('novo_usuario'));
                         alert('Cadastro realizado com sucesso! Redirecionando para o Quiz PDS...');
                         setTimeout(() => {
-                            window.location.href = data.redirect || 'quiz.html';
+                            window.location.href = 'quiz.html';
                         }, 3000); // Redireciona após 3 segundos
                     } else {
                         console.error('Erro:', data);
@@ -185,9 +181,7 @@ document.addEventListener('DOMContentLoaded', function () {
                     }
                 })
                 .catch(error => {
-                    if (loadingMessageCadastro) {
-                        hideLoadingMessage(loadingMessageCadastro);
-                    }
+                    hideLoadingMessage(loadingMessageCadastro);
                     console.error('Erro:', error);
                     alert('Ocorreu um erro ao processar sua solicitação. Por favor, tente novamente mais tarde.');
                 });
@@ -200,18 +194,14 @@ document.addEventListener('DOMContentLoaded', function () {
             const formData = new FormData(contactForm);
             formData.append('action', 'contato');
 
-            if (loadingMessageContact) {
-                showLoadingMessage(loadingMessageContact);
-            }
+            showLoadingMessage(loadingMessageContact);
 
             fetch('process_form.php', {
                 method: 'POST',
                 body: formData
             })
                 .then(response => {
-                    if (loadingMessageContact) {
-                        hideLoadingMessage(loadingMessageContact);
-                    }
+                    hideLoadingMessage(loadingMessageContact);
                     if (!response.ok) {
                         throw new Error('Network response was not ok');
                     }
@@ -228,9 +218,7 @@ document.addEventListener('DOMContentLoaded', function () {
                     }
                 })
                 .catch(error => {
-                    if (loadingMessageContact) {
-                        hideLoadingMessage(loadingMessageContact);
-                    }
+                    hideLoadingMessage(loadingMessageContact);
                     console.error('Erro:', error);
                     alert('Ocorreu um erro ao enviar sua mensagem. Por favor, tente novamente mais tarde.');
                 });
@@ -243,11 +231,14 @@ document.addEventListener('DOMContentLoaded', function () {
             const formData = new FormData(adminEmailForm);
             formData.append('action', 'cadastrar_email_admin');
 
+            showLoadingMessage(loadingMessageContact);
+
             fetch('process_form.php', {
                 method: 'POST',
                 body: formData
             })
                 .then(response => {
+                    hideLoadingMessage(loadingMessageContact);
                     if (!response.ok) {
                         throw new Error('Network response was not ok');
                     }
@@ -263,6 +254,7 @@ document.addEventListener('DOMContentLoaded', function () {
                     }
                 })
                 .catch(error => {
+                    hideLoadingMessage(loadingMessageContact);
                     console.error('Erro:', error);
                     alert('Ocorreu um erro ao processar sua solicitação. Por favor, tente novamente mais tarde.');
                 });
@@ -288,7 +280,7 @@ document.addEventListener('DOMContentLoaded', function () {
                 .then(data => {
                     console.log(data); // Adicionado para depuração
                     if (data.status === 'success') {
-                        localStorage.setItem('admin', formData.get('usuario'));
+                        localStorage.setItem('admin', formData.get('email'));
                         alert(data.message);
                         window.location.href = data.redirect || 'admin_dashboard.html';
                     } else {
@@ -344,13 +336,13 @@ document.addEventListener('DOMContentLoaded', function () {
     }
 
     if (logoutButtonHeader) {
-        logoutButtonHeader.addEventListener('click', function () {
+        logoutButtonHeader.addEventListener('click', function() {
             logout();
         });
     }
 
     if (logoutButtonMain) {
-        logoutButtonMain.addEventListener('click', function () {
+        logoutButtonMain.addEventListener('click', function() {
             adminLogout();
         });
     }
@@ -359,8 +351,6 @@ document.addEventListener('DOMContentLoaded', function () {
     window.startPDS = startPDS;
     window.logout = logout;
 });
-
-
 
 
 function growProgressBar(percentage_width) {
