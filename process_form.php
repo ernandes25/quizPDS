@@ -93,7 +93,7 @@ try {
                 if ($email === $admin_email && $senha === $admin_password) {
                     $response['status'] = 'success';
                     $response['message'] = 'Login do administrador realizado com sucesso';
-                    $response['redirect'] = 'admin_dashboard.html'; // Substitua pelo nome da página de dashboard do administrador
+                    $response['redirect'] = 'admin_dashboard.html';
                     echo json_encode($response);
                     exit;
                 } else {

@@ -16,37 +16,19 @@ document.addEventListener('DOMContentLoaded', function () {
     const loadingMessageCadastro = document.getElementById('loading-message-cadastro');
     const loadingMessageContact = document.getElementById('loading-message-contact');
 
-    
-    if (contactForm) {
-        contactForm.addEventListener('submit', function (event) {
-            event.preventDefault();
-            const formData = new FormData(contactForm);
-            formData.append('action', 'contato');
+    let isSubmittingAdminEmailForm = false; // Controla o envio múltiplo
+    let isSubmittingContactForm = false; // Controla o envio múltiplo do formulário de contato
 
-            fetch('process_form.php', {
-                method: 'POST',
-                body: formData
-            })
-                .then(response => {
-                    if (!response.ok) {
-                        throw new Error('Network response was not ok');
-                    }
-                    return response.json();
-                })
-                .then(data => {
-                    console.log(data); // Adicionado para depuração
-                    if (data.status === 'success') {
-                        alert('Mensagem enviada com sucesso!');
-                        window.location.href = 'contact_success.html';
-                    } else {
-                        alert('Erro ao enviar mensagem: ' + data.message);
-                    }
-                })
-                .catch(error => {
-                    console.error('Erro:', error);
-                    alert('Ocorreu um erro ao enviar sua mensagem. Por favor, tente novamente mais tarde.');
-                });
-        });
+    function showLoadingMessage(messageElement) {
+        if (messageElement) {
+            messageElement.style.display = 'block';
+        }
+    }
+
+    function hideLoadingMessage(messageElement) {
+        if (messageElement) {
+            messageElement.style.display = 'none';
+        }
     }
 
     function checkLogin() {
@@ -80,12 +62,18 @@ document.addEventListener('DOMContentLoaded', function () {
             if (logoutButtonMain) {
                 logoutButtonMain.style.display = 'block';
             }
+            if (logoutButtonHeader) {
+                logoutButtonHeader.style.display = 'block';
+            }
             if (userGreeting) {
                 userGreeting.innerHTML = 'Você está logado como<br>ADMINISTRADOR.';
             }
         } else {
             if (logoutButtonMain) {
                 logoutButtonMain.style.display = 'none';
+            }
+            if (logoutButtonHeader) {
+                logoutButtonHeader.style.display = 'none';
             }
         }
     }
@@ -101,6 +89,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
     function logout() {
         localStorage.removeItem('user');
+        localStorage.removeItem('admin'); // Adicionado para remover o admin ao deslogar
         checkLogin();
         window.location.href = 'index.html';
     }
@@ -109,18 +98,6 @@ document.addEventListener('DOMContentLoaded', function () {
         localStorage.removeItem('admin');
         checkLogin();
         window.location.href = 'index.html'; // Redireciona para a página inicial
-    }
-
-    function showLoadingMessage(messageElement) {
-        if (messageElement) {
-            messageElement.style.display = 'block';
-        }
-    }
-
-    function hideLoadingMessage(messageElement) {
-        if (messageElement) {
-            messageElement.style.display = 'none';
-        }
     }
 
     if (loginForm) {
@@ -221,46 +198,12 @@ document.addEventListener('DOMContentLoaded', function () {
         });
     }
 
-    if (contactForm) {
-        contactForm.addEventListener('submit', function (event) {
-            event.preventDefault();
-            const formData = new FormData(contactForm);
-            formData.append('action', 'contato');
-
-            showLoadingMessage(loadingMessageContact);
-
-            fetch('process_form.php', {
-                method: 'POST',
-                body: formData
-            })
-                .then(response => {
-                    hideLoadingMessage(loadingMessageContact);
-                    if (!response.ok) {
-                        throw new Error('Network response was not ok');
-                    }
-                    return response.json();
-                })
-                .then(data => {
-                    console.log(data); // Adicionado para depuração
-                    if (data.status === 'success') {
-                        alert('Mensagem enviada com sucesso!');
-                        window.location.href = 'contact_success.html';
-                    } else {
-                        console.error('Erro:', data);
-                        alert('Erro ao enviar mensagem: ' + data.message);
-                    }
-                })
-                .catch(error => {
-                    hideLoadingMessage(loadingMessageContact);
-                    console.error('Erro:', error);
-                    alert('Ocorreu um erro ao enviar sua mensagem. Por favor, tente novamente mais tarde.');
-                });
-        });
-    }
-
     if (adminEmailForm) {
         adminEmailForm.addEventListener('submit', function (event) {
             event.preventDefault();
+            if (isSubmittingAdminEmailForm) return; // Verifica se o formulário já está sendo enviado
+            isSubmittingAdminEmailForm = true;
+
             const formData = new FormData(adminEmailForm);
             formData.append('action', 'cadastrar_email_admin');
 
@@ -272,6 +215,7 @@ document.addEventListener('DOMContentLoaded', function () {
             })
                 .then(response => {
                     hideLoadingMessage(loadingMessageContact);
+                    isSubmittingAdminEmailForm = false;
                     if (!response.ok) {
                         throw new Error('Network response was not ok');
                     }
@@ -288,11 +232,14 @@ document.addEventListener('DOMContentLoaded', function () {
                 })
                 .catch(error => {
                     hideLoadingMessage(loadingMessageContact);
+                    isSubmittingAdminEmailForm = false;
                     console.error('Erro:', error);
                     alert('Ocorreu um erro ao processar sua solicitação. Por favor, tente novamente mais tarde.');
                 });
         });
     }
+  
+
 
     if (adminLoginForm) {
         adminLoginForm.addEventListener('submit', function (event) {
@@ -305,24 +252,21 @@ document.addEventListener('DOMContentLoaded', function () {
                 body: formData
             })
                 .then(response => {
-                    if (!response.ok) {
-                        throw new Error('Network response was not ok');
-                    }
+                    if (!response.ok) throw new Error('Network response was not ok');
                     return response.json();
                 })
                 .then(data => {
-                    console.log(data); // Adicionado para depuração
+                    console.log('Resposta do formulário de login do admin:', data);
                     if (data.status === 'success') {
                         localStorage.setItem('admin', formData.get('email'));
                         alert(data.message);
                         window.location.href = data.redirect || 'admin_dashboard.html';
                     } else {
-                        console.error('Erro:', data);
                         alert(data.message);
                     }
                 })
                 .catch(error => {
-                    console.error('Erro:', error);
+                    console.error('Erro ao fazer login do admin:', error);
                     alert('Ocorreu um erro ao processar sua solicitação. Por favor, tente novamente mais tarde.');
                 });
         });
@@ -330,22 +274,20 @@ document.addEventListener('DOMContentLoaded', function () {
 
     if (loadUsersButton) {
         loadUsersButton.addEventListener('click', function () {
-            console.log('Botão carregar dados dos usuários clicado.'); // Adicionado para depuração
+            console.log('Carregando dados dos usuários');
             fetch('process_form.php', {
                 method: 'POST',
                 body: new URLSearchParams({ action: 'get_users' })
             })
                 .then(response => {
-                    if (!response.ok) {
-                        throw new Error('Network response was not ok');
-                    }
+                    if (!response.ok) throw new Error('Network response was not ok');
                     return response.json();
                 })
                 .then(data => {
-                    console.log('Dados recebidos:', data); // Adicionado para depuração
+                    console.log('Dados dos usuários recebidos:', data);
                     if (data.status === 'success') {
                         const usersTableBody = usersTable.querySelector('tbody');
-                        usersTableBody.innerHTML = ''; // Limpar tabela antes de adicionar novos dados
+                        usersTableBody.innerHTML = '';
                         data.usuarios.forEach(user => {
                             const row = document.createElement('tr');
                             row.innerHTML = `
@@ -362,7 +304,7 @@ document.addEventListener('DOMContentLoaded', function () {
                     }
                 })
                 .catch(error => {
-                    console.error('Erro:', error);
+                    console.error('Erro ao carregar dados dos usuários:', error);
                     alert('Ocorreu um erro ao processar sua solicitação. Por favor, tente novamente mais tarde.');
                 });
         });
@@ -384,7 +326,6 @@ document.addEventListener('DOMContentLoaded', function () {
     window.startPDS = startPDS;
     window.logout = logout;
 });
-
 
 function growProgressBar(percentage_width) {
     var bar = document.getElementById("progress_bar");

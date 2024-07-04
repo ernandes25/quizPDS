@@ -165,6 +165,12 @@ header {
   transition: 0.8s;
 }
 
+#loading-message-cadastro, #loading-message-contact {
+  display: none;
+  font-size: 16px;
+  color: #333;
+  margin-top: 10px;
+}
 
 
 textarea {

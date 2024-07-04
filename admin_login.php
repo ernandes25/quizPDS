@@ -46,7 +46,7 @@
         <span>Todos os direitos reservados &copy;</span>
         <span>Desenvolvido por: Bay Software - H & E Silva</span>
     </footer>
-    <script>
+ <!--    <script>
         document.getElementById('adminLoginForm').addEventListener('submit', function(event) {
             event.preventDefault();
             const formData = new FormData(this);
@@ -69,6 +69,8 @@
                 alert('Ocorreu um erro ao processar sua solicitação. Por favor, tente novamente mais tarde.');
             });
         });
-    </script>
+    </script> -->
+    <script src="script.js" defer></script>
+    
 </body>
 </html>
