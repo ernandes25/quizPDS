@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cadastro de Usuário</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
     <header>
         <nav>
@@ -44,11 +46,11 @@
             <ul id="logout" style="display: none;">
                 <button onclick="logout()">Sair</button>
             </ul>
-
+            <!-- //Botão de logout do administrador
             <ul id="admin-logout" style="display: flex; flex-direction: column;">
                 <span id="user-greeting"></span> <br>
                 <button id="logout-button-main" style="display: none;">Sair</button>
-              </ul>
+            </ul> -->
         </nav>
         <button id="logout-button-main" style="display: none;">Sair</button>
     </header>
@@ -68,9 +70,9 @@
         </form>
 
         <!-- Adicione isso onde a mensagem de carregamento deve aparecer -->
-<div id="loading-message-cadastro" style="display: none;">Aguarde, solicitação em andamento.</div>
+        <div id="loading-message-cadastro" style="display: none;">Aguarde, solicitação em andamento.</div>
 
-        
+
     </main>
     <footer>
         <img id="logo" src="logo.jpeg" />
@@ -79,4 +81,5 @@
     </footer>
     <script src="script.js"></script>
 </body>
+
 </html>

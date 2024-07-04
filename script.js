@@ -239,39 +239,40 @@ document.addEventListener('DOMContentLoaded', function () {
         });
     }
   
-
-
     if (adminLoginForm) {
         adminLoginForm.addEventListener('submit', function (event) {
             event.preventDefault();
             const formData = new FormData(adminLoginForm);
             formData.append('action', 'admin_login');
-
+    
             fetch('process_form.php', {
                 method: 'POST',
                 body: formData
             })
-                .then(response => {
-                    if (!response.ok) throw new Error('Network response was not ok');
-                    return response.json();
-                })
-                .then(data => {
-                    console.log('Resposta do formulário de login do admin:', data);
-                    if (data.status === 'success') {
-                        localStorage.setItem('admin', formData.get('email'));
-                        alert(data.message);
-                        window.location.href = data.redirect || 'admin_dashboard.html';
-                    } else {
-                        alert(data.message);
-                    }
-                })
-                .catch(error => {
-                    console.error('Erro ao fazer login do admin:', error);
-                    alert('Ocorreu um erro ao processar sua solicitação. Por favor, tente novamente mais tarde.');
-                });
+            .then(response => {
+                if (!response.ok) {
+                    throw new Error('Network response was not ok');
+                }
+                return response.json();
+            })
+            .then(data => {
+                console.log(data); // Adicionado para depuração
+                if (data.status === 'success') {
+                    localStorage.setItem('admin', formData.get('email'));
+                    alert(data.message);
+                    window.open(data.redirect || 'admin_dashboard.html', '_blank');
+                } else {
+                    console.error('Erro:', data);
+                    alert(data.message);
+                }
+            })
+            .catch(error => {
+                console.error('Erro:', error);
+                alert('Ocorreu um erro ao processar sua solicitação. Por favor, tente novamente mais tarde.');
+            });
         });
     }
-
+    
     if (loadUsersButton) {
         loadUsersButton.addEventListener('click', function () {
             console.log('Carregando dados dos usuários');
