@@ -78,20 +78,18 @@ try {
                 $response['message'] = 'Arquivo de usuários não encontrado';
                 error_log("User file not found", 3, "/opt/lampp/htdocs/quizPDS/error.log");
             }
-      
-
         } elseif ($action == 'admin_login') {
             $email = $_POST['email'];
             $senha = $_POST['senha'];
             error_log("Admin login attempt: email=$email", 3, "/opt/lampp/htdocs/quizPDS/error.log");
-        
+
             // Validar email e senha do administrador
             if (file_exists($admin_email_file)) {
                 $admin_email_data = file_get_contents($admin_email_file);
                 $admin_email_info = json_decode($admin_email_data, true);
                 $admin_email = $admin_email_info['email'];
                 $admin_password = $admin_email_info['senha'];
-        
+
                 if ($email === $admin_email && $senha === $admin_password) {
                     $response['status'] = 'success';
                     $response['message'] = 'Login do administrador realizado com sucesso';
@@ -105,8 +103,6 @@ try {
                 $response['message'] = 'Arquivo de email do administrador não encontrado';
                 error_log("Admin email file not found", 3, "/opt/lampp/htdocs/quizPDS/error.log");
             }
-        
-        
         } elseif ($action == 'get_users') {
             // Carregar dados dos usuários
             if (file_exists($json_file)) {

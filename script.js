@@ -31,6 +31,48 @@ document.addEventListener('DOMContentLoaded', function () {
         }
     }
 
+    if (contactForm) {
+        contactForm.addEventListener('submit', function (event) {
+            event.preventDefault();
+            if (isSubmittingContactForm) return; // Verifica se o formulário já está sendo enviado
+            isSubmittingContactForm = true;
+
+            const formData = new FormData(contactForm);
+            formData.append('action', 'contato');
+
+            showLoadingMessage(loadingMessageContact);
+
+            fetch('process_form.php', {
+                method: 'POST',
+                body: formData
+            })
+                .then(response => {
+                    hideLoadingMessage(loadingMessageContact);
+                    isSubmittingContactForm = false;
+                    if (!response.ok) {
+                        throw new Error('Network response was not ok');
+                    }
+                    return response.json();
+                })
+                .then(data => {
+                    console.log(data); // Adicionado para depuração
+                    if (data.status === 'success') {
+                        alert('Mensagem enviada com sucesso!');
+                        window.location.href = 'contact_success.html';
+                    } else {
+                        console.error('Erro:', data);
+                        alert('Erro ao enviar mensagem: ' + data.message);
+                    }
+                })
+                .catch(error => {
+                    hideLoadingMessage(loadingMessageContact);
+                    isSubmittingContactForm = false;
+                    console.error('Erro:', error);
+                    alert('Ocorreu um erro ao enviar sua mensagem. Por favor, tente novamente mais tarde.');
+                });
+        });
+    }
+
     function checkLogin() {
         const user = localStorage.getItem('user');
         const admin = localStorage.getItem('admin');
@@ -62,18 +104,12 @@ document.addEventListener('DOMContentLoaded', function () {
             if (logoutButtonMain) {
                 logoutButtonMain.style.display = 'block';
             }
-            if (logoutButtonHeader) {
-                logoutButtonHeader.style.display = 'block';
-            }
             if (userGreeting) {
                 userGreeting.innerHTML = 'Você está logado como<br>ADMINISTRADOR.';
             }
         } else {
             if (logoutButtonMain) {
                 logoutButtonMain.style.display = 'none';
-            }
-            if (logoutButtonHeader) {
-                logoutButtonHeader.style.display = 'none';
             }
         }
     }
@@ -89,7 +125,6 @@ document.addEventListener('DOMContentLoaded', function () {
 
     function logout() {
         localStorage.removeItem('user');
-        localStorage.removeItem('admin'); // Adicionado para remover o admin ao deslogar
         checkLogin();
         window.location.href = 'index.html';
     }
@@ -214,17 +249,17 @@ document.addEventListener('DOMContentLoaded', function () {
                 body: formData
             })
                 .then(response => {
-                    hideLoadingMessage(loadingMessageContact);
-                    isSubmittingAdminEmailForm = false;
                     if (!response.ok) {
                         throw new Error('Network response was not ok');
                     }
                     return response.json();
                 })
                 .then(data => {
-                    console.log(data); // Adicionado para depuração
+                    hideLoadingMessage(loadingMessageContact);
+                    isSubmittingAdminEmailForm = false;
+                    console.log('Admin email form response:', data); // Adicionado para depuração
                     if (data.status === 'success') {
-                        alert('Email do administrador cadastrado com sucesso!');
+                        alert(data.message);
                     } else {
                         console.error('Erro:', data);
                         alert(data.message);
@@ -238,7 +273,7 @@ document.addEventListener('DOMContentLoaded', function () {
                 });
         });
     }
-  
+
     if (adminLoginForm) {
         adminLoginForm.addEventListener('submit', function (event) {
             event.preventDefault();
@@ -273,22 +308,26 @@ document.addEventListener('DOMContentLoaded', function () {
         });
     }
     
+
+
     if (loadUsersButton) {
         loadUsersButton.addEventListener('click', function () {
-            console.log('Carregando dados dos usuários');
+            console.log('Botão carregar dados dos usuários clicado.'); // Adicionado para depuração
             fetch('process_form.php', {
                 method: 'POST',
                 body: new URLSearchParams({ action: 'get_users' })
             })
                 .then(response => {
-                    if (!response.ok) throw new Error('Network response was not ok');
+                    if (!response.ok) {
+                        throw new Error('Network response was not ok');
+                    }
                     return response.json();
                 })
                 .then(data => {
-                    console.log('Dados dos usuários recebidos:', data);
+                    console.log('Dados recebidos:', data); // Adicionado para depuração
                     if (data.status === 'success') {
                         const usersTableBody = usersTable.querySelector('tbody');
-                        usersTableBody.innerHTML = '';
+                        usersTableBody.innerHTML = ''; // Limpar tabela antes de adicionar novos dados
                         data.usuarios.forEach(user => {
                             const row = document.createElement('tr');
                             row.innerHTML = `
@@ -305,7 +344,7 @@ document.addEventListener('DOMContentLoaded', function () {
                     }
                 })
                 .catch(error => {
-                    console.error('Erro ao carregar dados dos usuários:', error);
+                    console.error('Erro:', error);
                     alert('Ocorreu um erro ao processar sua solicitação. Por favor, tente novamente mais tarde.');
                 });
         });
