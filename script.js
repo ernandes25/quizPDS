@@ -84,7 +84,8 @@ document.addEventListener('DOMContentLoaded', function () {
                 logoutButtonHeader.style.display = 'block';
             }
             if (buttonInit) {
-                buttonInit.innerText = 'Continuar PDS';
+                buttonInit.innerText = 'CONTINUAR PDS';
+                buttonInit.style.display = 'block'; // Garantir que o botão está visível
             }
             if (userGreeting) {
                 userGreeting.innerText = `Bem vindo, ${user}`;
@@ -95,6 +96,10 @@ document.addEventListener('DOMContentLoaded', function () {
             }
             if (logoutButtonHeader) {
                 logoutButtonHeader.style.display = 'none';
+            }
+            if (buttonInit) {
+                buttonInit.innerText = 'INICIAR PDS';
+                buttonInit.style.display = 'block'; // Garantir que o botão está visível
             }
             if (userGreeting) {
                 userGreeting.innerText = '';
@@ -159,10 +164,10 @@ document.addEventListener('DOMContentLoaded', function () {
                         loginModal.style.display = 'none';
                         window.location.href = data.redirect || 'quiz.html';
                     } else if (data.status === 'user_not_found') {
-                        alert(data.message);
-                        window.location.href = data.redirect;
+                        if (confirm('Usuário não encontrado. Deseja efetuar seu cadastro agora?')) {
+                            window.location.href = 'cadastro.html';
+                        }
                     } else {
-                        console.error('Erro:', data);
                         alert(data.message);
                         if (data.message.includes('dados de cadastro incompletos')) {
                             additionalFields.style.display = 'block';
@@ -171,7 +176,6 @@ document.addEventListener('DOMContentLoaded', function () {
                     }
                 })
                 .catch(error => {
-                    console.error('Erro:', error);
                     alert('Ocorreu um erro ao processar sua solicitação. Por favor, tente novamente mais tarde.');
                 });
         });
@@ -213,7 +217,6 @@ document.addEventListener('DOMContentLoaded', function () {
                     return response.json();
                 })
                 .then(data => {
-                    console.log(data); // Adicionado para depuração
                     if (data.status === 'success') {
                         localStorage.setItem('user', formData.get('novo_usuario'));
                         alert('Cadastro realizado com sucesso! Redirecionando para o Quiz PDS...');
@@ -221,13 +224,11 @@ document.addEventListener('DOMContentLoaded', function () {
                             window.location.href = 'quiz.html';
                         }, 3000); // Redireciona após 3 segundos
                     } else {
-                        console.error('Erro:', data);
                         alert(data.message);
                     }
                 })
                 .catch(error => {
                     hideLoadingMessage(loadingMessageCadastro);
-                    console.error('Erro:', error);
                     alert('Ocorreu um erro ao processar sua solicitação. Por favor, tente novamente mais tarde.');
                 });
         });
@@ -250,6 +251,8 @@ document.addEventListener('DOMContentLoaded', function () {
             })
                 .then(response => {
                     if (!response.ok) {
+                        hideLoadingMessage(loadingMessageContact);
+                        isSubmittingAdminEmailForm = false;
                         throw new Error('Network response was not ok');
                     }
                     return response.json();
