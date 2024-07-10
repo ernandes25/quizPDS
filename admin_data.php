@@ -68,10 +68,5 @@ if (file_exists($usersFilePath)) {
             </tbody>
         </table>
     </div>
-    <footer>
-        <img id="logo" src="./logo.jpeg" alt="Logo" />
-        <span>Todos os direitos reservados &copy;</span>
-        <span>Desenvolvido por: Bay Software - H & E Silva</span>
-    </footer>
 </body>
 </html>

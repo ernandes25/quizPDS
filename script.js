@@ -310,94 +310,70 @@ document.addEventListener('DOMContentLoaded', function () {
             });
         });
     }
-    
 
-
-    if (loadUsersButton) {
-        loadUsersButton.addEventListener('click', function () {
-            console.log('Botão carregar dados dos usuários clicado.'); // Adicionado para depuração
-            fetch('process_form.php', {
-                method: 'POST',
-                body: new URLSearchParams({ action: 'get_users' })
-            })
-                .then(response => {
-                    if (!response.ok) {
-                        throw new Error('Network response was not ok');
-                    }
-                    return response.json();
-                })
-                .then(data => {
-                    console.log('Dados recebidos:', data); // Adicionado para depuração
-                    if (data.status === 'success') {
-                        const usersTableBody = usersTable.querySelector('tbody');
-                        usersTableBody.innerHTML = ''; // Limpar tabela antes de adicionar novos dados
-                        data.usuarios.forEach(user => {
-                            const row = document.createElement('tr');
-                            row.innerHTML = `
-                                <td>${user.nome}</td>
-                                <td>${user.email}</td>
-                                <td>${user.telefone}</td>
-                            `;
-                            usersTableBody.appendChild(row);
-                        });
-                            
-                        usersTable.style.display = 'table';
-                    } else {
-                        alert(data.message);
-                    }
-                })
-                .catch(error => {
-                    console.error('Erro:', error);
-                    alert('Ocorreu um erro ao processar sua solicitação. Por favor, tente novamente mais tarde.');
-                });
-        });
+    function growProgressBar(percentage_width) {
+        var bar = document.getElementById("progress_bar");
+        bar.style.width = percentage_width;
     }
 
-    if (logoutButtonHeader) {
-        logoutButtonHeader.addEventListener('click', function() {
-            logout();
-        });
-    }
+    function calculateScore() {
+        let score = 0;
+        let score11to15 = 0;
 
-    if (logoutButtonMain) {
-        logoutButtonMain.addEventListener('click', function() {
-            adminLogout();
-        });
-    }
+        const questions = document.querySelectorAll('.question');
+        const totalQuestions = questions.length;
 
-    checkLogin();
-    window.startPDS = startPDS;
-    window.logout = logout;
-});
-
-function growProgressBar(percentage_width) {
-    var bar = document.getElementById("progress_bar");
-    bar.style.width = percentage_width;
-}
-
-function calculateScore() {
-    let score = 0;
-    let score11to15 = 0;
-
-    const questions = document.querySelectorAll('.question');
-    const totalQuestions = questions.length;
-
-    for (let i = 1; i <= totalQuestions; i++) {
-        const selectedOption = document.querySelector(`input[name="q${i}"]:checked`);
-        if (selectedOption) {
-            const value = parseInt(selectedOption.value, 10);
-            if (i <= 10) {
-                score += value;
-            } else {
-                score11to15 += value;
+        for (let i = 1; i <= totalQuestions; i++) {
+            const selectedOption = document.querySelector(`input[name="q${i}"]:checked`);
+            if (selectedOption) {
+                const value = parseInt(selectedOption.value, 10);
+                if (i <= 10) {
+                    score += value;
+                } else {
+                    score11to15 += value;
+                }
             }
         }
+
+        return score + (score11to15 * 2);
     }
+    function saveQuizResult(score) {
+        const user = localStorage.getItem('user');
+        if (!user) {
+            alert('Usuário não encontrado. Faça login novamente.');
+            window.location.href = 'login.html';
+            return;
+        }
+    
+        const data = { action: 'save_quiz_result', user: user, score: score };
+        console.log('Dados a serem enviados:', JSON.stringify(data)); // Adicionado para depuração
+    
+        fetch('process_form.php', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify(data)
+        })
+        .then(response => {
+            console.log('Resposta do servidor:', response); // Adicionado para depuração
+            return response.json();
+        })
+        .then(data => {
+            console.log('Resposta do servidor (JSON):', data); // Adicionado para depuração
+            if (data.status !== 'success') {
+                alert('Erro ao salvar resultado do quiz: ' + data.message);
+            }
+        })
+        .catch(error => {
+            console.error('Erro:', error);
+            alert('Erro ao salvar resultado do quiz. Tente novamente mais tarde.');
+        });
+    }
+    
+    
+    
 
-    return score + (score11to15 * 2);
-}
-
-document.addEventListener('DOMContentLoaded', function () {
     const questions = document.querySelectorAll('.question');
     const totalQuestions = questions.length;
 
@@ -427,6 +403,8 @@ document.addEventListener('DOMContentLoaded', function () {
                     document.getElementById('result').classList.add('active');
                     document.getElementById('result').style.display = 'block';
 
+                    saveQuizResult(score);
+
                     let score_info;
                     if (score <= 90) {
                         score_info = "É improvável que você tenha Pouco Desejo Sexual (PDS)";
@@ -444,4 +422,58 @@ document.addEventListener('DOMContentLoaded', function () {
             });
         }
     });
+
+    if (loadUsersButton) {
+        loadUsersButton.addEventListener('click', function () {
+            console.log('Botão carregar dados dos usuários clicado.'); // Adicionado para depuração
+            fetch('process_form.php', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify({ action: 'get_users' })
+            })
+                .then(response => response.json())
+                .then(data => {
+                    console.log('Dados recebidos:', data); // Adicionado para depuração
+                    if (data.status === 'success') {
+                        const usersTableBody = usersTable.querySelector('tbody');
+                        usersTableBody.innerHTML = '';
+                        data.usuarios.forEach(user => {
+                            const row = document.createElement('tr');
+                            row.innerHTML = `
+                                <td>${user.nome}</td>
+                                <td>${user.email}</td>
+                                <td>${user.telefone}</td>
+                                <td>${user.quiz_result !== null ? user.quiz_result : 'N/A'}</td>
+                            `;
+                            usersTableBody.appendChild(row);
+                        });
+                        usersTable.style.display = 'table';
+                    } else {
+                        alert(data.message);
+                    }
+                })
+                .catch(error => {
+                    console.error('Erro:', error);
+                    alert('Ocorreu um erro ao processar sua solicitação. Por favor, tente novamente mais tarde.');
+                });
+        });
+    }
+
+    if (logoutButtonHeader) {
+        logoutButtonHeader.addEventListener('click', function() {
+            logout();
+        });
+    }
+
+    if (logoutButtonMain) {
+        logoutButtonMain.addEventListener('click', function() {
+            adminLogout();
+        });
+    }
+
+    checkLogin();
+    window.startPDS = startPDS;
+    window.logout = logout;
 });

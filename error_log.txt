@@ -1146,3 +1146,27 @@
 
 [2024-06-26 16:53:10] - Usuário: jljl, Senha: 1234
 [2024-06-26 16:53:10] - Resposta JSON: {"status":"user_not_found","message":"Usu\u00e1rio n\u00e3o encontrado, redirecionando para cadastro"}
+[2024-07-10 20:32:51] - Dados POST recebidos: Array
+(
+    [usuario] => fifo111@gmail.com
+    [senha] => 250200er
+    [action] => login
+)
+
+[2024-07-10 20:32:51] - Usuário ou senha do administrador incorretos.
+[2024-07-10 20:33:21] - Dados POST recebidos: Array
+(
+    [usuario] => fifo111@gmail.com
+    [senha] => 250200er
+    [action] => login
+)
+
+[2024-07-10 20:33:21] - Usuário ou senha do administrador incorretos.
+[2024-07-10 20:33:25] - Dados POST recebidos: Array
+(
+    [usuario] => fifo111@gmail.com
+    [senha] => 250200er
+    [action] => login
+)
+
+[2024-07-10 20:33:25] - Usuário ou senha do administrador incorretos.

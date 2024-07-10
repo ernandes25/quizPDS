@@ -1,4 +1,5 @@
 <?php
+
 use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\Exception;
 
@@ -42,7 +43,16 @@ try {
     error_log("Request received: " . json_encode($_POST), 3, "/opt/lampp/htdocs/quizPDS/error.log");
 
     if ($_SERVER['REQUEST_METHOD'] == 'POST') {
-        $action = $_POST['action'];
+        $input = json_decode(file_get_contents('php://input'), true);
+
+        // Determine se estamos lidando com JSON ou dados de formulário
+        if ($input) {
+            error_log('JSON decodificado: ' . print_r($input, true)); // Adicionado para depuração
+            $action = $input['action'] ?? '';
+        } else {
+            $action = $_POST['action'] ?? '';
+        }
+
         error_log("Action: $action", 3, "/opt/lampp/htdocs/quizPDS/error.log");
 
         $json_file = '/opt/lampp/htdocs/quizPDS/usuarios.json';
@@ -151,7 +161,8 @@ try {
                 'senha' => password_hash($nova_senha, PASSWORD_DEFAULT),
                 'nome' => $nome,
                 'email' => $email,
-                'telefone' => $telefone
+                'telefone' => $telefone,
+                'quiz_result' => null // Adicionar o campo quiz_result
             ];
 
             // Salvar dados atualizados
@@ -258,6 +269,27 @@ try {
                 $response['message'] = 'Falha ao salvar o email do administrador';
                 error_log("Failed to save admin email", 3, "/opt/lampp/htdocs/quizPDS/error.log");
             }
+        } elseif ($action == 'save_quiz_result') {
+            $userEmail = $input['user'];
+            $score = $input['score'];
+            $users = getUsers();
+            $userFound = false;
+            foreach ($users as &$user) {
+                if ($user['email'] === $userEmail) {
+                    $user['quiz_result'] = $score;
+                    $userFound = true;
+                    break;
+                }
+            }
+            if ($userFound) {
+                saveUsers($users);
+                $response['status'] = 'success';
+            } else {
+                $response['status'] = 'error';
+                $response['message'] = 'Usuário não encontrado';
+            }
+            echo json_encode($response);
+            exit;
         }
     }
 } catch (Exception $e) {
@@ -266,4 +298,21 @@ try {
 }
 
 echo json_encode($response);
+
+// Funções auxiliares
+function getUsers() {
+    $filePath = 'usuarios.json';
+    if (file_exists($filePath)) {
+        $jsonContent = file_get_contents($filePath);
+        return json_decode($jsonContent, true);
+    }
+    return [];
+}
+
+function saveUsers($users) {
+    $filePath = 'usuarios.json';
+    $jsonContent = json_encode($users, JSON_PRETTY_PRINT);
+    file_put_contents($filePath, $jsonContent);
+}
+
 ?>
