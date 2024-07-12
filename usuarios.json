@@ -21,7 +21,7 @@
         "nome": "A. E. SILVA FILHO CONTABILIDADE",
         "email": "fifo1113@gmail.com",
         "telefone": "34998142525",
-        "quiz_result": 180
+        "quiz_result": 31
     },
     {
         "usuario": "gago@gmail.com",
@@ -62,5 +62,13 @@
         "email": "fifo121212@gmail.com",
         "telefone": "34998142525",
         "quiz_result": 180
+    },
+    {
+        "usuario": "camilaas@gmail.com",
+        "senha": "$2y$10$UYIJLz9Is.s\/Qn6wRhyWMO\/R\/OcMZ45Fs4vO3lAxXEasFMtcVAp8G",
+        "nome": "CAMILA SILVA",
+        "email": "camilaas@gmail.com",
+        "telefone": "34998142525",
+        "quiz_result": 162
     }
 ]

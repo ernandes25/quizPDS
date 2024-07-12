@@ -45,8 +45,8 @@
           <li>Administração</li>
         </a>
         <div class="dropdown-content">
-          <a href="config_email.html">Cadastrar Email</a>
-          <a href="admin_login.html">Login do Administrador</a>
+          <a class="cad-email-adm" href="config_email.html">Cadastrar Email</a>
+          <a class="cad-email-adm" href="admin_login.html">Login do Administrador</a>
         </div>
       </ul>
 
@@ -76,18 +76,27 @@
   </div>
 
   <div id="login-modal" style="display:none;">
-    <form id="login-form" action="process_form.php" method="POST">
-      <label for="username">Usuário:</label>
-      <input type="text" id="username" name="usuario" required>
-      <label for="password">Senha:</label>
-      <input type="password" id="password" name="senha" required>
-      <input type="hidden" name="action" value="login">
-      <button type="submit">Entrar</button>
-    </form>
+    <div class="modal-content">
+
+      <span class="close-button" onclick="closeLoginModal()">×</span>
+      <form id="login-form" action="process_form.php" method="POST">
+        <label for="username">Usuário:</label>
+        <input type="text" id="username" name="usuario" required>
+        <label for="password">Senha:</label>
+        <input type="password" id="password" name="senha" required>
+        <input type="hidden" name="action" value="login">
+        <button type="submit">Entrar</button>
+
+      </form>
+    </div>
   </div>
 
 
-
+  <script>
+    function closeLoginModal() {
+      document.getElementById('login-modal').style.display = 'none';
+    }
+  </script>
 
 
 
@@ -102,6 +111,8 @@
       document.getElementById('login-modal').style.display = 'block';
     }
   </script>
+
+
 </body>
 
 </html>
