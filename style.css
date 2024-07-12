@@ -243,6 +243,11 @@ header nav ul li a {
     margin: 0;
 }
 
+#button-contact {
+    height: auto;
+    width: 200px;
+}
+
 
 #logout #user-greeting {
     display: block;
@@ -567,10 +572,11 @@ a {
     animation: pulse 3s 3s ease-in-out infinite;
     border-radius: 10px;
     font-size: 20px;
-    color: white;
+    color: black;
     cursor: pointer;
     text-transform: uppercase;
     font-family: "Figtree:ital", sans-serif;
+    text-align: center;
 }
 
 
@@ -637,6 +643,7 @@ p {
     color: black;
     margin-bottom: 80px;
     font-size: 22px;
+    text-align: center;
 }
 
 .fade-in {
@@ -729,8 +736,9 @@ main {
     /* Garantir que o modal fica acima de outros elementos */
     border-radius: 10px;
     /* Bordas arredondadas */
-    width: 300px;
+    width: 350px;
     /* Largura do modal */
+    height: auto;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -798,6 +806,11 @@ main {
     background-color: rgba(0, 0, 0, 0.5);
     z-index: 1000;
     display: none;
+}
+
+
+h1 {
+    margin-bottom: 20px;
 }
 
 input[type="text"],
