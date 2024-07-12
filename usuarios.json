@@ -21,6 +21,38 @@
         "nome": "A. E. SILVA FILHO CONTABILIDADE",
         "email": "fifo1113@gmail.com",
         "telefone": "34998142525",
-        "quiz_result": 74
+        "quiz_result": 180
+    },
+    {
+        "usuario": "gago@gmail.com",
+        "senha": "$2y$10$yV.s2kWhNKiCutb.RS2TGehqjJfhtA.2zwS.gL.4NehD.wYcnkLJO",
+        "nome": "gago",
+        "email": "gago@gmail.com",
+        "telefone": "34998142525",
+        "quiz_result": 140
+    },
+    {
+        "usuario": "gago2@gmail.com",
+        "senha": "$2y$10$TdjQXRU4vdGzab3dxUfAKu24dPkVoEHiDzzXdUw4Q8sHYnrdtIF9q",
+        "nome": "gafo",
+        "email": "gago2@gmail.com",
+        "telefone": "34998142525",
+        "quiz_result": null
+    },
+    {
+        "usuario": "camila@gmail.com",
+        "senha": "$2y$10$b9iVyUT6EKZS0LcCFLpfguzyGCFeIYK2tklN8\/5cQiivY.UlkFlwO",
+        "nome": "A. E. SILVA FILHO CONTABILIDADE",
+        "email": "camila@gmail.com",
+        "telefone": "34998142525",
+        "quiz_result": null
+    },
+    {
+        "usuario": "fifo1115@gmail.com",
+        "senha": "$2y$10$yH1t\/b44dYB.qkN7BTvaUedkOra7YJWwp3KF7EKTN1JoBhKz2aWOq",
+        "nome": "A. E. SILVA FILHO CONTABILIDADE",
+        "email": "fifo1115@gmail.com",
+        "telefone": "34998142525",
+        "quiz_result": 163
     }
 ]

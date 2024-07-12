@@ -125,6 +125,7 @@ document.addEventListener('DOMContentLoaded', function () {
             window.location.href = 'quiz.html';
         } else {
             loginModal.style.display = 'block';
+            
         }
     }
 

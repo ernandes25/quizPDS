@@ -195,7 +195,7 @@ try {
 
                             // Conteúdo do e-mail
                             $mail->isHTML(true);
-                            $mail->Subject = 'Novo Cadastro de Usuário';
+                            $mail->Subject = 'Novo Cadastro de Usuario';
                             $mail->Body = "Um novo usuário foi cadastrado:<br>Usuário: $novo_usuario";
 
                             $mail->send();

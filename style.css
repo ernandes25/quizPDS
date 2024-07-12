@@ -1,281 +1,504 @@
 @import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap');
 
 * {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-  text-decoration: none;
-  font-family: "Figtree:ital", sans-serif;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    font-family: 'Figtree', sans-serif;
 }
 
 body {
-  background-color: #718a94;
-  
+    background-color: #F9F9F9;
+    margin: 0;
+    padding: 0;
+
 }
 
 header {
+    background-color: #018fd0;
+    position: fixed;
+    color: #FFFFFF;
 
-/*   position: fixed; */
-  display: flex;
-  width: 100%;
-  height: 130px;
-  align-content: center;
-  z-index: 9;
-  top: 0;
-}
+    width: 100%;
+    height: 130px;
 
-nav {
-  display: flex;
-  background-color: black;
-  width: 100%;
-  border-radius: 10px;
-  justify-content: space-around;
-  align-items: center;
-}
+    /* z-index: 9; */
+    top: 0;
+    opacity: 0;
+    animation: fade-in 1s forwards;
 
-#logo {
-  width: 100px;
-  height: 100px;
-  border-radius: 100px 300px;
-}
-
-ul {
-  display: flex;
-  width: auto;
-  justify-content: space-around;
-  font-size: 40px;
-  background-color: #018fd0;
-}
-
-li {
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-size: 18px;
-  line-height: 1.42857143;
-  color: white;
-  font-weight: bold;
-  text-transform: none;
-}
-
-dropdown {
-  position: relative;
-  display: inline-block;
-  font-family: "Figtree:ital", sans-serif;
-}
-
-header nav {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 10px 20px;
-}
-
-#user-greeting {
-  font-size: 18px;
-    font-weight: bold;
-    color: #fff;
-    margin: 0 auto; /* centraliza o elemento */
-  
 }
 
 header nav ul {
-  list-style-type: none;
-  padding: 0;
-  margin: 0;
-  display: flex;
-  align-items: center;
+    list-style-type: none;
+    padding: 0;
 }
 
 header nav ul li {
-  margin-right: 15px;
+    display: inline;
+    margin-right: 10px;
 }
 
+
+header nav ul a {
+    color: #FFFFFF;
+    text-decoration: none;
+    padding: 5px 10px;
+}
+
+
+header nav ul a:hover {
+
+    background-color: #FFC83D;
+    color: #3F51B5;
+
+}
+
+#login-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#login-form label,
+#login-form input {
+    width: 100%;
+    max-width: 300px;
+    margin-bottom: 10px;
+}
+
+#button-init {
+    animation: pulse 3s 3s ease-in-out infinite;
+    width: 200px;
+    height: 30px;
+    background-color: #4a7ca8;
+    border-radius: 10px;
+    font-size: 20px;
+    color: white;
+    cursor: pointer;
+    text-transform: uppercase;
+    line-height: 28px;
+    /* Ajuste a altura da linha para centralizar verticalmente o texto dentro do botão */
+    text-align: center;
+    /* Centralize o texto horizontalmente */
+    vertical-align: middle;
+    /* Alinhe verticalmente ao meio  */
+    margin: auto;
+}
+
+
+#logo {
+    width: 100px;
+    height: 100px;
+    border-radius: 100px 300px;
+}
+
+#logo-footer {
+    width: 50px;
+    height: 50px;
+}
+
+/* 
+#login-modal{
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    align-items: center;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.502);
+    max-width: 300px;
+    margin-top: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 100px;
+} */
+#login-modal {
+    display: none;
+    /* Escondido por padrão */
+    position: fixed;
+    /* Fixa o modal na tela */
+    top: 50%;
+    /* Centraliza verticalmente */
+    left: 50%;
+    /* Centraliza horizontalmente */
+    transform: translate(-50%, -50%);
+    /* Ajusta a posição para centralizar */
+    background-color: white;
+    /* Cor de fundo do modal */
+    padding: 20px;
+    /* Espaçamento interno */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    /* Sombra para destaque */
+    z-index: 1000;
+    /* Garantir que o modal fica acima de outros elementos */
+    border-radius: 10px;
+    /* Bordas arredondadas */
+    width: 300px;
+    /* Largura do modal */
+}
+
+#login-modal form {
+    display: flex;
+    flex-direction: column;
+}
+
+#login-modal label {
+    margin-bottom: 5px;
+}
+
+#login-modal input {
+    margin-bottom: 10px;
+    padding: 5px;
+}
+
+#login-modal button {
+    background-color: #3F51B5;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+#login-modal button:hover {
+    background-color: #FFC83D;
+    color: #3F51B5;
+}
+
+/* Fundo semitransparente */
+#modal-background {
+    display: none;
+    /* Escondido por padrão */
+    position: fixed;
+    /* Fixa o fundo na tela */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    /* Fundo semitransparente */
+    z-index: 999;
+    /* Garantir que o fundo fica abaixo do modal */
+}
+
+header nav ul li {
+    /* display: inline; */
+    margin-right: 10px;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 18px;
+    /* line-height: 1.42857143; */
+    color: white;
+    font-weight: bold;
+    text-transform: none;
+}
+
+
+/* li {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 18px;
+    line-height: 1.42857143;
+    color: white;
+    font-weight: bold;
+    text-transform: none;
+} */
+
+dropdown {
+    position: relative;
+    display: inline-block;
+    font-family: "Figtree:ital", sans-serif;
+}
+
+header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+#user-greeting {
+    font-size: 18px;
+    font-weight: bold;
+    color: #fff;
+    margin: 0 auto;
+    /* centraliza o elemento */
+
+}
+
+
+
+
 header nav ul li a {
-  color: #fff;
-  text-decoration: none;
+    color: #fff;
+    text-decoration: none;
 }
 
 #logout {
-  display: none;
+    display: none;
+    text-align: center;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
 }
 
-header {
-  background-color: #333;
-  color: #fff;
-  padding: 10px 0;
+
+#logout #user-greeting {
+    display: block;
+    margin-bottom: 10px;
+    /* Espaço entre a saudação e o botão */
+}
+
+#logout button {
+    background-color: #3F51B5;
+    /* Cor de fundo do botão */
+    color: white;
+    /* Cor do texto do botão */
+    border: none;
+    /* Remove a borda */
+    padding: 10px 20px;
+    /* Espaçamento interno do botão */
+    border-radius: 5px;
+    /* Bordas arredondadas */
+    cursor: pointer;
+    /* Cursor de mãozinha ao passar sobre o botão */
+    font-size: 16px;
+    /* Tamanho da fonte */
+}
+
+#logout button:hover {
+    background-color: #FFC83D;
+    /* Cor de fundo do botão ao passar o mouse */
+    color: #3F51B5;
+    /* Cor do texto ao passar o mouse */
 }
 
 .dropdown-content {
-  display: none;
-  position: absolute;
-  background-color: #f9f9f9;
-  min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  z-index: 1;
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
 }
 
 .dropdown-content a {
-  color: black;
-  padding: 12px 16px;
-  text-decoration: none;
-  display: block;
-  
-  
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+
+
 }
 
 .dropdown-content a:hover {
-  background-color: #f1f1f1;
-   
+    background-color: #f1f1f1;
+
 }
 
 .dropdown:hover .dropdown-content {
-  display: block;
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  
+    display: block;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+
 }
 
 
 .contato {
-  display: flex;
-  width: 1330px;
-  margin-top: 5px;
-  font-family: "Kdam Thmor Pro", sans-serif;
-  height: 120px;
-  background-image: linear-gradient(to right, rgb(57, 116, 150), blue);
-  align-items: center;
-  justify-content: center;
-  font-size: 30px;
-  border-radius: 10px;
-  margin-left: auto;
-  margin-right: auto;
+    display: flex;
+    width: 1330px;
+    margin-top: 5px;
+    font-family: "Kdam Thmor Pro", sans-serif;
+    height: 120px;
+    background-image: linear-gradient(to right, rgb(57, 116, 150), blue);
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+    border-radius: 10px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#contact-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 400px; /* Ajuste conforme necessário */
+    margin: 0 auto;
+}
+
+#contact-form label {
+    width: 100%;
+    margin-bottom: 5px;
+    
+}
+
+#contact-form input,
+#contact-form textarea {
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    resize: none;
+}
+
+#contact-form button {
+    background-color: #3F51B5;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    align-self: center; /* Centraliza o botão */
+}
+
+#contact-form button:hover {
+    background-color: #FFC83D;
+    color: #3F51B5;
+}
+
+/* Mensagem de carregamento */
+#loading-message-contact {
+    text-align: center;
+    margin-top: 10px;
+    font-size: 14px;
+    color: #3F51B5;
 }
 
 .forma {
-  display: flex;
-  margin-top: 20px;
-  background-color: rgb(212, 212, 230);
-  width: 500px;
-  height: 450px;
-  flex-direction: column;
-  border: solid 10px rgb(128, 156, 189);
-  border-radius: 10px;
-  align-items: start;
-  padding-left: 20px;
-  margin-left: auto;
-  margin-right: auto;
-  transition: 0.8s;
+    display: flex;
+    margin-top: 20px;
+    background-color: rgb(212, 212, 230);
+    width: 500px;
+    height: 450px;
+    flex-direction: column;
+    border: solid 10px rgb(128, 156, 189);
+    border-radius: 10px;
+    align-items: start;
+    padding-left: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    transition: 0.8s;
 }
 
-#loading-message-cadastro, #loading-message-contact {
-  display: none;
-  font-size: 16px;
-  color: #333;
-  margin-top: 10px;
+
+
+#loading-message-cadastro {
+    display: none;
+    font-size: 16px;
+    color: #333;
+    margin-top: 10px;
 }
 
 
 textarea {
 
-  width: 97%;
-  height: 100px;
-  margin-top: 20px;
-  background-color: #e5e7d1;
-  border-radius: 10px;
-  font-size: 20px;
-  padding-left: 10px;
-  padding-top: 10px;
+    width: 97%;
+    height: 100px;
+    margin-top: 20px;
+    background-color: #e5e7d1;
+    border-radius: 10px;
+    font-size: 20px;
+    padding-left: 10px;
+    padding-top: 10px;
 }
 
 .h2_quiz {
-  margin-top: 50px;
-  padding-left: 10px;
+    margin-top: 50px;
+    padding-left: 10px;
 }
 
 #img {
-  width: 200px;
-  height: 100px;
+    width: 200px;
+    height: 100px;
 
 }
 
 .container:after,
 .row:after,
 .clearfix {
-  content: "";
-  display: table;
-  clear: both;
+    content: "";
+    display: table;
+    clear: both;
 }
 
 #questions_box {
-  display: flex;
-  width: 910px;
-  height: 350px;
-  background-color: rgba(50, 97, 68, 0.2);
-  border-radius: 10px;
-  align-items: center;
+    display: flex;
+    width: 910px;
+    height: 350px;
+    background-color: rgba(50, 97, 68, 0.2);
+    border-radius: 10px;
+    align-items: center;
 }
 
 h3 {
-  margin-top: 50px;
-  margin-bottom: 50px;
+    margin-top: 50px;
+    margin-bottom: 50px;
 }
 
 #value-quiz {
-  margin-top: 30px;
-  margin-left: 50px;
+    margin-top: 30px;
+    margin-left: 50px;
 }
 
 a :hover {
-  color: black;
-  transition: 0.5s;
-  opacity: 0.7;
+    color: black;
+    transition: 0.5s;
+    opacity: 0.7;
 }
 
 .question,
 .result {
-  display: none;
-  margin-left: 40px;
-  margin-top: 20px;
+    display: none;
+    margin-left: 40px;
+    margin-top: 20px;
 }
 
 .question.active {
-  width: 850px;
-  display: block;
+    width: 850px;
+    display: block;
 }
 
 #restart-pds {
-  display: flex;
-  width: 250px;
-  height: 50px;
-  margin-left: 500px;
-  animation: pulse 3s 3s ease-in-out infinite;
-  border-radius: 10px;
-  font-size: 20px;
-  color: white;
-  cursor: pointer;
-  text-transform: uppercase;
-  font-family: "Figtree:ital", sans-serif;
+    display: flex;
+    width: 250px;
+    height: 50px;
+    margin-left: 500px;
+    animation: pulse 3s 3s ease-in-out infinite;
+    border-radius: 10px;
+    font-size: 20px;
+    color: white;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-family: "Figtree:ital", sans-serif;
 }
 
 button {
-  animation: pulse 3s 3s ease-in-out infinite;
-  display: flex;
-  width: 250px;
-  height: 50px;
-  background-color: #325d70;
-  justify-content: center;
-  align-items: center;
-  border-radius: 10px;
-  font-size: 20px;
-  color: white;
-  cursor: pointer;
-  text-transform: uppercase;
-  font-family: "Figtree:ital", sans-serif;
+    animation: pulse 3s 3s ease-in-out infinite;
+    width: 200px;
+    height: 30px;
+    background-color: #4a7ca8;
+    border-radius: 10px;
+    font-size: 18px;
+    color: white;
+    cursor: pointer;
+    text-transform: uppercase;
+    
+    
+
+
 }
 
-.button :hover {
-  animation: pulse 3s 3s ease-in-out infinite;
-  background-color: rgb(136, 179, 180);
-  transition: 0.5s;
-  opacity: 0.7;
+button :hover {
+    animation: pulse 3s 3s ease-in-out infinite;
+    background-color: rgb(136, 179, 180);
+    transition: 0.5s;
+    opacity: 0.7;
+
 }
 
 #next1,
@@ -293,177 +516,288 @@ button {
 #next13,
 #next14,
 #next15 {
-  display: flex;
-  width: 250px;
-  height: 50px;
-  margin-left: 460px;
-  margin-top: 40px;
+    display: flex;
+    width: 250px;
+    height: 50px;
+    margin-left: 460px;
+    margin-top: 40px;
 
-  /* verificar */
-  background-color: #325d70;
-  justify-content: center;
-  align-items: center;
-  border-radius: 10px;
-  font-size: 20px;
-  color: white;
-  cursor: pointer;
-  text-transform: uppercase;
-  font-family: "Figtree:ital", sans-serif;
+    /* verificar */
+    background-color: #325d70;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    font-size: 20px;
+    color: white;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-family: "Figtree:ital", sans-serif;
 }
 
 .container-quiz {
-  width: 850px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  padding-top: 100px;
-  margin: auto;
+    width: 850px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-top: 100px;
+    margin: auto;
 }
 
 
 #progress_container {
-  height: 10px;
-  width: 910px;
-  background-color: #4caf50;
-  padding: 0;
+    height: 10px;
+    width: 910px;
+    background-color: #4caf50;
+    padding: 0;
 }
 
 #progress_bar {
-  background-color: #018fd0;
-  width: 910px;
-  height: 10px;
-  transition: all 100ms ease-in-out;
-  padding: 0;
+    background-color: #018fd0;
+    width: 910px;
+    height: 10px;
+    transition: all 100ms ease-in-out;
+    padding: 0;
 
 }
 
 a {
 
-  margin-top: 20px;
-  margin-bottom: 20px;
-  animation: pulse 3s 3s ease-in-out infinite;
-  border-radius: 10px;
-  font-size: 20px;
-  color: white;
-  cursor: pointer;
-  text-transform: uppercase;
-  font-family: "Figtree:ital", sans-serif;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    animation: pulse 3s 3s ease-in-out infinite;
+    border-radius: 10px;
+    font-size: 20px;
+    color: white;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-family: "Figtree:ital", sans-serif;
 }
 
 
 .sobre {
-  display: flex;
-  width: 100%;
-  height: 300px;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
+    opacity: 0;
+    transform: translateX(-20px);
+    animation: slide-in 1s 1.5s forwards;
+    text-align: center;
+    margin: 20px auto;
+    width: 80%;
+    background-color: #FFF;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
+.sobre p {
+    color: #3F51B5;
+}
+
+
 .cadastro {
-  display: flex;
-  justify-content: center;
-  padding-top: 30px;
+    display: flex;
+    justify-content: center;
+    padding-top: 30px;
 }
 
 .title_cad {
-  font-family: "Figtree:ital", sans-serif;
-  color: white;
-  font-size: 30px;
-  margin-top: 50px;
-  text-align: center;
+    font-family: "Figtree:ital", sans-serif;
+    color: white;
+    font-size: 30px;
+    margin-top: 50px;
+    text-align: center;
 }
 
 #title-php {
-  font-family: "Figtree:ital", sans-serif;
-  text-align: center;
-  color: rgb(167, 139, 103);
-  font-size: 30px;
+    font-family: "Figtree:ital", sans-serif;
+    text-align: center;
+    color: rgb(167, 139, 103);
+    font-size: 30px;
 }
 
 #title-page-initial {
-  font-family: "Figtree:ital", sans-serif;
-  width: 1200px;
-  color: black;
-  font-size: 30px;
-  text-align: center;
-  margin-top: 100px;
-  margin-bottom: 100px;
+    font-family: "Figtree:ital", sans-serif;
+    width: 1200px;
+    color: black;
+    font-size: 40px;
+    text-align: center;
+    margin-top: 150px;
+    margin-bottom: 150px;
+    margin-left: auto;
+    margin-right: auto;
+
+    opacity: 0;
+    animation: fade-in 2s 1s forwards;
+
+
 }
 
 p {
-  display: flex;
-  font-family: "Figtree:ital", sans-serif;
-  flex-direction: column;
-  color: #fff;
-  font-size: 25px;
-  margin-bottom: 50px;
+    display: flex;
+    font-family: 'Figtree', sans-serif;
+    flex-direction: column;
+    color: black;
+    margin-bottom: 80px;
+    font-size: 22px;
+}
+
+.fade-in {
+    opacity: 0;
+    animation: fade-in 1s forwards;
+}
+
+@keyframes fade-in {
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slide-in {
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
 }
 
 .start-test {
-  width: 430px;
-  text-decoration: underline;
-  font-family: "Figtree:ital", sans-serif;
-  color: black;
-  font-size: 25px;
+    width: 430px;
+    text-decoration: underline;
+    font-family: "Figtree:ital", sans-serif;
+    color: black;
+    font-size: 25px;
 }
 
 footer {
-  height: 250px;
-  margin-top: 60px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-around;
+
+    background-color: #3F51B5;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 60px;
+    opacity: 0;
+    animation: fade-in 1s 2s forwards;
 }
 
 span {
-  color: #fff;
-  font-family: "Figtree:ital", sans-serif;
-  margin-top: -100px;
-  font-size: 10px;
+    color: black;
+    font-family: "Figtree:ital", sans-serif;
+    margin-top: -100px;
+    font-size: 10px;
 }
 
 .span_result {
-  color: #fff;
-  font-family: "Figtree:ital", sans-serif;
-  font-size: 20px;
-  margin-top: 10px;
+    color: #fff;
+    font-family: "Figtree:ital", sans-serif;
+    font-size: 20px;
+    margin-top: 10px;
 }
 
 
 /* ELEMENTOS DE FORMULÁRIO */
 
-form label {
-  display: block;
-  width: fit-content;
-  font-size: 0.8em;
-  font-weight: 100;
-  background-color: rgba(55, 41, 145, 0.2);
-  padding: 3px 7px;
-  margin-top: 10px;
-  margin-bottom: 0px;
-  border-radius: 5px;
-  font-family: "Figtree:ital", sans-serif;
+/* form label {
+    display: block;
+    width: fit-content;
+    font-size: 0.8em;
+    font-weight: 100;
+    background-color: rgba(55, 41, 145, 0.2);
+    padding: 3px 7px;
+    margin-top: 10px;
+    margin-bottom: 0px;
+    border-radius: 5px;
+    font-family: "Figtree:ital", sans-serif;
+} */
+
+main {
+    display: flex;
+    position: fixed;
+    /* Fixa o modal na tela */
+    top: 50%;
+    /* Centraliza verticalmente */
+    left: 50%;
+    /* Centraliza horizontalmente */
+    transform: translate(-50%, -50%);
+    /* Ajusta a posição para centralizar */
+    background-color: white;
+    /* Cor de fundo do modal */
+    padding: 20px;
+    /* Espaçamento interno */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    /* Sombra para destaque */
+    z-index: 1000;
+    /* Garantir que o modal fica acima de outros elementos */
+    border-radius: 10px;
+    /* Bordas arredondadas */
+    width: 300px;
+    /* Largura do modal */
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
 }
 
-.main {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  align-content: space-around;
+#cadastro-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 400px; /* Ajuste conforme necessário */
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#cadastro-form label {
+    width: 100%;
+    margin-bottom: 5px;
+    text-align: left;
+}
+
+#cadastro-form input {
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+#cadastro-form button {
+    background-color: #3F51B5;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    text-align: center; /* Centraliza o texto dentro do botão */
+    align-self: center; /* Centraliza o botão no formulário */
+}
+
+#cadastro-form button:hover {
+    background-color: #FFC83D;
+    color: #3F51B5;
+}
+
+/* Mensagem de carregamento */
+#loading-message-cadastro {
+    text-align: center;
+    margin-top: 10px;
+    font-size: 14px;
+    color: #3F51B5;
 }
 
 #block-overlay {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.5);
-  z-index: 1000;
-  display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+    display: none;
 }
 
 input[type="text"],
@@ -479,87 +813,88 @@ input[type="range"],
 input[type="tel"],
 input[type="time"],
 input[type="week"] {
-  width: 100%;
-  padding: 12px 20px;
-  font-size: 1em;
-  margin: 8px 0;
-  display: inline-block;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  box-sizing: border-box;
-  background-color: #d8e0e4;
-  font-family: "Figtree:ital", sans-serif;
+    width: 100%;
+    padding: 12px 20px;
+    font-size: 1em;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    background-color: #d8e0e4;
+    font-family: "Figtree:ital", sans-serif;
 }
 
 input[type="submit"] {
-  width: 100%;
-  background-color: #537e91;
-  font-size: 1em;
-  color: white;
-  padding: 10px 20px;
-  margin: 5px 0;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-  font-family: "Figtree:ital", sans-serif;
+    width: 100%;
+    background-color: #537e91;
+    font-size: 1em;
+    color: white;
+    padding: 10px 20px;
+    margin: 5px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-family: "Figtree:ital", sans-serif;
+
 }
 
 input[type="submit"]:hover {
-  background-color: rgb(136, 179, 180);
+    background-color: rgb(136, 179, 180);
 }
 
 input[type="reset"] {
-  width: 100%;
-  background-color: #eb9903;
-  font-size: 1em;
-  color: white;
-  padding: 10px 20px;
-  margin: 5px 0;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
+    width: 100%;
+    background-color: #eb9903;
+    font-size: 1em;
+    color: white;
+    padding: 10px 20px;
+    margin: 5px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
 }
 
 input[type="reset"]:hover {
-  background-color: #c27013;
+    background-color: #c27013;
 }
 
 fieldset {
-  border: 0.5px dotted #372991;
+    border: 0.5px dotted #372991;
 }
 
 fieldset>legend {
-  font-size: 0.8em;
-  font-weight: 100;
-  background-color: rgba(55, 41, 145, 0.2);
-  padding: 3px 7px;
-  border-radius: 5px;
+    font-size: 0.8em;
+    font-weight: 100;
+    background-color: rgba(55, 41, 145, 0.2);
+    padding: 3px 7px;
+    border-radius: 5px;
 }
 
 input[type="radio"]+label,
 input[type="checkbox"]+label {
-  display: inline-block;
-  font-size: 1em;
-  background-color: rgba(0, 0, 0, 0);
+    display: inline-block;
+    font-size: 1em;
+    background-color: rgba(0, 0, 0, 0);
 }
 
 .form {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-top: 150px;
-  transform: scale(1.1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 150px;
+    transform: scale(1.1);
 }
 
 section {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  background-color: white;
-  align-items: center;
-  padding: 15px;
-  border-radius: 10px;
-  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.502);
-  max-width: 400px;
-  margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: white;
+    align-items: center;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.502);
+    max-width: 400px;
+    margin: auto;
 }
