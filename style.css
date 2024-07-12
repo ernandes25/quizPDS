@@ -1,14 +1,24 @@
 @import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap');
-
+/* 
 * {
     margin: 0;
     padding: 0;
     list-style: none;
     text-decoration: none;
     font-family: 'Figtree', sans-serif;
+} */
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: 'Figtree', sans-serif;
 }
 
+
 body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
     background-color: #FFC83D;
     margin: 0;
     padding: 0;
@@ -22,12 +32,10 @@ header {
 
     width: 100%;
     height: 130px;
-
-    /* z-index: 9; */
+    z-index: 9; 
     top: 0;
     opacity: 0;
     animation: fade-in 1s forwards;
-
 }
 
 header nav ul {
@@ -399,7 +407,7 @@ header nav ul li a {
     align-items: center;
     width: 100%;
     max-width: 400px; /* Ajuste conforme necessário */
-    margin: 0 auto;
+    margin: 0;
 }
 
 #contact-form label {
@@ -548,6 +556,36 @@ a :hover {
     opacity: 0.7;
 }
 
+/* Define a altura fixa para as divs question */
+.question {
+    height: 300px; /* Ajuste conforme necessário */
+    overflow: auto;
+    padding: 20px;
+    box-sizing: border-box;
+    border: 1px solid #ccc; /* Opcional: apenas para visualização das bordas */
+    margin-bottom: 20px; /* Espaçamento entre as questões */
+}
+
+/* Opcional: Adicione estilos para garantir que os textos sejam bem alinhados */
+.question h2, .question h3 {
+    margin: 0 0 10px 0;
+}
+
+/* Estilo para o botão avançar */
+.question button {
+    display: block;
+    margin: 20px auto 0;
+}
+
+/* Estilo para limpar flutuações */
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+
+
 .question,
 .result {
     display: none;
@@ -564,7 +602,7 @@ a :hover {
     display: flex;
     width: 250px;
     height: 50px;
-    margin-left: 500px;
+    margin-left: 600px;
     animation: pulse 3s 3s ease-in-out infinite;
     border-radius: 10px;
     font-size: 20px;
@@ -572,6 +610,7 @@ a :hover {
     cursor: pointer;
     text-transform: uppercase;
     font-family: "Figtree:ital", sans-serif;
+    margin-bottom: 160px;
 }
 
 button {
@@ -585,6 +624,8 @@ button {
     color: white;
     cursor: pointer;
     text-transform: uppercase;
+    margin-bottom: 40px;
+    
 
     
     
@@ -678,20 +719,33 @@ button :hover {
 
 #progress_container {
     height: 10px;
-    width: 950px;
-    background-color: #4caf50;
+    width: 910px;
+    background-color:  white;
     padding: 0;
     border-radius: 5px;
 }
 
 #progress_bar {
-    background-color: #018fd0;
-    width: 950px;
+    background-color: #4caf50;
+    width: 910px;
     height: 10px;
     transition: all 100ms ease-in-out;
     padding: 0;
     border-radius: 5px;
 
+}
+
+.span-wa {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px; /* Espaçamento entre o ícone e o texto */
+    font-size: 18px; /* Tamanho da fonte */
+    font: bold;
+    color: #2a884b; /* Cor do ícone e do texto */
+}
+
+.span-wa i {
+    font-size: 24px; /* Tamanho do ícone */
 }
 
 a {
@@ -807,7 +861,7 @@ footer {
     color: white;
     text-align: center;
     padding: 10px 0;
-    position: fixed;
+    position: relative;
     bottom: 0;
     width: 100%;
     height: 60px;
@@ -846,10 +900,12 @@ span {
 } */
 
 main {
+    margin: 0;
+    
     display: flex;
     position: fixed;
     /* Fixa o modal na tela */
-    top: 50%;
+    top: 60%;
     /* Centraliza verticalmente */
     left: 50%;
     /* Centraliza horizontalmente */
@@ -857,7 +913,7 @@ main {
     /* Ajusta a posição para centralizar */
     background-color: white;
     /* Cor de fundo do modal */
-    padding: 20px;
+    padding: 25px;
     /* Espaçamento interno */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     /* Sombra para destaque */
@@ -867,10 +923,11 @@ main {
     /* Bordas arredondadas */
     width: 350px;
     /* Largura do modal */
-    height: auto;
+    height: 500px;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    flex: 1;
     
 }
 
@@ -880,11 +937,8 @@ main {
     align-items: center;
     width: 100%;
     max-width: 400px; /* Ajuste conforme necessário */
-    padding: 20px;
-    background-color: #f9f9f9;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
+    margin: 0;
+    }
 
 #cadastro-form label {
     width: 100%;
