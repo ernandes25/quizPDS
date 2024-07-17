@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap');
+
 /* 
 * {
     margin: 0;
@@ -7,7 +8,8 @@
     text-decoration: none;
     font-family: 'Figtree', sans-serif;
 } */
-body, html {
+body,
+html {
     margin: 0;
     padding: 0;
     height: 100%;
@@ -19,20 +21,20 @@ body {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
-    background-color: #FFC83D;
+    background-color: #FFFFFF;
     margin: 0;
     padding: 0;
 
 }
 
 header {
-    background-color: #018fd0;
+    background-color: #5A189A;
     position: fixed;
     color: #FFFFFF;
 
     width: 100%;
     height: 130px;
-    z-index: 9; 
+    z-index: 9;
     top: 0;
     opacity: 0;
     animation: fade-in 1s forwards;
@@ -41,11 +43,13 @@ header {
 header nav ul {
     list-style-type: none;
     padding: 0;
+
 }
 
 header nav ul li {
     display: inline;
     margin-right: 10px;
+
 }
 
 
@@ -59,7 +63,7 @@ header nav ul a {
 header nav ul a:hover {
 
     background-color: #D35FB7;
-    color: #3F51B5;
+
 
 }
 
@@ -81,17 +85,19 @@ header nav ul a:hover {
     animation: pulse 3s 3s ease-in-out infinite;
     width: 200px;
     height: 30px;
-    background-color: #3F51B5;
+
     border-radius: 10px;
     font-size: 20px;
-    color: white;
+    background-color: A261;
+    #F4 color: #5A189A;
+
     cursor: pointer;
     text-transform: uppercase;
-    
+
     /* Ajuste a altura da linha para centralizar verticalmente o texto dentro do botão */
     text-align: center;
     /* Centralize o texto horizontalmente */
-    
+
     /* Alinhe verticalmente ao meio  */
     margin: auto;
     padding-bottom: 30px;
@@ -118,15 +124,19 @@ header nav ul a:hover {
     background-color: white;
     padding: 20px;
     border-radius: 10px;
-    position: relative; /* Permite que os filhos sejam posicionados relativamente a este contêiner */
+    position: relative;
+    /* Permite que os filhos sejam posicionados relativamente a este contêiner */
     width: 300px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 .close-button {
-    position: absolute; /* Posiciona o botão relativamente à div pai */
-    top: 10px; /* Ajusta conforme necessário */
-    right: 10px; /* Ajusta conforme necessário */
+    position: absolute;
+    /* Posiciona o botão relativamente à div pai */
+    top: 10px;
+    /* Ajusta conforme necessário */
+    right: 10px;
+    /* Ajusta conforme necessário */
     background-color: #f44336;
     color: white;
     border: none;
@@ -136,7 +146,8 @@ header nav ul a:hover {
     font-size: 20px;
     cursor: pointer;
     text-align: center;
-    line-height: 30px; /* Centraliza o texto verticalmente */
+    line-height: 30px;
+    /* Centraliza o texto verticalmente */
 }
 
 .close-button:hover {
@@ -161,7 +172,7 @@ header nav ul a:hover {
 }
 
 
-#main-admin-dashboard{
+#main-admin-dashboard {
     width: auto;
     height: auto;
 }
@@ -221,7 +232,7 @@ header nav ul a:hover {
 }
 
 #login-modal button {
-    background-color: #3F51B5;
+
     color: white;
     border: none;
     padding: 10px;
@@ -232,7 +243,8 @@ header nav ul a:hover {
 
 #login-modal button:hover {
     background-color: #D35FB7;
-    color: #3F51B5;
+
+
 }
 
 /* Fundo semitransparente */
@@ -257,7 +269,7 @@ header nav ul li {
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-size: 18px;
     /* line-height: 1.42857143; */
-    color: white;
+    color: #F4A261;
     font-weight: bold;
     text-transform: none;
 }
@@ -283,6 +295,7 @@ header nav {
     justify-content: space-between;
     align-items: center;
     padding: 10px 20px;
+
 }
 
 #user-greeting {
@@ -313,7 +326,7 @@ header nav ul li a {
 #button-contact {
     height: 100px;
     width: 200px;
-    
+
 }
 
 
@@ -324,9 +337,9 @@ header nav ul li a {
 }
 
 #logout button {
-    background-color: #3F51B5;
+
     /* Cor de fundo do botão */
-    color: white;
+    color: #5A189A;
     /* Cor do texto do botão */
     border: none;
     /* Remove a borda */
@@ -343,7 +356,7 @@ header nav ul li a {
 #logout button:hover {
     background-color: #D35FB7;
     /* Cor de fundo do botão ao passar o mouse */
-    color: #3F51B5;
+
     /* Cor do texto ao passar o mouse */
 }
 
@@ -373,7 +386,7 @@ header nav ul li a {
 .dropdown:hover .dropdown-content {
     display: block;
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-    
+
 
 }
 
@@ -383,7 +396,7 @@ header nav ul li a {
 
 .cad-email-adm:hover {
     background-color: #D35FB7;
-    
+
 }
 
 .contato {
@@ -406,14 +419,15 @@ header nav ul li a {
     flex-direction: column;
     align-items: center;
     width: 100%;
-    max-width: 400px; /* Ajuste conforme necessário */
+    max-width: 400px;
+    /* Ajuste conforme necessário */
     margin: 0;
 }
 
 #contact-form label {
     width: 100%;
     margin-bottom: 5px;
-    
+
 }
 
 #contact-form input,
@@ -428,19 +442,21 @@ header nav ul li a {
 }
 
 #contact-form button {
-    background-color: #3F51B5;
-    color: white;
+
+    background-color: #F4A261;
+    color: #5A189A;
     border: none;
     padding-top: 10px;
     border-radius: 5px;
     cursor: pointer;
     font-size: 16px;
-    align-self: center; /* Centraliza o botão */
+    align-self: center;
+    /* Centraliza o botão */
 }
 
 #contact-form button:hover {
     background-color: #D35FB7;
-    color: #3F51B5;
+
 }
 
 /* Mensagem de carregamento */
@@ -448,14 +464,14 @@ header nav ul li a {
     text-align: center;
     margin-top: 10px;
     font-size: 14px;
-    color: #3F51B5;
+
 }
 
 #load-users {
     margin-bottom: 20px;
     width: auto;
     padding: 5px;
-    
+
 }
 
 
@@ -481,10 +497,12 @@ users-table {
     margin: 20px 0;
 }
 
-#users-table th, #users-table td {
+#users-table th,
+#users-table td {
     border: 1px solid #ddd;
     padding: 8px;
-    text-align: center; /* Centraliza o texto nas células */
+    text-align: center;
+    /* Centraliza o texto nas células */
 }
 
 #users-table th {
@@ -558,16 +576,20 @@ a :hover {
 
 /* Define a altura fixa para as divs question */
 .question {
-    height: 300px; /* Ajuste conforme necessário */
+    height: 300px;
+    /* Ajuste conforme necessário */
     overflow: auto;
     padding: 20px;
     box-sizing: border-box;
-    border: 1px solid #ccc; /* Opcional: apenas para visualização das bordas */
-    margin-bottom: 20px; /* Espaçamento entre as questões */
+    border: 1px solid #ccc;
+    /* Opcional: apenas para visualização das bordas */
+    margin-bottom: 20px;
+    /* Espaçamento entre as questões */
 }
 
 /* Opcional: Adicione estilos para garantir que os textos sejam bem alinhados */
-.question h2, .question h3 {
+.question h2,
+.question h3 {
     margin: 0 0 10px 0;
 }
 
@@ -618,36 +640,38 @@ button {
     animation: pulse 3s 3s ease-in-out infinite;
     width: 200px;
     height: 40px;
-    background-color: #3F51B5;
+    background-color: #F4A261;
     border-radius: 10px;
     font-size: 18px;
-    color: white;
+    color: #5A189A;
     cursor: pointer;
     text-transform: uppercase;
     margin-bottom: 40px;
-    
 
-    
-    
+
+
+
 
     border: none;
     padding: 6px 10px;
 
 
 
-    text-align: center; /* Centraliza o texto dentro do botão */
-    align-self: center; /* Centraliza o botão no formulário */
+    text-align: center;
+    /* Centraliza o texto dentro do botão */
+    align-self: center;
+    /* Centraliza o botão no formulário */
     justify-content: center;
-    
-    
-    
+
+
+
 
 
 }
 
 button :hover {
     animation: pulse 3s 3s ease-in-out infinite;
-    background-color: #3F51B5;
+
     transition: 0.5s;
     opacity: 0.7;
 
@@ -690,7 +714,7 @@ button :hover {
 
 #button-contact {
     display: inline-block;
-    background-color: #3F51B5;
+
     color: white;
     padding: 10px 20px;
     text-align: center;
@@ -698,13 +722,14 @@ button :hover {
     border-radius: 5px;
     cursor: pointer;
     font-size: 16px;
-    margin-top: 10px; /* Adicione espaço superior se necessário */
+    margin-top: 10px;
+    /* Adicione espaço superior se necessário */
     height: auto;
 }
 
 #button-contact:hover {
     background-color: #D35FB7;
-    color: #3F51B5;
+
 }
 
 .container-quiz {
@@ -718,17 +743,17 @@ button :hover {
 
 
 #progress_container {
-    height: 10px;
+    height: 15px;
     width: 910px;
-    background-color:  white;
+    background-color: #F4A261;
     padding: 0;
     border-radius: 5px;
 }
 
 #progress_bar {
-    background-color: #4caf50;
+    background-color: #57398f;
     width: 910px;
-    height: 10px;
+    height: 15px;
     transition: all 100ms ease-in-out;
     padding: 0;
     border-radius: 5px;
@@ -738,18 +763,23 @@ button :hover {
 .span-wa {
     display: inline-flex;
     align-items: center;
-    gap: 8px; /* Espaçamento entre o ícone e o texto */
-    font-size: 18px; /* Tamanho da fonte */
+    gap: 8px;
+    /* Espaçamento entre o ícone e o texto */
+    font-size: 18px;
+    /* Tamanho da fonte */
     font: bold;
-    color: #2a884b; /* Cor do ícone e do texto */
+    color: #2a884b;
+    /* Cor do ícone e do texto */
 }
 
 .span-wa i {
-    font-size: 24px; /* Tamanho do ícone */
+    font-size: 24px;
+    /* Tamanho do ícone */
 }
 
-a {
 
+
+a {
     margin-top: 20px;
     margin-bottom: 20px;
     animation: pulse 3s 3s ease-in-out infinite;
@@ -760,6 +790,7 @@ a {
     text-transform: uppercase;
     font-family: "Figtree:ital", sans-serif;
     text-align: center;
+    font-size: 14px;
 }
 
 
@@ -770,14 +801,16 @@ a {
     text-align: center;
     margin: 20px auto;
     width: 80%;
-    background-color: #FFF;
+    background-color: #e0dce6;
     padding: 20px;
     border-radius: 5px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 .sobre p {
-    color: #3F51B5;
+    color: black;
+    font-size: 24px;
+
 }
 
 
@@ -808,7 +841,7 @@ a {
     color: black;
     font-size: 40px;
     text-align: center;
-    margin-top: 150px;
+    margin-top: 250px;
     margin-bottom: 150px;
     margin-left: auto;
     margin-right: auto;
@@ -826,12 +859,23 @@ p {
     color: black;
     margin-bottom: 80px;
     font-size: 22px;
-    text-align: center;
+    text-align: left;
+    align-items: center;
 }
 
 .fade-in {
+
+
     opacity: 0;
-    animation: fade-in 1s forwards;
+    transform: translateX(-20px);
+    animation: slide-in 1s 1.5s forwards;
+    text-align: center;
+    margin: 20px auto;
+    width: 80%;
+    background-color: #e0dce6;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 @keyframes fade-in {
@@ -857,16 +901,17 @@ p {
 
 footer {
 
-    background-color: #3F51B5;
-    color: white;
+    background-color: darkgrey;
+    color: black;
     text-align: center;
     padding: 10px 0;
-    position: relative;
+    position: fixed;
     bottom: 0;
     width: 100%;
     height: 60px;
     opacity: 0;
     animation: fade-in 1s 2s forwards;
+
 }
 
 span {
@@ -877,7 +922,7 @@ span {
 }
 
 .span_result {
-    color: #fff;
+    color: black;
     font-family: "Figtree:ital", sans-serif;
     font-size: 20px;
     margin-top: 10px;
@@ -901,19 +946,19 @@ span {
 
 main {
     margin: 0;
-    
+    background-color: #d8d2e0;
     display: flex;
     position: fixed;
     /* Fixa o modal na tela */
-    top: 60%;
+    top: 52%;
     /* Centraliza verticalmente */
     left: 50%;
     /* Centraliza horizontalmente */
     transform: translate(-50%, -50%);
     /* Ajusta a posição para centralizar */
-    background-color: white;
+
     /* Cor de fundo do modal */
-    padding: 25px;
+    padding: 10px;
     /* Espaçamento interno */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     /* Sombra para destaque */
@@ -928,7 +973,7 @@ main {
     justify-content: center;
     align-items: center;
     flex: 1;
-    
+
 }
 
 #cadastro-form {
@@ -936,9 +981,10 @@ main {
     flex-direction: column;
     align-items: center;
     width: 100%;
-    max-width: 400px; /* Ajuste conforme necessário */
+    max-width: 400px;
+    /* Ajuste conforme necessário */
     margin: 0;
-    }
+}
 
 #cadastro-form label {
     width: 100%;
@@ -957,21 +1003,23 @@ main {
 
 #cadastro-form button {
     display: flex;
-    background-color: #3F51B5;
-    color: white;
+    background-color: #F4A261;
+    color: #5A189A;
     border: none;
     padding: 6px 10px;
     border-radius: 5px;
     cursor: pointer;
     font-size: 16px;
-    text-align: center; /* Centraliza o texto dentro do botão */
-    align-self: center; /* Centraliza o botão no formulário */
+    text-align: center;
+    /* Centraliza o texto dentro do botão */
+    align-self: center;
+    /* Centraliza o botão no formulário */
     justify-content: center;
 }
 
 #cadastro-form button:hover {
-    background-color: #D35FB7;    
-    color: #3F51B5;
+    background-color: #D35FB7;
+
 }
 
 /* Mensagem de carregamento */
@@ -979,7 +1027,7 @@ main {
     text-align: center;
     margin-top: 10px;
     font-size: 14px;
-    color: #3F51B5;
+
 }
 
 #block-overlay {
@@ -1025,7 +1073,7 @@ input[type="week"] {
 
 input[type="submit"] {
     width: 100%;
-    background-color: #537e91;
+
     font-size: 1em;
     color: white;
     padding: 10px 20px;
