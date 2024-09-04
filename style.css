@@ -510,14 +510,6 @@ users-table {
     font-weight: bold;
 }
 
-#loading-message-cadastro {
-    display: none;
-    font-size: 16px;
-    color: #333;
-    margin-top: 10px;
-}
-
-
 textarea {
 
     width: 97%;
@@ -714,8 +706,8 @@ button :hover {
 
 #button-contact {
     display: inline-block;
-
-    color: white;
+    color: black;
+    
     padding: 10px 20px;
     text-align: center;
     text-decoration: none;
@@ -1027,6 +1019,7 @@ main {
     text-align: center;
     margin-top: 10px;
     font-size: 14px;
+    
 
 }
 

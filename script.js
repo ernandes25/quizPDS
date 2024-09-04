@@ -190,9 +190,13 @@ document.addEventListener('DOMContentLoaded', function () {
             const email = formData.get('email');
 
             // Validação do campo senha
-            if (!/^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8}$/.test(senha)) {
+            /* if (!/^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8}$/.test(senha)) {
                 alert('A senha deve conter 8 caracteres, incluindo letras e números.');
-                return;
+                return; */
+                if (!/^\d{4}$/.test(senha)) {
+                    alert('A senha deve conter exatamente 4 caracteres numéricos.');
+                    return;
+
             }
 
             // Validação do campo email

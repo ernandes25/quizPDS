@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contato</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
     <header>
         <nav>
@@ -46,12 +48,12 @@
                 <button onclick="logout()">Sair</button>
             </ul>
             <ul>
-                
+
             </ul>
 
-      
+
         </nav>
-       
+
     </header>
 
     <main>
@@ -65,11 +67,14 @@
             <textarea id="mensagem" name="mensagem" required></textarea><br>
             <button type="submit">Enviar</button>
         </form>
+
+        <div id="loading-message-contact" style="display: none;">Aguarde, sua mensagem está sendo enviada.</div>
     </main>
 
 
     <!-- Adicione isso onde a mensagem de carregamento deve aparecer -->
-<div id="loading-message-contact" style="display: none;">Aguarde, solicitação em andamento.</div>
+    
+    
 
 
     <footer>
@@ -77,7 +82,8 @@
         <span>Todos os direitos reservados &copy;</span>
         <span>Desenvolvido por: Bay Software - H & E Silva</span>
     </footer>
-    
+
     <script src="script.js"></script>
 </body>
+
 </html>
