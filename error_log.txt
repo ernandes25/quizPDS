@@ -1170,3 +1170,57 @@
 )
 
 [2024-07-10 20:33:25] - Usuário ou senha do administrador incorretos.
+[2024-09-13 14:07:54] - Dados POST recebidos: Array
+(
+    [email] => contato@ercont.com.br
+    [senha] => 250200er25*
+    [action] => admin_login
+)
+
+[2024-09-13 14:07:54] - Usuário ou senha não fornecidos.
+[2024-09-13 14:07:54] - Usuário ou senha não fornecidos.
+[2024-09-13 14:08:12] - Dados POST recebidos: Array
+(
+    [email] => contato@ercont.com.br
+    [senha] => 250200er25*
+    [action] => admin_login
+)
+
+[2024-09-13 14:08:12] - Usuário ou senha não fornecidos.
+[2024-09-13 14:08:12] - Usuário ou senha não fornecidos.
+[2024-09-13 14:08:57] - Dados POST recebidos: Array
+(
+    [email] => contato@ercont.com.br
+    [senha] => 250200er25*
+    [action] => admin_login
+)
+
+[2024-09-13 14:08:57] - Usuário ou senha não fornecidos.
+[2024-09-13 14:08:57] - Usuário ou senha não fornecidos.
+[2024-09-13 16:43:35] - Dados POST recebidos: Array
+(
+    [email] => contato@ercont.com.br
+    [senha] => 250200er25*
+    [action] => admin_login
+)
+
+[2024-09-13 16:43:35] - Usuário ou senha não fornecidos.
+[2024-09-13 16:43:35] - Usuário ou senha não fornecidos.
+[2024-09-13 16:43:40] - Dados POST recebidos: Array
+(
+    [email] => contato@ercont.com.br
+    [senha] => 250200er25*
+    [action] => admin_login
+)
+
+[2024-09-13 16:43:40] - Usuário ou senha não fornecidos.
+[2024-09-13 16:43:40] - Usuário ou senha não fornecidos.
+[2024-09-13 16:44:21] - Dados POST recebidos: Array
+(
+    [email] => contato@ercont.com.br
+    [senha] => 250200er25*
+    [action] => admin_login
+)
+
+[2024-09-13 16:44:21] - Usuário ou senha não fornecidos.
+[2024-09-13 16:44:21] - Usuário ou senha não fornecidos.

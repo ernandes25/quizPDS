@@ -1,17 +1,29 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Configuração de Email do Administrador</title>
     <link rel="stylesheet" href="style.css" />
-    
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            // Verificar se o administrador está logado
+            if (localStorage.getItem('admin')) {
+                alert("Você já está logado como administrador.");
+                window.location.href = 'admin_dashboard.php'; // Redireciona para o dashboard
+            }
+        });
+    </script>
+
 </head>
+
 <body>
     <header>
         <nav>
             <ul>
                 <img id="logo" src="logo.jpeg" />
+                
             </ul>
             <ul>
                 <a class="item" href="index.html">
@@ -50,7 +62,7 @@
 
     <main>
         <h1>Configuração de Email do Administrador</h1>
-        <form id="admin-email-form" action = "process_form.php" method="POST">
+        <form id="admin-email-form" action="process_form.php" method="POST">
             <label for="admin-email">Email:</label>
             <input type="email" id="admin-email" name="email" required><br>
             <label for="admin-password">Senha:</label>
@@ -65,4 +77,5 @@
     </footer>
     <script src="script.js"></script>
 </body>
+
 </html>

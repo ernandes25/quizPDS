@@ -228,12 +228,13 @@ try {
             echo json_encode($response);
             exit;
 
-        } elseif ($action == 'save_quiz_result') {
+        }elseif ($action == 'save_quiz_result') {
             $userEmail = $input['user'];
             $score = $input['score'];
-
-            $stmt = $pdo->prepare("UPDATE usuarios SET quiz_result = ? WHERE email = ?");
-            if ($stmt->execute([$score, $userEmail])) {
+            $currentDateTime = date('Y-m-d H:i:s'); // Obtém a data e hora atual
+        
+            $stmt = $pdo->prepare("UPDATE usuarios SET quiz_result = ?, data_hora_quiz = ? WHERE email = ?");
+            if ($stmt->execute([$score, $currentDateTime, $userEmail])) {
                 $response['status'] = 'success';
             } else {
                 $response['status'] = 'error';

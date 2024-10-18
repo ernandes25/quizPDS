@@ -15,9 +15,10 @@ document.addEventListener('DOMContentLoaded', function () {
     const userGreeting = document.getElementById('user-greeting');
     const loadingMessageCadastro = document.getElementById('loading-message-cadastro');
     const loadingMessageContact = document.getElementById('loading-message-contact');
+    
 
-    let isSubmittingAdminEmailForm = false; // Controla o envio múltiplo
-    let isSubmittingContactForm = false; // Controla o envio múltiplo do formulário de contato
+    let isSubmittingAdminEmailForm = false;
+    let isSubmittingContactForm = false;
 
     function showLoadingMessage(messageElement) {
         if (messageElement) {
@@ -34,7 +35,7 @@ document.addEventListener('DOMContentLoaded', function () {
     if (contactForm) {
         contactForm.addEventListener('submit', function (event) {
             event.preventDefault();
-            if (isSubmittingContactForm) return; // Verifica se o formulário já está sendo enviado
+            if (isSubmittingContactForm) return;
             isSubmittingContactForm = true;
 
             const formData = new FormData(contactForm);
@@ -55,19 +56,16 @@ document.addEventListener('DOMContentLoaded', function () {
                     return response.json();
                 })
                 .then(data => {
-                    console.log(data); // Adicionado para depuração
                     if (data.status === 'success') {
                         alert('Mensagem enviada com sucesso!');
                         window.location.href = 'contact_success.html';
                     } else {
-                        console.error('Erro:', data);
                         alert('Erro ao enviar mensagem: ' + data.message);
                     }
                 })
                 .catch(error => {
                     hideLoadingMessage(loadingMessageContact);
                     isSubmittingContactForm = false;
-                    console.error('Erro:', error);
                     alert('Ocorreu um erro ao enviar sua mensagem. Por favor, tente novamente mais tarde.');
                 });
         });
@@ -85,7 +83,7 @@ document.addEventListener('DOMContentLoaded', function () {
             }
             if (buttonInit) {
                 buttonInit.innerText = 'CONTINUAR PDS';
-                buttonInit.style.display = 'block'; // Garantir que o botão está visível
+                buttonInit.style.display = 'block';
             }
             if (userGreeting) {
                 userGreeting.innerText = `Bem vindo, ${user}`;
@@ -99,7 +97,7 @@ document.addEventListener('DOMContentLoaded', function () {
             }
             if (buttonInit) {
                 buttonInit.innerText = 'INICIAR PDS';
-                buttonInit.style.display = 'block'; // Garantir que o botão está visível
+                buttonInit.style.display = 'block';
             }
             if (userGreeting) {
                 userGreeting.innerText = '';
@@ -125,7 +123,6 @@ document.addEventListener('DOMContentLoaded', function () {
             window.location.href = 'quiz.html';
         } else {
             loginModal.style.display = 'block';
-            
         }
     }
 
@@ -138,7 +135,7 @@ document.addEventListener('DOMContentLoaded', function () {
     function adminLogout() {
         localStorage.removeItem('admin');
         checkLogin();
-        window.location.href = 'index.html'; // Redireciona para a página inicial
+        window.location.href = 'index.html';
     }
 
     if (loginForm) {
@@ -158,11 +155,8 @@ document.addEventListener('DOMContentLoaded', function () {
                     return response.json();
                 })
                 .then(data => {
-                    console.log(data); // Adicionado para depuração
                     if (data.status === 'success') {
                         localStorage.setItem('user', formData.get('usuario'));
-                        alert(data.message);
-                        loginModal.style.display = 'none';
                         window.location.href = data.redirect || 'quiz.html';
                     } else if (data.status === 'user_not_found') {
                         if (confirm('Usuário não encontrado. Deseja efetuar seu cadastro agora?')) {
@@ -189,24 +183,18 @@ document.addEventListener('DOMContentLoaded', function () {
             const senha = formData.get('nova_senha');
             const email = formData.get('email');
 
-            // Validação do campo senha
-            /* if (!/^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8}$/.test(senha)) {
-                alert('A senha deve conter 8 caracteres, incluindo letras e números.');
-                return; */
-                if (!/^\d{4}$/.test(senha)) {
-                    alert('A senha deve conter exatamente 4 caracteres numéricos.');
-                    return;
-
+            if (!/^\d{4}$/.test(senha)) {
+                alert('A senha deve conter exatamente 4 caracteres numéricos.');
+                return;
             }
 
-            // Validação do campo email
             if (!/\S+@\S+\.\S+/.test(email)) {
                 alert('Por favor, insira um endereço de email válido.');
                 return;
             }
 
             formData.append('action', 'cadastro');
-            formData.append('novo_usuario', email); // Define o email como o nome de usuário
+            formData.append('novo_usuario', email);
 
             showLoadingMessage(loadingMessageCadastro);
 
@@ -227,7 +215,7 @@ document.addEventListener('DOMContentLoaded', function () {
                         alert('Cadastro realizado com sucesso! Redirecionando para o Quiz PDS...');
                         setTimeout(() => {
                             window.location.href = 'quiz.html';
-                        }, 3000); // Redireciona após 3 segundos
+                        }, 3000);
                     } else {
                         alert(data.message);
                     }
@@ -242,7 +230,7 @@ document.addEventListener('DOMContentLoaded', function () {
     if (adminEmailForm) {
         adminEmailForm.addEventListener('submit', function (event) {
             event.preventDefault();
-            if (isSubmittingAdminEmailForm) return; // Verifica se o formulário já está sendo enviado
+            if (isSubmittingAdminEmailForm) return;
             isSubmittingAdminEmailForm = true;
 
             const formData = new FormData(adminEmailForm);
@@ -265,18 +253,15 @@ document.addEventListener('DOMContentLoaded', function () {
                 .then(data => {
                     hideLoadingMessage(loadingMessageContact);
                     isSubmittingAdminEmailForm = false;
-                    console.log('Admin email form response:', data); // Adicionado para depuração
                     if (data.status === 'success') {
                         alert(data.message);
                     } else {
-                        console.error('Erro:', data);
                         alert(data.message);
                     }
                 })
                 .catch(error => {
                     hideLoadingMessage(loadingMessageContact);
                     isSubmittingAdminEmailForm = false;
-                    console.error('Erro:', error);
                     alert('Ocorreu um erro ao processar sua solicitação. Por favor, tente novamente mais tarde.');
                 });
         });
@@ -287,32 +272,28 @@ document.addEventListener('DOMContentLoaded', function () {
             event.preventDefault();
             const formData = new FormData(adminLoginForm);
             formData.append('action', 'admin_login');
-    
+
             fetch('process_form.php', {
                 method: 'POST',
                 body: formData
             })
-            .then(response => {
-                if (!response.ok) {
-                    throw new Error('Network response was not ok');
-                }
-                return response.json();
-            })
-            .then(data => {
-                console.log(data); // Adicionado para depuração
-                if (data.status === 'success') {
-                    localStorage.setItem('admin', formData.get('email'));
-                    alert(data.message);
-                    window.open(data.redirect || 'admin_dashboard.html', '_blank');
-                } else {
-                    console.error('Erro:', data);
-                    alert(data.message);
-                }
-            })
-            .catch(error => {
-                console.error('Erro:', error);
-                alert('Ocorreu um erro ao processar sua solicitação. Por favor, tente novamente mais tarde.');
-            });
+                .then(response => {
+                    if (!response.ok) {
+                        throw new Error('Network response was not ok');
+                    }
+                    return response.json();
+                })
+                .then(data => {
+                    if (data.status === 'success') {
+                        localStorage.setItem('admin', formData.get('email'));
+                        window.open(data.redirect || 'admin_dashboard.html', '_blank');
+                    } else {
+                        alert(data.message);
+                    }
+                })
+                .catch(error => {
+                    alert('Ocorreu um erro ao processar sua solicitação. Por favor, tente novamente mais tarde.');
+                });
         });
     }
 
@@ -342,6 +323,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
         return score + (score11to15 * 2);
     }
+
     function saveQuizResult(score) {
         const user = localStorage.getItem('user');
         if (!user) {
@@ -349,10 +331,9 @@ document.addEventListener('DOMContentLoaded', function () {
             window.location.href = 'login.html';
             return;
         }
-    
+
         const data = { action: 'save_quiz_result', user: user, score: score };
-        console.log('Dados a serem enviados:', JSON.stringify(data)); // Adicionado para depuração
-    
+
         fetch('process_form.php', {
             method: 'POST',
             headers: {
@@ -360,24 +341,16 @@ document.addEventListener('DOMContentLoaded', function () {
             },
             body: JSON.stringify(data)
         })
-        .then(response => {
-            console.log('Resposta do servidor:', response); // Adicionado para depuração
-            return response.json();
-        })
-        .then(data => {
-            console.log('Resposta do servidor (JSON):', data); // Adicionado para depuração
-            if (data.status !== 'success') {
-                alert('Erro ao salvar resultado do quiz: ' + data.message);
-            }
-        })
-        .catch(error => {
-            console.error('Erro:', error);
-            alert('Erro ao salvar resultado do quiz. Tente novamente mais tarde.');
-        });
+            .then(response => response.json())
+            .then(data => {
+                if (data.status !== 'success') {
+                    alert('Erro ao salvar resultado do quiz: ' + data.message);
+                }
+            })
+            .catch(error => {
+                alert('Erro ao salvar resultado do quiz. Tente novamente mais tarde.');
+            });
     }
-    
-    
-    
 
     const questions = document.querySelectorAll('.question');
     const totalQuestions = questions.length;
@@ -430,7 +403,6 @@ document.addEventListener('DOMContentLoaded', function () {
 
     if (loadUsersButton) {
         loadUsersButton.addEventListener('click', function () {
-            console.log('Botão carregar dados dos usuários clicado.'); // Adicionado para depuração
             fetch('process_form.php', {
                 method: 'POST',
                 headers: {
@@ -440,7 +412,6 @@ document.addEventListener('DOMContentLoaded', function () {
             })
                 .then(response => response.json())
                 .then(data => {
-                    console.log('Dados recebidos:', data); // Adicionado para depuração
                     if (data.status === 'success') {
                         const usersTableBody = usersTable.querySelector('tbody');
                         usersTableBody.innerHTML = '';
@@ -451,6 +422,7 @@ document.addEventListener('DOMContentLoaded', function () {
                                 <td>${user.email}</td>
                                 <td>${user.telefone}</td>
                                 <td>${user.quiz_result !== null ? user.quiz_result : 'N/A'}</td>
+                                <td>${user.data_hora_quiz !== null ? user.data_hora_quiz : 'N/A'}</td>
                             `;
                             usersTableBody.appendChild(row);
                         });
@@ -460,20 +432,19 @@ document.addEventListener('DOMContentLoaded', function () {
                     }
                 })
                 .catch(error => {
-                    console.error('Erro:', error);
                     alert('Ocorreu um erro ao processar sua solicitação. Por favor, tente novamente mais tarde.');
                 });
         });
     }
 
     if (logoutButtonHeader) {
-        logoutButtonHeader.addEventListener('click', function() {
+        logoutButtonHeader.addEventListener('click', function () {
             logout();
         });
     }
 
     if (logoutButtonMain) {
-        logoutButtonMain.addEventListener('click', function() {
+        logoutButtonMain.addEventListener('click', function () {
             adminLogout();
         });
     }

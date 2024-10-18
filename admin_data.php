@@ -34,7 +34,7 @@ if (file_exists($usersFilePath)) {
                 </a>
             </ul>
             <ul>
-                <a class="item" href="admin_dashboard.html">
+                <a class="item" href="admin_dashboard.php">
                     <li>Painel do Administrador</li>
                 </a>
             </ul>
