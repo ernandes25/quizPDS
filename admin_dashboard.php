@@ -31,10 +31,10 @@ $usersData = $stmt->fetchAll(PDO::FETCH_ASSOC);
 // Função para formatar a data
 function formatDate($date) {
     if(!$date) return 'N/A';
-    $timestamp = strtotime($date);if (!$date) return 'N/A';
-        $timestamp = strtotime($date);
-        return $timestamp ? date("d m Y H:i", $timestamp) : 'Data inválida';
-    return $timestamp ? date("d m Y H:i", $timestamp($date)) : 'Data inválida';
+    $dateTime = new DateTime($date, new DateTimeZone('UTC'));
+    $dateTime->setTimezone(new DateTimeZone('America/Sao_Paulo'));
+    return $dateTime->format('d m Y H:i');
+   
 }
 
 ?>
