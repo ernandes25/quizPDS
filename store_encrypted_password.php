@@ -13,10 +13,10 @@ function encryptPassword($password) {
 // Conexão com o banco de dados
 require 'db_config.php';
 
-// Exemplo de uso
-$senha = '250200er25*'; // Substitua pela senha que você deseja criptografar
+ // Exemplo de uso
+$senha = ''; // Substitua pela senha que você deseja criptografar
 $senhaCriptografada = encryptPassword($senha);
-echo "Senha criptografada: " . $senhaCriptografada . "<br>";
+echo "Senha criptografada: " . $senhaCriptografada . "<br>"; 
 
 // Armazenar a senha criptografada no banco de dados
 $emailAdmin = 'contato@ercont.com.br';
