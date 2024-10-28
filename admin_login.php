@@ -46,30 +46,7 @@
         <span>Todos os direitos reservados &copy;</span>
         <span>Desenvolvido por: Bay Software - H & E Silva</span>
     </footer>
- <!--    <script>
-        document.getElementById('adminLoginForm').addEventListener('submit', function(event) {
-            event.preventDefault();
-            const formData = new FormData(this);
 
-            fetch('admin_login.php', {
-                method: 'POST',
-                body: formData
-            })
-            .then(response => response.json())
-            .then(data => {
-                if (data.status === 'success') {
-                    alert(data.message);
-                    window.location.href = 'admin_dashboard.html';
-                } else {
-                    alert(data.message);
-                }
-            })
-            .catch(error => {
-                console.error('Erro:', error);
-                alert('Ocorreu um erro ao processar sua solicitação. Por favor, tente novamente mais tarde.');
-            });
-        });
-    </script> -->
     <script src="script.js" defer></script>
     
 </body>

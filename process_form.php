@@ -8,6 +8,21 @@ require 'db_config.php';
 
 session_start();
 
+// Definir a chave de criptografia
+define('SECRET_KEY', 'a1b2c3d4e5f6g7h8i9j0k1l2m3n4o5p6'); // Armazene essa chave de forma segura e não compartilhe
+
+// Função para criptografar a senha
+function encryptPassword($password) {
+    $encrypted = openssl_encrypt($password, 'AES-128-CTR', SECRET_KEY, 0, '1234567891011121');
+    return base64_encode($encrypted); // Codifica o resultado em Base64
+}
+
+// Função para descriptografar a senha
+function decryptPassword($encryptedPassword) {
+    $encrypted = base64_decode($encryptedPassword); // Decodifica de Base64 antes da descriptografia
+    return openssl_decrypt($encrypted, 'AES-128-CTR', SECRET_KEY, 0, '1234567891011121');
+}
+
 $response = ['status' => 'error', 'message' => 'Ocorreu um erro ao processar sua solicitação. Por favor, tente mais tarde.'];
 
 if ($_SERVER['REQUEST_METHOD'] == 'POST') {
@@ -38,6 +53,10 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
                 $emailConfig = $stmt->fetch();
 
                 if ($emailConfig) {
+                    // Descriptografar a senha antes de usar no PHPMailer
+                    $senhaDescriptografada = decryptPassword($emailConfig['senha']);
+                    error_log("Senha descriptografada: $senhaDescriptografada", 3, "/opt/lampp/htdocs/quizPDS/error.log");
+
                     // Enviar email com link de redefinição de senha
                     $resetLink = "http://localhost/quizPDS/reset_password.php?token=$token";
                     $mail = new PHPMailer(true);
@@ -46,17 +65,20 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
                         $mail->Host = 'smtp.gmail.com';
                         $mail->SMTPAuth = true;
                         $mail->Username = $emailConfig['email'];
-                        $mail->Password = $emailConfig['senha'];
+                        $mail->Password = $senhaDescriptografada; // Usar a senha descriptografada
                         $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
                         $mail->Port = 587;
-                    
+
+                        error_log("Configurando PHPMailer", 3, "/opt/lampp/htdocs/quizPDS/error.log");
                         $mail->setFrom($emailConfig['email'], 'Sistema de Recuperação de Senha');
                         $mail->addAddress($email);
-                    
+                        error_log("Destinatário adicionado: $email", 3, "/opt/lampp/htdocs/quizPDS/error.log");
+
                         $mail->isHTML(true);
                         $mail->Subject = 'Redefinição de Senha';
                         $mail->Body = "Clique no link para redefinir sua senha: <a href='$resetLink'>$resetLink</a>";
-                    
+                        error_log("Conteúdo do e-mail configurado", 3, "/opt/lampp/htdocs/quizPDS/error.log");
+
                         $mail->send();
                         error_log("Email enviado para: $email", 3, "/opt/lampp/htdocs/quizPDS/error.log");
                         $response['status'] = 'success';
@@ -79,13 +101,42 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         }
         echo json_encode($response);
         exit;
+    } elseif ($action == 'admin_login') {
+        $email = $_POST['email'];
+        $senha = $_POST['senha'];
+        error_log("Tentativa de login do admin: email=$email", 3, "/opt/lampp/htdocs/quizPDS/error.log");
+
+        // Validar email e senha do administrador
+        $stmt = $pdo->prepare("SELECT * FROM admin_emails WHERE email = ?");
+        $stmt->execute([$email]);
+        $admin = $stmt->fetch();
+
+        if ($admin) {
+            // Descriptografar a senha armazenada
+            $senhaDescriptografada = decryptPassword($admin['senha']);
+            if ($senha === $senhaDescriptografada) {
+                // Login bem-sucedido
+                $_SESSION['admin'] = $admin['email'];
+                $response['status'] = 'success';
+                $response['message'] = 'Login do administrador realizado com sucesso';
+                $response['redirect'] = 'admin_dashboard.html';
+            } else {
+                // Falha no login
+                $response['message'] = 'Email ou senha do administrador inválidos';
+            }
+        } else {
+            // Falha no login
+            $response['message'] = 'Email ou senha do administrador inválidos';
+        }
+        echo json_encode($response);
+        exit;
     }
 }
 
 header('Content-Type: application/json');
 $response = ['status' => 'error', 'message' => 'Ocorreu um erro ao processar sua solicitação. Por favor, tente mais tarde.'];
 // Defina um manipulador de erros para capturar todos os erros e emitir JSON
-set_error_handler(function($severity, $message, $file, $line) {
+set_error_handler(function ($severity, $message, $file, $line) {
     http_response_code(500);
     error_log("Erro: [$severity] $message in $file on line $line", 3, "/opt/lampp/htdocs/quizPDS/error.log");
     echo json_encode([
@@ -97,7 +148,7 @@ set_error_handler(function($severity, $message, $file, $line) {
     exit;
 });
 
-set_exception_handler(function($exception) {
+set_exception_handler(function ($exception) {
     http_response_code(500);
     error_log("Exceção: " . $exception->getMessage() . " in " . $exception->getFile() . " on line " . $exception->getLine(), 3, "/opt/lampp/htdocs/quizPDS/error.log");
     echo json_encode([
@@ -151,30 +202,6 @@ try {
             }
             echo json_encode($response);
             exit;
-
-        } elseif ($action == 'admin_login') {
-            $email = $_POST['email'];
-            $senha = $_POST['senha'];
-            error_log("Tentativa de login do admin: email=$email", 3, "/opt/lampp/htdocs/quizPDS/error.log");
-
-            // Validar email e senha do administrador
-            $stmt = $pdo->prepare("SELECT * FROM admin_emails WHERE email = ?");
-            $stmt->execute([$email]);
-            $admin = $stmt->fetch();
-
-            if ($admin && password_verify($senha, $admin['senha'])) {
-                // Login bem-sucedido
-                $_SESSION['admin'] = $admin['email'];
-                $response['status'] = 'success';
-                $response['message'] = 'Login do administrador realizado com sucesso';
-                $response['redirect'] = 'admin_dashboard.html';
-            } else {
-                // Falha no login
-                $response['message'] = 'Email ou senha do administrador inválidos';
-            }
-            echo json_encode($response);
-            exit;
-
         } elseif ($action == 'get_users') {
             // Carregar dados dos usuários
             $stmt = $pdo->query("SELECT * FROM usuarios");
@@ -183,7 +210,6 @@ try {
             $response['usuarios'] = $usuarios;
             echo json_encode($response);
             exit;
-
         } elseif ($action == 'cadastro') {
             $novo_usuario = $_POST['novo_usuario'];
             $nova_senha = $_POST['nova_senha'];
@@ -223,7 +249,7 @@ try {
                         $mail->Host = 'smtp.gmail.com';
                         $mail->SMTPAuth = true;
                         $mail->Username = $admin['email'];
-                        $mail->Password = $admin['senha'];
+                        $mail->Password = decryptPassword($admin['senha']); // Descriptografar a senha
                         $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
                         $mail->Port = 587;
 
@@ -244,7 +270,6 @@ try {
             }
             echo json_encode($response);
             exit;
-
         } elseif ($action == 'contato') {
             $nome = $_POST['nome'];
             $email = $_POST['email'];
@@ -263,7 +288,7 @@ try {
                     $mail->Host = 'smtp.gmail.com';
                     $mail->SMTPAuth = true;
                     $mail->Username = $admin['email'];
-                    $mail->Password = $admin['senha'];
+                    $mail->Password = decryptPassword($admin['senha']); // Descriptografar a senha
                     $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
                     $mail->Port = 587;
 
@@ -288,7 +313,6 @@ try {
             }
             echo json_encode($response);
             exit;
-
         } elseif ($action == 'cadastrar_email_admin') {
             // Verificar se já existe algum administrador cadastrado
             $stmt = $pdo->query("SELECT COUNT(*) FROM admin_emails");
@@ -305,11 +329,11 @@ try {
             $senha = $_POST['senha'];
             error_log("Tentativa de cadastro de email admin: email=$email", 3, "/opt/lampp/htdocs/quizPDS/error.log");
 
-            // Hash da senha
-            $hashedPassword = password_hash($senha, PASSWORD_DEFAULT);
+            // Criptografar a senha
+            $senhaCriptografada = encryptPassword($senha);
 
             $stmt = $pdo->prepare("INSERT INTO admin_emails (email, senha) VALUES (?, ?)");
-            if ($stmt->execute([$email, $hashedPassword])) {
+            if ($stmt->execute([$email, $senhaCriptografada])) {
                 $response['status'] = 'success';
                 $response['message'] = 'Email do administrador cadastrado com sucesso';
             } else {
@@ -318,12 +342,11 @@ try {
             }
             echo json_encode($response);
             exit;
-
         } elseif ($action == 'save_quiz_result') {
             $userEmail = $input['user'];
             $score = $input['score'];
             $currentDateTime = date('Y-m-d H:i:s'); // Obtém a data e hora atual
-        
+
             $stmt = $pdo->prepare("UPDATE usuarios SET quiz_result = ?, data_hora_quiz = ? WHERE email = ?");
             if ($stmt->execute([$score, $currentDateTime, $userEmail])) {
                 $response['status'] = 'success';
