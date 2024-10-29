@@ -12,13 +12,15 @@ session_start();
 define('SECRET_KEY', 'a1b2c3d4e5f6g7h8i9j0k1l2m3n4o5p6'); // Armazene essa chave de forma segura e não compartilhe
 
 // Função para criptografar a senha
-function encryptPassword($password) {
+function encryptPassword($password)
+{
     $encrypted = openssl_encrypt($password, 'AES-128-CTR', SECRET_KEY, 0, '1234567891011121');
     return base64_encode($encrypted); // Codifica o resultado em Base64
 }
 
 // Função para descriptografar a senha
-function decryptPassword($encryptedPassword) {
+function decryptPassword($encryptedPassword)
+{
     $encrypted = base64_decode($encryptedPassword); // Decodifica de Base64 antes da descriptografia
     return openssl_decrypt($encrypted, 'AES-128-CTR', SECRET_KEY, 0, '1234567891011121');
 }
@@ -329,6 +331,18 @@ try {
             $senha = $_POST['senha'];
             error_log("Tentativa de cadastro de email admin: email=$email", 3, "/opt/lampp/htdocs/quizPDS/error.log");
 
+            // Verificar se o email já existe
+            $stmt = $pdo->prepare("SELECT COUNT(*) FROM admin_emails WHERE email = ?");
+            $stmt->execute([$email]);
+            $emailCount = $stmt->fetchColumn();
+
+            if ($emailCount > 0) {
+                $response['status'] = 'error';
+                $response['message'] = 'Este email de administrador já está cadastrado.';
+                echo json_encode($response);
+                exit;
+            }
+
             // Criptografar a senha
             $senhaCriptografada = encryptPassword($senha);
 
@@ -337,11 +351,13 @@ try {
                 $response['status'] = 'success';
                 $response['message'] = 'Email do administrador cadastrado com sucesso';
             } else {
+                $response['status'] = 'error';
                 $response['message'] = 'Falha ao salvar o email do administrador';
                 error_log("Failed to save admin email", 3, "/opt/lampp/htdocs/quizPDS/error.log");
             }
             echo json_encode($response);
             exit;
+        } elseif ($action == 'save_quiz_result') {
         } elseif ($action == 'save_quiz_result') {
             $userEmail = $input['user'];
             $score = $input['score'];
@@ -364,4 +380,3 @@ try {
 }
 
 echo json_encode($response);
-?>

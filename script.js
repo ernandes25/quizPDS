@@ -286,7 +286,7 @@ document.addEventListener('DOMContentLoaded', function () {
                 .then(data => {
                     if (data.status === 'success') {
                         localStorage.setItem('admin', formData.get('email'));
-                        window.open(data.redirect || 'admin_dashboard.html', '_blank');
+                        window.location.href = data.redirect || 'admin_dashboard.html';
                     } else {
                         alert(data.message);
                     }
