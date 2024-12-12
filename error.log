@@ -179,4 +179,49 @@ Ação: loginTentativa de login: usuario=fifo@gmail.comSolicitação POST recebi
     [action] => cadastro
     [novo_usuario] => antonioernandes25@gmail.com
 )
-Ação: cadastroTentativa de cadastro: usuario=antonioernandes25@gmail.comSolicitação POST recebidaAção recebida: recuperar_senhaTentativa de recuperação de senha: email=antonioernandes25@gmail.comEmail não encontrado: antonioernandes25@gmail.comSolicitação POST recebidaAção recebida: recuperar_senhaTentativa de recuperação de senha: email=contato@ercont.com.brEmail encontrado: contato@ercont.com.brToken gerado: 68fa69a98cf2885e6e37f53d5f610e067489c39b57327cef032669a644345dbf93f53e7a42de0c1868edbcab6c40e39ac88eSenha descriptografada: 250200er25*Configurando PHPMailerDestinatário adicionado: contato@ercont.com.brConteúdo do e-mail configuradoEmail enviado para: contato@ercont.com.brSolicitação POST recebidaAção recebida: recuperar_senhaTentativa de recuperação de senha: email=antonioernandes25@gmail.comEmail não encontrado: antonioernandes25@gmail.com
+Ação: cadastroTentativa de cadastro: usuario=antonioernandes25@gmail.comSolicitação POST recebidaAção recebida: recuperar_senhaTentativa de recuperação de senha: email=antonioernandes25@gmail.comEmail não encontrado: antonioernandes25@gmail.comSolicitação POST recebidaAção recebida: recuperar_senhaTentativa de recuperação de senha: email=contato@ercont.com.brEmail encontrado: contato@ercont.com.brToken gerado: 68fa69a98cf2885e6e37f53d5f610e067489c39b57327cef032669a644345dbf93f53e7a42de0c1868edbcab6c40e39ac88eSenha descriptografada: 250200er25*Configurando PHPMailerDestinatário adicionado: contato@ercont.com.brConteúdo do e-mail configuradoEmail enviado para: contato@ercont.com.brSolicitação POST recebidaAção recebida: recuperar_senhaTentativa de recuperação de senha: email=antonioernandes25@gmail.comEmail não encontrado: antonioernandes25@gmail.comSolicitação POST recebidaAção recebida: recuperar_senha_usuarioTentativa de recuperação de senha de usuário: email=antonioernandes25@gmail.comEmail encontrado: antonioernandes25@gmail.comSolicitação POST recebidaAção recebida: recuperar_senha_usuarioTentativa de recuperação de senha de usuário: email=antonioernandes25@gmail.comEmail encontrado: antonioernandes25@gmail.comToken gerado: 86ec4a277096b407bc2ba64930a45fd4a6fa5fea6ec31a693bf92f16c4175dd4c004979bb7c6700ea04f5d76b44ddd67856bSenha descriptografada: 250200er25*Configurando PHPMailerDestinatário adicionado: antonioernandes25@gmail.comConteúdo do e-mail configuradoEmail enviado para: antonioernandes25@gmail.comSolicitação POST recebidaAção recebida: recuperar_senha_usuarioTentativa de recuperação de senha de usuário: email=antonioernandes25@gmail.comEmail encontrado: antonioernandes25@gmail.comToken gerado: 05561f3725bdd0c482562cef99bc34e59f0439cefeb583b57e99b38dc3da9e7e1b3eaa7ede99a8df309adeeea0f8cd5c2830Senha descriptografada: 250200er25*Configurando PHPMailerDestinatário adicionado: antonioernandes25@gmail.comConteúdo do e-mail configuradoEmail enviado para: antonioernandes25@gmail.comSolicitação POST recebidaAção recebida: recuperar_senha_usuarioTentativa de recuperação de senha de usuário: email=antonioernandes25@gmail.comEmail encontrado: antonioernandes25@gmail.comToken gerado: 88ef80d754c08f52e49a3456335d764e3540f322bc917b0fa4baf536481d3228a87f62b7d62eb76b6a6c62a604182b85a612Senha descriptografada: 250200er25*Configurando PHPMailerDestinatário adicionado: antonioernandes25@gmail.comConteúdo do e-mail configuradoEmail enviado para: antonioernandes25@gmail.comSolicitação POST recebidaAção recebida: recuperar_senha_usuarioTentativa de recuperação de senha de usuário: email=antonioernandes25@gmail.comEmail encontrado: antonioernandes25@gmail.comToken gerado: b37d1e30c31639716de130105e558397cfa95f0169000a5a7dd621fef519422a7bad2d5b00de9aa525d0d5daf5f26134250cSenha descriptografada: 250200er25*Configurando PHPMailerDestinatário adicionado: antonioernandes25@gmail.comConteúdo do e-mail configuradoEmail enviado para: antonioernandes25@gmail.comSolicitação POST recebidaAção recebida: recuperar_senha_usuarioTentativa de recuperação de senha de usuário: email=antonioernandes25@gmail.comEmail encontrado: antonioernandes25@gmail.comToken gerado: 7ef7a8020c32a94f4907f0974aa716af84e4bfe7374c07733e6d392275b5fcc0418c1fbea9f477736a1890ff30180abc621cSenha descriptografada: 250200er25*Configurando PHPMailerDestinatário adicionado: antonioernandes25@gmail.comConteúdo do e-mail configuradoEmail enviado para: antonioernandes25@gmail.comSolicitação POST recebidaAção recebida: recuperar_senha_usuarioTentativa de recuperação de senha de usuário: email=antonioernandes25@gmail.comEmail encontrado: antonioernandes25@gmail.comToken gerado: f81ee3c3eca31be8e54f11f88bfb2128237d05e9958caedbba3bd451b785642ceff2cb047699007935e65505fbefebb9bfa4Senha descriptografada: 250200er25*Configurando PHPMailerDestinatário adicionado: antonioernandes25@gmail.comConteúdo do e-mail configuradoEmail enviado para: antonioernandes25@gmail.comSolicitação POST recebidaAção recebida: loginSolicitação recebida: {"usuario":"antonioernandes25@gmail.com","senha":"250200","action":"login"}Dados de formulário recebidos: Array
+(
+    [usuario] => antonioernandes25@gmail.com
+    [senha] => 250200
+    [action] => login
+)
+Ação: loginTentativa de login: usuario=antonioernandes25@gmail.comSolicitação POST recebidaAção recebida: loginSolicitação recebida: {"usuario":"antonioernandes25@gmail.com","senha":"1234","action":"login"}Dados de formulário recebidos: Array
+(
+    [usuario] => antonioernandes25@gmail.com
+    [senha] => 1234
+    [action] => login
+)
+Ação: loginTentativa de login: usuario=antonioernandes25@gmail.comSolicitação POST recebidaAção recebida: loginSolicitação recebida: {"usuario":"antonioernandes25@gmail.com","senha":"250200","action":"login"}Dados de formulário recebidos: Array
+(
+    [usuario] => antonioernandes25@gmail.com
+    [senha] => 250200
+    [action] => login
+)
+Ação: loginTentativa de login: usuario=antonioernandes25@gmail.comSolicitação POST recebidaAção recebida: cadastroSolicitação recebida: {"nome":"ANTONIO ERNANDES SILVA FILHO","email":"antonioernandes25@gmail.com","telefone":"34998142525","nova_senha":"2502","action":"cadastro","novo_usuario":"antonioernandes25@gmail.com"}Dados de formulário recebidos: Array
+(
+    [nome] => ANTONIO ERNANDES SILVA FILHO
+    [email] => antonioernandes25@gmail.com
+    [telefone] => 34998142525
+    [nova_senha] => 2502
+    [action] => cadastro
+    [novo_usuario] => antonioernandes25@gmail.com
+)
+Ação: cadastroTentativa de cadastro: usuario=antonioernandes25@gmail.comSolicitação POST recebidaAção recebida: loginSolicitação recebida: {"usuario":"antonioernandes25@gmail.com","senha":"250200","action":"login"}Dados de formulário recebidos: Array
+(
+    [usuario] => antonioernandes25@gmail.com
+    [senha] => 250200
+    [action] => login
+)
+Ação: loginTentativa de login: usuario=antonioernandes25@gmail.comSolicitação POST recebidaAção recebida: loginSolicitação recebida: {"usuario":"antonioernandes25@gmail.com","senha":"250200","action":"login"}Dados de formulário recebidos: Array
+(
+    [usuario] => antonioernandes25@gmail.com
+    [senha] => 250200
+    [action] => login
+)
+Ação: loginTentativa de login: usuario=antonioernandes25@gmail.comSolicitação POST recebidaAção recebida: loginSolicitação recebida: {"usuario":"antonioernandes25@gmail.com","senha":"250200","action":"login"}Dados de formulário recebidos: Array
+(
+    [usuario] => antonioernandes25@gmail.com
+    [senha] => 250200
+    [action] => login
+)
+Ação: loginTentativa de login: usuario=antonioernandes25@gmail.com

@@ -103,6 +103,77 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         }
         echo json_encode($response);
         exit;
+    } elseif ($action == 'recuperar_senha_usuario') {
+        $email = $_POST['email'];
+        error_log("Tentativa de recuperação de senha de usuário: email=$email", 3, "/opt/lampp/htdocs/quizPDS/error.log");
+
+        // Verificar se o email está registrado
+        $stmt = $pdo->prepare("SELECT * FROM usuarios WHERE email = ?");
+        $stmt->execute([$email]);
+        $user = $stmt->fetch();
+
+        if ($user) {
+            error_log("Email encontrado: $email", 3, "/opt/lampp/htdocs/quizPDS/error.log");
+
+            // Gerar token de recuperação de senha
+            $token = bin2hex(random_bytes(50));
+            $stmt = $pdo->prepare("UPDATE usuarios SET reset_token = ?, reset_token_expiry = DATE_ADD(NOW(), INTERVAL 1 HOUR) WHERE email = ?");
+            if ($stmt->execute([$token, $email])) {
+                error_log("Token gerado: $token", 3, "/opt/lampp/htdocs/quizPDS/error.log");
+
+                // Buscar credenciais de email do administrador
+                $stmt = $pdo->query("SELECT email, senha FROM admin_emails LIMIT 1");
+                $emailConfig = $stmt->fetch();
+
+                if ($emailConfig) {
+                    // Descriptografar a senha antes de usar no PHPMailer
+                    $senhaDescriptografada = decryptPassword($emailConfig['senha']);
+                    error_log("Senha descriptografada: $senhaDescriptografada", 3, "/opt/lampp/htdocs/quizPDS/error.log");
+
+                    // Enviar email com link de redefinição de senha
+                    $resetLink = "http://localhost/quizPDS/reset_password.php?token=$token";
+                    $mail = new PHPMailer(true);
+                    try {
+                        $mail->isSMTP();
+                        $mail->Host = 'smtp.gmail.com';
+                        $mail->SMTPAuth = true;
+                        $mail->Username = $emailConfig['email'];
+                        $mail->Password = $senhaDescriptografada; // Usar a senha descriptografada
+                        $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
+                        $mail->Port = 587;
+
+                        error_log("Configurando PHPMailer", 3, "/opt/lampp/htdocs/quizPDS/error.log");
+                        $mail->setFrom($emailConfig['email'], 'Sistema de Recuperação de Senha');
+                        $mail->addAddress($email);
+                        error_log("Destinatário adicionado: $email", 3, "/opt/lampp/htdocs/quizPDS/error.log");
+
+                        $mail->isHTML(true);
+                        $mail->Subject = 'Redefinição de Senha';
+                        $mail->Body = "Clique no link para redefinir sua senha: <a href='$resetLink'>$resetLink</a>";
+                        error_log("Conteúdo do e-mail configurado", 3, "/opt/lampp/htdocs/quizPDS/error.log");
+
+                        $mail->send();
+                        error_log("Email enviado para: $email", 3, "/opt/lampp/htdocs/quizPDS/error.log");
+                        $response['status'] = 'success';
+                        $response['message'] = 'Email de recuperação de senha enviado com sucesso.';
+                    } catch (Exception $e) {
+                        error_log("Erro no envio do email: {$mail->ErrorInfo}", 3, "/opt/lampp/htdocs/quizPDS/error.log");
+                        $response['message'] = "A mensagem não pôde ser enviada. Erro: {$mail->ErrorInfo}";
+                    }
+                } else {
+                    error_log("Falha ao buscar credenciais de email", 3, "/opt/lampp/htdocs/quizPDS/error.log");
+                    $response['message'] = 'Falha ao buscar credenciais de email';
+                }
+            } else {
+                error_log("Falha ao atualizar o token no banco de dados", 3, "/opt/lampp/htdocs/quizPDS/error.log");
+                $response['message'] = 'Falha ao atualizar o token no banco de dados';
+            }
+        } else {
+            error_log("Email não encontrado: $email", 3, "/opt/lampp/htdocs/quizPDS/error.log");
+            $response['message'] = 'Email não encontrado.';
+        }
+        echo json_encode($response);
+        exit;
     } elseif ($action == 'admin_login') {
         $email = $_POST['email'];
         $senha = $_POST['senha'];
