@@ -1,10 +1,80 @@
-Solicitação POST recebidaAção recebida: Solicitação recebida: []Ação: save_quiz_resultSolicitação POST recebidaAção recebida: Solicitação recebida: []JSON decodificado: Array
+Solicitação POST recebidaSolicitação POST recebidaAção recebida: admin_loginAção recebida: admin_loginTentativa de login do admin: email=contato@ercont.com.brTentativa de login do admin: email=contato@ercont.com.brSolicitação POST recebidaAção recebida: Solicitação recebida: []JSON decodificado: Array
 (
-    [action] => save_quiz_result
-    [user] => fifo@gmail.com
-    [score] => 138
+    [action] => admin_logout
 )
-Ação: save_quiz_resultSalvando resultado do quiz: user=fifo@gmail.com, score=138Solicitação POST recebidaAção recebida: loginSolicitação recebida: {"usuario":"fifo@gmail.com","senha":"1234","action":"login"}Dados de formulário recebidos: Array
+Ação: admin_logoutTentativa de logout do administradorLogout do administrador realizado com sucessoSolicitação POST recebidaAção recebida: admin_loginTentativa de login do admin: email=contato@ercont.com.brSolicitação POST recebidaAção recebida: admin_loginSolicitação POST recebidaAção recebida: Solicitação recebida: []JSON decodificado: Array
+(
+    [action] => admin_logout
+)
+Ação: admin_logoutTentativa de logout do administradorLogout do administrador realizado com sucessoSolicitação POST recebidaAção recebida: admin_loginTentativa de login do admin: email=contato@ercont.com.brSolicitação POST recebidaAção recebida: admin_loginSolicitação POST recebidaAção recebida: Solicitação recebida: []JSON decodificado: Array
+(
+    [action] => admin_logout
+)
+Ação: admin_logoutTentativa de logout do administradorLogout do administrador realizado com sucessoSolicitação POST recebidaAção recebida: cadastrar_email_adminSolicitação recebida: {"email":"antonioernandes25@gmail.com","senha":"1234","action":"cadastrar_email_admin"}Dados de formulário recebidos: Array
+(
+    [email] => antonioernandes25@gmail.com
+    [senha] => 1234
+    [action] => cadastrar_email_admin
+)
+Ação: cadastrar_email_adminSolicitação POST recebidaAção recebida: admin_loginTentativa de login do admin: email=contato@ercont.com.brSolicitação POST recebidaAção recebida: admin_loginSolicitação POST recebidaAção recebida: cadastrar_email_adminSolicitação recebida: {"email":"antonioernandes25@gmail.com","senha":"250200","action":"cadastrar_email_admin"}Dados de formulário recebidos: Array
+(
+    [email] => antonioernandes25@gmail.com
+    [senha] => 250200
+    [action] => cadastrar_email_admin
+)
+Ação: cadastrar_email_adminSolicitação POST recebidaAção recebida: admin_loginSolicitação POST recebidaAção recebida: admin_loginSolicitação POST recebidaAção recebida: admin_loginSolicitação POST recebidaAção recebida: admin_loginSolicitação POST recebidaAção recebida: admin_loginSolicitação POST recebidaAção recebida: admin_loginSolicitação POST recebidaAção recebida: cadastrar_email_adminSolicitação recebida: {"email":"antonioernandes25@gmail.com","senha":"250200","action":"cadastrar_email_admin"}Dados de formulário recebidos: Array
+(
+    [email] => antonioernandes25@gmail.com
+    [senha] => 250200
+    [action] => cadastrar_email_admin
+)
+Ação: cadastrar_email_adminSolicitação POST recebidaAção recebida: cadastrar_email_adminSolicitação recebida: {"email":"antonioernandes25@gmail.com","senha":"250200er","action":"cadastrar_email_admin"}Dados de formulário recebidos: Array
+(
+    [email] => antonioernandes25@gmail.com
+    [senha] => 250200er
+    [action] => cadastrar_email_admin
+)
+Ação: cadastrar_email_adminSolicitação POST recebidaAção recebida: admin_loginTentativa de login do admin: email=contato@ercont.com.brSolicitação POST recebidaAção recebida: admin_loginTentativa de login do admin: email=contato@ercont.com.brSolicitação POST recebidaAção recebida: cadastrar_email_adminSolicitação recebida: {"email":"antonioernandes25@gmail.com","senha":"250200er","action":"cadastrar_email_admin"}Dados de formulário recebidos: Array
+(
+    [email] => antonioernandes25@gmail.com
+    [senha] => 250200er
+    [action] => cadastrar_email_admin
+)
+Ação: cadastrar_email_adminSolicitação POST recebidaAção recebida: cadastrar_email_adminSolicitação recebida: {"email":"antonioernandes25@gmail.com","senha":"250200er","action":"cadastrar_email_admin"}Dados de formulário recebidos: Array
+(
+    [email] => antonioernandes25@gmail.com
+    [senha] => 250200er
+    [action] => cadastrar_email_admin
+)
+Ação: cadastrar_email_adminSolicitação POST recebidaAção recebida: Solicitação recebida: []JSON decodificado: Array
+(
+    [action] => get_users
+)
+Ação: get_usersSolicitação POST recebidaAção recebida: Solicitação recebida: []JSON decodificado: Array
+(
+    [action] => admin_logout
+)
+Ação: admin_logoutTentativa de logout do administradorLogout do administrador realizado com sucessoSolicitação POST recebidaAção recebida: admin_loginTentativa de login do admin: email=contato@ercont.com.brSolicitação POST recebidaAção recebida: admin_loginSolicitação POST recebidaAção recebida: Solicitação recebida: []JSON decodificado: Array
+(
+    [action] => get_users
+)
+Ação: get_usersSolicitação POST recebidaAção recebida: Solicitação recebida: []JSON decodificado: Array
+(
+    [action] => admin_logout
+)
+Ação: admin_logoutTentativa de logout do administradorLogout do administrador realizado com sucessoSolicitação POST recebidaAção recebida: cadastrar_email_adminSolicitação recebida: {"email":"antonioernandes25@gmail.com","senha":"250200","action":"cadastrar_email_admin"}Dados de formulário recebidos: Array
+(
+    [email] => antonioernandes25@gmail.com
+    [senha] => 250200
+    [action] => cadastrar_email_admin
+)
+Ação: cadastrar_email_adminSolicitação POST recebidaAção recebida: admin_loginTentativa de login do admin: email=contato@ercont.com.brSolicitação POST recebidaAção recebida: admin_loginTentativa de login do admin: email=contato@ercont.com.brSolicitação POST recebidaAção recebida: admin_loginTentativa de login do admin: email=contato@ercont.com.brSolicitação POST recebidaAção recebida: admin_loginTentativa de login do admin: email=contato@ercont.com.brSolicitação POST recebidaAção recebida: cadastrar_email_adminSolicitação recebida: {"email":"antonioernandes25@gmail.com","senha":"250200","action":"cadastrar_email_admin"}Dados de formulário recebidos: Array
+(
+    [email] => antonioernandes25@gmail.com
+    [senha] => 250200
+    [action] => cadastrar_email_admin
+)
+Ação: cadastrar_email_adminTentativa de cadastro de email admin: email=antonioernandes25@gmail.comSolicitação POST recebidaAção recebida: loginSolicitação recebida: {"usuario":"fifo@gmail.com","senha":"1234","action":"login"}Dados de formulário recebidos: Array
 (
     [usuario] => fifo@gmail.com
     [senha] => 1234
@@ -14,10 +84,40 @@ Ação: loginTentativa de login: usuario=fifo@gmail.comSolicitação POST recebi
 (
     [action] => save_quiz_result
     [user] => fifo@gmail.com
-    [score] => 112
+    [score] => 138
 )
-Ação: save_quiz_resultSalvando resultado do quiz: user=fifo@gmail.com, score=112Solicitação POST recebidaAção recebida: admin_loginTentativa de login do admin: email=contato@ercont.com.brSolicitação POST recebidaAção recebida: admin_loginTentativa de login do admin: email=contato@ercont.com.brSolicitação POST recebidaAção recebida: Solicitação recebida: []JSON decodificado: Array
+Ação: save_quiz_resultSalvando resultado do quiz: user=fifo@gmail.com, score=138Solicitação POST recebidaAção recebida: admin_loginTentativa de login do admin: email=contato@ercont.com.brSolicitação POST recebidaAção recebida: admin_loginTentativa de login do admin: email=contato@ercont.com.brSolicitação POST recebidaAção recebida: Solicitação recebida: []JSON decodificado: Array
 (
     [action] => get_users
 )
-Ação: get_users
+Ação: get_usersSolicitação POST recebidaAção recebida: admin_loginTentativa de login do admin: email=contato@ercont.com.brSolicitação POST recebidaAção recebida: admin_loginTentativa de login do admin: email=contato@ercont.com.brSolicitação POST recebidaAção recebida: admin_loginTentativa de login do admin: email=contato@ercont.com.brSolicitação POST recebidaAção recebida: admin_loginTentativa de login do admin: email=contato@ercont.com.brSolicitação POST recebidaAção recebida: admin_loginTentativa de login do admin: email=contato@ercont.com.brSolicitação POST recebidaAção recebida: admin_loginTentativa de login do admin: email=contato@ercont.com.brSolicitação POST recebidaAção recebida: cadastrar_email_adminSolicitação recebida: {"email":"antonioernandes25@gmail.com","senha":"250200","action":"cadastrar_email_admin"}Dados de formulário recebidos: Array
+(
+    [email] => antonioernandes25@gmail.com
+    [senha] => 250200
+    [action] => cadastrar_email_admin
+)
+Ação: cadastrar_email_adminTentativa de cadastro de email admin: email=antonioernandes25@gmail.comSolicitação POST recebidaSolicitação POST recebidaAção recebida: admin_loginAção recebida: admin_loginTentativa de login do admin: email=contato@ercont.com.brTentativa de login do admin: email=contato@ercont.com.brSolicitação POST recebidaAção recebida: cadastrar_email_adminSolicitação recebida: {"email":"antonioernandes25@gmail.com","senha":"250200","action":"cadastrar_email_admin"}Dados de formulário recebidos: Array
+(
+    [email] => antonioernandes25@gmail.com
+    [senha] => 250200
+    [action] => cadastrar_email_admin
+)
+Ação: cadastrar_email_adminTentativa de cadastro de email admin: email=antonioernandes25@gmail.comSolicitação POST recebidaAção recebida: loginSolicitação recebida: {"usuario":"fifo@gmail.com","senha":"1234","action":"login"}Dados de formulário recebidos: Array
+(
+    [usuario] => fifo@gmail.com
+    [senha] => 1234
+    [action] => login
+)
+Ação: loginTentativa de login: usuario=fifo@gmail.comSolicitação POST recebidaAção recebida: admin_loginTentativa de login do admin: email=contato@ercont.com.brSolicitação POST recebidaAção recebida: admin_loginTentativa de login do admin: email=contato@ercont.com.brSolicitação POST recebidaAção recebida: Solicitação recebida: []JSON decodificado: Array
+(
+    [action] => get_users
+)
+Ação: get_usersSolicitação POST recebidaAção recebida: admin_loginTentativa de login do admin: email=contato@ercont.com.brSolicitação POST recebidaAção recebida: admin_loginTentativa de login do admin: email=contato@ercont.com.brSolicitação POST recebidaAção recebida: admin_loginTentativa de login do admin: email=contato@ercont.com.brSolicitação POST recebidaAção recebida: admin_loginTentativa de login do admin: email=contato@ercont.com.brSolicitação POST recebidaAção recebida: Solicitação recebida: []JSON decodificado: Array
+(
+    [action] => get_users
+)
+Ação: get_usersSolicitação POST recebidaAção recebida: admin_loginTentativa de login do admin: email=contato@ercont.com.brSolicitação POST recebidaAção recebida: admin_loginTentativa de login do admin: email=contato@ercont.com.brSolicitação POST recebidaAção recebida: admin_loginTentativa de login do admin: email=contato@ercont.com.brSolicitação POST recebidaAção recebida: admin_loginTentativa de login do admin: email=contato@ercont.com.brSolicitação POST recebidaAção recebida: admin_loginTentativa de login do admin: email=contato@ercont.com.brSolicitação POST recebidaAção recebida: admin_loginTentativa de login do admin: email=contato@ercont.com.brSolicitação POST recebidaAção recebida: admin_loginTentativa de login do admin: email=contato@ercont.com.brSolicitação POST recebidaAção recebida: admin_loginTentativa de login do admin: email=contato@ercont.com.brSolicitação POST recebidaAção recebida: admin_loginTentativa de login do admin: email=contato@ercont.com.brSolicitação POST recebidaAção recebida: admin_loginTentativa de login do admin: email=contato@ercont.com.brSolicitação POST recebidaAção recebida: admin_loginTentativa de login do admin: email=contato@ercont.com.brSolicitação POST recebidaAção recebida: admin_loginTentativa de login do admin: email=contato@ercont.com.brSolicitação POST recebidaSolicitação POST recebidaAção recebida: admin_loginAção recebida: admin_loginTentativa de login do admin: email=contato@ercont.com.brTentativa de login do admin: email=contato@ercont.com.brSolicitação POST recebidaAção recebida: admin_loginSolicitação POST recebidaTentativa de login do admin: email=contato@ercont.com.brAção recebida: admin_loginTentativa de login do admin: email=contato@ercont.com.brSolicitação POST recebidaAção recebida: admin_loginTentativa de login do admin: email=contato@ercont.com.brSolicitação POST recebidaAção recebida: admin_loginTentativa de login do admin: email=contato@ercont.com.brSolicitação POST recebidaAção recebida: admin_loginTentativa de login do admin: email=contato@ercont.com.brSolicitação POST recebidaAção recebida: admin_loginTentativa de login do admin: email=contato@ercont.com.brSolicitação POST recebidaAção recebida: admin_loginTentativa de login do admin: email=contato@ercont.com.brSolicitação POST recebidaAção recebida: admin_loginTentativa de login do admin: email=contato@ercont.com.brSolicitação POST recebidaAção recebida: admin_loginTentativa de login do admin: email=contato@ercont.com.brSolicitação POST recebidaAção recebida: admin_loginTentativa de login do admin: email=contato@ercont.com.brSolicitação POST recebidaAção recebida: admin_loginSolicitação POST recebidaTentativa de login do admin: email=contato@ercont.com.brAção recebida: admin_loginTentativa de login do admin: email=contato@ercont.com.brSolicitação POST recebidaAção recebida: admin_loginTentativa de login do admin: email=contato@ercont.com.brSolicitação POST recebidaAção recebida: admin_loginTentativa de login do admin: email=contato@ercont.com.brSolicitação POST recebidaAção recebida: admin_loginTentativa de login do admin: email=contato@ercont.com.brSolicitação POST recebidaAção recebida: admin_loginTentativa de login do admin: email=contato@ercont.com.brSolicitação POST recebidaAção recebida: admin_loginTentativa de login do admin: email=contato@ercont.com.brSolicitação POST recebidaAção recebida: admin_loginTentativa de login do admin: email=contato@ercont.com.brSolicitação POST recebidaAção recebida: admin_loginTentativa de login do admin: email=contato@ercont.com.brSolicitação POST recebidaAção recebida: admin_loginTentativa de login do admin: email=contato@ercont.com.brSolicitação POST recebidaAção recebida: admin_loginTentativa de login do admin: email=contato@ercont.com.brSolicitação POST recebidaAção recebida: admin_loginTentativa de login do admin: email=contato@ercont.com.brSolicitação POST recebidaAção recebida: admin_loginTentativa de login do admin: email=contato@ercont.com.brSolicitação POST recebidaAção recebida: admin_loginTentativa de login do admin: email=contato@ercont.com.brSolicitação POST recebidaAção recebida: admin_loginTentativa de login do admin: email=contato@ercont.com.brSolicitação POST recebidaAção recebida: admin_loginTentativa de login do admin: email=contato@ercont.com.brSolicitação POST recebidaAção recebida: admin_loginTentativa de login do admin: email=contato@ercont.com.brSolicitação POST recebidaAção recebida: admin_loginTentativa de login do admin: email=contato@ercont.com.brSolicitação POST recebidaAção recebida: admin_loginTentativa de login do admin: email=contato@ercont.com.brSolicitação POST recebidaAção recebida: admin_loginTentativa de login do admin: email=contato@ercont.com.brSolicitação POST recebidaAção recebida: admin_loginTentativa de login do admin: email=contato@ercont.com.brSolicitação POST recebidaAção recebida: admin_loginTentativa de login do admin: email=contato@ercont.com.brSolicitação POST recebidaAção recebida: admin_loginTentativa de login do admin: email=contato@ercont.com.brSolicitação POST recebidaAção recebida: admin_loginTentativa de login do admin: email=contato@ercont.com.brSolicitação POST recebidaAção recebida: admin_loginTentativa de login do admin: email=contato@ercont.com.brSolicitação POST recebidaAção recebida: admin_loginTentativa de login do admin: email=contato@ercont.com.brSolicitação POST recebidaSolicitação POST recebidaAção recebida: admin_loginAção recebida: admin_loginTentativa de login do admin: email=contato@ercont.com.brTentativa de login do admin: email=contato@ercont.com.brSolicitação POST recebidaAção recebida: admin_loginTentativa de login do admin: email=contato@ercont.com.brSolicitação POST recebidaAção recebida: admin_loginTentativa de login do admin: email=contato@ercont.com.brSolicitação POST recebidaAção recebida: admin_loginTentativa de login do admin: email=contato@ercont.com.brSolicitação POST recebidaAção recebida: admin_loginTentativa de login do admin: email=contato@ercont.com.brSolicitação POST recebidaAção recebida: admin_loginTentativa de login do admin: email=contato@ercont.com.brSolicitação POST recebidaAção recebida: admin_loginTentativa de login do admin: email=contato@ercont.com.brSolicitação POST recebidaAção recebida: admin_loginTentativa de login do admin: email=contato@ercont.com.brSolicitação POST recebidaAção recebida: admin_loginTentativa de login do admin: email=contato@ercont.com.brSolicitação POST recebidaAção recebida: admin_loginTentativa de login do admin: email=contato@ercont.com.brSolicitação POST recebidaAção recebida: admin_loginTentativa de login do admin: email=contato@ercont.com.brSolicitação POST recebidaAção recebida: admin_loginTentativa de login do admin: email=contato@ercont.com.brSolicitação POST recebidaAção recebida: admin_loginTentativa de login do admin: email=contato@ercont.com.brSolicitação POST recebidaAção recebida: admin_loginTentativa de login do admin: email=contato@ercont.com.brSolicitação POST recebidaAção recebida: Solicitação recebida: []JSON decodificado: Array
+(
+    [action] => get_users
+)
+Ação: get_usersSolicitação POST recebidaAção recebida: admin_loginTentativa de login do admin: email=contato@ercont.com.brSolicitação POST recebidaAção recebida: admin_loginTentativa de login do admin: email=contato@ercont.com.brSolicitação POST recebidaAção recebida: admin_loginTentativa de login do admin: email=contato@ercont.com.br
