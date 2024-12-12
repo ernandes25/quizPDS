@@ -96,7 +96,7 @@ document.addEventListener('DOMContentLoaded', function () {
                 logoutButtonHeader.style.display = 'none';
             }
             if (buttonInit) {
-                buttonInit.innerText = 'INICIAR PDS';
+                buttonInit.innerText = 'Fezer Login';
                 buttonInit.style.display = 'block';
             }
             if (userGreeting) {

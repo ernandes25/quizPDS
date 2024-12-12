@@ -164,4 +164,19 @@ Ação: get_usersSolicitação POST recebidaAção recebida: loginSolicitação 
     [senha] => 1234
     [action] => login
 )
-Ação: loginTentativa de login: usuario=fifo@gmail.com
+Ação: loginTentativa de login: usuario=fifo@gmail.comSolicitação POST recebidaAção recebida: loginSolicitação recebida: {"usuario":"fifo@gmail.com","senha":"1234","action":"login"}Dados de formulário recebidos: Array
+(
+    [usuario] => fifo@gmail.com
+    [senha] => 1234
+    [action] => login
+)
+Ação: loginTentativa de login: usuario=fifo@gmail.comSolicitação POST recebidaAção recebida: recuperar_senhaTentativa de recuperação de senha: email=antonioernandes25@gmail.comEmail não encontrado: antonioernandes25@gmail.comSolicitação POST recebidaAção recebida: cadastroSolicitação recebida: {"nome":"ernandes","email":"antonioernandes25@gmail.com","telefone":"34998142525","nova_senha":"1234","action":"cadastro","novo_usuario":"antonioernandes25@gmail.com"}Dados de formulário recebidos: Array
+(
+    [nome] => ernandes
+    [email] => antonioernandes25@gmail.com
+    [telefone] => 34998142525
+    [nova_senha] => 1234
+    [action] => cadastro
+    [novo_usuario] => antonioernandes25@gmail.com
+)
+Ação: cadastroTentativa de cadastro: usuario=antonioernandes25@gmail.comSolicitação POST recebidaAção recebida: recuperar_senhaTentativa de recuperação de senha: email=antonioernandes25@gmail.comEmail não encontrado: antonioernandes25@gmail.comSolicitação POST recebidaAção recebida: recuperar_senhaTentativa de recuperação de senha: email=contato@ercont.com.brEmail encontrado: contato@ercont.com.brToken gerado: 68fa69a98cf2885e6e37f53d5f610e067489c39b57327cef032669a644345dbf93f53e7a42de0c1868edbcab6c40e39ac88eSenha descriptografada: 250200er25*Configurando PHPMailerDestinatário adicionado: contato@ercont.com.brConteúdo do e-mail configuradoEmail enviado para: contato@ercont.com.brSolicitação POST recebidaAção recebida: recuperar_senhaTentativa de recuperação de senha: email=antonioernandes25@gmail.comEmail não encontrado: antonioernandes25@gmail.com

@@ -77,7 +77,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
                         error_log("Destinatário adicionado: $email", 3, "/opt/lampp/htdocs/quizPDS/error.log");
 
                         $mail->isHTML(true);
-                        $mail->Subject = 'Redefiniç��o de Senha';
+                        $mail->Subject = 'Redefinição de Senha';
                         $mail->Body = "Clique no link para redefinir sua senha: <a href='$resetLink'>$resetLink</a>";
                         error_log("Conteúdo do e-mail configurado", 3, "/opt/lampp/htdocs/quizPDS/error.log");
 
@@ -122,7 +122,6 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
                 $response['status'] = 'success';
                 $response['message'] = 'Login do administrador realizado com sucesso';
                 $response['redirect'] = 'admin_dashboard.html';
-                $response['adminLoggedIn'] = true; // Adicionado para definir o item no sessionStorage
             } else {
                 // Falha no login
                 $response['message'] = 'Email ou senha do administrador inválidos';

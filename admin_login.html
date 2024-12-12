@@ -39,11 +39,10 @@
                 </a>
                 <div class="dropdown-content">
                     <a href="config_email.html">Cadastrar Email</a>
-                    <a href="admin_login.html" id="admin-login-link">Login do Administrador</a>
+                    <a href="admin_login.html">Login do Administrador</a>
                 </div>
             </ul>
             <ul id="logout" style="display: none;">
-                <span id="user-greeting"></span>
                 <button onclick="logout()">Sair</button>
             </ul>
         </nav>
@@ -63,47 +62,6 @@
     </main>
 
     <script src="script.js"></script>
-    <script>
-        document.addEventListener('DOMContentLoaded', function() {
-            console.log('Verificando status de login do administrador...');
-            if (sessionStorage.getItem('adminLoggedIn')) {
-                console.log('Administrador está logado.');
-                document.getElementById('admin-login-link').style.pointerEvents = 'none';
-                document.getElementById('admin-login-link').style.color = 'gray';
-                const adminEmail = sessionStorage.getItem('adminEmail');
-                document.getElementById('user-greeting').textContent = `Bem-vindo, ${adminEmail}`;
-                document.getElementById('logout').style.display = 'block';
-            } else {
-                console.log('Administrador não está logado.');
-            }
-
-            document.getElementById('admin-login-form').addEventListener('submit', function(event) {
-                event.preventDefault();
-                const formData = new FormData(this);
-                fetch('process_form.php', {
-                    method: 'POST',
-                    body: formData
-                })
-                .then(response => response.json())
-                .then(data => {
-                    if (data.status === 'success') {
-                        sessionStorage.setItem('adminLoggedIn', true);
-                        sessionStorage.setItem('adminEmail', formData.get('email'));
-                        window.location.href = data.redirect;
-                    } else {
-                        alert(data.message);
-                    }
-                })
-                .catch(error => console.error('Erro:', error));
-            });
-        });
-
-        function logout() {
-            sessionStorage.removeItem('adminLoggedIn');
-            sessionStorage.removeItem('adminEmail');
-            window.location.href = 'index.html';
-        }
-    </script>
 
     <footer>
         <p>&copy; 2024 Seu Site. Todos os direitos reservados.</p>
