@@ -175,9 +175,10 @@ try {
 
         // Determine se estamos lidando com JSON ou dados de formulário
         if ($input) {
-            error_log('JSON decodificado: ' . print_r($input, true)); // Adicionado para depuração
+            error_log('JSON decodificado: ' . print_r($input, true), 3, "/opt/lampp/htdocs/quizPDS/error.log"); // Adicionado para depuração
             $action = $input['action'] ?? '';
         } else {
+            error_log('Dados de formulário recebidos: ' . print_r($_POST, true), 3, "/opt/lampp/htdocs/quizPDS/error.log"); // Adicionado para depuração
             $action = $_POST['action'] ?? '';
         }
 
@@ -358,12 +359,13 @@ try {
             echo json_encode($response);
             exit;
         } elseif ($action == 'save_quiz_result') {
-        } elseif ($action == 'save_quiz_result') {
             $userEmail = $input['user'];
             $score = $input['score'];
             $currentDateTime = date('Y-m-d H:i:s'); // Obtém a data e hora atual
 
-            $stmt = $pdo->prepare("UPDATE usuarios SET quiz_result = ?, data_hora_quiz = ? WHERE email = ?");
+            error_log("Salvando resultado do quiz: user=$userEmail, score=$score", 3, "/opt/lampp/htdocs/quizPDS/error.log"); // Adicionado para depuração
+
+            $stmt = $pdo->prepare("UPDATE usuarios SET quiz_result = ?, data_hora_quiz = ? WHERE usuario = ?");
             if ($stmt->execute([$score, $currentDateTime, $userEmail])) {
                 $response['status'] = 'success';
             } else {

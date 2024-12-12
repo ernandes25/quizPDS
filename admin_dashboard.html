@@ -1,26 +1,87 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Painel do Administrador</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-<!--     <header>
+
+
+
+
+
+
+
+
+    <header>
         <nav>
+
             <ul>
                 <img id="logo" src="logo.jpeg" />
+
             </ul>
-         
-      
+
+            <ul>
+                <a class="item" href="index.html">
+                    <li>Início</li>
+                </a>
+            </ul>
+
+            <ul>
+                <a class="item" href="sobre.html">
+                    <li>Sobre nós</li>
+                </a>
+            </ul>
+
+            <ul>
+                <a class="item" href="contato.html">
+                    <li>Fale comigo
+                    <li>
+                </a>
+            </ul>
+
+            <ul>
+                <a class="item" href="cadastro.html">
+                    <li>Cadastro</li>
+                </a>
+            </ul>
+
+            <ul class="dropdown">
+                <a class="item" href="#">
+                    <li>Administração</li>
+                </a>
+                <div class="dropdown-content">
+                    <a class="cad-email-adm" href="config_email.html">Cadastrar Email</a>
+                    <a class="cad-email-adm" href="admin_login.html">Login do Administrador</a>
+
+                    <a class="cad-email-adm" href="recover_password.html">Recuperar Senha do Administrador</a>
+
+
+                </div>
+            </ul>
+
+            <ul id="logout" style="display: none;">
+                <span id="user-greeting"></span>
+                <button onclick="logout()">Sair</button>
+            </ul>
+
+
+
+
+          
+
+
             <ul id="logout">
                 <button id="logout-button-header" style="display: none;">Sair</button>
             </ul>
-        
+
 
         </nav>
-    </header> -->
+    </header>
 
     <main id="main-admin-dashboard">
         <h1>Painel do Administrador</h1>
@@ -56,4 +117,5 @@
 
     <script src="script.js"></script>
 </body>
+
 </html>

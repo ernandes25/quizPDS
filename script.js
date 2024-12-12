@@ -345,10 +345,12 @@ document.addEventListener('DOMContentLoaded', function () {
             .then(data => {
                 if (data.status !== 'success') {
                     alert('Erro ao salvar resultado do quiz: ' + data.message);
+                    console.error('Erro ao salvar resultado do quiz:', data.message); // Adicionado log de erro
                 }
             })
             .catch(error => {
                 alert('Erro ao salvar resultado do quiz. Tente novamente mais tarde.');
+                console.error('Erro ao salvar resultado do quiz:', error); // Adicionado log de erro
             });
     }
 
