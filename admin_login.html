@@ -43,6 +43,7 @@
                 </div>
             </ul>
             <ul id="logout" style="display: none;">
+                <span id="user-greeting"></span>
                 <button onclick="logout()">Sair</button>
             </ul>
         </nav>
@@ -69,6 +70,9 @@
                 console.log('Administrador está logado.');
                 document.getElementById('admin-login-link').style.pointerEvents = 'none';
                 document.getElementById('admin-login-link').style.color = 'gray';
+                const adminEmail = sessionStorage.getItem('adminEmail');
+                document.getElementById('user-greeting').textContent = `Bem-vindo, ${adminEmail}`;
+                document.getElementById('logout').style.display = 'block';
             } else {
                 console.log('Administrador não está logado.');
             }
@@ -84,6 +88,7 @@
                 .then(data => {
                     if (data.status === 'success') {
                         sessionStorage.setItem('adminLoggedIn', true);
+                        sessionStorage.setItem('adminEmail', formData.get('email'));
                         window.location.href = data.redirect;
                     } else {
                         alert(data.message);
@@ -92,6 +97,12 @@
                 .catch(error => console.error('Erro:', error));
             });
         });
+
+        function logout() {
+            sessionStorage.removeItem('adminLoggedIn');
+            sessionStorage.removeItem('adminEmail');
+            window.location.href = 'index.html';
+        }
     </script>
 
     <footer>

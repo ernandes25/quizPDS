@@ -20,7 +20,7 @@
     <header>
         <nav>
 
-            <ul>
+     <!--        <ul>
                 <img id="logo" src="logo.jpeg" />
 
             </ul>
@@ -48,7 +48,7 @@
                 <a class="item" href="cadastro.html">
                     <li>Cadastro</li>
                 </a>
-            </ul>
+            </ul> -->
 
             <ul class="dropdown">
                 <a class="item" href="#">
@@ -127,6 +127,20 @@
                 console.log('Administrador não está logado.');
             }
         });
+
+        document.addEventListener('DOMContentLoaded', function() {
+            if (sessionStorage.getItem('adminLoggedIn')) {
+                const adminEmail = sessionStorage.getItem('adminEmail');
+                document.getElementById('user-greeting').textContent = `Bem-vindo, ${adminEmail}`;
+                document.getElementById('logout').style.display = 'block';
+            }
+        });
+
+        function logout() {
+            sessionStorage.removeItem('adminLoggedIn');
+            sessionStorage.removeItem('adminEmail');
+            window.location.href = 'index.html';
+        }
     </script>
 </body>
 

@@ -55,6 +55,7 @@
                 </div>
             </ul>
             <ul id="logout" style="display: none;">
+                <span id="user-greeting"></span>
                 <button onclick="logout()">Sair</button>
             </ul>
         </nav>
@@ -76,6 +77,21 @@
         <p>&copy; 2024 Seu Site. Todos os direitos reservados.</p>
     </footer>
     <script src="script.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            if (sessionStorage.getItem('adminLoggedIn')) {
+                const adminEmail = sessionStorage.getItem('adminEmail');
+                document.getElementById('user-greeting').textContent = `Bem-vindo, ${adminEmail}`;
+                document.getElementById('logout').style.display = 'block';
+            }
+        });
+
+        function logout() {
+            sessionStorage.removeItem('adminLoggedIn');
+            sessionStorage.removeItem('adminEmail');
+            window.location.href = 'index.html';
+        }
+    </script>
 </body>
 
 </html>

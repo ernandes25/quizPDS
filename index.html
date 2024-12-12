@@ -116,6 +116,20 @@
     function startPDS() {
       document.getElementById('login-modal').style.display = 'block';
     }
+
+    document.addEventListener('DOMContentLoaded', function() {
+      if (sessionStorage.getItem('adminLoggedIn')) {
+        const adminEmail = sessionStorage.getItem('adminEmail');
+        document.getElementById('user-greeting').textContent = `Bem-vindo, ${adminEmail}`;
+        document.getElementById('logout').style.display = 'block';
+      }
+    });
+
+    function logout() {
+      sessionStorage.removeItem('adminLoggedIn');
+      sessionStorage.removeItem('adminEmail');
+      window.location.href = 'index.html';
+    }
   </script>
 
 
