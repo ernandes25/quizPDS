@@ -228,4 +228,70 @@ Ação: loginTentativa de login: usuario=antonioernandes25@gmail.comSolicitaçã
 (
     [action] => get_users
 )
-Ação: get_usersSolicitação POST recebidaAção recebida: admin_loginTentativa de login do admin: email=contato@ercont.com.brSolicitação POST recebidaAção recebida: admin_loginTentativa de login do admin: email=contato@ercont.com.br
+Ação: get_usersSolicitação POST recebidaAção recebida: admin_loginTentativa de login do admin: email=contato@ercont.com.brSolicitação POST recebidaAção recebida: admin_loginTentativa de login do admin: email=contato@ercont.com.brSolicitação POST recebidaAção recebida: loginSolicitação recebida: {"usuario":"fifo@gmail.com","senha":"1234","action":"login"}Dados de formulário recebidos: Array
+(
+    [usuario] => fifo@gmail.com
+    [senha] => 1234
+    [action] => login
+)
+Ação: loginTentativa de login: usuario=fifo@gmail.comSolicitação POST recebidaAção recebida: Solicitação recebida: []JSON decodificado: Array
+(
+    [action] => save_quiz_result
+    [user] => fifo@gmail.com
+    [score] => 180
+)
+Ação: save_quiz_resultSalvando resultado do quiz: user=fifo@gmail.com, score=180Solicitação POST recebidaAção recebida: loginSolicitação recebida: {"usuario":"fifo@gmail.com","senha":"1111","action":"login"}Dados de formulário recebidos: Array
+(
+    [usuario] => fifo@gmail.com
+    [senha] => 1111
+    [action] => login
+)
+Ação: loginTentativa de login: usuario=fifo@gmail.comSolicitação POST recebidaAção recebida: cadastroSolicitação recebida: {"nome":"ANTONIO ERNANDES SILVA FILHO","email":"fifo@gmail.com","telefone":"34998142525","nova_senha":"1111","action":"cadastro","novo_usuario":"fifo@gmail.com"}Dados de formulário recebidos: Array
+(
+    [nome] => ANTONIO ERNANDES SILVA FILHO
+    [email] => fifo@gmail.com
+    [telefone] => 34998142525
+    [nova_senha] => 1111
+    [action] => cadastro
+    [novo_usuario] => fifo@gmail.com
+)
+Ação: cadastroTentativa de cadastro: usuario=fifo@gmail.comSolicitação POST recebidaAção recebida: loginSolicitação recebida: {"usuario":"fifo@gmail.com","senha":"1111","action":"login"}Dados de formulário recebidos: Array
+(
+    [usuario] => fifo@gmail.com
+    [senha] => 1111
+    [action] => login
+)
+Ação: loginTentativa de login: usuario=fifo@gmail.comSolicitação POST recebidaAção recebida: loginSolicitação recebida: {"usuario":"fifo@gmail.com","senha":"1234","action":"login"}Dados de formulário recebidos: Array
+(
+    [usuario] => fifo@gmail.com
+    [senha] => 1234
+    [action] => login
+)
+Ação: loginTentativa de login: usuario=fifo@gmail.comSolicitação POST recebidaAção recebida: loginSolicitação recebida: {"usuario":"fifo@gmail.com","senha":"1231","action":"login"}Dados de formulário recebidos: Array
+(
+    [usuario] => fifo@gmail.com
+    [senha] => 1231
+    [action] => login
+)
+Ação: loginTentativa de login: usuario=fifo@gmail.comSolicitação POST recebidaAção recebida: loginSolicitação recebida: {"usuario":"fifo@gmail.com","senha":"1234","action":"login"}Dados de formulário recebidos: Array
+(
+    [usuario] => fifo@gmail.com
+    [senha] => 1234
+    [action] => login
+)
+Ação: loginTentativa de login: usuario=fifo@gmail.comSolicitação POST recebidaAção recebida: loginSolicitação recebida: {"usuario":"fifififi@gmail.com","senha":"1234","action":"login"}Dados de formulário recebidos: Array
+(
+    [usuario] => fifififi@gmail.com
+    [senha] => 1234
+    [action] => login
+)
+Ação: loginTentativa de login: usuario=fifififi@gmail.comSolicitação POST recebidaAção recebida: cadastroSolicitação recebida: {"nome":"HIGOR ERNANDES RAMOS SILVA","email":"fififififi@gmail.com","telefone":"34999998888","nova_senha":"1234","action":"cadastro","novo_usuario":"fififififi@gmail.com"}Dados de formulário recebidos: Array
+(
+    [nome] => HIGOR ERNANDES RAMOS SILVA
+    [email] => fififififi@gmail.com
+    [telefone] => 34999998888
+    [nova_senha] => 1234
+    [action] => cadastro
+    [novo_usuario] => fififififi@gmail.com
+)
+Ação: cadastroTentativa de cadastro: usuario=fififififi@gmail.com

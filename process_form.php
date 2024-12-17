@@ -265,13 +265,18 @@ try {
             $stmt->execute([$usuario]);
             $user = $stmt->fetch();
 
-            if ($user && password_verify($senha, $user['senha'])) {
-                $response['status'] = 'success';
-                $response['message'] = 'Login realizado com sucesso';
-                $response['redirect'] = 'quiz.html';
+            if ($user) {
+                if (password_verify($senha, $user['senha'])) {
+                    $response['status'] = 'success';
+                    $response['message'] = 'Login realizado com sucesso';
+                    $response['redirect'] = 'quiz.html';
+                } else {
+                    $response['status'] = 'error';
+                    $response['message'] = 'Usuário e/ou senha incorretos.';
+                }
             } else {
                 $response['status'] = 'user_not_found';
-                $response['message'] = 'Usuário ou senha inválidos. Redirecionando para a página de cadastro.';
+                $response['message'] = 'Usuário não encontrado. Deseja efetuar seu cadastro agora?';
                 $response['redirect'] = 'cadastro.html';
             }
             echo json_encode($response);
