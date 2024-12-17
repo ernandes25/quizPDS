@@ -110,6 +110,11 @@ document.addEventListener('DOMContentLoaded', function () {
             if (userGreeting) {
                 userGreeting.innerHTML = 'Você está logado como<br>ADMINISTRADOR.';
             }
+            const adminLoginLinks = document.querySelectorAll('a.cad-email-adm[href="admin_login.html"]');
+            adminLoginLinks.forEach(link => {
+                link.style.pointerEvents = 'none';
+                link.style.color = 'gray';
+            });
         } else {
             if (logoutButtonMain) {
                 logoutButtonMain.style.display = 'none';
