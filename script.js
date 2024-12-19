@@ -361,6 +361,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
     const questions = document.querySelectorAll('.question');
     const totalQuestions = questions.length;
+    const h2Quiz = document.querySelector('.h2_quiz'); // Adicione esta linha
 
     questions.forEach((questionDiv, index) => {
         const nextButton = questionDiv.querySelector('button[type="button"]');
@@ -380,6 +381,10 @@ document.addEventListener('DOMContentLoaded', function () {
                     questions[index + 1].classList.add('active');
                     const progressPercentage = ((index + 1) / totalQuestions) * 100;
                     growProgressBar(progressPercentage + '%');
+
+                    if (index === 0 && h2Quiz) { // Adicione esta condição
+                        h2Quiz.innerText = "Questionário em andamento...";
+                    }
                 } else {
                     growProgressBar('100%');
 
@@ -387,6 +392,10 @@ document.addEventListener('DOMContentLoaded', function () {
                     document.getElementById('score').innerText = score;
                     document.getElementById('result').classList.add('active');
                     document.getElementById('result').style.display = 'block';
+
+                    if (h2Quiz) { // Adicione esta condição
+                        h2Quiz.style.display = 'none';
+                    }
 
                     saveQuizResult(score);
 
@@ -403,6 +412,7 @@ document.addEventListener('DOMContentLoaded', function () {
                     }
 
                     document.getElementById('result_score_info').innerText = score_info;
+                    document.getElementById('result_score_info').classList.add('center-text', 'fade-in-slide-up'); // Adicione esta linha
                 }
             });
         }

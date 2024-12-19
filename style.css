@@ -38,7 +38,7 @@ header {
     top: 0;
     opacity: 0;
     animation: fade-in 1s forwards;
-    
+
 }
 
 header nav ul {
@@ -88,7 +88,7 @@ header nav ul a:hover {
     height: 30px;
 
     border-radius: 10px;
-    font-size: 20px;
+    font-size: 16px;
     background-color: A261;
     color: #5A189A;
 
@@ -97,11 +97,12 @@ header nav ul a:hover {
 
     /* Ajuste a altura da linha para centralizar verticalmente o texto dentro do botão */
     text-align: center;
+    margin: 30px auto;
     /* Centralize o texto horizontalmente */
 
     /* Alinhe verticalmente ao meio  */
-    margin: auto;
-    padding-bottom: 30px;
+    
+    padding-bottom: 20px;
 }
 
 #button-init:hover {
@@ -176,6 +177,7 @@ header nav ul a:hover {
 #main-admin-dashboard {
     width: auto;
     height: auto;
+
 }
 
 /* 
@@ -277,20 +279,26 @@ header nav ul li {
 
 .dropdown-item {
     display: flex;
-    justify-content: center; /* Centraliza horizontalmente */
-    align-items: center; /* Centraliza verticalmente */
-    width: 100%; /* Garante que o item ocupe toda a largura d
+    justify-content: center;
+    /* Centraliza horizontalmente */
+    align-items: center;
+    /* Centraliza verticalmente */
+    width: 100%;
+    /* Garante que o item ocupe toda a largura d
     isponível */
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-size: 18px;
     font-weight: bold;
     text-transform: none;
-    margin: 0; /* Remove margens adicionais */
+    margin: 0;
+    /* Remove margens adicionais */
 }
 
 #item {
-    text-align: center; /* Centraliza o texto dentro do item */
-    width: 100%; /* Garante que o item ocupe toda a largura disponível */
+    text-align: center;
+    /* Centraliza o texto dentro do item */
+    width: 100%;
+    /* Garante que o item ocupe toda a largura disponível */
     margin-top: 40px;
 }
 
@@ -445,16 +453,17 @@ header nav ul li a {
 }
 
 #contact-form label {
-    
+
     width: 100%;
-    margin-top: -10px; 
+    margin-top: -10px;
 
 }
 
 #contact-form input,
 #contact-form textarea {
     width: 100%;
-    margin-bottom: 10px; /* Reduz o espaçamento entre os itens */
+    margin-bottom: 10px;
+    /* Reduz o espaçamento entre os itens */
     padding-top: 10px;
     padding: 4px;
     border-radius: 5px;
@@ -464,7 +473,8 @@ header nav ul li a {
 }
 
 #contact-form textarea {
-    height: 50px; /* Aumenta a altura do campo de mensagem */
+    height: 50px;
+    /* Aumenta a altura do campo de mensagem */
     font-size: 12px;
 }
 
@@ -474,15 +484,18 @@ header nav ul li a {
     background-color: #F4A261;
     color: #5A189A;
     border: none;
-    padding: 10px 4px; /* Reduz o padding */
+    padding: 10px 4px;
+    /* Reduz o padding */
     border-radius: 5px;
     cursor: pointer;
-    font-size: 12px; /* Reduz o tamanho da fonte */
+    font-size: 12px;
+    /* Reduz o tamanho da fonte */
     text-align: center;
     align-self: center;
     justify-content: center;
     margin-top: 20px;
-    width: 120px; /* Define uma largura menor */
+    width: 120px;
+    /* Define uma largura menor */
     height: 30px;
 }
 
@@ -576,8 +589,8 @@ textarea {
 
 #questions_box {
     display: flex;
-    width: 910px;
-    height: 350px;
+    width: 900px;
+    height: 300px;
     background-color: rgba(50, 97, 68, 0.2);
     border-radius: 10px;
     align-items: center;
@@ -585,7 +598,7 @@ textarea {
 
 h3 {
     margin-top: 50px;
-    margin-bottom: 50px;
+    margin-bottom: 40px;
 }
 
 #value-quiz {
@@ -601,21 +614,32 @@ a :hover {
 
 /* Define a altura fixa para as divs question */
 .question {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     height: 300px;
-    /* Ajuste conforme necessário */
-    overflow: auto;
+    overflow: hidden; /* Esconda o texto que não cabe */
     padding: 20px;
     box-sizing: border-box;
     border: 1px solid #ccc;
-    /* Opcional: apenas para visualização das bordas */
     margin-bottom: 20px;
-    /* Espaçamento entre as questões */
+    text-align: left;
+    word-break: break-word;
+    width: 100%;
+}
+
+.question p {
+    flex: 1;
+    overflow: hidden; /* Esconda o texto que não cabe */
+    text-overflow: ellipsis; /* Trunque o texto */
+    white-space: nowrap; /* Impedir que o texto quebre em várias linhas */
 }
 
 /* Opcional: Adicione estilos para garantir que os textos sejam bem alinhados */
 .question h2,
 .question h3 {
     margin: 0 0 10px 0;
+    text-align: left;
 }
 
 /* Estilo para o botão avançar */
@@ -631,25 +655,32 @@ a :hover {
     display: table;
 }
 
-
-
 .question,
 .result {
     display: none;
     margin-left: 40px;
     margin-top: 20px;
+    justify-content: center;
 }
 
 .question.active {
-    width: 850px;
+    width: 900px;
     display: block;
+    margin: 0;
+    text-align: center;
+}
+
+#restart-pds {
+    display: flex;
+    width: 250px;
+
 }
 
 #restart-pds {
     display: flex;
     width: 250px;
     height: 50px;
-    margin-left: 600px;
+    margin-left: 630px;
     animation: pulse 3s 3s ease-in-out infinite;
     border-radius: 10px;
     font-size: 20px;
@@ -658,6 +689,7 @@ a :hover {
     text-transform: uppercase;
     font-family: "Figtree:ital", sans-serif;
     margin-bottom: 160px;
+    text-decoration: none;
 }
 
 button {
@@ -700,6 +732,7 @@ button :hover {
     transition: 0.5s;
     opacity: 0.7;
 
+
 }
 
 #next1,
@@ -720,15 +753,15 @@ button :hover {
     display: flex;
     width: 250px;
     height: 50px;
-    margin-left: 460px;
-    margin-top: 40px;
+    margin-left: 550px;
+    margin-top: 85px;
 
     /* verificar */
     background-color: #325d70;
     justify-content: center;
     align-items: center;
     border-radius: 10px;
-    font-size: 20px;
+    font-size: 16px;
     color: white;
     cursor: pointer;
     text-transform: uppercase;
@@ -740,7 +773,7 @@ button :hover {
 #button-contact {
     display: inline-block;
     color: black;
-    
+
     padding: 10px 20px;
     text-align: center;
     text-decoration: none;
@@ -758,18 +791,22 @@ button :hover {
 }
 
 .container-quiz {
-    width: 850px;
     display: flex;
+    width: 900px;
+    height: 300px;
     flex-direction: column;
     justify-content: center;
-    padding-top: 100px;
-    margin: auto;
+    padding-top: 10px;
+    align-items: center;
+    margin: 5px auto 0 auto;
+    /* Centraliza horizontalmente */
 }
+
 
 
 #progress_container {
     height: 15px;
-    width: 910px;
+    width: 900px;
     background-color: #F4A261;
     padding: 0;
     border-radius: 5px;
@@ -777,7 +814,7 @@ button :hover {
 
 #progress_bar {
     background-color: #57398f;
-    width: 910px;
+    width: 900px;
     height: 15px;
     transition: all 100ms ease-in-out;
     padding: 0;
@@ -824,15 +861,16 @@ a {
     transform: translateX(-20px);
     animation: slide-in 1s 1.5s forwards;
     text-align: center;
-    margin-top: -40px;
-    margin: 20px auto;
+    /* margin-top: -60px; */
+    margin: -60PX auto 0 auto;
     height: 100%;
-    width: 80%;
+    width: 60%;
     background-color: #e0dce6;
     padding: 10px;
     border-radius: 5px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    margin-bottom: 140px; /* Adiciona margem inferior para separar do footer */
+    margin-bottom: 140px;
+    /* Adiciona margem inferior para separar do footer */
 }
 
 .sobre p {
@@ -867,7 +905,7 @@ a {
     font-family: "Figtree:ital", sans-serif;
     width: 1200px;
     color: black;
-    font-size: 40px;
+    font-size: 20px;
     text-align: center;
     margin-top: 60px;
     margin-bottom: 80px;
@@ -900,12 +938,25 @@ p {
     text-align: center;
     margin: auto;
     width: 80%;
-    
+
     background-color: #e0dce6;
     /* padding: 20px; */
     border-radius: 20px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-     margin-top: -10px;
+    margin-top: -10px;
+}
+
+.fade-in-slide-up {
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInSlideUp 1s forwards;
+}
+
+@keyframes fadeInSlideUp {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
 @keyframes fade-in {
@@ -952,12 +1003,28 @@ span {
 }
 
 .span_result {
-    color: black;
+    color: rgb(0, 0, 0);
     font-family: "Figtree:ital", sans-serif;
-    font-size: 20px;
+    font-size: 16px;
     margin-top: 10px;
+    
+
+   
+    max-width: 100%; /* Adicione esta linha */
+
+
 }
 
+.center-text {
+    text-align: center;
+    font-size: 16px;
+    word-wrap: break-word;
+    word-break: break-word;
+    margin: 0 10px;
+    max-width: 100%;
+    white-space: normal; /* Adicione esta linha */
+    padding-right: 10px; /* Adicione esta linha */
+}
 
 /* ELEMENTOS DE FORMULÁRIO */
 
@@ -975,7 +1042,7 @@ span {
 } */
 
 .main-contact {
-    margin: 20px 0 0 0; 
+    margin: 20px 0 0 0;
     background-color: #d8d2e0;
     display: flex;
     position: fixed;
@@ -1002,12 +1069,13 @@ span {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-     flex: 1; 
-     
+    flex: 1;
+
 
 }
-.main-cad{
-    margin: 20px 0 0 0; 
+
+.main-cad {
+    margin: 20px 0 0 0;
     background-color: #d8d2e0;
     display: flex;
     position: fixed;
@@ -1034,8 +1102,8 @@ span {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-     flex: 1; 
-     
+    flex: 1;
+
 
 }
 
@@ -1046,12 +1114,12 @@ span {
     width: 100%;
     max-width: 300px;
     /* Ajuste conforme necessário */
-    
-    
+
+
     margin-bottom: -30px;
     height: 100%;
 }
-   
+
 
 #cadastro-form label {
     width: 100%;
@@ -1073,15 +1141,18 @@ span {
     background-color: #F4A261;
     color: #5A189A;
     border: none;
-    padding: 10px 4px; /* Reduz o padding */
+    padding: 10px 4px;
+    /* Reduz o padding */
     border-radius: 5px;
     cursor: pointer;
-    font-size: 12px; /* Reduz o tamanho da fonte */
+    font-size: 12px;
+    /* Reduz o tamanho da fonte */
     text-align: center;
     align-self: center;
     justify-content: center;
     margin-top: 10px;
-    width: 120px; /* Define uma largura menor */
+    width: 120px;
+    /* Define uma largura menor */
     height: 30px;
 }
 
@@ -1095,7 +1166,7 @@ span {
     text-align: center;
     margin-top: 10px;
     font-size: 14px;
-    
+
 
 }
 
@@ -1212,4 +1283,38 @@ section {
     box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.502);
     max-width: 400px;
     margin: auto;
+}
+
+.result {
+    display: none;
+    margin-left: 10px;
+    margin-top: 90px; /* Adicione esta linha para aumentar a margem superior */
+    
+    text-align: center;
+    /* Centraliza o texto */
+    width: 100%;
+    /* Garante que o resultado ocupe toda a largura disponível */
+    height: 300px;
+
+}
+
+.result h2,
+.result h3,
+.result p {
+    
+    margin-top: 10px; /* Reduz o espaçamento superior */
+    margin-bottom: 10px; /* Reduz o espaçamento inferior */
+}
+.result #button-restart {
+    display: flex;
+    margin-top: 30px;
+
+}
+
+
+.link-container {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 5px;
 }
