@@ -764,22 +764,51 @@ button :hover {
     display: flex;
     width: 250px;
     height: 50px;
-    margin-left: 550px;
-    margin-top: 65px;
-
-    /* verificar */
+    margin-top: 50px;
+    margin-right: 280px;    
     background-color: #325d70;
     justify-content: center;
     align-items: center;
-    border-radius: 10px;
+    border-radius: 0 50px 50px 0;
     font-size: 16px;
     color: white;
     cursor: pointer;
     text-transform: uppercase;
     font-family: "Figtree:ital", sans-serif;
+    position: absolute;
+    right: 0;
 }
 
-
+#back2,
+#back3,
+#back4,
+#back5,
+#back6,
+#back7,
+#back8,
+#back9,
+#back10,
+#back11,
+#back12,
+#back13,
+#back14,
+#back15 {
+    display: flex;
+    width: 250px;
+    height: 50px;
+    margin-top: 50px;
+    margin-left: 20px;
+    background-color: #325d70;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+    color: white;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-family: "Figtree:ital", sans-serif;
+    position: absolute;
+    left: 260px;
+}
 
 #button-contact {
     display: inline-block;
@@ -1330,6 +1359,41 @@ section {
     margin-top: 5px;
 }
 
+/* ...código existente... */
+.button-arrow {
+    display: flex;
+    width: 250px;
+    height: 50px;
+    margin-top: 50px;
+    background-color: #325d70;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+    color: white;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-family: "Figtree:ital", sans-serif;
+    position: absolute;
+    clip-path: polygon(0 0, 90% 0, 100% 50%, 90% 100%, 0 100%);
+}
+
+.button-arrow-left {
+    display: flex;
+    width: 250px;
+    height: 50px;
+    margin-top: 50px;
+    background-color: #325d70;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+    color: white;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-family: "Figtree:ital", sans-serif;
+    position: absolute;
+    clip-path: polygon(0 50%, 10% 0, 100% 0, 100% 100%, 10% 100%, 0 50%);
+    border-radius: 0; /* Certifique-se de que esta linha está presente */
+}
 /* ...código existente... */
 .div-estatica {
     position: fixed;
