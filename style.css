@@ -814,6 +814,10 @@ button :hover {
     padding: 0 20px;
 }
 
+#question1 .button-container {
+    justify-content: flex-end; /* Alinha o botão "Avançar" à direita */
+}
+
 #next1,
 #next2,
 #next3,

@@ -365,7 +365,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
     questions.forEach((questionDiv, index) => {
         const nextButton = questionDiv.querySelector('button[type="button"]#next' + (index + 1));
-        const backButton = questionDiv.querySelector('button[type="button"]#back' + (index + 2)); // Corrigido para pegar o botão de voltar da próxima questão
+        const backButton = questionDiv.querySelector('button[type="button"]#back' + (index + 1)); // Corrigido para pegar o botão de voltar da questão atual
         const radios = questionDiv.querySelectorAll('input[type="radio"]');
 
         radios.forEach(radio => {
