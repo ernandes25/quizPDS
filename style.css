@@ -603,6 +603,7 @@ h3 {
 
 #value-quiz {
     margin-top: 30px;
+    margin-bottom: 10px;
     margin-left: 50px;
 }
 
@@ -631,16 +632,27 @@ a :hover {
 .question p {
     flex: 1;
     overflow: hidden; /* Esconda o texto que não cabe */
+    overflow: hidden; /* Esconda o texto que não cabe */
     text-overflow: ellipsis; /* Trunque o texto */
     white-space: nowrap; /* Impedir que o texto quebre em várias linhas */
 }
 
 /* Opcional: Adicione estilos para garantir que os textos sejam bem alinhados */
-.question h2,
+.question h2 {
+ 
+    margin: 0 0 10px 0;
+    text-align: left;
+ 
+}
+
+
 .question h3 {
     margin: 0 0 10px 0;
     text-align: left;
+    height: 40px;
+    font-size: 16px;
 }
+
 
 /* Estilo para o botão avançar */
 .question button {
@@ -655,6 +667,8 @@ a :hover {
     display: table;
 }
 
+
+
 .question,
 .result {
     display: none;
@@ -667,12 +681,9 @@ a :hover {
     width: 900px;
     display: block;
     margin: 0;
+    
     text-align: center;
-}
-
-#restart-pds {
-    display: flex;
-    width: 250px;
+    
 
 }
 
@@ -754,7 +765,7 @@ button :hover {
     width: 250px;
     height: 50px;
     margin-left: 550px;
-    margin-top: 85px;
+    margin-top: 65px;
 
     /* verificar */
     background-color: #325d70;
@@ -1318,3 +1329,12 @@ section {
     width: 100%;
     margin-top: 5px;
 }
+
+/* ...código existente... */
+.div-estatica {
+    position: fixed;
+    /* Adicione outras propriedades conforme necessário, como top, left, right, bottom */
+    top: 0;
+    left: 0;
+}
+/* ...código existente... */

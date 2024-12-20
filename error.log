@@ -962,4 +962,64 @@ Ação: loginTentativa de login: usuario=fifo@gmail.comSolicitação POST recebi
     [user] => fifo@gmail.com
     [score] => 180
 )
-Ação: save_quiz_resultSalvando resultado do quiz: user=fifo@gmail.com, score=180
+Ação: save_quiz_resultSalvando resultado do quiz: user=fifo@gmail.com, score=180Solicitação POST recebidaAção recebida: Solicitação recebida: []JSON decodificado: Array
+(
+    [action] => save_quiz_result
+    [user] => fifo@gmail.com
+    [score] => 180
+)
+Ação: save_quiz_resultSalvando resultado do quiz: user=fifo@gmail.com, score=180Solicitação POST recebidaAção recebida: Solicitação recebida: []JSON decodificado: Array
+(
+    [action] => save_quiz_result
+    [user] => fifo@gmail.com
+    [score] => 180
+)
+Ação: save_quiz_resultSalvando resultado do quiz: user=fifo@gmail.com, score=180Solicitação POST recebidaAção recebida: loginSolicitação recebida: {"usuario":"fifo@gmail.com","senha":"1234","action":"login"}Dados de formulário recebidos: Array
+(
+    [usuario] => fifo@gmail.com
+    [senha] => 1234
+    [action] => login
+)
+Ação: loginTentativa de login: usuario=fifo@gmail.comSolicitação POST recebidaAção recebida: loginSolicitação recebida: {"usuario":"fifo@gmail.com","senha":"1234","action":"login"}Dados de formulário recebidos: Array
+(
+    [usuario] => fifo@gmail.com
+    [senha] => 1234
+    [action] => login
+)
+Ação: loginTentativa de login: usuario=fifo@gmail.comSolicitação POST recebidaAção recebida: loginSolicitação recebida: {"usuario":"fifo@gmail.com","senha":"1234","action":"login"}Dados de formulário recebidos: Array
+(
+    [usuario] => fifo@gmail.com
+    [senha] => 1234
+    [action] => login
+)
+Ação: loginTentativa de login: usuario=fifo@gmail.comSolicitação POST recebidaAção recebida: Solicitação recebida: []JSON decodificado: Array
+(
+    [action] => save_quiz_result
+    [user] => fifo@gmail.com
+    [score] => 140
+)
+Ação: save_quiz_resultSalvando resultado do quiz: user=fifo@gmail.com, score=140Solicitação POST recebidaAção recebida: loginSolicitação recebida: {"usuario":"fifo@gmail.com","senha":"1234","action":"login"}Dados de formulário recebidos: Array
+(
+    [usuario] => fifo@gmail.com
+    [senha] => 1234
+    [action] => login
+)
+Ação: loginTentativa de login: usuario=fifo@gmail.comSolicitação POST recebidaAção recebida: loginSolicitação recebida: {"usuario":"fifo@gmail.com","senha":"1234","action":"login"}Dados de formulário recebidos: Array
+(
+    [usuario] => fifo@gmail.com
+    [senha] => 1234
+    [action] => login
+)
+Ação: loginTentativa de login: usuario=fifo@gmail.comSolicitação POST recebidaAção recebida: loginSolicitação recebida: {"usuario":"fifo@gmail.com","senha":"1234","action":"login"}Dados de formulário recebidos: Array
+(
+    [usuario] => fifo@gmail.com
+    [senha] => 1234
+    [action] => login
+)
+Ação: loginTentativa de login: usuario=fifo@gmail.comSolicitação POST recebidaAção recebida: Solicitação recebida: []JSON decodificado: Array
+(
+    [action] => save_quiz_result
+    [user] => fifo@gmail.com
+    [score] => 139
+)
+Ação: save_quiz_resultSalvando resultado do quiz: user=fifo@gmail.com, score=139
