@@ -1278,4 +1278,80 @@ Ação: loginTentativa de login: usuario=fifo@gmail.comSolicitação POST recebi
     [user] => fifo@gmail.com
     [score] => 160
 )
-Ação: save_quiz_resultSalvando resultado do quiz: user=fifo@gmail.com, score=160Solicitação POST recebidaAção recebida: admin_loginTentativa de login do admin: email=contato@ercont.com.brSolicitação POST recebidaAção recebida: admin_loginTentativa de login do admin: email=contato@ercont.com.br
+Ação: save_quiz_resultSalvando resultado do quiz: user=fifo@gmail.com, score=160Solicitação POST recebidaAção recebida: admin_loginTentativa de login do admin: email=contato@ercont.com.brSolicitação POST recebidaAção recebida: admin_loginTentativa de login do admin: email=contato@ercont.com.brSolicitação POST recebidaAção recebida: loginSolicitação recebida: {"usuario":"fifo@gmail.com","senha":"1234","action":"login"}Dados de formulário recebidos: Array
+(
+    [usuario] => fifo@gmail.com
+    [senha] => 1234
+    [action] => login
+)
+Ação: loginTentativa de login: usuario=fifo@gmail.comSolicitação POST recebidaAção recebida: Solicitação recebida: []JSON decodificado: Array
+(
+    [action] => save_quiz_result
+    [user] => fifo@gmail.com
+    [score] => 180
+)
+Ação: save_quiz_resultSalvando resultado do quiz: user=fifo@gmail.com, score=180Solicitação POST recebidaAção recebida: admin_loginTentativa de login do admin: email=contato@ercont.com.brSolicitação POST recebidaAção recebida: admin_loginTentativa de login do admin: email=contato@ercont.com.brSolicitação POST recebidaAção recebida: Solicitação recebida: []JSON decodificado: Array
+(
+    [action] => get_users
+)
+Ação: get_usersSolicitação POST recebidaAção recebida: admin_loginTentativa de login do admin: email=contato@ercont.com.brSolicitação POST recebidaAção recebida: admin_loginTentativa de login do admin: email=contato@ercont.com.brSolicitação POST recebidaAção recebida: Solicitação recebida: []JSON decodificado: Array
+(
+    [action] => get_users
+)
+Ação: get_usersSolicitação POST recebidaAção recebida: Solicitação recebida: []JSON decodificado: Array
+(
+    [action] => get_users
+)
+Ação: get_usersSolicitação POST recebidaAção recebida: Solicitação recebida: []JSON decodificado: Array
+(
+    [action] => get_users
+)
+Ação: get_usersSolicitação POST recebidaAção recebida: Solicitação recebida: []JSON decodificado: Array
+(
+    [action] => get_users
+)
+Ação: get_usersSolicitação POST recebidaAção recebida: Solicitação recebida: []JSON decodificado: Array
+(
+    [action] => get_users
+)
+Ação: get_usersSolicitação POST recebidaAção recebida: Solicitação recebida: []JSON decodificado: Array
+(
+    [action] => get_users
+)
+Ação: get_usersSolicitação POST recebidaAção recebida: Solicitação recebida: []JSON decodificado: Array
+(
+    [action] => get_users
+)
+Ação: get_usersSolicitação POST recebidaAção recebida: Solicitação recebida: []JSON decodificado: Array
+(
+    [action] => get_users
+)
+Ação: get_usersSolicitação POST recebidaAção recebida: Solicitação recebida: []JSON decodificado: Array
+(
+    [action] => get_users
+)
+Ação: get_usersSolicitação POST recebidaAção recebida: Solicitação recebida: []JSON decodificado: Array
+(
+    [action] => get_users
+)
+Ação: get_usersSolicitação POST recebidaAção recebida: Solicitação recebida: []JSON decodificado: Array
+(
+    [action] => get_users
+)
+Ação: get_usersSolicitação POST recebidaAção recebida: Solicitação recebida: []JSON decodificado: Array
+(
+    [action] => get_users
+)
+Ação: get_usersSolicitação POST recebidaAção recebida: Solicitação recebida: []JSON decodificado: Array
+(
+    [action] => get_users
+)
+Ação: get_usersSolicitação POST recebidaAção recebida: Solicitação recebida: []JSON decodificado: Array
+(
+    [action] => get_users
+)
+Ação: get_usersSolicitação POST recebidaAção recebida: admin_loginTentativa de login do admin: email=contato@ercont.com.brSolicitação POST recebidaAção recebida: admin_loginTentativa de login do admin: email=contato@ercont.com.brSolicitação POST recebidaAção recebida: Solicitação recebida: []JSON decodificado: Array
+(
+    [action] => get_users
+)
+Ação: get_users

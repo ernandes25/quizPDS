@@ -175,8 +175,19 @@ header nav ul a:hover {
 
 
 #main-admin-dashboard {
+
+    border: solid;
+    border: #372991;
+    border-radius: 10px;
+    background-color: #d8d2e0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     width: auto;
     height: auto;
+    margin: 20px auto 100px auto;
+    padding: 10px;
 
 }
 
