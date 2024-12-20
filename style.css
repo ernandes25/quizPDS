@@ -627,6 +627,7 @@ a :hover {
     text-align: left;
     word-break: break-word;
     width: 100%;
+    align-items: center; /* Centraliza os botões horizontalmente */
 }
 
 .question p {
@@ -760,25 +761,7 @@ button :hover {
 #next12,
 #next13,
 #next14,
-#next15 {
-    display: flex;
-    width: 250px;
-    height: 50px;
-    margin-top: 50px;
-    margin-right: 280px;    
-    background-color: #325d70;
-    justify-content: center;
-    align-items: center;
-    border-radius: 0 50px 50px 0;
-    font-size: 16px;
-    color: white;
-    cursor: pointer;
-    text-transform: uppercase;
-    font-family: "Figtree:ital", sans-serif;
-    position: absolute;
-    right: 0;
-}
-
+#next15,
 #back2,
 #back3,
 #back4,
@@ -793,11 +776,15 @@ button :hover {
 #back13,
 #back14,
 #back15 {
+    position: relative; /* Altere de absolute para relative */
+    margin: 10px; /* Ajuste a margem para centralizar verticalmente */
+}
+
+.button-arrow,
+.button-arrow-left {
     display: flex;
     width: 250px;
     height: 50px;
-    margin-top: 50px;
-    margin-left: 20px;
     background-color: #325d70;
     justify-content: center;
     align-items: center;
@@ -806,15 +793,96 @@ button :hover {
     cursor: pointer;
     text-transform: uppercase;
     font-family: "Figtree:ital", sans-serif;
-    position: absolute;
-    left: 260px;
+    position: relative;
+    margin: 10px; /* Ajuste a margem para centralizar horizontalmente */
 }
+
+.button-arrow {
+    clip-path: polygon(0 0, 90% 0, 100% 50%, 90% 100%, 0 100%);
+    border-radius: 0 10px 10px 0; /* Adiciona bordas arredondadas no lado direito */
+}
+
+.button-arrow-left {
+    clip-path: polygon(0 50%, 10% 0, 100% 0, 100% 100%, 10% 100%, 0 50%);
+    border-radius: 10px 0 0 10px; /* Adiciona bordas arredondadas no lado esquerdo */
+}
+
+.question .button-container {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 0 20px;
+}
+
+#next1,
+#next2,
+#next3,
+#next4,
+#next5,
+#next6,
+#next7,
+#next8,
+#next9,
+#next10,
+#next11,
+#next12,
+#next13,
+#next14,
+#next15,
+.button-arrow {
+    display: flex;
+    width: 250px;
+    height: 50px;
+    
+    background-color: #325d70;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+    color: white;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-family: "Figtree:ital", sans-serif;
+    
+    position: relative;
+    top: 40px;
+    left: -10px;
+    clip-path: polygon(0 0, 90% 0, 100% 50%, 90% 100%, 0 100%);
+}
+
+.button-arrow-left {
+    display: flex;
+    width: 250px;
+    height: 50px;
+    
+    
+    background-color: #325d70;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+    color: white;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-family: "Figtree:ital", sans-serif;
+    position: relative;
+    top: 50px;
+    right: 20px;
+    clip-path: polygon(0 50%, 10% 0, 100% 0, 100% 100%, 10% 100%, 0 50%);
+
+}
+/* ...código existente... */
+.div-estatica {
+    position: fixed;
+    /* Adicione outras propriedades conforme necessário, como top, left, right, bottom */
+    top: 0;
+    left: 0;
+}
+
 
 #button-contact {
     display: inline-block;
     color: black;
 
-    padding: 10px 20px;
+    padding: 10px 10px;
     text-align: center;
     text-decoration: none;
     border-radius: 5px;
@@ -1364,7 +1432,7 @@ section {
     display: flex;
     width: 250px;
     height: 50px;
-    margin-top: 50px;
+    
     background-color: #325d70;
     justify-content: center;
     align-items: center;
@@ -1373,7 +1441,9 @@ section {
     cursor: pointer;
     text-transform: uppercase;
     font-family: "Figtree:ital", sans-serif;
-    position: absolute;
+    position: relative;
+    top: 40px;
+    left: 580px;
     clip-path: polygon(0 0, 90% 0, 100% 50%, 90% 100%, 0 100%);
 }
 
@@ -1381,7 +1451,8 @@ section {
     display: flex;
     width: 250px;
     height: 50px;
-    margin-top: 50px;
+    margin: auto;
+    
     background-color: #325d70;
     justify-content: center;
     align-items: center;
@@ -1390,9 +1461,10 @@ section {
     cursor: pointer;
     text-transform: uppercase;
     font-family: "Figtree:ital", sans-serif;
-    position: absolute;
+    position: relative;
+    top: 40px;
     clip-path: polygon(0 50%, 10% 0, 100% 0, 100% 100%, 10% 100%, 0 50%);
-    border-radius: 0; /* Certifique-se de que esta linha está presente */
+    border-radius: 0;
 }
 /* ...código existente... */
 .div-estatica {
@@ -1402,3 +1474,4 @@ section {
     left: 0;
 }
 /* ...código existente... */
+
