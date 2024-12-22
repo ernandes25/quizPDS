@@ -124,32 +124,37 @@ header nav ul a:hover {
 
 .modal-content {
     background-color: white;
-    padding: 20px;
+    padding: 0 20px 10px 20px;
     border-radius: 10px;
     position: relative;
+    margin-top: 100px;
     /* Permite que os filhos sejam posicionados relativamente a este contêiner */
     width: 300px;
+    height: 260px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 .close-button {
-    position: absolute;
+    position: relative;
     /* Posiciona o botão relativamente à div pai */
-    top: 10px;
+    
     /* Ajusta conforme necessário */
-    right: 10px;
-    /* Ajusta conforme necessário */
+    left: 270px;
+    top: 10px; /* Desce um pouco o botão */
     background-color: #f44336;
     color: white;
     border: none;
-    border-radius: 50%;
-    width: 30px;
-    height: 30px;
-    font-size: 20px;
+    
+    font-size: 30px;
     cursor: pointer;
-    text-align: center;
-    line-height: 30px;
+    
     /* Centraliza o texto verticalmente */
+    width: 40px; /* Ajuste conforme necessário */
+    height: 40px; /* Ajuste conforme necessário */
+    border-radius: 50%; /* Torna o botão redondo */
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .close-button:hover {
@@ -217,12 +222,9 @@ header nav ul a:hover {
     /* Centraliza horizontalmente */
     transform: translate(-50%, -50%);
     /* Ajusta a posição para centralizar */
-    background-color: white;
-    /* Cor de fundo do modal */
     padding: 20px;
     /* Espaçamento interno */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    /* Sombra para destaque */
+
     z-index: 1000;
     /* Garantir que o modal fica acima de outros elementos */
     border-radius: 10px;
@@ -246,10 +248,11 @@ header nav ul a:hover {
 }
 
 #login-modal button {
-
-    color: white;
+display: flex;
+align-items: center;
+    color: #5A189A;
     border: none;
-    padding: 10px;
+    
     border-radius: 5px;
     cursor: pointer;
     font-size: 16px;
@@ -772,26 +775,15 @@ button {
     color: #5A189A;
     cursor: pointer;
     text-transform: uppercase;
+    margin-top: 30px;
     margin-bottom: 40px;
-
-
-
-
-
     border: none;
     padding: 6px 10px;
-
-
-
     text-align: center;
     /* Centraliza o texto dentro do botão */
     align-self: center;
     /* Centraliza o botão no formulário */
     justify-content: center;
-
-
-
-
 
 }
 
@@ -1452,6 +1444,45 @@ section {
     box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.502);
     max-width: 400px;
     margin: auto;
+}
+#recover-password-modal{
+    
+    justify-content: center;
+    align-items: center;
+    margin: -400px auto auto auto;
+    
+    
+    
+
+}
+
+#button-recover {
+    display: flex;
+    animation: pulse 3s 3s ease-in-out infinite;
+    width: 200px;
+    height: 30px;
+
+    border-radius: 10px;
+    font-size: 16px;
+    background-color: A261;
+    color: #5A189A;
+
+    cursor: pointer;
+    text-transform: uppercase;
+
+    /* Ajuste a altura da linha para centralizar verticalmente o texto dentro do botão */
+    text-align: center;
+    margin: 50px auto;
+    /* Centralize o texto horizontalmente */
+
+    /* Alinhe verticalmente ao meio  */
+    
+    padding-bottom: 20px;
+}
+
+#button-init:hover {
+    background-color: #D35FB7;
+
 }
 
 .result {

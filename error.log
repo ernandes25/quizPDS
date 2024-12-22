@@ -1354,4 +1354,14 @@ Ação: get_usersSolicitação POST recebidaAção recebida: admin_loginTentativ
 (
     [action] => get_users
 )
-Ação: get_users
+Ação: get_usersSolicitação POST recebidaAção recebida: admin_loginTentativa de login do admin: email=contato@ercont.com.brSolicitação POST recebidaAção recebida: admin_loginTentativa de login do admin: email=contato@ercont.com.brSolicitação POST recebidaAção recebida: recuperar_senha_usuarioTentativa de recuperação de senha de usuário: email=doricassia@gmail.comEmail não encontrado: doricassia@gmail.comSolicitação POST recebidaAção recebida: recuperar_senha_usuarioTentativa de recuperação de senha de usuário: email=fifo@gmail.comEmail encontrado: fifo@gmail.comToken gerado: c3aada3da0f2f806c38292597e8b65454b45f39756fa70e4743215fef11299aee05794e0918fc09902ad9de333301f7cf954Senha descriptografada: 250200er25*Configurando PHPMailerDestinatário adicionado: fifo@gmail.comConteúdo do e-mail configuradoEmail enviado para: fifo@gmail.comSolicitação POST recebidaAção recebida: admin_loginTentativa de login do admin: email=contato@ercont.com.brSolicitação POST recebidaAção recebida: admin_loginTentativa de login do admin: email=contato@ercont.com.brSolicitação POST recebidaAção recebida: Solicitação recebida: []JSON decodificado: Array
+(
+    [action] => get_users
+)
+Ação: get_usersSolicitação POST recebidaAção recebida: loginSolicitação recebida: {"usuario":"fifo@gmail.com","senha":"1234","action":"login"}Dados de formulário recebidos: Array
+(
+    [usuario] => fifo@gmail.com
+    [senha] => 1234
+    [action] => login
+)
+Ação: loginTentativa de login: usuario=fifo@gmail.com
