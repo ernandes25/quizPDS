@@ -72,6 +72,7 @@ header nav ul a:hover {
     display: flex;
     flex-direction: column;
     align-items: center;
+  
 }
 
 #login-form label,
@@ -101,7 +102,7 @@ header nav ul a:hover {
     /* Centralize o texto horizontalmente */
 
     /* Alinhe verticalmente ao meio  */
-    
+
     padding-bottom: 20px;
 }
 
@@ -122,49 +123,75 @@ header nav ul a:hover {
     align-items: center;
 }
 
-.modal-content {
-    background-color: white;
-    padding: 0 20px 10px 20px;
-    border-radius: 10px;
-    position: relative;
-    margin-top: 100px;
-    /* Permite que os filhos sejam posicionados relativamente a este contêiner */
-    width: 300px;
-    height: 260px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-}
+
 
 .close-button {
     position: relative;
     /* Posiciona o botão relativamente à div pai */
-    
+
     /* Ajusta conforme necessário */
-    left: 270px;
-    top: 10px; /* Desce um pouco o botão */
+    left: 235px;
+    top: -10px;
+    /* Desce um pouco o botão */
     background-color: #f44336;
     color: white;
     border: none;
-    
+
     font-size: 30px;
     cursor: pointer;
-    
+
     /* Centraliza o texto verticalmente */
-    width: 40px; /* Ajuste conforme necessário */
-    height: 40px; /* Ajuste conforme necessário */
-    border-radius: 50%; /* Torna o botão redondo */
+    width: 40px;
+    /* Ajuste conforme necessário */
+    height: 40px;
+    /* Ajuste conforme necessário */
+    border-radius: 50%;
+    /* Torna o botão redondo */
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
+
+.close-button-login {
+    position: relative;
+    /* Posiciona o botão relativamente à div pai */
+
+    /* Ajusta conforme necessário */
+    left: 280px;
+    top: 70px;
+    /* Desce um pouco o botão */
+    background-color: #f44336;
+    color: white;
+    border: none;
+
+    font-size: 30px;
+    cursor: pointer;
+
+    /* Centraliza o texto verticalmente */
+    width: 40px;
+    /* Ajuste conforme necessário */
+    height: 40px;
+    /* Ajuste conforme necessário */
+    border-radius: 50%;
+    /* Torna o botão redondo */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
 .close-button:hover {
     background-color: #d32f2f;
 }
 
-
-.close-button:hover {
+.close-button-login:hover {
     background-color: #d32f2f;
 }
+
+
+
 
 
 #logo {
@@ -196,63 +223,59 @@ header nav ul a:hover {
 
 }
 
-/* 
-#login-modal{
-    flex-direction: column;
-    align-items: center;
-    background-color: white;
-    align-items: center;
-    padding: 15px;
-    border-radius: 10px;
-    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.502);
-    max-width: 300px;
-    margin-top: 100px;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 100px;
-} */
+
 #login-modal {
     display: none;
-    /* Escondido por padrão */
     position: fixed;
-    /* Fixa o modal na tela */
     top: 50%;
-    /* Centraliza verticalmente */
     left: 50%;
-    /* Centraliza horizontalmente */
     transform: translate(-50%, -50%);
-    /* Ajusta a posição para centralizar */
-    padding: 20px;
-    /* Espaçamento interno */
-
     z-index: 1000;
-    /* Garantir que o modal fica acima de outros elementos */
+    background-color: white;
+    padding: 50px 0 0 0;
     border-radius: 10px;
-    /* Bordas arredondadas */
-    width: 300px;
-    /* Largura do modal */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: auto;
+    
+    
+
+    
+
+
 }
 
 #login-modal form {
     display: flex;
     flex-direction: column;
+    align-items: center;
+    margin-top: 80px;
+    width: 340px; /* Ajuste a largura do formulário */
 }
 
 #login-modal label {
-    margin-bottom: 5px;
+    width: 100%;
+    margin: 10px 0 -5px 0;
+    text-align: left;
 }
 
 #login-modal input {
-    margin-bottom: 10px;
-    padding: 5px;
+    width: 100%;
+    padding: 10px 0 0 0;
 }
 
+#login-modal button:hover {
+    background-color: #D35FB7;
+}
+
+
+
+
 #login-modal button {
-display: flex;
-align-items: center;
+    display: flex;
+    align-items: center;
     color: #5A189A;
     border: none;
-    
+width: 150px;
     border-radius: 5px;
     cursor: pointer;
     font-size: 16px;
@@ -278,6 +301,21 @@ align-items: center;
     /* Fundo semitransparente */
     z-index: 999;
     /* Garantir que o fundo fica abaixo do modal */
+}
+
+
+#recover-password-modal {
+    display: none;
+
+    position: relative;
+    bottom: -50px;
+    left: 10%;
+    transform: translate(-50%, -50%);
+    z-index: 1000;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 header nav ul li {
@@ -679,7 +717,8 @@ a :hover {
     flex-direction: column;
     justify-content: space-between;
     height: 300px;
-    overflow: hidden; /* Esconda o texto que não cabe */
+    overflow: hidden;
+    /* Esconda o texto que não cabe */
     padding: 20px;
     box-sizing: border-box;
     border: 1px solid #ccc;
@@ -687,23 +726,28 @@ a :hover {
     text-align: left;
     word-break: break-word;
     width: 100%;
-    align-items: center; /* Centraliza os botões horizontalmente */
+    align-items: center;
+    /* Centraliza os botões horizontalmente */
 }
 
 .question p {
     flex: 1;
-    overflow: hidden; /* Esconda o texto que não cabe */
-    overflow: hidden; /* Esconda o texto que não cabe */
-    text-overflow: ellipsis; /* Trunque o texto */
-    white-space: nowrap; /* Impedir que o texto quebre em várias linhas */
+    overflow: hidden;
+    /* Esconda o texto que não cabe */
+    overflow: hidden;
+    /* Esconda o texto que não cabe */
+    text-overflow: ellipsis;
+    /* Trunque o texto */
+    white-space: nowrap;
+    /* Impedir que o texto quebre em várias linhas */
 }
 
 /* Opcional: Adicione estilos para garantir que os textos sejam bem alinhados */
 .question h2 {
- 
+
     margin: 0 0 10px 0;
     text-align: left;
- 
+
 }
 
 
@@ -742,9 +786,9 @@ a :hover {
     width: 900px;
     display: block;
     margin: 0;
-    
+
     text-align: center;
-    
+
 
 }
 
@@ -825,8 +869,10 @@ button :hover {
 #back13,
 #back14,
 #back15 {
-    position: relative; /* Altere de absolute para relative */
-    margin: 10px; /* Ajuste a margem para centralizar verticalmente */
+    position: relative;
+    /* Altere de absolute para relative */
+    margin: 10px;
+    /* Ajuste a margem para centralizar verticalmente */
 }
 
 .button-arrow,
@@ -843,17 +889,20 @@ button :hover {
     text-transform: uppercase;
     font-family: "Figtree:ital", sans-serif;
     position: relative;
-    margin: 10px; /* Ajuste a margem para centralizar horizontalmente */
+    margin: 10px;
+    /* Ajuste a margem para centralizar horizontalmente */
 }
 
 .button-arrow {
     clip-path: polygon(0 0, 90% 0, 100% 50%, 90% 100%, 0 100%);
-    border-radius: 0 10px 10px 0; /* Adiciona bordas arredondadas no lado direito */
+    border-radius: 0 10px 10px 0;
+    /* Adiciona bordas arredondadas no lado direito */
 }
 
 .button-arrow-left {
     clip-path: polygon(0 50%, 10% 0, 100% 0, 100% 100%, 10% 100%, 0 50%);
-    border-radius: 10px 0 0 10px; /* Adiciona bordas arredondadas no lado esquerdo */
+    border-radius: 10px 0 0 10px;
+    /* Adiciona bordas arredondadas no lado esquerdo */
 }
 
 .question .button-container {
@@ -864,7 +913,8 @@ button :hover {
 }
 
 #question1 .button-container {
-    justify-content: flex-end; /* Alinha o botão "Avançar" à direita */
+    justify-content: flex-end;
+    /* Alinha o botão "Avançar" à direita */
 }
 
 #next1,
@@ -886,7 +936,7 @@ button :hover {
     display: flex;
     width: 250px;
     height: 50px;
-    
+
     background-color: #325d70;
     justify-content: center;
     align-items: center;
@@ -895,7 +945,7 @@ button :hover {
     cursor: pointer;
     text-transform: uppercase;
     font-family: "Figtree:ital", sans-serif;
-    
+
     position: relative;
     top: 40px;
     left: -10px;
@@ -906,8 +956,8 @@ button :hover {
     display: flex;
     width: 250px;
     height: 50px;
-    
-    
+
+
     background-color: #325d70;
     justify-content: center;
     align-items: center;
@@ -922,6 +972,7 @@ button :hover {
     clip-path: polygon(0 50%, 10% 0, 100% 0, 100% 100%, 10% 100%, 0 50%);
 
 }
+
 /* ...código existente... */
 .div-estatica {
     position: fixed;
@@ -1168,10 +1219,11 @@ span {
     font-family: "Figtree:ital", sans-serif;
     font-size: 16px;
     margin-top: 10px;
-    
 
-   
-    max-width: 100%; /* Adicione esta linha */
+
+
+    max-width: 100%;
+    /* Adicione esta linha */
 
 
 }
@@ -1183,8 +1235,10 @@ span {
     word-break: break-word;
     margin: 0 10px;
     max-width: 100%;
-    white-space: normal; /* Adicione esta linha */
-    padding-right: 10px; /* Adicione esta linha */
+    white-space: normal;
+    /* Adicione esta linha */
+    padding-right: 10px;
+    /* Adicione esta linha */
 }
 
 /* ELEMENTOS DE FORMULÁRIO */
@@ -1216,7 +1270,7 @@ span {
     /* Ajusta a posição para centralizar */
 
     /* Cor de fundo do modal */
-    padding: 0 5px 0 5px;
+    padding: 0 10px 0 10px;
     /* Espaçamento interno */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     /* Sombra para destaque */
@@ -1249,7 +1303,7 @@ span {
     /* Ajusta a posição para centralizar */
 
     /* Cor de fundo do modal */
-    padding: 10px 5px 10px 5px;
+    padding: 10px 10px 10px 10px;
     /* Espaçamento interno */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     /* Sombra para destaque */
@@ -1445,14 +1499,16 @@ section {
     max-width: 400px;
     margin: auto;
 }
-#recover-password-modal{
-    
+
+#recover-password-modal {
+
     justify-content: center;
     align-items: center;
     margin: -400px auto auto auto;
-    
-    
-    
+    height: 150px;
+    padding-top: 120px;
+
+
 
 }
 
@@ -1476,7 +1532,7 @@ section {
     /* Centralize o texto horizontalmente */
 
     /* Alinhe verticalmente ao meio  */
-    
+
     padding-bottom: 20px;
 }
 
@@ -1488,8 +1544,9 @@ section {
 .result {
     display: none;
     margin-left: 10px;
-    margin-top: 90px; /* Adicione esta linha para aumentar a margem superior */
-    
+    margin-top: 90px;
+    /* Adicione esta linha para aumentar a margem superior */
+
     text-align: center;
     /* Centraliza o texto */
     width: 100%;
@@ -1501,10 +1558,13 @@ section {
 .result h2,
 .result h3,
 .result p {
-    
-    margin-top: 10px; /* Reduz o espaçamento superior */
-    margin-bottom: 10px; /* Reduz o espaçamento inferior */
+
+    margin-top: 10px;
+    /* Reduz o espaçamento superior */
+    margin-bottom: 10px;
+    /* Reduz o espaçamento inferior */
 }
+
 .result #button-restart {
     display: flex;
     margin-top: 30px;
@@ -1524,7 +1584,7 @@ section {
     display: flex;
     width: 250px;
     height: 50px;
-    
+
     background-color: #325d70;
     justify-content: center;
     align-items: center;
@@ -1544,7 +1604,7 @@ section {
     width: 250px;
     height: 50px;
     margin: auto;
-    
+
     background-color: #325d70;
     justify-content: center;
     align-items: center;
@@ -1558,6 +1618,7 @@ section {
     clip-path: polygon(0 50%, 10% 0, 100% 0, 100% 100%, 10% 100%, 0 50%);
     border-radius: 0;
 }
+
 /* ...código existente... */
 .div-estatica {
     position: fixed;
@@ -1565,5 +1626,5 @@ section {
     top: 0;
     left: 0;
 }
-/* ...código existente... */
 
+/* ...código existente... */

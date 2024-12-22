@@ -1364,4 +1364,10 @@ Ação: get_usersSolicitação POST recebidaAção recebida: loginSolicitação 
     [senha] => 1234
     [action] => login
 )
-Ação: loginTentativa de login: usuario=fifo@gmail.com
+Ação: loginTentativa de login: usuario=fifo@gmail.comSolicitação POST recebidaAção recebida: loginSolicitação recebida: {"usuario":"fifo@gmail.com","senha":"1234","action":"login"}Dados de formulário recebidos: Array
+(
+    [usuario] => fifo@gmail.com
+    [senha] => 1234
+    [action] => login
+)
+Ação: loginTentativa de login: usuario=fifo@gmail.comSolicitação POST recebidaAção recebida: recuperar_senha_usuarioTentativa de recuperação de senha de usuário: email=antonioernandes25@gmail.comEmail encontrado: antonioernandes25@gmail.comToken gerado: ef76a3f9b1c416d1911de9ea0c01e37f511d89303a9007f22277f54d3cc59e4a9fb497c4c02b0f6af1b5699917a94e878264Senha descriptografada: 250200er25*Configurando PHPMailerDestinatário adicionado: antonioernandes25@gmail.comConteúdo do e-mail configuradoEmail enviado para: antonioernandes25@gmail.com

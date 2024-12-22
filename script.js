@@ -15,7 +15,7 @@ document.addEventListener('DOMContentLoaded', function () {
     const userGreeting = document.getElementById('user-greeting');
     const loadingMessageCadastro = document.getElementById('loading-message-cadastro');
     const loadingMessageContact = document.getElementById('loading-message-contact');
-    
+    const modalBackground = document.getElementById('modal-background');
 
     let isSubmittingAdminEmailForm = false;
     let isSubmittingContactForm = false;
@@ -127,7 +127,7 @@ document.addEventListener('DOMContentLoaded', function () {
         if (user) {
             window.location.href = 'quiz.html';
         } else {
-            loginModal.style.display = 'block';
+            showModal(loginModal);
         }
     }
 
@@ -171,7 +171,7 @@ document.addEventListener('DOMContentLoaded', function () {
                         alert(data.message);
                         if (data.message.includes('dados de cadastro incompletos')) {
                             additionalFields.style.display = 'block';
-                            loginModal.style.display = 'block';
+                            showModal(loginModal);
                         }
                     }
                 })
@@ -478,6 +478,32 @@ document.addEventListener('DOMContentLoaded', function () {
             adminLogout();
         });
     }
+
+    function showModal(modal) {
+        modal.style.display = 'block';
+        modalBackground.style.display = 'block';
+    }
+
+    function hideModal(modal) {
+        modal.style.display = 'none';
+        modalBackground.style.display = 'none';
+    }
+
+    function closeLoginModal() {
+        hideModal(loginModal);
+    }
+
+    function openRecoverPasswordModal() {
+        showModal(document.getElementById('recover-password-modal'));
+    }
+
+    function closeRecoverPasswordModal() {
+        hideModal(document.getElementById('recover-password-modal'));
+    }
+
+    window.closeLoginModal = closeLoginModal;
+    window.openRecoverPasswordModal = openRecoverPasswordModal;
+    window.closeRecoverPasswordModal = closeRecoverPasswordModal;
 
     checkLogin();
     window.startPDS = startPDS;

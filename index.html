@@ -86,10 +86,12 @@
     </div>
   </div>
 
-  <div id="login-modal" style="display:none;">
-    <div class="modal-content">
+  <div id="modal-background"></div>
 
-      <span class="close-button" onclick="closeLoginModal()">×</span>
+  <div id="login-modal" style="display:none;">
+    
+
+      <span class="close-button-login" onclick="closeLoginModal()">×</span>
       <form id="login-form" action="process_form.php" method="POST">
         <label for="username">Usuário:</label>
         <input type="text" id="username" name="usuario" required>
@@ -99,11 +101,11 @@
         <button type="submit">Entrar</button>
        
       </form>
-    </div>
+    
   </div>
 
   <div id="recover-password-modal" style="display:none;">
-    <div class="modal-content">
+    
       <span class="close-button" onclick="closeRecoverPasswordModal()">×</span>
       <form id="recover-password-form" action="process_form.php" method="POST">
         <label for="recover-email">Email:</label>
@@ -111,7 +113,7 @@
         <input type="hidden" name="action" value="recuperar_senha_usuario">
         <button type="submit" id="button-recover">Recuperar Senha</button>
       </form>
-    </div>
+    
   </div>
 
   <script>
