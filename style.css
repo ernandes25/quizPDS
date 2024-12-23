@@ -1473,6 +1473,62 @@ span {
 
 }
 
+.main-cad-adm{
+    
+    background-color: #d8d2e0;
+    display: flex;
+    position: fixed;
+    /* Fixa o modal na tela */
+    top: 53%;
+    /* Centraliza verticalmente */
+    left: 50%;
+    /* Centraliza horizontalmente */
+    transform: translate(-50%, -50%);
+    /* Ajusta a posição para centralizar */
+
+    /* Cor de fundo do modal */
+    padding: 0 10px 5px 10px;
+    /* Espaçamento interno */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    /* Sombra para destaque */
+    /* z-index: 1000; */
+    /* Garantir que o modal fica acima de outros elementos */
+    border-radius: 10px;
+    /* Bordas arredondadas */
+    width: 300px;
+    /* Largura do modal */
+    height: 310px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+
+
+}
+
+.button-cad-adm {
+    display: flex;
+    animation: pulse 3s 3s ease-in-out infinite;
+    width: 200px;
+    height: 40px;
+    background-color: #F4A261;
+    border-radius: 10px;
+    font-size: 18px;
+    color: #5A189A;
+    cursor: pointer;
+    text-transform: uppercase;
+    margin: 20px 50px 0;
+    
+    border: none;
+    padding: 6px 10px;
+    text-align: center;
+    /* Centraliza o texto dentro do botão */
+    align-self: center;
+    /* Centraliza o botão no formulário */
+    justify-content: center;
+
+}
+
 #cadastro-form {
     display: flex;
     flex-direction: column;

@@ -60,15 +60,16 @@
         </nav>
     </header>
 
-    <main>
-        <h1>Configuração de Email do Administrador</h1>
+    <main class="main-cad-adm">
+        
         <form id="admin-email-form" action="process_form.php" method="POST">
+            <h2>Cadastro de administrador</h2>
             <label for="admin-email">Email:</label>
             <input type="email" id="admin-email" name="email" required><br>
             <label for="admin-password">Senha:</label>
             <input type="password" id="admin-password" name="senha" required><br>
             <input type="hidden" name="action" value="cadastrar_email_admin">
-            <button type="submit">Cadastrar Email</button>
+            <button class="button-cad-adm" type="submit">Cadastrar Email</button>
         </form>
     </main>
 
