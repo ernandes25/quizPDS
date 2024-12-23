@@ -108,7 +108,7 @@ document.addEventListener('DOMContentLoaded', function () {
                 logoutButtonMain.style.display = 'block';
             }
             if (userGreeting) {
-                userGreeting.innerHTML = 'Você está logado como<br>ADMINISTRADOR.';
+                userGreeting.innerHTML = `Você está logado como ADMINISTRADOR<br>Email: ${admin}`;
             }
             const adminLoginLinks = document.querySelectorAll('a.cad-email-adm[href="admin_login.html"]');
             adminLoginLinks.forEach(link => {
