@@ -70,6 +70,14 @@
                 userGreetingContainer.style.display = 'block';
                 document.getElementById('logout').style.display = 'block';
             }
+
+            const loadUsersButton = document.getElementById('load-users');
+            const cadEmailLinks = document.querySelectorAll('.cad-email-adm');
+            loadUsersButton.addEventListener('click', function () {
+                loadUsersButton.classList.add('hidden');
+                cadEmailLinks.forEach(link => link.classList.add('hidden'));
+                document.getElementById('users-table').style.display = 'table';
+            });
         });
 
         function adminLogout() {
