@@ -57,9 +57,12 @@
                 </div>
             </ul>
 
-            <ul id="logout" style="display: none;">
+            <ul id="user-greeting-container" style="display: none;">
                 <span id="user-greeting"></span>
-                <button onclick="logout()">Sair</button>
+            </ul>
+
+            <ul id="logout" style="display: none;">
+                <button onclick="adminLogout()">Sair</button>
             </ul>
 
 
@@ -78,10 +81,6 @@
 
     <main id="main-admin-dashboard">
         <h1>Painel do Administrador</h1>
-
-        <ul>
-            <span id="user-greeting"></span>
-        </ul>
 
         <a class="cad-email-adm" href="config_email.html">Cadastrar Email</a>
 
@@ -110,6 +109,23 @@
         <span>Desenvolvido por: Bay Software - H & E Silva</span>
       </footer>
 
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const userGreeting = document.getElementById('user-greeting');
+            const userGreetingContainer = document.getElementById('user-greeting-container');
+            const adminEmail = localStorage.getItem('admin');
+            if (adminEmail) {
+                userGreeting.innerHTML = `Você está logado como: ${adminEmail}`;
+                userGreetingContainer.style.display = 'block';
+                document.getElementById('logout').style.display = 'block';
+            }
+        });
+
+        function adminLogout() {
+            localStorage.removeItem('admin');
+            window.location.href = 'admin_login.html';
+        }
+    </script>
     <script src="script.js"></script>
 </body>
 
