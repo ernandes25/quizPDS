@@ -798,6 +798,10 @@ header nav ul li a {
     padding: 5px;
 
 }
+#load-users:hover {
+    background-color: #D35FB7;
+
+}
 
 
 .forma {
@@ -1011,6 +1015,9 @@ button {
     /* Centraliza o botão no formulário */
     justify-content: center;
 
+}
+button:hover {
+    background-color: #D35FB7;
 }
 
 
