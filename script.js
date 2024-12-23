@@ -501,6 +501,17 @@ document.addEventListener('DOMContentLoaded', function () {
         hideModal(document.getElementById('recover-password-modal'));
     }
 
+    function openRecoverPasswordAdmim() {
+        document.getElementById('recover-password-adm').style.display = 'block';
+    }
+
+    function closeRecoverPasswordAdmim() {
+        document.getElementById('recover-password-adm').style.display = 'none';
+    }
+
+    window.openRecoverPasswordAdmim = openRecoverPasswordAdmim;
+    window.closeRecoverPasswordAdmim = closeRecoverPasswordAdmim;
+
     window.closeLoginModal = closeLoginModal;
     window.openRecoverPasswordModal = openRecoverPasswordModal;
     window.closeRecoverPasswordModal = closeRecoverPasswordModal;
