@@ -530,10 +530,19 @@ header nav {
 
 }
 
-#user-greeting {
-    font-size: 18px;
+#user-greeting-container {
+    font-size: 12px;
     font-weight: bold;
     color: #fff;
+    margin: 0 auto;
+    /* centraliza o elemento */
+
+}
+
+#user-greeting {
+    font-size: 12px;
+    font-weight: bold;
+    color: black;
     margin: 0 auto;
     /* centraliza o elemento */
 
