@@ -82,7 +82,7 @@
 
     <div class="link-container">
       <a href="cadastro.html">Cadastrar usuário</a>
-      <a href="#" onclick="openRecoverPasswordModal()">Esqueci minha senha</a>
+      <a href="recover_password_user.html">Esqueci minha senha</a>
     </div>
   </div>
 
@@ -100,18 +100,6 @@
         <input type="hidden" name="action" value="login">
         <button type="submit">Entrar</button>
        
-      </form>
-    
-  </div>
-
-  <div id="recover-password-modal" style="display:none;">
-    
-      <span class="close-button" onclick="closeRecoverPasswordModal()">×</span>
-      <form id="recover-password-form" action="process_form.php" method="POST">
-        <label for="recover-email">Email:</label>
-        <input type="email" id="recover-email" name="email" required>
-        <input type="hidden" name="action" value="recuperar_senha_usuario">
-        <button type="submit" id="button-recover">Recuperar Senha</button>
       </form>
     
   </div>

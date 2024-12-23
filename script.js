@@ -499,6 +499,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
     function closeRecoverPasswordModal() {
         hideModal(document.getElementById('recover-password-modal'));
+        window.location.href = 'index.html';
     }
 
     function openRecoverPasswordAdmim() {
@@ -515,6 +516,46 @@ document.addEventListener('DOMContentLoaded', function () {
     window.closeLoginModal = closeLoginModal;
     window.openRecoverPasswordModal = openRecoverPasswordModal;
     window.closeRecoverPasswordModal = closeRecoverPasswordModal;
+
+    const recoverPasswordForm = document.getElementById('recover-password-form');
+    const messageContainer = document.getElementById('message-container');
+
+    if (recoverPasswordForm) {
+        recoverPasswordForm.addEventListener('submit', function (event) {
+            event.preventDefault();
+            const formData = new FormData(recoverPasswordForm);
+            formData.append('action', 'recuperar_senha_usuario');
+
+            fetch('process_form.php', {
+                method: 'POST',
+                body: formData
+            })
+                .then(response => {
+                    console.log('Resposta do servidor:', response);
+                    return response.text();
+                })
+                .then(text => {
+                    try {
+                        const data = JSON.parse(text);
+                        console.log('Dados recebidos:', data);
+                        messageContainer.innerHTML = `${data.message}<br><a href="index.html">RETORNAR À PÁGINA INICIAL</a>`;
+                        messageContainer.className = 'message success';
+                    } catch (error) {
+                        console.error('Erro ao analisar JSON:', error);
+                        console.error('Resposta do servidor:', text);
+                        messageContainer.innerHTML = 'Ocorreu um erro ao processar sua solicitação. Por favor, tente novamente mais tarde.<br><a href="index.html">RETORNAR À PÁGINA INICIAL</a>';
+                        messageContainer.className = 'message error';
+                    }
+                    messageContainer.style.display = 'block';
+                })
+                .catch(error => {
+                    console.error('Erro:', error);
+                    messageContainer.innerHTML = 'Ocorreu um erro ao processar sua solicitação. Por favor, tente novamente mais tarde.<br><a href="index.html">RETORNAR À PÁGINA INICIAL</a>';
+                    messageContainer.className = 'message error';
+                    messageContainer.style.display = 'block';
+                });
+        });
+    }
 
     checkLogin();
     window.startPDS = startPDS;
