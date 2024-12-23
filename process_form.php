@@ -203,48 +203,6 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         }
         echo json_encode($response);
         exit;
-    } elseif ($action == 'cadastrar_email_admin') {
-        // Verificar se já existe algum administrador cadastrado
-        $stmt = $pdo->query("SELECT COUNT(*) FROM admin_emails");
-        $adminCount = $stmt->fetchColumn();
-
-        if ($adminCount > 0 && !isset($_SESSION['admin'])) {
-            $response['status'] = 'error';
-            $response['message'] = 'Acesso negado. Faça login como administrador.';
-            echo json_encode($response);
-            exit;
-        }
-
-        $email = $_POST['email'];
-        $senha = $_POST['senha'];
-        error_log("Tentativa de cadastro de email admin: email=$email", 3, "/opt/lampp/htdocs/quizPDS/error.log");
-
-        // Verificar se o email já existe
-        $stmt = $pdo->prepare("SELECT COUNT(*) FROM admin_emails WHERE email = ?");
-        $stmt->execute([$email]);
-        $emailCount = $stmt->fetchColumn();
-
-        if ($emailCount > 0) {
-            $response['status'] = 'error';
-            $response['message'] = 'Este email de administrador já está cadastrado.';
-            echo json_encode($response);
-            exit;
-        }
-
-        // Criptografar a senha
-        $senhaCriptografada = encryptPassword($senha);
-
-        $stmt = $pdo->prepare("INSERT INTO admin_emails (email, senha) VALUES (?, ?)");
-        if ($stmt->execute([$email, $senhaCriptografada])) {
-            $response['status'] = 'success';
-            $response['message'] = 'Email do administrador cadastrado com sucesso';
-        } else {
-            $response['status'] = 'error';
-            $response['message'] = 'Falha ao salvar o email do administrador';
-            error_log("Failed to save admin email", 3, "/opt/lampp/htdocs/quizPDS/error.log");
-        }
-        echo json_encode($response);
-        exit;
     }
 }
 

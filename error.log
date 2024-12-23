@@ -1,68 +1,28 @@
-Solicitação POST recebidaSolicitação POST recebidaAção recebida: admin_loginAção recebida: admin_loginTentativa de login do admin: email=contato@ercont.com.brTentativa de login do admin: email=contato@ercont.com.brSolicitação POST recebidaAção recebida: Solicitação recebida: []JSON decodificado: Array
+Solicitação POST recebidaAção recebida: admin_loginSolicitação POST recebidaTentativa de login do admin: email=contato@ercont.com.brAção recebida: admin_loginTentativa de login do admin: email=contato@ercont.com.brSolicitação POST recebidaAção recebida: Solicitação recebida: []JSON decodificado: Array
 (
     [action] => admin_logout
 )
-Ação: admin_logoutTentativa de logout do administradorLogout do administrador realizado com sucessoSolicitação POST recebidaAção recebida: admin_loginTentativa de login do admin: email=contato@ercont.com.brSolicitação POST recebidaAção recebida: admin_loginSolicitação POST recebidaAção recebida: Solicitação recebida: []JSON decodificado: Array
-(
-    [action] => admin_logout
-)
-Ação: admin_logoutTentativa de logout do administradorLogout do administrador realizado com sucessoSolicitação POST recebidaAção recebida: admin_loginTentativa de login do admin: email=contato@ercont.com.brSolicitação POST recebidaAção recebida: admin_loginSolicitação POST recebidaAção recebida: Solicitação recebida: []JSON decodificado: Array
-(
-    [action] => admin_logout
-)
-Ação: admin_logoutTentativa de logout do administradorLogout do administrador realizado com sucessoSolicitação POST recebidaAção recebida: cadastrar_email_adminSolicitação recebida: {"email":"antonioernandes25@gmail.com","senha":"1234","action":"cadastrar_email_admin"}Dados de formulário recebidos: Array
-(
-    [email] => antonioernandes25@gmail.com
-    [senha] => 1234
-    [action] => cadastrar_email_admin
-)
-Ação: cadastrar_email_adminSolicitação POST recebidaAção recebida: admin_loginTentativa de login do admin: email=contato@ercont.com.brSolicitação POST recebidaAção recebida: admin_loginSolicitação POST recebidaAção recebida: cadastrar_email_adminSolicitação recebida: {"email":"antonioernandes25@gmail.com","senha":"250200","action":"cadastrar_email_admin"}Dados de formulário recebidos: Array
-(
-    [email] => antonioernandes25@gmail.com
-    [senha] => 250200
-    [action] => cadastrar_email_admin
-)
-Ação: cadastrar_email_adminSolicitação POST recebidaAção recebida: admin_loginSolicitação POST recebidaAção recebida: admin_loginSolicitação POST recebidaAção recebida: admin_loginSolicitação POST recebidaAção recebida: admin_loginSolicitação POST recebidaAção recebida: admin_loginSolicitação POST recebidaAção recebida: admin_loginSolicitação POST recebidaAção recebida: cadastrar_email_adminSolicitação recebida: {"email":"antonioernandes25@gmail.com","senha":"250200","action":"cadastrar_email_admin"}Dados de formulário recebidos: Array
-(
-    [email] => antonioernandes25@gmail.com
-    [senha] => 250200
-    [action] => cadastrar_email_admin
-)
-Ação: cadastrar_email_adminSolicitação POST recebidaAção recebida: cadastrar_email_adminSolicitação recebida: {"email":"antonioernandes25@gmail.com","senha":"250200er","action":"cadastrar_email_admin"}Dados de formulário recebidos: Array
-(
-    [email] => antonioernandes25@gmail.com
-    [senha] => 250200er
-    [action] => cadastrar_email_admin
-)
-Ação: cadastrar_email_adminSolicitação POST recebidaAção recebida: admin_loginTentativa de login do admin: email=contato@ercont.com.brSolicitação POST recebidaAção recebida: admin_loginTentativa de login do admin: email=contato@ercont.com.brSolicitação POST recebidaAção recebida: cadastrar_email_adminSolicitação recebida: {"email":"antonioernandes25@gmail.com","senha":"250200er","action":"cadastrar_email_admin"}Dados de formulário recebidos: Array
-(
-    [email] => antonioernandes25@gmail.com
-    [senha] => 250200er
-    [action] => cadastrar_email_admin
-)
-Ação: cadastrar_email_adminSolicitação POST recebidaAção recebida: cadastrar_email_adminSolicitação recebida: {"email":"antonioernandes25@gmail.com","senha":"250200er","action":"cadastrar_email_admin"}Dados de formulário recebidos: Array
-(
-    [email] => antonioernandes25@gmail.com
-    [senha] => 250200er
-    [action] => cadastrar_email_admin
-)
-Ação: cadastrar_email_adminSolicitação POST recebidaAção recebida: Solicitação recebida: []JSON decodificado: Array
+Ação: admin_logoutSolicitação POST recebidaAção recebida: Solicitação recebida: []JSON decodificado: Array
 (
     [action] => get_users
 )
-Ação: get_usersSolicitação POST recebidaAção recebida: Solicitação recebida: []JSON decodificado: Array
+Ação: get_usersSolicitação POST recebidaSolicitação POST recebidaAção recebida: admin_loginAção recebida: admin_loginTentativa de login do admin: email=contato@ercont.com.brTentativa de login do admin: email=contato@ercont.com.brSolicitação POST recebidaAção recebida: Solicitação recebida: []JSON decodificado: Array
 (
     [action] => admin_logout
 )
-Ação: admin_logoutTentativa de logout do administradorLogout do administrador realizado com sucessoSolicitação POST recebidaAção recebida: admin_loginTentativa de login do admin: email=contato@ercont.com.brSolicitação POST recebidaAção recebida: admin_loginSolicitação POST recebidaAção recebida: Solicitação recebida: []JSON decodificado: Array
+Ação: admin_logoutSolicitação POST recebidaSolicitação POST recebidaAção recebida: recuperar_senha_usuarioAção recebida: recuperar_senha_usuarioTentativa de recuperação de senha de usuário: email=contato@ercont.com.brTentativa de recuperação de senha de usuário: email=contato@ercont.com.brEmail não encontrado: contato@ercont.com.brEmail não encontrado: contato@ercont.com.brSolicitação POST recebidaAção recebida: recuperar_senha_usuarioTentativa de recuperação de senha de usuário: email=antonioernandes25@gmail.comEmail encontrado: antonioernandes25@gmail.comToken gerado: 399c40ec656a6ee5881161db1c41bcf25672b47019ddc99901e378479fe9cc983703acd3830de18f9597a33d88a26c50fbfdSenha descriptografada: 250200er25*Configurando PHPMailerDestinatário adicionado: antonioernandes25@gmail.comConteúdo do e-mail configuradoEmail enviado para: antonioernandes25@gmail.comSolicitação POST recebidaAção recebida: recuperar_senha_usuarioTentativa de recuperação de senha de usuário: email=antonioernandes25@gmail.comEmail encontrado: antonioernandes25@gmail.comToken gerado: 0e7d38e409c80e66706ffe64dab6b2792d6635e2a382c339fea57249244aac7d4c3ae3f27141dc7adbbd8f93ebfbc681d9beSenha descriptografada: 250200er25*Configurando PHPMailerDestinatário adicionado: antonioernandes25@gmail.comConteúdo do e-mail configuradoEmail enviado para: antonioernandes25@gmail.comSolicitação POST recebidaAção recebida: recuperar_senhaTentativa de recuperação de senha: email=contato@ercont.com.brEmail encontrado: contato@ercont.com.brToken gerado: 42309505a783b3174c24eefaf093f440434f73ec64e58c3046a6936ec4d0a4eabce09014b55814cf6b26fb27f1ef1c8e6194Senha descriptografada: 250200er25*Configurando PHPMailerDestinatário adicionado: contato@ercont.com.brConteúdo do e-mail configuradoEmail enviado para: contato@ercont.com.brSolicitação POST recebidaAção recebida: admin_loginTentativa de login do admin: email=contato@ercont.com.brSolicitação POST recebidaAção recebida: admin_loginTentativa de login do admin: email=contato@ercont.com.brSolicitação POST recebidaAção recebida: Solicitação recebida: []JSON decodificado: Array
+(
+    [action] => admin_logout
+)
+Ação: admin_logoutSolicitação POST recebidaAção recebida: Solicitação recebida: []JSON decodificado: Array
 (
     [action] => get_users
 )
-Ação: get_usersSolicitação POST recebidaAção recebida: Solicitação recebida: []JSON decodificado: Array
+Ação: get_usersSolicitação POST recebidaAção recebida: cadastrar_email_adminSolicitação POST recebidaAção recebida: admin_loginTentativa de login do admin: email=contato@ercont.com.brSolicitação POST recebidaAção recebida: admin_loginTentativa de login do admin: email=contato@ercont.com.brSolicitação POST recebidaAção recebida: cadastrar_email_adminTentativa de cadastro de email admin: email=antonioernandes25@gmail.comSolicitação POST recebidaAção recebida: cadastrar_email_adminTentativa de cadastro de email admin: email=antonioernandes25@gmail.comSolicitação POST recebidaAção recebida: admin_loginTentativa de login do admin: email=contato@ercont.com.brSolicitação POST recebidaAção recebida: admin_loginTentativa de login do admin: email=contato@ercont.com.brSolicitação POST recebidaAção recebida: Solicitação recebida: []JSON decodificado: Array
 (
     [action] => admin_logout
 )
-Ação: admin_logoutTentativa de logout do administradorLogout do administrador realizado com sucessoSolicitação POST recebidaAção recebida: cadastrar_email_adminSolicitação recebida: {"email":"antonioernandes25@gmail.com","senha":"250200","action":"cadastrar_email_admin"}Dados de formulário recebidos: Array
+Ação: admin_logoutSolicitação POST recebidaAção recebida: recuperar_senha_usuarioTentativa de recuperação de senha de usuário: email=antonioernandes25@gmail.comEmail encontrado: antonioernandes25@gmail.comToken gerado: 1c565629dfd30760cf3cc85af10248964bff1a111010bf26f387d93b8d148a6b0359384347b57be800290186a534083861bcSenha descriptografada: 250200er25*Configurando PHPMailerDestinatário adicionado: antonioernandes25@gmail.comConteúdo do e-mail configuradoEmail enviado para: antonioernandes25@gmail.comSolicitação POST recebidaAção recebida: cadastrar_email_adminSolicitação recebida: {"email":"antonioernandes25@gmail.com","senha":"250200","action":"cadastrar_email_admin"}Dados de formulário recebidos: Array
 (
     [email] => antonioernandes25@gmail.com
     [senha] => 250200
@@ -74,53 +34,19 @@ Ação: cadastrar_email_adminSolicitação POST recebidaAção recebida: admin_l
     [senha] => 250200
     [action] => cadastrar_email_admin
 )
-Ação: cadastrar_email_adminTentativa de cadastro de email admin: email=antonioernandes25@gmail.comSolicitação POST recebidaAção recebida: loginSolicitação recebida: {"usuario":"fifo@gmail.com","senha":"1234","action":"login"}Dados de formulário recebidos: Array
-(
-    [usuario] => fifo@gmail.com
-    [senha] => 1234
-    [action] => login
-)
-Ação: loginTentativa de login: usuario=fifo@gmail.comSolicitação POST recebidaAção recebida: Solicitação recebida: []JSON decodificado: Array
-(
-    [action] => save_quiz_result
-    [user] => fifo@gmail.com
-    [score] => 138
-)
-Ação: save_quiz_resultSalvando resultado do quiz: user=fifo@gmail.com, score=138Solicitação POST recebidaAção recebida: admin_loginTentativa de login do admin: email=contato@ercont.com.brSolicitação POST recebidaAção recebida: admin_loginTentativa de login do admin: email=contato@ercont.com.brSolicitação POST recebidaAção recebida: Solicitação recebida: []JSON decodificado: Array
-(
-    [action] => get_users
-)
-Ação: get_usersSolicitação POST recebidaAção recebida: admin_loginTentativa de login do admin: email=contato@ercont.com.brSolicitação POST recebidaAção recebida: admin_loginTentativa de login do admin: email=contato@ercont.com.brSolicitação POST recebidaAção recebida: admin_loginTentativa de login do admin: email=contato@ercont.com.brSolicitação POST recebidaAção recebida: admin_loginTentativa de login do admin: email=contato@ercont.com.brSolicitação POST recebidaAção recebida: admin_loginTentativa de login do admin: email=contato@ercont.com.brSolicitação POST recebidaAção recebida: admin_loginTentativa de login do admin: email=contato@ercont.com.brSolicitação POST recebidaAção recebida: cadastrar_email_adminSolicitação recebida: {"email":"antonioernandes25@gmail.com","senha":"250200","action":"cadastrar_email_admin"}Dados de formulário recebidos: Array
+Ação: cadastrar_email_adminTentativa de cadastro de email admin: email=antonioernandes25@gmail.comSolicitação POST recebidaAção recebida: admin_loginTentativa de login do admin: email=contato@ercont.com.brSolicitação POST recebidaAção recebida: admin_loginTentativa de login do admin: email=contato@ercont.com.brSolicitação POST recebidaAção recebida: cadastrar_email_adminSolicitação recebida: {"email":"antonioernandes25@gmail.com","senha":"250200","action":"cadastrar_email_admin"}Dados de formulário recebidos: Array
 (
     [email] => antonioernandes25@gmail.com
     [senha] => 250200
     [action] => cadastrar_email_admin
 )
-Ação: cadastrar_email_adminTentativa de cadastro de email admin: email=antonioernandes25@gmail.comSolicitação POST recebidaSolicitação POST recebidaAção recebida: admin_loginAção recebida: admin_loginTentativa de login do admin: email=contato@ercont.com.brTentativa de login do admin: email=contato@ercont.com.brSolicitação POST recebidaAção recebida: cadastrar_email_adminSolicitação recebida: {"email":"antonioernandes25@gmail.com","senha":"250200","action":"cadastrar_email_admin"}Dados de formulário recebidos: Array
+Ação: cadastrar_email_adminTentativa de cadastro de email admin: email=antonioernandes25@gmail.comSolicitação POST recebidaAção recebida: admin_loginTentativa de login do admin: email=contato@ercont.com.brSolicitação POST recebidaAção recebida: admin_loginTentativa de login do admin: email=contato@ercont.com.brSolicitação POST recebidaAção recebida: cadastrar_email_adminSolicitação recebida: {"email":"antonioernandes25@gmail.com","senha":"250200","action":"cadastrar_email_admin"}Dados de formulário recebidos: Array
 (
     [email] => antonioernandes25@gmail.com
     [senha] => 250200
     [action] => cadastrar_email_admin
 )
-Ação: cadastrar_email_adminTentativa de cadastro de email admin: email=antonioernandes25@gmail.comSolicitação POST recebidaAção recebida: loginSolicitação recebida: {"usuario":"fifo@gmail.com","senha":"1234","action":"login"}Dados de formulário recebidos: Array
-(
-    [usuario] => fifo@gmail.com
-    [senha] => 1234
-    [action] => login
-)
-Ação: loginTentativa de login: usuario=fifo@gmail.comSolicitação POST recebidaAção recebida: admin_loginTentativa de login do admin: email=contato@ercont.com.brSolicitação POST recebidaAção recebida: admin_loginTentativa de login do admin: email=contato@ercont.com.brSolicitação POST recebidaAção recebida: Solicitação recebida: []JSON decodificado: Array
-(
-    [action] => get_users
-)
-Ação: get_usersSolicitação POST recebidaAção recebida: admin_loginTentativa de login do admin: email=contato@ercont.com.brSolicitação POST recebidaAção recebida: admin_loginTentativa de login do admin: email=contato@ercont.com.brSolicitação POST recebidaAção recebida: admin_loginTentativa de login do admin: email=contato@ercont.com.brSolicitação POST recebidaAção recebida: admin_loginTentativa de login do admin: email=contato@ercont.com.brSolicitação POST recebidaAção recebida: Solicitação recebida: []JSON decodificado: Array
-(
-    [action] => get_users
-)
-Ação: get_usersSolicitação POST recebidaAção recebida: admin_loginTentativa de login do admin: email=contato@ercont.com.brSolicitação POST recebidaAção recebida: admin_loginTentativa de login do admin: email=contato@ercont.com.brSolicitação POST recebidaAção recebida: admin_loginTentativa de login do admin: email=contato@ercont.com.brSolicitação POST recebidaAção recebida: admin_loginTentativa de login do admin: email=contato@ercont.com.brSolicitação POST recebidaAção recebida: admin_loginTentativa de login do admin: email=contato@ercont.com.brSolicitação POST recebidaAção recebida: admin_loginTentativa de login do admin: email=contato@ercont.com.brSolicitação POST recebidaAção recebida: admin_loginTentativa de login do admin: email=contato@ercont.com.brSolicitação POST recebidaAção recebida: admin_loginTentativa de login do admin: email=contato@ercont.com.brSolicitação POST recebidaAção recebida: admin_loginTentativa de login do admin: email=contato@ercont.com.brSolicitação POST recebidaAção recebida: admin_loginTentativa de login do admin: email=contato@ercont.com.brSolicitação POST recebidaAção recebida: admin_loginTentativa de login do admin: email=contato@ercont.com.brSolicitação POST recebidaAção recebida: admin_loginTentativa de login do admin: email=contato@ercont.com.brSolicitação POST recebidaSolicitação POST recebidaAção recebida: admin_loginAção recebida: admin_loginTentativa de login do admin: email=contato@ercont.com.brTentativa de login do admin: email=contato@ercont.com.brSolicitação POST recebidaAção recebida: admin_loginSolicitação POST recebidaTentativa de login do admin: email=contato@ercont.com.brAção recebida: admin_loginTentativa de login do admin: email=contato@ercont.com.brSolicitação POST recebidaAção recebida: admin_loginTentativa de login do admin: email=contato@ercont.com.brSolicitação POST recebidaAção recebida: admin_loginTentativa de login do admin: email=contato@ercont.com.brSolicitação POST recebidaAção recebida: admin_loginTentativa de login do admin: email=contato@ercont.com.brSolicitação POST recebidaAção recebida: admin_loginTentativa de login do admin: email=contato@ercont.com.brSolicitação POST recebidaAção recebida: admin_loginTentativa de login do admin: email=contato@ercont.com.brSolicitação POST recebidaAção recebida: admin_loginTentativa de login do admin: email=contato@ercont.com.brSolicitação POST recebidaAção recebida: admin_loginTentativa de login do admin: email=contato@ercont.com.brSolicitação POST recebidaAção recebida: admin_loginTentativa de login do admin: email=contato@ercont.com.brSolicitação POST recebidaAção recebida: admin_loginSolicitação POST recebidaTentativa de login do admin: email=contato@ercont.com.brAção recebida: admin_loginTentativa de login do admin: email=contato@ercont.com.brSolicitação POST recebidaAção recebida: admin_loginTentativa de login do admin: email=contato@ercont.com.brSolicitação POST recebidaAção recebida: admin_loginTentativa de login do admin: email=contato@ercont.com.brSolicitação POST recebidaAção recebida: admin_loginTentativa de login do admin: email=contato@ercont.com.brSolicitação POST recebidaAção recebida: admin_loginTentativa de login do admin: email=contato@ercont.com.brSolicitação POST recebidaAção recebida: admin_loginTentativa de login do admin: email=contato@ercont.com.brSolicitação POST recebidaAção recebida: admin_loginTentativa de login do admin: email=contato@ercont.com.brSolicitação POST recebidaAção recebida: admin_loginTentativa de login do admin: email=contato@ercont.com.brSolicitação POST recebidaAção recebida: admin_loginTentativa de login do admin: email=contato@ercont.com.brSolicitação POST recebidaAção recebida: admin_loginTentativa de login do admin: email=contato@ercont.com.brSolicitação POST recebidaAção recebida: admin_loginTentativa de login do admin: email=contato@ercont.com.brSolicitação POST recebidaAção recebida: admin_loginTentativa de login do admin: email=contato@ercont.com.brSolicitação POST recebidaAção recebida: admin_loginTentativa de login do admin: email=contato@ercont.com.brSolicitação POST recebidaAção recebida: admin_loginTentativa de login do admin: email=contato@ercont.com.brSolicitação POST recebidaAção recebida: admin_loginTentativa de login do admin: email=contato@ercont.com.brSolicitação POST recebidaAção recebida: admin_loginTentativa de login do admin: email=contato@ercont.com.brSolicitação POST recebidaAção recebida: admin_loginTentativa de login do admin: email=contato@ercont.com.brSolicitação POST recebidaAção recebida: admin_loginTentativa de login do admin: email=contato@ercont.com.brSolicitação POST recebidaAção recebida: admin_loginTentativa de login do admin: email=contato@ercont.com.brSolicitação POST recebidaAção recebida: admin_loginTentativa de login do admin: email=contato@ercont.com.brSolicitação POST recebidaAção recebida: admin_loginTentativa de login do admin: email=contato@ercont.com.brSolicitação POST recebidaAção recebida: admin_loginTentativa de login do admin: email=contato@ercont.com.brSolicitação POST recebidaAção recebida: admin_loginTentativa de login do admin: email=contato@ercont.com.brSolicitação POST recebidaAção recebida: admin_loginTentativa de login do admin: email=contato@ercont.com.brSolicitação POST recebidaAção recebida: admin_loginTentativa de login do admin: email=contato@ercont.com.brSolicitação POST recebidaSolicitação POST recebidaAção recebida: admin_loginAção recebida: admin_loginTentativa de login do admin: email=contato@ercont.com.brTentativa de login do admin: email=contato@ercont.com.brSolicitação POST recebidaAção recebida: admin_loginTentativa de login do admin: email=contato@ercont.com.brSolicitação POST recebidaAção recebida: admin_loginTentativa de login do admin: email=contato@ercont.com.brSolicitação POST recebidaAção recebida: admin_loginTentativa de login do admin: email=contato@ercont.com.brSolicitação POST recebidaAção recebida: admin_loginTentativa de login do admin: email=contato@ercont.com.brSolicitação POST recebidaAção recebida: admin_loginTentativa de login do admin: email=contato@ercont.com.brSolicitação POST recebidaAção recebida: admin_loginTentativa de login do admin: email=contato@ercont.com.brSolicitação POST recebidaAção recebida: admin_loginTentativa de login do admin: email=contato@ercont.com.brSolicitação POST recebidaAção recebida: admin_loginTentativa de login do admin: email=contato@ercont.com.brSolicitação POST recebidaAção recebida: admin_loginTentativa de login do admin: email=contato@ercont.com.brSolicitação POST recebidaAção recebida: admin_loginTentativa de login do admin: email=contato@ercont.com.brSolicitação POST recebidaAção recebida: admin_loginTentativa de login do admin: email=contato@ercont.com.brSolicitação POST recebidaAção recebida: admin_loginTentativa de login do admin: email=contato@ercont.com.brSolicitação POST recebidaAção recebida: admin_loginTentativa de login do admin: email=contato@ercont.com.brSolicitação POST recebidaAção recebida: Solicitação recebida: []JSON decodificado: Array
-(
-    [action] => get_users
-)
-Ação: get_usersSolicitação POST recebidaAção recebida: admin_loginTentativa de login do admin: email=contato@ercont.com.brSolicitação POST recebidaAção recebida: admin_loginTentativa de login do admin: email=contato@ercont.com.brSolicitação POST recebidaAção recebida: admin_loginTentativa de login do admin: email=contato@ercont.com.brSolicitação POST recebidaAção recebida: cadastrar_email_adminSolicitação recebida: {"email":"antonioernandes25@gmail.com","senha":"250200","action":"cadastrar_email_admin"}Dados de formulário recebidos: Array
+Ação: cadastrar_email_adminSolicitação POST recebidaAção recebida: admin_loginTentativa de login do admin: email=contato@ercont.com.brSolicitação POST recebidaAção recebida: admin_loginTentativa de login do admin: email=contato@ercont.com.brSolicitação POST recebidaAção recebida: cadastrar_email_adminSolicitação recebida: {"email":"antonioernandes25@gmail.com","senha":"250200","action":"cadastrar_email_admin"}Dados de formulário recebidos: Array
 (
     [email] => antonioernandes25@gmail.com
     [senha] => 250200
@@ -138,951 +64,59 @@ Ação: cadastrar_email_adminTentativa de cadastro de email admin: email=antonio
     [senha] => 250200
     [action] => cadastrar_email_admin
 )
-Ação: cadastrar_email_adminSolicitação POST recebidaAção recebida: admin_loginTentativa de login do admin: email=contato@ercont.com.brSolicitação POST recebidaAção recebida: admin_loginTentativa de login do admin: email=contato@ercont.com.brSolicitação POST recebidaAção recebida: admin_loginTentativa de login do admin: email=contato@ercont.com.brSolicitação POST recebidaAção recebida: cadastrar_email_adminSolicitação recebida: {"email":"contato@ercont.com.br","senha":"250200er25*","action":"cadastrar_email_admin"}Dados de formulário recebidos: Array
+Ação: cadastrar_email_adminSolicitação POST recebidaAção recebida: admin_loginTentativa de login do admin: email=contato@ercont.com.brSolicitação POST recebidaAção recebida: admin_loginTentativa de login do admin: email=contato@ercont.com.brSolicitação POST recebidaAção recebida: Solicitação recebida: []JSON decodificado: Array
 (
-    [email] => contato@ercont.com.br
-    [senha] => 250200er25*
-    [action] => cadastrar_email_admin
+    [action] => logout
 )
-Ação: cadastrar_email_adminTentativa de cadastro de email admin: email=contato@ercont.com.brSolicitação POST recebidaAção recebida: admin_loginTentativa de login do admin: email=contato@ercont.com.brSolicitação POST recebidaAção recebida: admin_loginTentativa de login do admin: email=contato@ercont.com.brSolicitação POST recebidaAção recebida: admin_loginTentativa de login do admin: email=contato@ercont.com.brSolicitação POST recebidaAção recebida: cadastrar_email_adminSolicitação recebida: {"email":"contato@ercont.com.br","senha":"250200er25*","action":"cadastrar_email_admin"}Dados de formulário recebidos: Array
+Ação: logoutSolicitação POST recebidaAção recebida: cadastrar_email_adminSolicitação recebida: {"email":"antonioernandes25@gmail.com","senha":"250200","action":"cadastrar_email_admin"}Dados de formulário recebidos: Array
 (
-    [email] => contato@ercont.com.br
-    [senha] => 250200er25*
-    [action] => cadastrar_email_admin
-)
-Ação: cadastrar_email_adminSolicitação POST recebidaAção recebida: admin_loginTentativa de login do admin: email=contato@ercont.com.brSolicitação POST recebidaAção recebida: admin_loginTentativa de login do admin: email=contato@ercont.com.brSolicitação POST recebidaAção recebida: admin_loginTentativa de login do admin: email=contato@ercont.com.brSolicitação POST recebidaAção recebida: admin_loginTentativa de login do admin: email=contato@ercont.com.brSolicitação POST recebidaAção recebida: admin_loginTentativa de login do admin: email=contato@ercont.com.brSolicitação POST recebidaAção recebida: admin_loginTentativa de login do admin: email=contato@ercont.com.brSolicitação POST recebidaAção recebida: admin_loginTentativa de login do admin: email=contato@ercont.com.brSolicitação POST recebidaAção recebida: admin_loginTentativa de login do admin: email=contato@ercont.com.brSolicitação POST recebidaAção recebida: admin_loginTentativa de login do admin: email=contato@ercont.com.brSolicitação POST recebidaAção recebida: Solicitação recebida: []JSON decodificado: Array
-(
-    [action] => get_users
-)
-Ação: get_usersSolicitação POST recebidaAção recebida: admin_loginTentativa de login do admin: email=contato@ercont.com.brSolicitação POST recebidaAção recebida: admin_loginTentativa de login do admin: email=contato@ercont.com.brSolicitação POST recebidaAção recebida: admin_loginTentativa de login do admin: email=contato@ercont.com.brSolicitação POST recebidaAção recebida: Solicitação recebida: []JSON decodificado: Array
-(
-    [action] => get_users
-)
-Ação: get_usersSolicitação POST recebidaAção recebida: loginSolicitação recebida: {"usuario":"fifo@gmail.com","senha":"1234","action":"login"}Dados de formulário recebidos: Array
-(
-    [usuario] => fifo@gmail.com
-    [senha] => 1234
-    [action] => login
-)
-Ação: loginTentativa de login: usuario=fifo@gmail.comSolicitação POST recebidaAção recebida: loginSolicitação recebida: {"usuario":"fifo@gmail.com","senha":"1234","action":"login"}Dados de formulário recebidos: Array
-(
-    [usuario] => fifo@gmail.com
-    [senha] => 1234
-    [action] => login
-)
-Ação: loginTentativa de login: usuario=fifo@gmail.comSolicitação POST recebidaAção recebida: recuperar_senhaTentativa de recuperação de senha: email=antonioernandes25@gmail.comEmail não encontrado: antonioernandes25@gmail.comSolicitação POST recebidaAção recebida: cadastroSolicitação recebida: {"nome":"ernandes","email":"antonioernandes25@gmail.com","telefone":"34998142525","nova_senha":"1234","action":"cadastro","novo_usuario":"antonioernandes25@gmail.com"}Dados de formulário recebidos: Array
-(
-    [nome] => ernandes
     [email] => antonioernandes25@gmail.com
-    [telefone] => 34998142525
-    [nova_senha] => 1234
-    [action] => cadastro
-    [novo_usuario] => antonioernandes25@gmail.com
-)
-Ação: cadastroTentativa de cadastro: usuario=antonioernandes25@gmail.comSolicitação POST recebidaAção recebida: recuperar_senhaTentativa de recuperação de senha: email=antonioernandes25@gmail.comEmail não encontrado: antonioernandes25@gmail.comSolicitação POST recebidaAção recebida: recuperar_senhaTentativa de recuperação de senha: email=contato@ercont.com.brEmail encontrado: contato@ercont.com.brToken gerado: 68fa69a98cf2885e6e37f53d5f610e067489c39b57327cef032669a644345dbf93f53e7a42de0c1868edbcab6c40e39ac88eSenha descriptografada: 250200er25*Configurando PHPMailerDestinatário adicionado: contato@ercont.com.brConteúdo do e-mail configuradoEmail enviado para: contato@ercont.com.brSolicitação POST recebidaAção recebida: recuperar_senhaTentativa de recuperação de senha: email=antonioernandes25@gmail.comEmail não encontrado: antonioernandes25@gmail.comSolicitação POST recebidaAção recebida: recuperar_senha_usuarioTentativa de recuperação de senha de usuário: email=antonioernandes25@gmail.comEmail encontrado: antonioernandes25@gmail.comSolicitação POST recebidaAção recebida: recuperar_senha_usuarioTentativa de recuperação de senha de usuário: email=antonioernandes25@gmail.comEmail encontrado: antonioernandes25@gmail.comToken gerado: 86ec4a277096b407bc2ba64930a45fd4a6fa5fea6ec31a693bf92f16c4175dd4c004979bb7c6700ea04f5d76b44ddd67856bSenha descriptografada: 250200er25*Configurando PHPMailerDestinatário adicionado: antonioernandes25@gmail.comConteúdo do e-mail configuradoEmail enviado para: antonioernandes25@gmail.comSolicitação POST recebidaAção recebida: recuperar_senha_usuarioTentativa de recuperação de senha de usuário: email=antonioernandes25@gmail.comEmail encontrado: antonioernandes25@gmail.comToken gerado: 05561f3725bdd0c482562cef99bc34e59f0439cefeb583b57e99b38dc3da9e7e1b3eaa7ede99a8df309adeeea0f8cd5c2830Senha descriptografada: 250200er25*Configurando PHPMailerDestinatário adicionado: antonioernandes25@gmail.comConteúdo do e-mail configuradoEmail enviado para: antonioernandes25@gmail.comSolicitação POST recebidaAção recebida: recuperar_senha_usuarioTentativa de recuperação de senha de usuário: email=antonioernandes25@gmail.comEmail encontrado: antonioernandes25@gmail.comToken gerado: 88ef80d754c08f52e49a3456335d764e3540f322bc917b0fa4baf536481d3228a87f62b7d62eb76b6a6c62a604182b85a612Senha descriptografada: 250200er25*Configurando PHPMailerDestinatário adicionado: antonioernandes25@gmail.comConteúdo do e-mail configuradoEmail enviado para: antonioernandes25@gmail.comSolicitação POST recebidaAção recebida: recuperar_senha_usuarioTentativa de recuperação de senha de usuário: email=antonioernandes25@gmail.comEmail encontrado: antonioernandes25@gmail.comToken gerado: b37d1e30c31639716de130105e558397cfa95f0169000a5a7dd621fef519422a7bad2d5b00de9aa525d0d5daf5f26134250cSenha descriptografada: 250200er25*Configurando PHPMailerDestinatário adicionado: antonioernandes25@gmail.comConteúdo do e-mail configuradoEmail enviado para: antonioernandes25@gmail.comSolicitação POST recebidaAção recebida: recuperar_senha_usuarioTentativa de recuperação de senha de usuário: email=antonioernandes25@gmail.comEmail encontrado: antonioernandes25@gmail.comToken gerado: 7ef7a8020c32a94f4907f0974aa716af84e4bfe7374c07733e6d392275b5fcc0418c1fbea9f477736a1890ff30180abc621cSenha descriptografada: 250200er25*Configurando PHPMailerDestinatário adicionado: antonioernandes25@gmail.comConteúdo do e-mail configuradoEmail enviado para: antonioernandes25@gmail.comSolicitação POST recebidaAção recebida: recuperar_senha_usuarioTentativa de recuperação de senha de usuário: email=antonioernandes25@gmail.comEmail encontrado: antonioernandes25@gmail.comToken gerado: f81ee3c3eca31be8e54f11f88bfb2128237d05e9958caedbba3bd451b785642ceff2cb047699007935e65505fbefebb9bfa4Senha descriptografada: 250200er25*Configurando PHPMailerDestinatário adicionado: antonioernandes25@gmail.comConteúdo do e-mail configuradoEmail enviado para: antonioernandes25@gmail.comSolicitação POST recebidaAção recebida: loginSolicitação recebida: {"usuario":"antonioernandes25@gmail.com","senha":"250200","action":"login"}Dados de formulário recebidos: Array
-(
-    [usuario] => antonioernandes25@gmail.com
     [senha] => 250200
-    [action] => login
-)
-Ação: loginTentativa de login: usuario=antonioernandes25@gmail.comSolicitação POST recebidaAção recebida: loginSolicitação recebida: {"usuario":"antonioernandes25@gmail.com","senha":"1234","action":"login"}Dados de formulário recebidos: Array
-(
-    [usuario] => antonioernandes25@gmail.com
-    [senha] => 1234
-    [action] => login
-)
-Ação: loginTentativa de login: usuario=antonioernandes25@gmail.comSolicitação POST recebidaAção recebida: loginSolicitação recebida: {"usuario":"antonioernandes25@gmail.com","senha":"250200","action":"login"}Dados de formulário recebidos: Array
-(
-    [usuario] => antonioernandes25@gmail.com
-    [senha] => 250200
-    [action] => login
-)
-Ação: loginTentativa de login: usuario=antonioernandes25@gmail.comSolicitação POST recebidaAção recebida: cadastroSolicitação recebida: {"nome":"ANTONIO ERNANDES SILVA FILHO","email":"antonioernandes25@gmail.com","telefone":"34998142525","nova_senha":"2502","action":"cadastro","novo_usuario":"antonioernandes25@gmail.com"}Dados de formulário recebidos: Array
-(
-    [nome] => ANTONIO ERNANDES SILVA FILHO
-    [email] => antonioernandes25@gmail.com
-    [telefone] => 34998142525
-    [nova_senha] => 2502
-    [action] => cadastro
-    [novo_usuario] => antonioernandes25@gmail.com
-)
-Ação: cadastroTentativa de cadastro: usuario=antonioernandes25@gmail.comSolicitação POST recebidaAção recebida: loginSolicitação recebida: {"usuario":"antonioernandes25@gmail.com","senha":"250200","action":"login"}Dados de formulário recebidos: Array
-(
-    [usuario] => antonioernandes25@gmail.com
-    [senha] => 250200
-    [action] => login
-)
-Ação: loginTentativa de login: usuario=antonioernandes25@gmail.comSolicitação POST recebidaAção recebida: loginSolicitação recebida: {"usuario":"antonioernandes25@gmail.com","senha":"250200","action":"login"}Dados de formulário recebidos: Array
-(
-    [usuario] => antonioernandes25@gmail.com
-    [senha] => 250200
-    [action] => login
-)
-Ação: loginTentativa de login: usuario=antonioernandes25@gmail.comSolicitação POST recebidaAção recebida: loginSolicitação recebida: {"usuario":"antonioernandes25@gmail.com","senha":"250200","action":"login"}Dados de formulário recebidos: Array
-(
-    [usuario] => antonioernandes25@gmail.com
-    [senha] => 250200
-    [action] => login
-)
-Ação: loginTentativa de login: usuario=antonioernandes25@gmail.comSolicitação POST recebidaAção recebida: recuperar_senha_usuarioTentativa de recuperação de senha de usuário: email=antonioernandes25@gmail.comEmail encontrado: antonioernandes25@gmail.comToken gerado: b1b47efc7591f552b3711564a08752ee1f7f0d13b09ef916d7a9e4729dd07d649d2ecedc346d6677c0d7b8e8fb3efd3799d7Senha descriptografada: 250200er25*Configurando PHPMailerDestinatário adicionado: antonioernandes25@gmail.comConteúdo do e-mail configuradoEmail enviado para: antonioernandes25@gmail.comSolicitação POST recebidaSolicitação POST recebidaAção recebida: admin_loginTentativa de login do admin: email=contato@ercont.com.brAção recebida: admin_loginTentativa de login do admin: email=contato@ercont.com.brSolicitação POST recebidaAção recebida: admin_loginTentativa de login do admin: email=contato@ercont.com.brSolicitação POST recebidaAção recebida: admin_loginTentativa de login do admin: email=contato@ercont.com.brSolicitação POST recebidaAção recebida: admin_loginTentativa de login do admin: email=contato@ercont.com.brSolicitação POST recebidaAção recebida: admin_loginTentativa de login do admin: email=contato@ercont.com.brSolicitação POST recebidaAção recebida: admin_loginTentativa de login do admin: email=contato@ercont.com.brSolicitação POST recebidaAção recebida: admin_loginTentativa de login do admin: email=contato@ercont.com.brSolicitação POST recebidaAção recebida: admin_loginTentativa de login do admin: email=contato@ercont.com.brSolicitação POST recebidaAção recebida: admin_loginTentativa de login do admin: email=contato@ercont.com.brSolicitação POST recebidaAção recebida: Solicitação recebida: []JSON decodificado: Array
-(
-    [action] => get_users
-)
-Ação: get_usersSolicitação POST recebidaAção recebida: admin_loginTentativa de login do admin: email=contato@ercont.com.brSolicitação POST recebidaAção recebida: admin_loginTentativa de login do admin: email=contato@ercont.com.brSolicitação POST recebidaAção recebida: loginSolicitação recebida: {"usuario":"fifo@gmail.com","senha":"1234","action":"login"}Dados de formulário recebidos: Array
-(
-    [usuario] => fifo@gmail.com
-    [senha] => 1234
-    [action] => login
-)
-Ação: loginTentativa de login: usuario=fifo@gmail.comSolicitação POST recebidaAção recebida: Solicitação recebida: []JSON decodificado: Array
-(
-    [action] => save_quiz_result
-    [user] => fifo@gmail.com
-    [score] => 180
-)
-Ação: save_quiz_resultSalvando resultado do quiz: user=fifo@gmail.com, score=180Solicitação POST recebidaAção recebida: loginSolicitação recebida: {"usuario":"fifo@gmail.com","senha":"1111","action":"login"}Dados de formulário recebidos: Array
-(
-    [usuario] => fifo@gmail.com
-    [senha] => 1111
-    [action] => login
-)
-Ação: loginTentativa de login: usuario=fifo@gmail.comSolicitação POST recebidaAção recebida: cadastroSolicitação recebida: {"nome":"ANTONIO ERNANDES SILVA FILHO","email":"fifo@gmail.com","telefone":"34998142525","nova_senha":"1111","action":"cadastro","novo_usuario":"fifo@gmail.com"}Dados de formulário recebidos: Array
-(
-    [nome] => ANTONIO ERNANDES SILVA FILHO
-    [email] => fifo@gmail.com
-    [telefone] => 34998142525
-    [nova_senha] => 1111
-    [action] => cadastro
-    [novo_usuario] => fifo@gmail.com
-)
-Ação: cadastroTentativa de cadastro: usuario=fifo@gmail.comSolicitação POST recebidaAção recebida: loginSolicitação recebida: {"usuario":"fifo@gmail.com","senha":"1111","action":"login"}Dados de formulário recebidos: Array
-(
-    [usuario] => fifo@gmail.com
-    [senha] => 1111
-    [action] => login
-)
-Ação: loginTentativa de login: usuario=fifo@gmail.comSolicitação POST recebidaAção recebida: loginSolicitação recebida: {"usuario":"fifo@gmail.com","senha":"1234","action":"login"}Dados de formulário recebidos: Array
-(
-    [usuario] => fifo@gmail.com
-    [senha] => 1234
-    [action] => login
-)
-Ação: loginTentativa de login: usuario=fifo@gmail.comSolicitação POST recebidaAção recebida: loginSolicitação recebida: {"usuario":"fifo@gmail.com","senha":"1231","action":"login"}Dados de formulário recebidos: Array
-(
-    [usuario] => fifo@gmail.com
-    [senha] => 1231
-    [action] => login
-)
-Ação: loginTentativa de login: usuario=fifo@gmail.comSolicitação POST recebidaAção recebida: loginSolicitação recebida: {"usuario":"fifo@gmail.com","senha":"1234","action":"login"}Dados de formulário recebidos: Array
-(
-    [usuario] => fifo@gmail.com
-    [senha] => 1234
-    [action] => login
-)
-Ação: loginTentativa de login: usuario=fifo@gmail.comSolicitação POST recebidaAção recebida: loginSolicitação recebida: {"usuario":"fifififi@gmail.com","senha":"1234","action":"login"}Dados de formulário recebidos: Array
-(
-    [usuario] => fifififi@gmail.com
-    [senha] => 1234
-    [action] => login
-)
-Ação: loginTentativa de login: usuario=fifififi@gmail.comSolicitação POST recebidaAção recebida: cadastroSolicitação recebida: {"nome":"HIGOR ERNANDES RAMOS SILVA","email":"fififififi@gmail.com","telefone":"34999998888","nova_senha":"1234","action":"cadastro","novo_usuario":"fififififi@gmail.com"}Dados de formulário recebidos: Array
-(
-    [nome] => HIGOR ERNANDES RAMOS SILVA
-    [email] => fififififi@gmail.com
-    [telefone] => 34999998888
-    [nova_senha] => 1234
-    [action] => cadastro
-    [novo_usuario] => fififififi@gmail.com
-)
-Ação: cadastroTentativa de cadastro: usuario=fififififi@gmail.comSolicitação POST recebidaAção recebida: loginSolicitação recebida: {"usuario":"fifo@gmail.com","senha":"1231","action":"login"}Dados de formulário recebidos: Array
-(
-    [usuario] => fifo@gmail.com
-    [senha] => 1231
-    [action] => login
-)
-Ação: loginTentativa de login: usuario=fifo@gmail.comSolicitação POST recebidaAção recebida: loginSolicitação recebida: {"usuario":"fifo@gmail.co","senha":"1234","action":"login"}Dados de formulário recebidos: Array
-(
-    [usuario] => fifo@gmail.co
-    [senha] => 1234
-    [action] => login
-)
-Ação: loginTentativa de login: usuario=fifo@gmail.coSolicitação POST recebidaAção recebida: loginSolicitação recebida: {"usuario":"fifo@gmail.com","senha":"1234","action":"login"}Dados de formulário recebidos: Array
-(
-    [usuario] => fifo@gmail.com
-    [senha] => 1234
-    [action] => login
-)
-Ação: loginTentativa de login: usuario=fifo@gmail.comSolicitação POST recebidaAção recebida: cadastrar_email_adminSolicitação recebida: {"email":"camila@gmail.com","senha":"250200ty","action":"cadastrar_email_admin"}Dados de formulário recebidos: Array
-(
-    [email] => camila@gmail.com
-    [senha] => 250200ty
     [action] => cadastrar_email_admin
 )
-Ação: cadastrar_email_adminSolicitação POST recebidaAção recebida: admin_loginTentativa de login do admin: email=contato@ercont.com.brSolicitação POST recebidaAção recebida: admin_loginTentativa de login do admin: email=contato@ercont.com.brSolicitação POST recebidaAção recebida: admin_loginTentativa de login do admin: email=contato@ercont.com.brSolicitação POST recebidaAção recebida: admin_loginTentativa de login do admin: email=contato@ercont.com.brSolicitação POST recebidaAção recebida: admin_loginTentativa de login do admin: email=contato@ercont.com.brSolicitação POST recebidaAção recebida: admin_loginTentativa de login do admin: email=contato@ercont.com.brSolicitação POST recebidaAção recebida: admin_loginTentativa de login do admin: email=contato@ercont.com.brSolicitação POST recebidaAção recebida: admin_loginTentativa de login do admin: email=contato@ercont.com.brSolicitação POST recebidaAção recebida: admin_loginTentativa de login do admin: email=contato@ercont.com.brSolicitação POST recebidaAção recebida: admin_loginTentativa de login do admin: email=contato@ercont.com.brSolicitação POST recebidaSolicitação POST recebidaAção recebida: admin_loginAção recebida: admin_loginTentativa de login do admin: email=contato@ercont.com.brTentativa de login do admin: email=contato@ercont.com.brSolicitação POST recebidaAção recebida: admin_loginTentativa de login do admin: email=contato@ercont.com.brSolicitação POST recebidaAção recebida: admin_loginTentativa de login do admin: email=contato@ercont.com.brSolicitação POST recebidaAção recebida: admin_loginTentativa de login do admin: email=contato@ercont.com.brSolicitação POST recebidaAção recebida: admin_loginTentativa de login do admin: email=contato@ercont.com.brSolicitação POST recebidaAção recebida: admin_loginTentativa de login do admin: email=contato@ercont.com.brSolicitação POST recebidaAção recebida: admin_loginTentativa de login do admin: email=contato@ercont.com.brSolicitação POST recebidaAção recebida: admin_loginTentativa de login do admin: email=contato@ercont.com.brSolicitação POST recebidaAção recebida: admin_loginTentativa de login do admin: email=contato@ercont.com.brSolicitação POST recebidaAção recebida: admin_loginTentativa de login do admin: email=contato@ercont.com.brSolicitação POST recebidaAção recebida: admin_loginTentativa de login do admin: email=contato@ercont.com.brSolicitação POST recebidaSolicitação POST recebidaAção recebida: admin_loginAção recebida: admin_loginTentativa de login do admin: email=contato@ercont.com.brTentativa de login do admin: email=contato@ercont.com.brSolicitação POST recebidaAção recebida: admin_loginTentativa de login do admin: email=contato@ercont.com.brSolicitação POST recebidaAção recebida: admin_loginTentativa de login do admin: email=contato@ercont.com.brSolicitação POST recebidaAção recebida: admin_loginTentativa de login do admin: email=contato@ercont.com.brSolicitação POST recebidaAção recebida: admin_loginTentativa de login do admin: email=contato@ercont.com.brSolicitação POST recebidaAção recebida: admin_loginTentativa de login do admin: email=contato@ercont.com.brSolicitação POST recebidaAção recebida: admin_loginTentativa de login do admin: email=contato@ercont.com.brSolicitação POST recebidaAção recebida: admin_loginTentativa de login do admin: email=contato@ercont.com.brSolicitação POST recebidaAção recebida: admin_loginTentativa de login do admin: email=contato@ercont.com.brSolicitação POST recebidaAção recebida: admin_loginTentativa de login do admin: email=contato@ercont.com.brSolicitação POST recebidaAção recebida: admin_loginTentativa de login do admin: email=contato@ercont.com.brSolicitação POST recebidaSolicitação POST recebidaAção recebida: admin_loginAção recebida: admin_loginTentativa de login do admin: email=contato@ercont.com.brTentativa de login do admin: email=contato@ercont.com.brSolicitação POST recebidaAção recebida: admin_loginTentativa de login do admin: email=contato@ercont.com.brSolicitação POST recebidaAção recebida: admin_loginTentativa de login do admin: email=contato@ercont.com.brSolicitação POST recebidaAção recebida: admin_loginTentativa de login do admin: email=contato@ercont.com.brSolicitação POST recebidaAção recebida: admin_loginTentativa de login do admin: email=contato@ercont.com.brSolicitação POST recebidaAção recebida: admin_loginTentativa de login do admin: email=contato@ercont.com.brSolicitação POST recebidaAção recebida: admin_loginTentativa de login do admin: email=contato@ercont.com.brSolicitação POST recebidaAção recebida: admin_loginTentativa de login do admin: email=contato@ercont.com.brSolicitação POST recebidaAção recebida: admin_loginTentativa de login do admin: email=contato@ercont.com.brSolicitação POST recebidaAção recebida: admin_loginTentativa de login do admin: email=contato@ercont.com.brSolicitação POST recebidaAção recebida: admin_loginTentativa de login do admin: email=contato@ercont.com.brSolicitação POST recebidaAção recebida: admin_loginTentativa de login do admin: email=contato@ercont.com.brSolicitação POST recebidaAção recebida: admin_loginTentativa de login do admin: email=contato@ercont.com.brSolicitação POST recebidaAção recebida: Solicitação recebida: []JSON decodificado: Array
+Ação: cadastrar_email_adminTentativa de cadastro de email admin: email=antonioernandes25@gmail.comSolicitação POST recebidaAção recebida: admin_loginTentativa de login do admin: email=contato@ercont.com.brSolicitação POST recebidaAção recebida: admin_loginTentativa de login do admin: email=contato@ercont.com.brSolicitação POST recebidaAção recebida: Solicitação recebida: []JSON decodificado: Array
 (
-    [action] => get_users
+    [action] => logout
 )
-Ação: get_usersSolicitação POST recebidaAção recebida: admin_loginTentativa de login do admin: email=contato@ercont.com.brSolicitação POST recebidaAção recebida: admin_loginTentativa de login do admin: email=contato@ercont.com.brSolicitação POST recebidaAção recebida: Solicitação recebida: []JSON decodificado: Array
-(
-    [action] => get_users
-)
-Ação: get_usersSolicitação POST recebidaAção recebida: admin_loginTentativa de login do admin: email=contato@ercont.com.brSolicitação POST recebidaAção recebida: admin_loginTentativa de login do admin: email=contato@ercont.com.brSolicitação POST recebidaAção recebida: admin_loginTentativa de login do admin: email=contato@ercont.com.brSolicitação POST recebidaAção recebida: admin_loginTentativa de login do admin: email=contato@ercont.com.brSolicitação POST recebidaSolicitação POST recebidaAção recebida: admin_loginTentativa de login do admin: email=contato@ercont.com.brAção recebida: admin_loginTentativa de login do admin: email=contato@ercont.com.brSolicitação POST recebidaAção recebida: admin_loginTentativa de login do admin: email=contato@ercont.com.brSolicitação POST recebidaAção recebida: admin_loginTentativa de login do admin: email=contato@ercont.com.brSolicitação POST recebidaAção recebida: admin_loginTentativa de login do admin: email=contato@ercont.com.brSolicitação POST recebidaAção recebida: admin_loginTentativa de login do admin: email=contato@ercont.com.brSolicitação POST recebidaAção recebida: loginSolicitação recebida: {"usuario":"fifo@gmail.com","senha":"1234","action":"login"}Dados de formulário recebidos: Array
-(
-    [usuario] => fifo@gmail.com
-    [senha] => 1234
-    [action] => login
-)
-Ação: loginTentativa de login: usuario=fifo@gmail.comSolicitação POST recebidaAção recebida: loginSolicitação recebida: {"usuario":"fifo@gmail.com","senha":"1234","action":"login"}Dados de formulário recebidos: Array
-(
-    [usuario] => fifo@gmail.com
-    [senha] => 1234
-    [action] => login
-)
-Ação: loginTentativa de login: usuario=fifo@gmail.comSolicitação POST recebidaAção recebida: Solicitação recebida: []JSON decodificado: Array
-(
-    [action] => save_quiz_result
-    [user] => fifo@gmail.com
-    [score] => 180
-)
-Ação: save_quiz_resultSalvando resultado do quiz: user=fifo@gmail.com, score=180Solicitação POST recebidaAção recebida: loginSolicitação recebida: {"usuario":"fifo@gmail.com","senha":"1234","action":"login"}Dados de formulário recebidos: Array
-(
-    [usuario] => fifo@gmail.com
-    [senha] => 1234
-    [action] => login
-)
-Ação: loginTentativa de login: usuario=fifo@gmail.comSolicitação POST recebidaAção recebida: Solicitação recebida: []JSON decodificado: Array
-(
-    [action] => save_quiz_result
-    [user] => fifo@gmail.com
-    [score] => 138
-)
-Ação: save_quiz_resultSalvando resultado do quiz: user=fifo@gmail.com, score=138Solicitação POST recebidaAção recebida: Solicitação recebida: []JSON decodificado: Array
-(
-    [action] => save_quiz_result
-    [user] => fifo@gmail.com
-    [score] => 180
-)
-Ação: save_quiz_resultSalvando resultado do quiz: user=fifo@gmail.com, score=180Solicitação POST recebidaAção recebida: Solicitação recebida: []JSON decodificado: Array
-(
-    [action] => save_quiz_result
-    [user] => fifo@gmail.com
-    [score] => 160
-)
-Ação: save_quiz_resultSalvando resultado do quiz: user=fifo@gmail.com, score=160Solicitação POST recebidaAção recebida: Solicitação recebida: []JSON decodificado: Array
-(
-    [action] => save_quiz_result
-    [user] => fifo@gmail.com
-    [score] => 160
-)
-Ação: save_quiz_resultSalvando resultado do quiz: user=fifo@gmail.com, score=160Solicitação POST recebidaAção recebida: Solicitação recebida: []JSON decodificado: Array
-(
-    [action] => save_quiz_result
-    [user] => fifo@gmail.com
-    [score] => 160
-)
-Ação: save_quiz_resultSalvando resultado do quiz: user=fifo@gmail.com, score=160Solicitação POST recebidaAção recebida: Solicitação recebida: []JSON decodificado: Array
-(
-    [action] => save_quiz_result
-    [user] => fifo@gmail.com
-    [score] => 180
-)
-Ação: save_quiz_resultSalvando resultado do quiz: user=fifo@gmail.com, score=180Solicitação POST recebidaAção recebida: Solicitação recebida: []JSON decodificado: Array
-(
-    [action] => save_quiz_result
-    [user] => fifo@gmail.com
-    [score] => 180
-)
-Ação: save_quiz_resultSalvando resultado do quiz: user=fifo@gmail.com, score=180Solicitação POST recebidaAção recebida: Solicitação recebida: []JSON decodificado: Array
-(
-    [action] => save_quiz_result
-    [user] => fifo@gmail.com
-    [score] => 180
-)
-Ação: save_quiz_resultSalvando resultado do quiz: user=fifo@gmail.com, score=180Solicitação POST recebidaAção recebida: loginSolicitação recebida: {"usuario":"fifo@gmail.com","senha":"1234","action":"login"}Dados de formulário recebidos: Array
-(
-    [usuario] => fifo@gmail.com
-    [senha] => 1234
-    [action] => login
-)
-Ação: loginTentativa de login: usuario=fifo@gmail.comSolicitação POST recebidaAção recebida: loginSolicitação recebida: {"usuario":"fifo@gmail.com","senha":"1234","action":"login"}Dados de formulário recebidos: Array
-(
-    [usuario] => fifo@gmail.com
-    [senha] => 1234
-    [action] => login
-)
-Ação: loginTentativa de login: usuario=fifo@gmail.comSolicitação POST recebidaAção recebida: loginSolicitação recebida: {"usuario":"fifo@gmail.com","senha":"1234","action":"login"}Dados de formulário recebidos: Array
-(
-    [usuario] => fifo@gmail.com
-    [senha] => 1234
-    [action] => login
-)
-Ação: loginTentativa de login: usuario=fifo@gmail.comSolicitação POST recebidaAção recebida: loginSolicitação recebida: {"usuario":"fifo@gmail.com","senha":"1234","action":"login"}Dados de formulário recebidos: Array
-(
-    [usuario] => fifo@gmail.com
-    [senha] => 1234
-    [action] => login
-)
-Ação: loginTentativa de login: usuario=fifo@gmail.comSolicitação POST recebidaAção recebida: loginSolicitação recebida: {"usuario":"fifo@gmail.com","senha":"1234","action":"login"}Dados de formulário recebidos: Array
-(
-    [usuario] => fifo@gmail.com
-    [senha] => 1234
-    [action] => login
-)
-Ação: loginTentativa de login: usuario=fifo@gmail.comSolicitação POST recebidaAção recebida: Solicitação recebida: []JSON decodificado: Array
-(
-    [action] => save_quiz_result
-    [user] => fifo@gmail.com
-    [score] => 180
-)
-Ação: save_quiz_resultSalvando resultado do quiz: user=fifo@gmail.com, score=180Solicitação POST recebidaAção recebida: Solicitação recebida: []JSON decodificado: Array
-(
-    [action] => save_quiz_result
-    [user] => fifo@gmail.com
-    [score] => 180
-)
-Ação: save_quiz_resultSalvando resultado do quiz: user=fifo@gmail.com, score=180Solicitação POST recebidaAção recebida: loginSolicitação recebida: {"usuario":"fifo@gmail.com","senha":"1234","action":"login"}Dados de formulário recebidos: Array
-(
-    [usuario] => fifo@gmail.com
-    [senha] => 1234
-    [action] => login
-)
-Ação: loginTentativa de login: usuario=fifo@gmail.comSolicitação POST recebidaAção recebida: Solicitação recebida: []JSON decodificado: Array
-(
-    [action] => save_quiz_result
-    [user] => fifo@gmail.com
-    [score] => 180
-)
-Ação: save_quiz_resultSalvando resultado do quiz: user=fifo@gmail.com, score=180Solicitação POST recebidaAção recebida: Solicitação recebida: []JSON decodificado: Array
-(
-    [action] => save_quiz_result
-    [user] => fifo@gmail.com
-    [score] => 179
-)
-Ação: save_quiz_resultSalvando resultado do quiz: user=fifo@gmail.com, score=179Solicitação POST recebidaAção recebida: Solicitação recebida: []JSON decodificado: Array
-(
-    [action] => save_quiz_result
-    [user] => fifo@gmail.com
-    [score] => 180
-)
-Ação: save_quiz_resultSalvando resultado do quiz: user=fifo@gmail.com, score=180Solicitação POST recebidaAção recebida: Solicitação recebida: []JSON decodificado: Array
-(
-    [action] => save_quiz_result
-    [user] => fifo@gmail.com
-    [score] => 180
-)
-Ação: save_quiz_resultSalvando resultado do quiz: user=fifo@gmail.com, score=180Solicitação POST recebidaAção recebida: Solicitação recebida: []JSON decodificado: Array
-(
-    [action] => save_quiz_result
-    [user] => fifo@gmail.com
-    [score] => 180
-)
-Ação: save_quiz_resultSalvando resultado do quiz: user=fifo@gmail.com, score=180Solicitação POST recebidaAção recebida: Solicitação recebida: []JSON decodificado: Array
-(
-    [action] => save_quiz_result
-    [user] => fifo@gmail.com
-    [score] => 180
-)
-Ação: save_quiz_resultSalvando resultado do quiz: user=fifo@gmail.com, score=180Solicitação POST recebidaAção recebida: Solicitação recebida: []JSON decodificado: Array
-(
-    [action] => save_quiz_result
-    [user] => fifo@gmail.com
-    [score] => 180
-)
-Ação: save_quiz_resultSalvando resultado do quiz: user=fifo@gmail.com, score=180Solicitação POST recebidaAção recebida: Solicitação recebida: []JSON decodificado: Array
-(
-    [action] => save_quiz_result
-    [user] => fifo@gmail.com
-    [score] => 180
-)
-Ação: save_quiz_resultSalvando resultado do quiz: user=fifo@gmail.com, score=180Solicitação POST recebidaAção recebida: Solicitação recebida: []JSON decodificado: Array
-(
-    [action] => save_quiz_result
-    [user] => fifo@gmail.com
-    [score] => 180
-)
-Ação: save_quiz_resultSalvando resultado do quiz: user=fifo@gmail.com, score=180Solicitação POST recebidaAção recebida: Solicitação recebida: []JSON decodificado: Array
-(
-    [action] => save_quiz_result
-    [user] => fifo@gmail.com
-    [score] => 180
-)
-Ação: save_quiz_resultSalvando resultado do quiz: user=fifo@gmail.com, score=180Solicitação POST recebidaAção recebida: Solicitação recebida: []JSON decodificado: Array
-(
-    [action] => save_quiz_result
-    [user] => fifo@gmail.com
-    [score] => 180
-)
-Ação: save_quiz_resultSalvando resultado do quiz: user=fifo@gmail.com, score=180Solicitação POST recebidaAção recebida: Solicitação recebida: []JSON decodificado: Array
-(
-    [action] => save_quiz_result
-    [user] => fifo@gmail.com
-    [score] => 180
-)
-Ação: save_quiz_resultSalvando resultado do quiz: user=fifo@gmail.com, score=180Solicitação POST recebidaAção recebida: Solicitação recebida: []JSON decodificado: Array
-(
-    [action] => save_quiz_result
-    [user] => fifo@gmail.com
-    [score] => 180
-)
-Ação: save_quiz_resultSalvando resultado do quiz: user=fifo@gmail.com, score=180Solicitação POST recebidaAção recebida: Solicitação recebida: []JSON decodificado: Array
-(
-    [action] => save_quiz_result
-    [user] => fifo@gmail.com
-    [score] => 180
-)
-Ação: save_quiz_resultSalvando resultado do quiz: user=fifo@gmail.com, score=180Solicitação POST recebidaAção recebida: Solicitação recebida: []JSON decodificado: Array
-(
-    [action] => save_quiz_result
-    [user] => fifo@gmail.com
-    [score] => 180
-)
-Ação: save_quiz_resultSalvando resultado do quiz: user=fifo@gmail.com, score=180Solicitação POST recebidaAção recebida: Solicitação recebida: []JSON decodificado: Array
-(
-    [action] => save_quiz_result
-    [user] => fifo@gmail.com
-    [score] => 180
-)
-Ação: save_quiz_resultSalvando resultado do quiz: user=fifo@gmail.com, score=180Solicitação POST recebidaAção recebida: Solicitação recebida: []JSON decodificado: Array
-(
-    [action] => save_quiz_result
-    [user] => fifo@gmail.com
-    [score] => 180
-)
-Ação: save_quiz_resultSalvando resultado do quiz: user=fifo@gmail.com, score=180Solicitação POST recebidaAção recebida: loginSolicitação recebida: {"usuario":"fifo@gmail.com","senha":"1234","action":"login"}Dados de formulário recebidos: Array
-(
-    [usuario] => fifo@gmail.com
-    [senha] => 1234
-    [action] => login
-)
-Ação: loginTentativa de login: usuario=fifo@gmail.comSolicitação POST recebidaAção recebida: Solicitação recebida: []JSON decodificado: Array
-(
-    [action] => save_quiz_result
-    [user] => fifo@gmail.com
-    [score] => 180
-)
-Ação: save_quiz_resultSalvando resultado do quiz: user=fifo@gmail.com, score=180Solicitação POST recebidaAção recebida: Solicitação recebida: []JSON decodificado: Array
-(
-    [action] => save_quiz_result
-    [user] => fifo@gmail.com
-    [score] => 180
-)
-Ação: save_quiz_resultSalvando resultado do quiz: user=fifo@gmail.com, score=180Solicitação POST recebidaAção recebida: loginSolicitação recebida: {"usuario":"fifo@gmail.com","senha":"1234","action":"login"}Dados de formulário recebidos: Array
-(
-    [usuario] => fifo@gmail.com
-    [senha] => 1234
-    [action] => login
-)
-Ação: loginTentativa de login: usuario=fifo@gmail.comSolicitação POST recebidaAção recebida: Solicitação recebida: []JSON decodificado: Array
-(
-    [action] => save_quiz_result
-    [user] => fifo@gmail.com
-    [score] => 180
-)
-Ação: save_quiz_resultSalvando resultado do quiz: user=fifo@gmail.com, score=180Solicitação POST recebidaAção recebida: Solicitação recebida: []JSON decodificado: Array
-(
-    [action] => save_quiz_result
-    [user] => fifo@gmail.com
-    [score] => 180
-)
-Ação: save_quiz_resultSalvando resultado do quiz: user=fifo@gmail.com, score=180Solicitação POST recebidaAção recebida: Solicitação recebida: []JSON decodificado: Array
-(
-    [action] => save_quiz_result
-    [user] => fifo@gmail.com
-    [score] => 180
-)
-Ação: save_quiz_resultSalvando resultado do quiz: user=fifo@gmail.com, score=180Solicitação POST recebidaAção recebida: loginSolicitação recebida: {"usuario":"fifo@gmail.com","senha":"1234","action":"login"}Dados de formulário recebidos: Array
-(
-    [usuario] => fifo@gmail.com
-    [senha] => 1234
-    [action] => login
-)
-Ação: loginTentativa de login: usuario=fifo@gmail.comSolicitação POST recebidaAção recebida: Solicitação recebida: []JSON decodificado: Array
-(
-    [action] => save_quiz_result
-    [user] => fifo@gmail.com
-    [score] => 158
-)
-Ação: save_quiz_resultSalvando resultado do quiz: user=fifo@gmail.com, score=158Solicitação POST recebidaAção recebida: Solicitação recebida: []JSON decodificado: Array
-(
-    [action] => save_quiz_result
-    [user] => fifo@gmail.com
-    [score] => 180
-)
-Ação: save_quiz_resultSalvando resultado do quiz: user=fifo@gmail.com, score=180Solicitação POST recebidaAção recebida: Solicitação recebida: []JSON decodificado: Array
-(
-    [action] => save_quiz_result
-    [user] => fifo@gmail.com
-    [score] => 180
-)
-Ação: save_quiz_resultSalvando resultado do quiz: user=fifo@gmail.com, score=180Solicitação POST recebidaAção recebida: loginSolicitação recebida: {"usuario":"fifo@gmail.com","senha":"1234","action":"login"}Dados de formulário recebidos: Array
-(
-    [usuario] => fifo@gmail.com
-    [senha] => 1234
-    [action] => login
-)
-Ação: loginTentativa de login: usuario=fifo@gmail.comSolicitação POST recebidaAção recebida: Solicitação recebida: []JSON decodificado: Array
-(
-    [action] => save_quiz_result
-    [user] => fifo@gmail.com
-    [score] => 180
-)
-Ação: save_quiz_resultSalvando resultado do quiz: user=fifo@gmail.com, score=180Solicitação POST recebidaAção recebida: Solicitação recebida: []JSON decodificado: Array
-(
-    [action] => save_quiz_result
-    [user] => fifo@gmail.com
-    [score] => 180
-)
-Ação: save_quiz_resultSalvando resultado do quiz: user=fifo@gmail.com, score=180Solicitação POST recebidaAção recebida: loginSolicitação recebida: {"usuario":"fifo@gmail.com","senha":"1234","action":"login"}Dados de formulário recebidos: Array
-(
-    [usuario] => fifo@gmail.com
-    [senha] => 1234
-    [action] => login
-)
-Ação: loginTentativa de login: usuario=fifo@gmail.comSolicitação POST recebidaAção recebida: Solicitação recebida: []JSON decodificado: Array
-(
-    [action] => save_quiz_result
-    [user] => fifo@gmail.com
-    [score] => 180
-)
-Ação: save_quiz_resultSalvando resultado do quiz: user=fifo@gmail.com, score=180Solicitação POST recebidaAção recebida: Solicitação recebida: []JSON decodificado: Array
-(
-    [action] => save_quiz_result
-    [user] => fifo@gmail.com
-    [score] => 180
-)
-Ação: save_quiz_resultSalvando resultado do quiz: user=fifo@gmail.com, score=180Solicitação POST recebidaAção recebida: Solicitação recebida: []JSON decodificado: Array
-(
-    [action] => save_quiz_result
-    [user] => fifo@gmail.com
-    [score] => 180
-)
-Ação: save_quiz_resultSalvando resultado do quiz: user=fifo@gmail.com, score=180Solicitação POST recebidaAção recebida: Solicitação recebida: []JSON decodificado: Array
-(
-    [action] => save_quiz_result
-    [user] => fifo@gmail.com
-    [score] => 180
-)
-Ação: save_quiz_resultSalvando resultado do quiz: user=fifo@gmail.com, score=180Solicitação POST recebidaAção recebida: Solicitação recebida: []JSON decodificado: Array
-(
-    [action] => save_quiz_result
-    [user] => fifo@gmail.com
-    [score] => 180
-)
-Ação: save_quiz_resultSalvando resultado do quiz: user=fifo@gmail.com, score=180Solicitação POST recebidaAção recebida: Solicitação recebida: []JSON decodificado: Array
-(
-    [action] => save_quiz_result
-    [user] => fifo@gmail.com
-    [score] => 180
-)
-Ação: save_quiz_resultSalvando resultado do quiz: user=fifo@gmail.com, score=180Solicitação POST recebidaAção recebida: Solicitação recebida: []JSON decodificado: Array
-(
-    [action] => save_quiz_result
-    [user] => fifo@gmail.com
-    [score] => 180
-)
-Ação: save_quiz_resultSalvando resultado do quiz: user=fifo@gmail.com, score=180Solicitação POST recebidaAção recebida: Solicitação recebida: []JSON decodificado: Array
-(
-    [action] => save_quiz_result
-    [user] => fifo@gmail.com
-    [score] => 180
-)
-Ação: save_quiz_resultSalvando resultado do quiz: user=fifo@gmail.com, score=180Solicitação POST recebidaAção recebida: Solicitação recebida: []JSON decodificado: Array
-(
-    [action] => save_quiz_result
-    [user] => fifo@gmail.com
-    [score] => 180
-)
-Ação: save_quiz_resultSalvando resultado do quiz: user=fifo@gmail.com, score=180Solicitação POST recebidaAção recebida: Solicitação recebida: []JSON decodificado: Array
-(
-    [action] => save_quiz_result
-    [user] => fifo@gmail.com
-    [score] => 180
-)
-Ação: save_quiz_resultSalvando resultado do quiz: user=fifo@gmail.com, score=180Solicitação POST recebidaAção recebida: loginSolicitação recebida: {"usuario":"fifo@gmail.com","senha":"1234","action":"login"}Dados de formulário recebidos: Array
-(
-    [usuario] => fifo@gmail.com
-    [senha] => 1234
-    [action] => login
-)
-Ação: loginTentativa de login: usuario=fifo@gmail.comSolicitação POST recebidaAção recebida: Solicitação recebida: []JSON decodificado: Array
-(
-    [action] => save_quiz_result
-    [user] => fifo@gmail.com
-    [score] => 180
-)
-Ação: save_quiz_resultSalvando resultado do quiz: user=fifo@gmail.com, score=180Solicitação POST recebidaAção recebida: Solicitação recebida: []JSON decodificado: Array
-(
-    [action] => save_quiz_result
-    [user] => fifo@gmail.com
-    [score] => 180
-)
-Ação: save_quiz_resultSalvando resultado do quiz: user=fifo@gmail.com, score=180Solicitação POST recebidaAção recebida: loginSolicitação recebida: {"usuario":"fifo@gmail.com","senha":"1234","action":"login"}Dados de formulário recebidos: Array
-(
-    [usuario] => fifo@gmail.com
-    [senha] => 1234
-    [action] => login
-)
-Ação: loginTentativa de login: usuario=fifo@gmail.comSolicitação POST recebidaAção recebida: Solicitação recebida: []JSON decodificado: Array
-(
-    [action] => save_quiz_result
-    [user] => fifo@gmail.com
-    [score] => 180
-)
-Ação: save_quiz_resultSalvando resultado do quiz: user=fifo@gmail.com, score=180Solicitação POST recebidaAção recebida: Solicitação recebida: []JSON decodificado: Array
-(
-    [action] => save_quiz_result
-    [user] => fifo@gmail.com
-    [score] => 180
-)
-Ação: save_quiz_resultSalvando resultado do quiz: user=fifo@gmail.com, score=180Solicitação POST recebidaAção recebida: Solicitação recebida: []JSON decodificado: Array
-(
-    [action] => save_quiz_result
-    [user] => fifo@gmail.com
-    [score] => 180
-)
-Ação: save_quiz_resultSalvando resultado do quiz: user=fifo@gmail.com, score=180Solicitação POST recebidaAção recebida: Solicitação recebida: []JSON decodificado: Array
-(
-    [action] => save_quiz_result
-    [user] => fifo@gmail.com
-    [score] => 180
-)
-Ação: save_quiz_resultSalvando resultado do quiz: user=fifo@gmail.com, score=180Solicitação POST recebidaAção recebida: Solicitação recebida: []JSON decodificado: Array
-(
-    [action] => save_quiz_result
-    [user] => fifo@gmail.com
-    [score] => 180
-)
-Ação: save_quiz_resultSalvando resultado do quiz: user=fifo@gmail.com, score=180Solicitação POST recebidaAção recebida: loginSolicitação recebida: {"usuario":"fifo@gmail.com","senha":"1234","action":"login"}Dados de formulário recebidos: Array
-(
-    [usuario] => fifo@gmail.com
-    [senha] => 1234
-    [action] => login
-)
-Ação: loginTentativa de login: usuario=fifo@gmail.comSolicitação POST recebidaAção recebida: Solicitação recebida: []JSON decodificado: Array
-(
-    [action] => save_quiz_result
-    [user] => fifo@gmail.com
-    [score] => 160
-)
-Ação: save_quiz_resultSalvando resultado do quiz: user=fifo@gmail.com, score=160Solicitação POST recebidaAção recebida: loginSolicitação recebida: {"usuario":"fifo@gmail.com","senha":"1234","action":"login"}Dados de formulário recebidos: Array
-(
-    [usuario] => fifo@gmail.com
-    [senha] => 1234
-    [action] => login
-)
-Ação: loginTentativa de login: usuario=fifo@gmail.comSolicitação POST recebidaAção recebida: loginSolicitação recebida: {"usuario":"fifo@gmail.com","senha":"1234","action":"login"}Dados de formulário recebidos: Array
-(
-    [usuario] => fifo@gmail.com
-    [senha] => 1234
-    [action] => login
-)
-Ação: loginTentativa de login: usuario=fifo@gmail.comSolicitação POST recebidaAção recebida: Solicitação recebida: []JSON decodificado: Array
-(
-    [action] => save_quiz_result
-    [user] => fifo@gmail.com
-    [score] => 180
-)
-Ação: save_quiz_resultSalvando resultado do quiz: user=fifo@gmail.com, score=180Solicitação POST recebidaAção recebida: Solicitação recebida: []JSON decodificado: Array
-(
-    [action] => save_quiz_result
-    [user] => fifo@gmail.com
-    [score] => 180
-)
-Ação: save_quiz_resultSalvando resultado do quiz: user=fifo@gmail.com, score=180Solicitação POST recebidaAção recebida: Solicitação recebida: []JSON decodificado: Array
-(
-    [action] => save_quiz_result
-    [user] => fifo@gmail.com
-    [score] => 180
-)
-Ação: save_quiz_resultSalvando resultado do quiz: user=fifo@gmail.com, score=180Solicitação POST recebidaAção recebida: loginSolicitação recebida: {"usuario":"fifo@gmail.com","senha":"1234","action":"login"}Dados de formulário recebidos: Array
-(
-    [usuario] => fifo@gmail.com
-    [senha] => 1234
-    [action] => login
-)
-Ação: loginTentativa de login: usuario=fifo@gmail.comSolicitação POST recebidaAção recebida: Solicitação recebida: []JSON decodificado: Array
-(
-    [action] => save_quiz_result
-    [user] => fifo@gmail.com
-    [score] => 180
-)
-Ação: save_quiz_resultSalvando resultado do quiz: user=fifo@gmail.com, score=180Solicitação POST recebidaAção recebida: Solicitação recebida: []JSON decodificado: Array
-(
-    [action] => save_quiz_result
-    [user] => fifo@gmail.com
-    [score] => 180
-)
-Ação: save_quiz_resultSalvando resultado do quiz: user=fifo@gmail.com, score=180Solicitação POST recebidaAção recebida: Solicitação recebida: []JSON decodificado: Array
-(
-    [action] => save_quiz_result
-    [user] => fifo@gmail.com
-    [score] => 180
-)
-Ação: save_quiz_resultSalvando resultado do quiz: user=fifo@gmail.com, score=180Solicitação POST recebidaAção recebida: Solicitação recebida: []JSON decodificado: Array
-(
-    [action] => save_quiz_result
-    [user] => fifo@gmail.com
-    [score] => 180
-)
-Ação: save_quiz_resultSalvando resultado do quiz: user=fifo@gmail.com, score=180Solicitação POST recebidaAção recebida: Solicitação recebida: []JSON decodificado: Array
-(
-    [action] => save_quiz_result
-    [user] => fifo@gmail.com
-    [score] => 180
-)
-Ação: save_quiz_resultSalvando resultado do quiz: user=fifo@gmail.com, score=180Solicitação POST recebidaAção recebida: Solicitação recebida: []JSON decodificado: Array
-(
-    [action] => save_quiz_result
-    [user] => fifo@gmail.com
-    [score] => 180
-)
-Ação: save_quiz_resultSalvando resultado do quiz: user=fifo@gmail.com, score=180Solicitação POST recebidaAção recebida: Solicitação recebida: []JSON decodificado: Array
-(
-    [action] => save_quiz_result
-    [user] => fifo@gmail.com
-    [score] => 180
-)
-Ação: save_quiz_resultSalvando resultado do quiz: user=fifo@gmail.com, score=180Solicitação POST recebidaAção recebida: Solicitação recebida: []JSON decodificado: Array
-(
-    [action] => save_quiz_result
-    [user] => fifo@gmail.com
-    [score] => 180
-)
-Ação: save_quiz_resultSalvando resultado do quiz: user=fifo@gmail.com, score=180Solicitação POST recebidaAção recebida: Solicitação recebida: []JSON decodificado: Array
-(
-    [action] => save_quiz_result
-    [user] => fifo@gmail.com
-    [score] => 180
-)
-Ação: save_quiz_resultSalvando resultado do quiz: user=fifo@gmail.com, score=180Solicitação POST recebidaAção recebida: Solicitação recebida: []JSON decodificado: Array
-(
-    [action] => save_quiz_result
-    [user] => fifo@gmail.com
-    [score] => 180
-)
-Ação: save_quiz_resultSalvando resultado do quiz: user=fifo@gmail.com, score=180Solicitação POST recebidaAção recebida: Solicitação recebida: []JSON decodificado: Array
-(
-    [action] => save_quiz_result
-    [user] => fifo@gmail.com
-    [score] => 178
-)
-Ação: save_quiz_resultSalvando resultado do quiz: user=fifo@gmail.com, score=178Solicitação POST recebidaAção recebida: Solicitação recebida: []JSON decodificado: Array
-(
-    [action] => save_quiz_result
-    [user] => fifo@gmail.com
-    [score] => 141
-)
-Ação: save_quiz_resultSalvando resultado do quiz: user=fifo@gmail.com, score=141Solicitação POST recebidaAção recebida: Solicitação recebida: []JSON decodificado: Array
-(
-    [action] => save_quiz_result
-    [user] => fifo@gmail.com
-    [score] => 142
-)
-Ação: save_quiz_resultSalvando resultado do quiz: user=fifo@gmail.com, score=142Solicitação POST recebidaAção recebida: Solicitação recebida: []JSON decodificado: Array
-(
-    [action] => save_quiz_result
-    [user] => fifo@gmail.com
-    [score] => 180
-)
-Ação: save_quiz_resultSalvando resultado do quiz: user=fifo@gmail.com, score=180Solicitação POST recebidaAção recebida: Solicitação recebida: []JSON decodificado: Array
-(
-    [action] => save_quiz_result
-    [user] => fifo@gmail.com
-    [score] => 152
-)
-Ação: save_quiz_resultSalvando resultado do quiz: user=fifo@gmail.com, score=152Solicitação POST recebidaAção recebida: Solicitação recebida: []JSON decodificado: Array
-(
-    [action] => save_quiz_result
-    [user] => fifo@gmail.com
-    [score] => 160
-)
-Ação: save_quiz_resultSalvando resultado do quiz: user=fifo@gmail.com, score=160Solicitação POST recebidaAção recebida: Solicitação recebida: []JSON decodificado: Array
-(
-    [action] => save_quiz_result
-    [user] => fifo@gmail.com
-    [score] => 180
-)
-Ação: save_quiz_resultSalvando resultado do quiz: user=fifo@gmail.com, score=180Solicitação POST recebidaAção recebida: Solicitação recebida: []JSON decodificado: Array
-(
-    [action] => save_quiz_result
-    [user] => fifo@gmail.com
-    [score] => 160
-)
-Ação: save_quiz_resultSalvando resultado do quiz: user=fifo@gmail.com, score=160Solicitação POST recebidaAção recebida: Solicitação recebida: []JSON decodificado: Array
-(
-    [action] => save_quiz_result
-    [user] => fifo@gmail.com
-    [score] => 174
-)
-Ação: save_quiz_resultSalvando resultado do quiz: user=fifo@gmail.com, score=174Solicitação POST recebidaAção recebida: loginSolicitação recebida: {"usuario":"fifo@gmail.com","senha":"1234","action":"login"}Dados de formulário recebidos: Array
-(
-    [usuario] => fifo@gmail.com
-    [senha] => 1234
-    [action] => login
-)
-Ação: loginTentativa de login: usuario=fifo@gmail.comSolicitação POST recebidaAção recebida: loginSolicitação recebida: {"usuario":"fifo@gmail.com","senha":"1234","action":"login"}Dados de formulário recebidos: Array
-(
-    [usuario] => fifo@gmail.com
-    [senha] => 1234
-    [action] => login
-)
-Ação: loginTentativa de login: usuario=fifo@gmail.comSolicitação POST recebidaAção recebida: Solicitação recebida: []JSON decodificado: Array
-(
-    [action] => save_quiz_result
-    [user] => fifo@gmail.com
-    [score] => 160
-)
-Ação: save_quiz_resultSalvando resultado do quiz: user=fifo@gmail.com, score=160Solicitação POST recebidaAção recebida: Solicitação recebida: []JSON decodificado: Array
-(
-    [action] => save_quiz_result
-    [user] => fifo@gmail.com
-    [score] => 160
-)
-Ação: save_quiz_resultSalvando resultado do quiz: user=fifo@gmail.com, score=160Solicitação POST recebidaAção recebida: Solicitação recebida: []JSON decodificado: Array
-(
-    [action] => save_quiz_result
-    [user] => fifo@gmail.com
-    [score] => 174
-)
-Ação: save_quiz_resultSalvando resultado do quiz: user=fifo@gmail.com, score=174Solicitação POST recebidaAção recebida: Solicitação recebida: []JSON decodificado: Array
-(
-    [action] => save_quiz_result
-    [user] => fifo@gmail.com
-    [score] => 154
-)
-Ação: save_quiz_resultSalvando resultado do quiz: user=fifo@gmail.com, score=154Solicitação POST recebidaAção recebida: loginSolicitação recebida: {"usuario":"fifo@gmail.com","senha":"1234","action":"login"}Dados de formulário recebidos: Array
-(
-    [usuario] => fifo@gmail.com
-    [senha] => 1234
-    [action] => login
-)
-Ação: loginTentativa de login: usuario=fifo@gmail.comSolicitação POST recebidaAção recebida: Solicitação recebida: []JSON decodificado: Array
-(
-    [action] => save_quiz_result
-    [user] => fifo@gmail.com
-    [score] => 180
-)
-Ação: save_quiz_resultSalvando resultado do quiz: user=fifo@gmail.com, score=180Solicitação POST recebidaAção recebida: Solicitação recebida: []JSON decodificado: Array
-(
-    [action] => save_quiz_result
-    [user] => fifo@gmail.com
-    [score] => 180
-)
-Ação: save_quiz_resultSalvando resultado do quiz: user=fifo@gmail.com, score=180Solicitação POST recebidaAção recebida: Solicitação recebida: []JSON decodificado: Array
-(
-    [action] => save_quiz_result
-    [user] => fifo@gmail.com
-    [score] => 180
-)
-Ação: save_quiz_resultSalvando resultado do quiz: user=fifo@gmail.com, score=180Solicitação POST recebidaAção recebida: loginSolicitação recebida: {"usuario":"fifo@gmail.com","senha":"1234","action":"login"}Dados de formulário recebidos: Array
-(
-    [usuario] => fifo@gmail.com
-    [senha] => 1234
-    [action] => login
-)
-Ação: loginTentativa de login: usuario=fifo@gmail.comSolicitação POST recebidaAção recebida: loginSolicitação recebida: {"usuario":"fifo@gmail.com","senha":"1234","action":"login"}Dados de formulário recebidos: Array
-(
-    [usuario] => fifo@gmail.com
-    [senha] => 1234
-    [action] => login
-)
-Ação: loginTentativa de login: usuario=fifo@gmail.comSolicitação POST recebidaAção recebida: loginSolicitação recebida: {"usuario":"fifo@gmail.com","senha":"1234","action":"login"}Dados de formulário recebidos: Array
-(
-    [usuario] => fifo@gmail.com
-    [senha] => 1234
-    [action] => login
-)
-Ação: loginTentativa de login: usuario=fifo@gmail.comSolicitação POST recebidaAção recebida: Solicitação recebida: []JSON decodificado: Array
-(
-    [action] => save_quiz_result
-    [user] => fifo@gmail.com
-    [score] => 140
-)
-Ação: save_quiz_resultSalvando resultado do quiz: user=fifo@gmail.com, score=140Solicitação POST recebidaAção recebida: loginSolicitação recebida: {"usuario":"fifo@gmail.com","senha":"1234","action":"login"}Dados de formulário recebidos: Array
-(
-    [usuario] => fifo@gmail.com
-    [senha] => 1234
-    [action] => login
-)
-Ação: loginTentativa de login: usuario=fifo@gmail.comSolicitação POST recebidaAção recebida: loginSolicitação recebida: {"usuario":"fifo@gmail.com","senha":"1234","action":"login"}Dados de formulário recebidos: Array
-(
-    [usuario] => fifo@gmail.com
-    [senha] => 1234
-    [action] => login
-)
-Ação: loginTentativa de login: usuario=fifo@gmail.comSolicitação POST recebidaAção recebida: loginSolicitação recebida: {"usuario":"fifo@gmail.com","senha":"1234","action":"login"}Dados de formulário recebidos: Array
-(
-    [usuario] => fifo@gmail.com
-    [senha] => 1234
-    [action] => login
-)
-Ação: loginTentativa de login: usuario=fifo@gmail.comSolicitação POST recebidaAção recebida: Solicitação recebida: []JSON decodificado: Array
-(
-    [action] => save_quiz_result
-    [user] => fifo@gmail.com
-    [score] => 139
-)
-Ação: save_quiz_resultSalvando resultado do quiz: user=fifo@gmail.com, score=139Solicitação POST recebidaAção recebida: loginSolicitação recebida: {"usuario":"fifo@gmail.com","senha":"1234","action":"login"}Dados de formulário recebidos: Array
-(
-    [usuario] => fifo@gmail.com
-    [senha] => 1234
-    [action] => login
-)
-Ação: loginTentativa de login: usuario=fifo@gmail.comSolicitação POST recebidaAção recebida: Solicitação recebida: []JSON decodificado: Array
-(
-    [action] => save_quiz_result
-    [user] => fifo@gmail.com
-    [score] => 180
-)
-Ação: save_quiz_resultSalvando resultado do quiz: user=fifo@gmail.com, score=180Solicitação POST recebidaAção recebida: loginSolicitação recebida: {"usuario":"fifo@gmail.com","senha":"250200er","action":"login"}Dados de formulário recebidos: Array
-(
-    [usuario] => fifo@gmail.com
-    [senha] => 250200er
-    [action] => login
-)
-Ação: loginTentativa de login: usuario=fifo@gmail.comSolicitação POST recebidaAção recebida: loginSolicitação recebida: {"usuario":"fifo@gmail.com","senha":"1234","action":"login"}Dados de formulário recebidos: Array
-(
-    [usuario] => fifo@gmail.com
-    [senha] => 1234
-    [action] => login
-)
-Ação: loginTentativa de login: usuario=fifo@gmail.comSolicitação POST recebidaAção recebida: loginSolicitação recebida: {"usuario":"fifo@gmail.com","senha":"1234","action":"login"}Dados de formulário recebidos: Array
-(
-    [usuario] => fifo@gmail.com
-    [senha] => 1234
-    [action] => login
-)
-Ação: loginTentativa de login: usuario=fifo@gmail.comSolicitação POST recebidaAção recebida: loginSolicitação recebida: {"usuario":"fifo@gmail.com","senha":"1234","action":"login"}Dados de formulário recebidos: Array
-(
-    [usuario] => fifo@gmail.com
-    [senha] => 1234
-    [action] => login
-)
-Ação: loginTentativa de login: usuario=fifo@gmail.comSolicitação POST recebidaAção recebida: Solicitação recebida: []JSON decodificado: Array
-(
-    [action] => save_quiz_result
-    [user] => fifo@gmail.com
-    [score] => 155
-)
-Ação: save_quiz_resultSalvando resultado do quiz: user=fifo@gmail.com, score=155Solicitação POST recebidaAção recebida: loginSolicitação recebida: {"usuario":"fifo@gmail.com","senha":"1234","action":"login"}Dados de formulário recebidos: Array
-(
-    [usuario] => fifo@gmail.com
-    [senha] => 1234
-    [action] => login
-)
-Ação: loginTentativa de login: usuario=fifo@gmail.comSolicitação POST recebidaAção recebida: loginSolicitação recebida: {"usuario":"fifo@gmail.com","senha":"1234","action":"login"}Dados de formulário recebidos: Array
-(
-    [usuario] => fifo@gmail.com
-    [senha] => 1234
-    [action] => login
-)
-Ação: loginTentativa de login: usuario=fifo@gmail.comSolicitação POST recebidaAção recebida: loginSolicitação recebida: {"usuario":"contato@ercont.com.br","senha":"250200er25*","action":"login"}Dados de formulário recebidos: Array
+Ação: logoutSolicitação POST recebidaAção recebida: admin_loginTentativa de login do admin: email=contato@ercont.com.brSolicitação POST recebidaAção recebida: admin_loginTentativa de login do admin: email=contato@ercont.com.brSolicitação POST recebidaAção recebida: loginSolicitação recebida: {"usuario":"contato@ercont.com.br","senha":"250200er25*","action":"login"}Dados de formulário recebidos: Array
 (
     [usuario] => contato@ercont.com.br
     [senha] => 250200er25*
     [action] => login
 )
-Ação: loginTentativa de login: usuario=contato@ercont.com.brSolicitação POST recebidaAção recebida: loginSolicitação recebida: {"usuario":"fifo@gmail.com","senha":"1234","action":"login"}Dados de formulário recebidos: Array
+Ação: loginTentativa de login: usuario=contato@ercont.com.brSolicitação POST recebidaAção recebida: admin_loginTentativa de login do admin: email=contato@ercont.com.brSolicitação POST recebidaAção recebida: admin_loginTentativa de login do admin: email=contato@ercont.com.brSolicitação POST recebidaAção recebida: Solicitação recebida: []JSON decodificado: Array
+(
+    [action] => logout
+)
+Ação: logoutSolicitação POST recebidaAção recebida: Solicitação recebida: []JSON decodificado: Array
+(
+    [action] => logout
+)
+Ação: logoutSolicitação POST recebidaAção recebida: Solicitação recebida: []JSON decodificado: Array
+(
+    [action] => logout
+)
+Ação: logoutSolicitação POST recebidaAção recebida: Solicitação recebida: []JSON decodificado: Array
+(
+    [action] => logout
+)
+Ação: logoutSolicitação POST recebidaAção recebida: admin_loginTentativa de login do admin: email=contato@ercont.com.brSolicitação POST recebidaAção recebida: admin_loginTentativa de login do admin: email=contato@ercont.com.brSolicitação POST recebidaAção recebida: Solicitação recebida: []JSON decodificado: Array
+(
+    [action] => logout
+)
+Ação: logoutSolicitação POST recebidaAção recebida: Solicitação recebida: []JSON decodificado: Array
+(
+    [action] => logout
+)
+Ação: logoutSolicitação POST recebidaAção recebida: Solicitação recebida: []JSON decodificado: Array
+(
+    [action] => logout
+)
+Ação: logoutSolicitação POST recebidaAção recebida: admin_loginTentativa de login do admin: email=contato@ercont.com.brSolicitação POST recebidaAção recebida: admin_loginTentativa de login do admin: email=contato@ercont.com.brSolicitação POST recebidaAção recebida: Solicitação recebida: []JSON decodificado: Array
+(
+    [action] => logout
+)
+Ação: logoutSolicitação POST recebidaAção recebida: loginSolicitação recebida: {"usuario":"fifo@gmail.com","senha":"1234","action":"login"}Dados de formulário recebidos: Array
 (
     [usuario] => fifo@gmail.com
     [senha] => 1234
@@ -1090,296 +124,44 @@ Ação: loginTentativa de login: usuario=contato@ercont.com.brSolicitação POST
 )
 Ação: loginTentativa de login: usuario=fifo@gmail.comSolicitação POST recebidaAção recebida: Solicitação recebida: []JSON decodificado: Array
 (
-    [action] => save_quiz_result
-    [user] => fifo@gmail.com
-    [score] => 180
+    [action] => logout
 )
-Ação: save_quiz_resultSalvando resultado do quiz: user=fifo@gmail.com, score=180Solicitação POST recebidaAção recebida: loginSolicitação recebida: {"usuario":"contato@ercont.com.br","senha":"250200er25*","action":"login"}Dados de formulário recebidos: Array
+Ação: logoutSolicitação POST recebidaAção recebida: Solicitação recebida: []JSON decodificado: Array
 (
-    [usuario] => contato@ercont.com.br
+    [action] => logout
+)
+Ação: logoutSolicitação POST recebidaAção recebida: Solicitação recebida: []JSON decodificado: Array
+(
+    [action] => logout
+)
+Ação: logoutSolicitação POST recebidaAção recebida: loginSolicitação recebida: {"usuario":"fifo@gmail.com","senha":"1234","action":"login"}Dados de formulário recebidos: Array
+(
+    [usuario] => fifo@gmail.com
+    [senha] => 1234
+    [action] => login
+)
+Ação: loginTentativa de login: usuario=fifo@gmail.comSolicitação POST recebidaAção recebida: admin_loginTentativa de login do admin: email=contato@ercont.com.brSolicitação POST recebidaAção recebida: admin_loginTentativa de login do admin: email=contato@ercont.com.brSolicitação POST recebidaAção recebida: admin_loginTentativa de login do admin: email=contato@ercont.com.brSolicitação POST recebidaAção recebida: admin_loginTentativa de login do admin: email=contato@ercont.com.brSolicitação POST recebidaAção recebida: admin_loginTentativa de login do admin: email=contato@ercont.com.brSolicitação POST recebidaAção recebida: admin_loginTentativa de login do admin: email=contato@ercont.com.brSolicitação POST recebidaAção recebida: admin_loginTentativa de login do admin: email=contato@ercont.com.brSolicitação POST recebidaAção recebida: admin_loginTentativa de login do admin: email=contato@ercont.com.brSolicitação POST recebidaAção recebida: admin_loginTentativa de login do admin: email=contato@ercont.com.brSolicitação POST recebidaAção recebida: admin_loginTentativa de login do admin: email=contato@ercont.com.brSolicitação POST recebidaAção recebida: admin_loginTentativa de login do admin: email=contato@ercont.com.brSolicitação POST recebidaAção recebida: admin_loginTentativa de login do admin: email=contato@ercont.com.brSolicitação POST recebidaAção recebida: admin_loginTentativa de login do admin: email=contato@ercont.com.brSolicitação POST recebidaAção recebida: admin_loginTentativa de login do admin: email=contato@ercont.com.brSolicitação POST recebidaAção recebida: cadastrar_email_adminSolicitação recebida: {"email":"antonioernandes25@gmail.com","senha":"250200","action":"cadastrar_email_admin"}Dados de formulário recebidos: Array
+(
+    [email] => antonioernandes25@gmail.com
+    [senha] => 250200
+    [action] => cadastrar_email_admin
+)
+Ação: cadastrar_email_adminTentativa de cadastro de email admin: email=antonioernandes25@gmail.comSolicitação POST recebidaSolicitação POST recebidaAção recebida: admin_loginAção recebida: admin_loginTentativa de login do admin: email=contato@ercont.com.brTentativa de login do admin: email=contato@ercont.com.brSolicitação POST recebidaAção recebida: admin_loginTentativa de login do admin: email=contato@ercont.com.brSolicitação POST recebidaAção recebida: admin_loginTentativa de login do admin: email=contato@ercont.com.brSolicitação POST recebidaAção recebida: cadastrar_email_adminSolicitação recebida: {"email":"antonioernandes25@gmail.com","senha":"250200","action":"cadastrar_email_admin"}Dados de formulário recebidos: Array
+(
+    [email] => antonioernandes25@gmail.com
+    [senha] => 250200
+    [action] => cadastrar_email_admin
+)
+Ação: cadastrar_email_adminTentativa de cadastro de email admin: email=antonioernandes25@gmail.comSolicitação POST recebidaAção recebida: admin_loginTentativa de login do admin: email=contato@ercont.com.brSolicitação POST recebidaAção recebida: admin_loginTentativa de login do admin: email=contato@ercont.com.brSolicitação POST recebidaAção recebida: recuperar_senhaTentativa de recuperação de senha: email=contato@ercont.com.brEmail encontrado: contato@ercont.com.brToken gerado: accaace718fe97ede2d04e1167aae488f5a9f79535ce6b273069e2f21c466b2217b622c067e61de5271ca2c409fea17d6b2dSenha descriptografada: 250200er25*Configurando PHPMailerDestinatário adicionado: contato@ercont.com.brConteúdo do e-mail configuradoEmail enviado para: contato@ercont.com.brSolicitação POST recebidaAção recebida: recuperar_senha_usuarioTentativa de recuperação de senha de usuário: email=antonioernandes25@gmail.comEmail encontrado: antonioernandes25@gmail.comToken gerado: 257c783486b92c8f4a99e1eeb8490745f5e4608927cf2756d1a958e41bbc14ce27920e80cd3b0f7bf48636841d29c7c3acdaSenha descriptografada: 250200er25*Configurando PHPMailerDestinatário adicionado: antonioernandes25@gmail.comConteúdo do e-mail configuradoEmail enviado para: antonioernandes25@gmail.comSolicitação POST recebidaAção recebida: recuperar_senhaTentativa de recuperação de senha: email=contato@ercont.com.brEmail encontrado: contato@ercont.com.brToken gerado: d92e91345ad71182f14269c54d47c1fd7d7941531b0538ae1e937434128142c98d6c2364fde2b8c005101368c1eaef2917bcSenha descriptografada: 250200er25*Configurando PHPMailerDestinatário adicionado: contato@ercont.com.brConteúdo do e-mail configuradoEmail enviado para: contato@ercont.com.brSolicitação POST recebidaAção recebida: recuperar_senha_usuarioTentativa de recuperação de senha de usuário: email=antonioernandes25@gmail.comEmail encontrado: antonioernandes25@gmail.comToken gerado: a401b707d95664cd9ed98e0e741738da98ec1e1881741ae92ca7c39148884fe956754df2a89541793d7593a1d74601e92c47Senha descriptografada: 250200er25*Configurando PHPMailerDestinatário adicionado: antonioernandes25@gmail.comConteúdo do e-mail configuradoEmail enviado para: antonioernandes25@gmail.comSolicitação POST recebidaAção recebida: recuperar_senhaTentativa de recuperação de senha: email=contato@ercont.com.brEmail encontrado: contato@ercont.com.brToken gerado: 4b60d2eea3917cc21605b4e25c56135a1acf5a4e98bf45cd2889beb2df2ab11ad515d7dec15b07921a30bc14dd64b014fbfbSenha descriptografada: 250200er25*Configurando PHPMailerDestinatário adicionado: contato@ercont.com.brConteúdo do e-mail configuradoEmail enviado para: contato@ercont.com.brSolicitação POST recebidaAção recebida: recuperar_senha_usuarioTentativa de recuperação de senha de usuário: email=antonioernandes25@gmail.comEmail encontrado: antonioernandes25@gmail.comToken gerado: 53eed9250746a896ed66e3fec5a53d395f2694925e9022556e66514ef408d69142cc409fc4b36f6691b6317841941b5f754dSenha descriptografada: 250200er25*Configurando PHPMailerDestinatário adicionado: antonioernandes25@gmail.comConteúdo do e-mail configuradoEmail enviado para: antonioernandes25@gmail.comSolicitação POST recebidaAção recebida: recuperar_senhaTentativa de recuperação de senha: email=contato@ercont.com.brEmail encontrado: contato@ercont.com.brToken gerado: 4b2f871b12e01d9022ccc904cbb9a86bf37a5903f697c099b08554afea027bf38a13e4212e7b83572c8ddfb5094e3da57c8fSenha descriptografada: 250200er25*Configurando PHPMailerDestinatário adicionado: contato@ercont.com.brConteúdo do e-mail configuradoEmail enviado para: contato@ercont.com.brSolicitação POST recebidaAção recebida: recuperar_senhaTentativa de recuperação de senha: email=contato@ercont.com.brEmail encontrado: contato@ercont.com.brToken gerado: 8e4b381894701eefa17cc0f830d628c10cda4c67021209aa18dfd3f098afa3ee8b382a4b65f3102a2e327a6e3b39a1c50134Senha descriptografada: 250200er25*Configurando PHPMailerDestinatário adicionado: contato@ercont.com.brConteúdo do e-mail configuradoEmail enviado para: contato@ercont.com.brSolicitação POST recebidaAção recebida: recuperar_senha_usuarioTentativa de recuperação de senha de usuário: email=antonioernandes25@gmail.comEmail encontrado: antonioernandes25@gmail.comToken gerado: 7e0945c0ca1d15a23d4fe840f2349d389dc4f5223e875899e934dff1c9704cadfac9b4720684025f9420ce83eb26d619147cSenha descriptografada: 250200er25*Configurando PHPMailerDestinatário adicionado: antonioernandes25@gmail.comConteúdo do e-mail configuradoEmail enviado para: antonioernandes25@gmail.comSolicitação POST recebidaAção recebida: recuperar_senhaTentativa de recuperação de senha: email=contato@ercont.com.brEmail encontrado: contato@ercont.com.brToken gerado: d2c06b93b8be7ce2907c128d4cf455454f94e04249e62540855f5bea98c8f3152c309f62813287b02453ee29114bd6f40820Senha descriptografada: 250200er25*Configurando PHPMailerDestinatário adicionado: contato@ercont.com.brConteúdo do e-mail configuradoEmail enviado para: contato@ercont.com.brSolicitação POST recebidaAção recebida: recuperar_senha_usuarioTentativa de recuperação de senha de usuário: email=antonioernandes25@gmail.comEmail encontrado: antonioernandes25@gmail.comToken gerado: d363d01cf0b9a24950481a648558eec740e16215d101888c79d6d9f08f476b908bbc55a2e522a04377ed5fc13c138c2bdd76Senha descriptografada: 250200er25*Configurando PHPMailerDestinatário adicionado: antonioernandes25@gmail.comConteúdo do e-mail configuradoEmail enviado para: antonioernandes25@gmail.comSolicitação POST recebidaAção recebida: recuperar_senhaTentativa de recuperação de senha: email=contato@ercont.com.brEmail encontrado: contato@ercont.com.brToken gerado: 6d0ab71fa937996fec5ec970c63954689311b47906c164d2ddeec77a5e5f827aeadde53942136a900e1b63eea94bfdd61430Senha descriptografada: 250200er25*Configurando PHPMailerDestinatário adicionado: contato@ercont.com.brConteúdo do e-mail configuradoEmail enviado para: contato@ercont.com.brSolicitação POST recebidaAção recebida: recuperar_senhaTentativa de recuperação de senha: email=contato@ercont.com.brEmail encontrado: contato@ercont.com.brToken gerado: 69ffbddc5ad11db6021f31877962873ed60a0762722d6c169a3ef6a981b3bd007a1a55717d7b8ccb85adb772055926c3028bSenha descriptografada: 250200er25*Configurando PHPMailerDestinatário adicionado: contato@ercont.com.brConteúdo do e-mail configuradoEmail enviado para: contato@ercont.com.brSolicitação POST recebidaAção recebida: recuperar_senha_usuarioTentativa de recuperação de senha de usuário: email=antonioernandes25@gmail.comEmail encontrado: antonioernandes25@gmail.comToken gerado: fce7d142f600dbac4e6f80bb73a984f5c332e5ac386fc34bc6da05316d281ad3e9b64938b000eb64ec261ce66ea52f93c656Senha descriptografada: 250200er25*Configurando PHPMailerDestinatário adicionado: antonioernandes25@gmail.comConteúdo do e-mail configuradoEmail enviado para: antonioernandes25@gmail.comSolicitação POST recebidaAção recebida: recuperar_senha_usuarioTentativa de recuperação de senha de usuário: email=antonioernandes25@gmail.comEmail encontrado: antonioernandes25@gmail.comToken gerado: 0283ee123ab7d39889c86a634a61ef6b368445d349f0c5cbfb7776562250ecef2b6184c8e401f372d5e859d57ef057585d70Senha descriptografada: 250200er25*Configurando PHPMailerDestinatário adicionado: antonioernandes25@gmail.comConteúdo do e-mail configuradoEmail enviado para: antonioernandes25@gmail.comSolicitação POST recebidaAção recebida: recuperar_senha_usuarioTentativa de recuperação de senha de usuário: email=antonioernandes25@gmail.comEmail encontrado: antonioernandes25@gmail.comToken gerado: 59a2021692c90c21bc53dd094553b9b0f951dc6ec587748e6bbe6abc51ece094afbad1730a1ac14fff6b5595481f4d6bbcb3Senha descriptografada: 250200er25*Configurando PHPMailerDestinatário adicionado: antonioernandes25@gmail.comConteúdo do e-mail configuradoEmail enviado para: antonioernandes25@gmail.comSolicitação POST recebidaAção recebida: recuperar_senha_usuarioTentativa de recuperação de senha de usuário: email=antonioernandes25@gmail.comEmail encontrado: antonioernandes25@gmail.comToken gerado: 949ff4524f6d2f44c6e86618a9f665b84544644026a2b0ed99c53e22b739edc00d69bf3eb9fe73cc16683f900488740df54eSenha descriptografada: 250200er25*Configurando PHPMailerDestinatário adicionado: antonioernandes25@gmail.comConteúdo do e-mail configuradoEmail enviado para: antonioernandes25@gmail.comSolicitação POST recebidaAção recebida: recuperar_senha_usuarioTentativa de recuperação de senha de usuário: email=antonioernandes25@gmail.comEmail encontrado: antonioernandes25@gmail.comToken gerado: b7fed111a0a39176cfb7d1f200272f3bfc9b504172c6564d648ea14ca2e218af500ac013292fce99b98b61db574ffd81a6a1Senha descriptografada: 250200er25*Configurando PHPMailerDestinatário adicionado: antonioernandes25@gmail.comConteúdo do e-mail configuradoEmail enviado para: antonioernandes25@gmail.comSolicitação POST recebidaAção recebida: recuperar_senhaTentativa de recuperação de senha: email=contato@ercont.com.brEmail encontrado: contato@ercont.com.brToken gerado: 603ccf06894a433786d680be8d685d7024ef8cbd51bec42133e07f4aa0c7223ec603e0b93e522357f88ad7997c5463c365ccSenha descriptografada: 250200er25*Configurando PHPMailerDestinatário adicionado: contato@ercont.com.brConteúdo do e-mail configuradoEmail enviado para: contato@ercont.com.brSolicitação POST recebidaAção recebida: cadastrar_email_adminSolicitação recebida: {"email":"contato@ercont.com.br","senha":"250200er25*","action":"cadastrar_email_admin"}Dados de formulário recebidos: Array
+(
+    [email] => contato@ercont.com.br
     [senha] => 250200er25*
-    [action] => login
+    [action] => cadastrar_email_admin
 )
-Ação: loginTentativa de login: usuario=contato@ercont.com.brSolicitação POST recebidaAção recebida: loginSolicitação recebida: {"usuario":"fifo@gmail.com","senha":"1234","action":"login"}Dados de formulário recebidos: Array
+Ação: cadastrar_email_adminSolicitação POST recebidaAção recebida: cadastrar_email_adminSolicitação recebida: {"email":"antonioernandes25@gmail.com","senha":"250200","action":"cadastrar_email_admin"}Dados de formulário recebidos: Array
 (
-    [usuario] => fifo@gmail.com
-    [senha] => 1234
-    [action] => login
+    [email] => antonioernandes25@gmail.com
+    [senha] => 250200
+    [action] => cadastrar_email_admin
 )
-Ação: loginTentativa de login: usuario=fifo@gmail.comSolicitação POST recebidaAção recebida: loginSolicitação recebida: {"usuario":"fifo@gmail.com","senha":"1234","action":"login"}Dados de formulário recebidos: Array
-(
-    [usuario] => fifo@gmail.com
-    [senha] => 1234
-    [action] => login
-)
-Ação: loginTentativa de login: usuario=fifo@gmail.comSolicitação POST recebidaAção recebida: Solicitação recebida: []JSON decodificado: Array
-(
-    [action] => save_quiz_result
-    [user] => fifo@gmail.com
-    [score] => 179
-)
-Ação: save_quiz_resultSalvando resultado do quiz: user=fifo@gmail.com, score=179Solicitação POST recebidaAção recebida: loginSolicitação recebida: {"usuario":"fifo@gmail.com","senha":"1234","action":"login"}Dados de formulário recebidos: Array
-(
-    [usuario] => fifo@gmail.com
-    [senha] => 1234
-    [action] => login
-)
-Ação: loginTentativa de login: usuario=fifo@gmail.comSolicitação POST recebidaAção recebida: loginSolicitação recebida: {"usuario":"fifo@gmail.com","senha":"1234","action":"login"}Dados de formulário recebidos: Array
-(
-    [usuario] => fifo@gmail.com
-    [senha] => 1234
-    [action] => login
-)
-Ação: loginTentativa de login: usuario=fifo@gmail.comSolicitação POST recebidaAção recebida: loginSolicitação recebida: {"usuario":"fifo@gmail.com","senha":"1234","action":"login"}Dados de formulário recebidos: Array
-(
-    [usuario] => fifo@gmail.com
-    [senha] => 1234
-    [action] => login
-)
-Ação: loginTentativa de login: usuario=fifo@gmail.comSolicitação POST recebidaAção recebida: loginSolicitação recebida: {"usuario":"fifo@gmail.com","senha":"1234","action":"login"}Dados de formulário recebidos: Array
-(
-    [usuario] => fifo@gmail.com
-    [senha] => 1234
-    [action] => login
-)
-Ação: loginTentativa de login: usuario=fifo@gmail.comSolicitação POST recebidaAção recebida: loginSolicitação recebida: {"usuario":"fifo@gmail.com","senha":"1234","action":"login"}Dados de formulário recebidos: Array
-(
-    [usuario] => fifo@gmail.com
-    [senha] => 1234
-    [action] => login
-)
-Ação: loginTentativa de login: usuario=fifo@gmail.comSolicitação POST recebidaAção recebida: Solicitação recebida: []JSON decodificado: Array
-(
-    [action] => save_quiz_result
-    [user] => fifo@gmail.com
-    [score] => 157
-)
-Ação: save_quiz_resultSalvando resultado do quiz: user=fifo@gmail.com, score=157Solicitação POST recebidaAção recebida: loginSolicitação recebida: {"usuario":"fifo@gmail.com","senha":"1234","action":"login"}Dados de formulário recebidos: Array
-(
-    [usuario] => fifo@gmail.com
-    [senha] => 1234
-    [action] => login
-)
-Ação: loginTentativa de login: usuario=fifo@gmail.comSolicitação POST recebidaAção recebida: loginSolicitação recebida: {"usuario":"fifo@gmail.com","senha":"1234","action":"login"}Dados de formulário recebidos: Array
-(
-    [usuario] => fifo@gmail.com
-    [senha] => 1234
-    [action] => login
-)
-Ação: loginTentativa de login: usuario=fifo@gmail.comSolicitação POST recebidaAção recebida: loginSolicitação recebida: {"usuario":"fifo@gmail.com","senha":"1234","action":"login"}Dados de formulário recebidos: Array
-(
-    [usuario] => fifo@gmail.com
-    [senha] => 1234
-    [action] => login
-)
-Ação: loginTentativa de login: usuario=fifo@gmail.comSolicitação POST recebidaAção recebida: Solicitação recebida: []JSON decodificado: Array
-(
-    [action] => save_quiz_result
-    [user] => fifo@gmail.com
-    [score] => 180
-)
-Ação: save_quiz_resultSalvando resultado do quiz: user=fifo@gmail.com, score=180Solicitação POST recebidaAção recebida: loginSolicitação recebida: {"usuario":"fifo@gmail.com","senha":"1234","action":"login"}Dados de formulário recebidos: Array
-(
-    [usuario] => fifo@gmail.com
-    [senha] => 1234
-    [action] => login
-)
-Ação: loginTentativa de login: usuario=fifo@gmail.comSolicitação POST recebidaAção recebida: loginSolicitação recebida: {"usuario":"fifo@gmail.com","senha":"1234","action":"login"}Dados de formulário recebidos: Array
-(
-    [usuario] => fifo@gmail.com
-    [senha] => 1234
-    [action] => login
-)
-Ação: loginTentativa de login: usuario=fifo@gmail.comSolicitação POST recebidaAção recebida: Solicitação recebida: []JSON decodificado: Array
-(
-    [action] => save_quiz_result
-    [user] => fifo@gmail.com
-    [score] => 180
-)
-Ação: save_quiz_resultSalvando resultado do quiz: user=fifo@gmail.com, score=180Solicitação POST recebidaAção recebida: Solicitação recebida: []JSON decodificado: Array
-(
-    [action] => save_quiz_result
-    [user] => fifo@gmail.com
-    [score] => 180
-)
-Ação: save_quiz_resultSalvando resultado do quiz: user=fifo@gmail.com, score=180Solicitação POST recebidaAção recebida: loginSolicitação recebida: {"usuario":"fifo@gmail.com","senha":"1234","action":"login"}Dados de formulário recebidos: Array
-(
-    [usuario] => fifo@gmail.com
-    [senha] => 1234
-    [action] => login
-)
-Ação: loginTentativa de login: usuario=fifo@gmail.comSolicitação POST recebidaAção recebida: Solicitação recebida: []JSON decodificado: Array
-(
-    [action] => save_quiz_result
-    [user] => fifo@gmail.com
-    [score] => 180
-)
-Ação: save_quiz_resultSalvando resultado do quiz: user=fifo@gmail.com, score=180Solicitação POST recebidaAção recebida: loginSolicitação recebida: {"usuario":"fifo@gmail.com","senha":"1234","action":"login"}Dados de formulário recebidos: Array
-(
-    [usuario] => fifo@gmail.com
-    [senha] => 1234
-    [action] => login
-)
-Ação: loginTentativa de login: usuario=fifo@gmail.comSolicitação POST recebidaAção recebida: loginSolicitação recebida: {"usuario":"fifo@gmail.com","senha":"1234","action":"login"}Dados de formulário recebidos: Array
-(
-    [usuario] => fifo@gmail.com
-    [senha] => 1234
-    [action] => login
-)
-Ação: loginTentativa de login: usuario=fifo@gmail.comSolicitação POST recebidaAção recebida: loginSolicitação recebida: {"usuario":"fifo@gmail.com","senha":"1234","action":"login"}Dados de formulário recebidos: Array
-(
-    [usuario] => fifo@gmail.com
-    [senha] => 1234
-    [action] => login
-)
-Ação: loginTentativa de login: usuario=fifo@gmail.comSolicitação POST recebidaAção recebida: loginSolicitação recebida: {"usuario":"fifo@gmail.com","senha":"1234","action":"login"}Dados de formulário recebidos: Array
-(
-    [usuario] => fifo@gmail.com
-    [senha] => 1234
-    [action] => login
-)
-Ação: loginTentativa de login: usuario=fifo@gmail.comSolicitação POST recebidaAção recebida: Solicitação recebida: []JSON decodificado: Array
-(
-    [action] => save_quiz_result
-    [user] => fifo@gmail.com
-    [score] => 160
-)
-Ação: save_quiz_resultSalvando resultado do quiz: user=fifo@gmail.com, score=160Solicitação POST recebidaAção recebida: loginSolicitação recebida: {"usuario":"fifo@gmail.com","senha":"1234","action":"login"}Dados de formulário recebidos: Array
-(
-    [usuario] => fifo@gmail.com
-    [senha] => 1234
-    [action] => login
-)
-Ação: loginTentativa de login: usuario=fifo@gmail.comSolicitação POST recebidaAção recebida: Solicitação recebida: []JSON decodificado: Array
-(
-    [action] => save_quiz_result
-    [user] => fifo@gmail.com
-    [score] => 139
-)
-Ação: save_quiz_resultSalvando resultado do quiz: user=fifo@gmail.com, score=139Solicitação POST recebidaAção recebida: admin_loginTentativa de login do admin: email=contato@ercont.com.brSolicitação POST recebidaAção recebida: admin_loginTentativa de login do admin: email=contato@ercont.com.brSolicitação POST recebidaAção recebida: Solicitação recebida: []JSON decodificado: Array
-(
-    [action] => get_users
-)
-Ação: get_usersSolicitação POST recebidaAção recebida: loginSolicitação recebida: {"usuario":"fifo@gmail.com","senha":"1234","action":"login"}Dados de formulário recebidos: Array
-(
-    [usuario] => fifo@gmail.com
-    [senha] => 1234
-    [action] => login
-)
-Ação: loginTentativa de login: usuario=fifo@gmail.comSolicitação POST recebidaAção recebida: loginSolicitação recebida: {"usuario":"fifo@gmail.com","senha":"1234","action":"login"}Dados de formulário recebidos: Array
-(
-    [usuario] => fifo@gmail.com
-    [senha] => 1234
-    [action] => login
-)
-Ação: loginTentativa de login: usuario=fifo@gmail.comSolicitação POST recebidaAção recebida: Solicitação recebida: []JSON decodificado: Array
-(
-    [action] => save_quiz_result
-    [user] => fifo@gmail.com
-    [score] => 160
-)
-Ação: save_quiz_resultSalvando resultado do quiz: user=fifo@gmail.com, score=160Solicitação POST recebidaAção recebida: admin_loginTentativa de login do admin: email=contato@ercont.com.brSolicitação POST recebidaAção recebida: admin_loginTentativa de login do admin: email=contato@ercont.com.brSolicitação POST recebidaAção recebida: loginSolicitação recebida: {"usuario":"fifo@gmail.com","senha":"1234","action":"login"}Dados de formulário recebidos: Array
-(
-    [usuario] => fifo@gmail.com
-    [senha] => 1234
-    [action] => login
-)
-Ação: loginTentativa de login: usuario=fifo@gmail.comSolicitação POST recebidaAção recebida: Solicitação recebida: []JSON decodificado: Array
-(
-    [action] => save_quiz_result
-    [user] => fifo@gmail.com
-    [score] => 180
-)
-Ação: save_quiz_resultSalvando resultado do quiz: user=fifo@gmail.com, score=180Solicitação POST recebidaAção recebida: admin_loginTentativa de login do admin: email=contato@ercont.com.brSolicitação POST recebidaAção recebida: admin_loginTentativa de login do admin: email=contato@ercont.com.brSolicitação POST recebidaAção recebida: Solicitação recebida: []JSON decodificado: Array
-(
-    [action] => get_users
-)
-Ação: get_usersSolicitação POST recebidaAção recebida: admin_loginTentativa de login do admin: email=contato@ercont.com.brSolicitação POST recebidaAção recebida: admin_loginTentativa de login do admin: email=contato@ercont.com.brSolicitação POST recebidaAção recebida: Solicitação recebida: []JSON decodificado: Array
-(
-    [action] => get_users
-)
-Ação: get_usersSolicitação POST recebidaAção recebida: Solicitação recebida: []JSON decodificado: Array
-(
-    [action] => get_users
-)
-Ação: get_usersSolicitação POST recebidaAção recebida: Solicitação recebida: []JSON decodificado: Array
-(
-    [action] => get_users
-)
-Ação: get_usersSolicitação POST recebidaAção recebida: Solicitação recebida: []JSON decodificado: Array
-(
-    [action] => get_users
-)
-Ação: get_usersSolicitação POST recebidaAção recebida: Solicitação recebida: []JSON decodificado: Array
-(
-    [action] => get_users
-)
-Ação: get_usersSolicitação POST recebidaAção recebida: Solicitação recebida: []JSON decodificado: Array
-(
-    [action] => get_users
-)
-Ação: get_usersSolicitação POST recebidaAção recebida: Solicitação recebida: []JSON decodificado: Array
-(
-    [action] => get_users
-)
-Ação: get_usersSolicitação POST recebidaAção recebida: Solicitação recebida: []JSON decodificado: Array
-(
-    [action] => get_users
-)
-Ação: get_usersSolicitação POST recebidaAção recebida: Solicitação recebida: []JSON decodificado: Array
-(
-    [action] => get_users
-)
-Ação: get_usersSolicitação POST recebidaAção recebida: Solicitação recebida: []JSON decodificado: Array
-(
-    [action] => get_users
-)
-Ação: get_usersSolicitação POST recebidaAção recebida: Solicitação recebida: []JSON decodificado: Array
-(
-    [action] => get_users
-)
-Ação: get_usersSolicitação POST recebidaAção recebida: Solicitação recebida: []JSON decodificado: Array
-(
-    [action] => get_users
-)
-Ação: get_usersSolicitação POST recebidaAção recebida: Solicitação recebida: []JSON decodificado: Array
-(
-    [action] => get_users
-)
-Ação: get_usersSolicitação POST recebidaAção recebida: Solicitação recebida: []JSON decodificado: Array
-(
-    [action] => get_users
-)
-Ação: get_usersSolicitação POST recebidaAção recebida: admin_loginTentativa de login do admin: email=contato@ercont.com.brSolicitação POST recebidaAção recebida: admin_loginTentativa de login do admin: email=contato@ercont.com.brSolicitação POST recebidaAção recebida: Solicitação recebida: []JSON decodificado: Array
-(
-    [action] => get_users
-)
-Ação: get_usersSolicitação POST recebidaAção recebida: admin_loginTentativa de login do admin: email=contato@ercont.com.brSolicitação POST recebidaAção recebida: admin_loginTentativa de login do admin: email=contato@ercont.com.brSolicitação POST recebidaAção recebida: recuperar_senha_usuarioTentativa de recuperação de senha de usuário: email=doricassia@gmail.comEmail não encontrado: doricassia@gmail.comSolicitação POST recebidaAção recebida: recuperar_senha_usuarioTentativa de recuperação de senha de usuário: email=fifo@gmail.comEmail encontrado: fifo@gmail.comToken gerado: c3aada3da0f2f806c38292597e8b65454b45f39756fa70e4743215fef11299aee05794e0918fc09902ad9de333301f7cf954Senha descriptografada: 250200er25*Configurando PHPMailerDestinatário adicionado: fifo@gmail.comConteúdo do e-mail configuradoEmail enviado para: fifo@gmail.comSolicitação POST recebidaAção recebida: admin_loginTentativa de login do admin: email=contato@ercont.com.brSolicitação POST recebidaAção recebida: admin_loginTentativa de login do admin: email=contato@ercont.com.brSolicitação POST recebidaAção recebida: Solicitação recebida: []JSON decodificado: Array
-(
-    [action] => get_users
-)
-Ação: get_usersSolicitação POST recebidaAção recebida: loginSolicitação recebida: {"usuario":"fifo@gmail.com","senha":"1234","action":"login"}Dados de formulário recebidos: Array
-(
-    [usuario] => fifo@gmail.com
-    [senha] => 1234
-    [action] => login
-)
-Ação: loginTentativa de login: usuario=fifo@gmail.comSolicitação POST recebidaAção recebida: loginSolicitação recebida: {"usuario":"fifo@gmail.com","senha":"1234","action":"login"}Dados de formulário recebidos: Array
-(
-    [usuario] => fifo@gmail.com
-    [senha] => 1234
-    [action] => login
-)
-Ação: loginTentativa de login: usuario=fifo@gmail.comSolicitação POST recebidaAção recebida: recuperar_senha_usuarioTentativa de recuperação de senha de usuário: email=antonioernandes25@gmail.comEmail encontrado: antonioernandes25@gmail.comToken gerado: ef76a3f9b1c416d1911de9ea0c01e37f511d89303a9007f22277f54d3cc59e4a9fb497c4c02b0f6af1b5699917a94e878264Senha descriptografada: 250200er25*Configurando PHPMailerDestinatário adicionado: antonioernandes25@gmail.comConteúdo do e-mail configuradoEmail enviado para: antonioernandes25@gmail.comSolicitação POST recebidaAção recebida: recuperar_senha_usuarioTentativa de recuperação de senha de usuário: email=antonioernandes25@gmail.comEmail encontrado: antonioernandes25@gmail.comToken gerado: 190165a9061649bec2586b69710bfe16918727517e85cae61f985445ec336db77d4862b8ffcaf562f32a4b36fbdb6b4e8c8dSenha descriptografada: 250200er25*Configurando PHPMailerDestinatário adicionado: antonioernandes25@gmail.comConteúdo do e-mail configuradoEmail enviado para: antonioernandes25@gmail.comSolicitação POST recebidaAção recebida: recuperar_senha_usuarioTentativa de recuperação de senha de usuário: email=antonioernandes25@gmail.comEmail encontrado: antonioernandes25@gmail.comToken gerado: 3bd8762d52aa8285d9b51eb7a665dd35f04e49f4ffe1b2110cc014227247e7f67c2fee0f3908b5140b32cd772e421684a3f2Senha descriptografada: 250200er25*Configurando PHPMailerDestinatário adicionado: antonioernandes25@gmail.comConteúdo do e-mail configuradoEmail enviado para: antonioernandes25@gmail.comSolicitação POST recebidaAção recebida: recuperar_senha_usuarioTentativa de recuperação de senha de usuário: email=antonioernandes25@gmail.comEmail encontrado: antonioernandes25@gmail.comToken gerado: a48dc465e04c2a2f98a66a279502e8bee3042e374c617abdc034d7a42c16dd4d0ed64dc8492d6c5c925e44b974c73df169ccSenha descriptografada: 250200er25*Configurando PHPMailerDestinatário adicionado: antonioernandes25@gmail.comConteúdo do e-mail configuradoEmail enviado para: antonioernandes25@gmail.comSolicitação POST recebidaAção recebida: recuperar_senha_usuarioTentativa de recuperação de senha de usuário: email=antonioernandes25@gmail.comEmail encontrado: antonioernandes25@gmail.comToken gerado: 1ccf2ded4b003f37637b538481900c968ea04b34172b88f79209074120aa590f87323b0625c3bc2877adb57fc7bf41cedb32Senha descriptografada: 250200er25*Configurando PHPMailerDestinatário adicionado: antonioernandes25@gmail.comConteúdo do e-mail configuradoEmail enviado para: antonioernandes25@gmail.comSolicitação POST recebidaAção recebida: recuperar_senha_usuarioTentativa de recuperação de senha de usuário: email=antonioernandes25@gmail.comEmail encontrado: antonioernandes25@gmail.comToken gerado: 77521f76f03ceda4fd46a8e1f0cf935450f1217cda9b2436b414bfd7524fd2578de5bef25aae59ea54b3d744723fb5726d85Senha descriptografada: 250200er25*Configurando PHPMailerDestinatário adicionado: antonioernandes25@gmail.comConteúdo do e-mail configuradoEmail enviado para: antonioernandes25@gmail.comSolicitação POST recebidaAção recebida: recuperar_senha_usuarioTentativa de recuperação de senha de usuário: email=antonioernandes25@gmail.comEmail encontrado: antonioernandes25@gmail.comToken gerado: 50f460e41903a4e2eec78d7211a70d25354b56373e63d5eb3cb9cefdbe9a0e4630f094d42ef4b5c5628f6645bd9e2b4d04b1Senha descriptografada: 250200er25*Configurando PHPMailerDestinatário adicionado: antonioernandes25@gmail.comConteúdo do e-mail configuradoEmail enviado para: antonioernandes25@gmail.comSolicitação POST recebidaAção recebida: recuperar_senha_usuarioTentativa de recuperação de senha de usuário: email=antonioernandes25@gmail.comEmail encontrado: antonioernandes25@gmail.comToken gerado: 47e08029d90bedda009adc4311911d390b6d05fba07784d2413471516637c0748326f64e6cbef686210eaeafc12ff6949860Senha descriptografada: 250200er25*Configurando PHPMailerDestinatário adicionado: antonioernandes25@gmail.comConteúdo do e-mail configuradoEmail enviado para: antonioernandes25@gmail.comSolicitação POST recebidaAção recebida: recuperar_senha_usuarioTentativa de recuperação de senha de usuário: email=antonioernandes25@gmail.comEmail encontrado: antonioernandes25@gmail.comToken gerado: f97552bb83be9b89a18abf9e1523d24f7f9b043e4d6c36e86141ec53e50b82c4410a53166d0c57bd4142799439f277b99423Senha descriptografada: 250200er25*Configurando PHPMailerDestinatário adicionado: antonioernandes25@gmail.comConteúdo do e-mail configuradoEmail enviado para: antonioernandes25@gmail.comSolicitação POST recebidaAção recebida: recuperar_senha_usuarioSolicitação POST recebidaAção recebida: recuperar_senha_usuarioTentativa de recuperação de senha de usuário: email=antonioernandes25@gmail.comEmail encontrado: antonioernandes25@gmail.comToken gerado: 577a487f19e6eeda822c531fccdfa950d43a0a63e528e95f1426187823036ffe17310aac64d5f84549a2e6d8a231db83c45dSenha descriptografada: 250200er25*Configurando PHPMailerDestinatário adicionado: antonioernandes25@gmail.comConteúdo do e-mail configuradoEmail enviado para: antonioernandes25@gmail.comSolicitação POST recebidaAção recebida: recuperar_senhaTentativa de recuperação de senha: email=antonioernandes25@gmail.comEmail não encontrado: antonioernandes25@gmail.comSolicitação POST recebidaAção recebida: recuperar_senhaTentativa de recuperação de senha: email=contato@ercont.com.brEmail encontrado: contato@ercont.com.brToken gerado: 20730eb7df050dcb8c2a4810e878d59825307a9cc108143170eee5f6407a90544eb41db0c83d4f313b504ef54648d65533baSenha descriptografada: 250200er25*Configurando PHPMailerDestinatário adicionado: contato@ercont.com.brConteúdo do e-mail configuradoEmail enviado para: contato@ercont.com.brSolicitação POST recebidaAção recebida: loginSolicitação recebida: {"usuario":"fifo@gmail.com","senha":"1234","action":"login"}Dados de formulário recebidos: Array
-(
-    [usuario] => fifo@gmail.com
-    [senha] => 1234
-    [action] => login
-)
-Ação: loginTentativa de login: usuario=fifo@gmail.comSolicitação POST recebidaAção recebida: Solicitação recebida: []JSON decodificado: Array
-(
-    [action] => save_quiz_result
-    [user] => fifo@gmail.com
-    [score] => 180
-)
-Ação: save_quiz_resultSalvando resultado do quiz: user=fifo@gmail.com, score=180Solicitação POST recebidaAção recebida: recuperar_senha_usuarioTentativa de recuperação de senha de usuário: email=antonioernandes25@gmail.comEmail encontrado: antonioernandes25@gmail.comToken gerado: 7ed3a078ae10b2414827514400f0139c2dab8080b4fc84685437b71194f483d18c1f0956a8ab4e4e037277baa84fd38458fbSenha descriptografada: 250200er25*Configurando PHPMailerDestinatário adicionado: antonioernandes25@gmail.comConteúdo do e-mail configuradoEmail enviado para: antonioernandes25@gmail.comSolicitação POST recebidaAção recebida: recuperar_senha_usuarioTentativa de recuperação de senha de usuário: email=antonioernandes25@gmail.comEmail encontrado: antonioernandes25@gmail.comToken gerado: 3f9c2dcd5c7b218f3c5593826d7dfe8ae8cd70c322b0ebcdccc0772f4c498f5fb7a1a8ec9b50b896c30d59dcffaa020b55dcSenha descriptografada: 250200er25*Configurando PHPMailerDestinatário adicionado: antonioernandes25@gmail.comConteúdo do e-mail configuradoEmail enviado para: antonioernandes25@gmail.comSolicitação POST recebidaAção recebida: recuperar_senha_usuarioTentativa de recuperação de senha de usuário: email=antonioernandes25@gmail.comEmail encontrado: antonioernandes25@gmail.comToken gerado: 9ed2426088b883bbb910e7dbf72f971a6ec6ee69247a4f5a0e85eb87fad63651ec32b125472f005e8b805dc1321863293274Senha descriptografada: 250200er25*Configurando PHPMailerDestinatário adicionado: antonioernandes25@gmail.comConteúdo do e-mail configuradoEmail enviado para: antonioernandes25@gmail.comSolicitação POST recebidaAção recebida: recuperar_senha_usuarioTentativa de recuperação de senha de usuário: email=antonioernandes25@gmail.comEmail encontrado: antonioernandes25@gmail.comToken gerado: 55fe45f9a04928148bbd07269135ad8e0a7f01618c94563ef6554977a476016487babbf7f89ce8497803f6b7d9dab76b5accSenha descriptografada: 250200er25*Configurando PHPMailerDestinatário adicionado: antonioernandes25@gmail.comConteúdo do e-mail configuradoEmail enviado para: antonioernandes25@gmail.comSolicitação POST recebidaAção recebida: recuperar_senha_usuarioTentativa de recuperação de senha de usuário: email=antonioernandes25@gmail.comEmail encontrado: antonioernandes25@gmail.comToken gerado: d4755ae2fb638821500a9d6fadbd97bb5794bff5a54126a69b5745e39c9bac9e4dc3a24af7d065b41cc0179cc5a05a5e8e33Senha descriptografada: 250200er25*Configurando PHPMailerDestinatário adicionado: antonioernandes25@gmail.comConteúdo do e-mail configuradoEmail enviado para: antonioernandes25@gmail.comSolicitação POST recebidaAção recebida: recuperar_senha_usuarioTentativa de recuperação de senha de usuário: email=antonioernandes25@gmail.comEmail encontrado: antonioernandes25@gmail.comToken gerado: f2d3393464d5fcd2b00710aacc966c41feb2a1e32bfee0b7e0a3e259f1579435ffa64417fe294d77f79505fca7e8c1c09c73Senha descriptografada: 250200er25*Configurando PHPMailerDestinatário adicionado: antonioernandes25@gmail.comConteúdo do e-mail configuradoEmail enviado para: antonioernandes25@gmail.comSolicitação POST recebidaAção recebida: recuperar_senha_usuarioTentativa de recuperação de senha de usuário: email=antonioernandes25@gmail.comEmail encontrado: antonioernandes25@gmail.comToken gerado: 41a46b7eaf3cfd875ceae485e54fc521fa2958f4019cbfa0a33162a50b10db1b9f1de7cf4c83cd321995d83fd13f008d11e4Senha descriptografada: 250200er25*Configurando PHPMailerDestinatário adicionado: antonioernandes25@gmail.comConteúdo do e-mail configuradoEmail enviado para: antonioernandes25@gmail.comSolicitação POST recebidaAção recebida: recuperar_senha_usuarioTentativa de recuperação de senha de usuário: email=antonioernandes25@gmail.comEmail encontrado: antonioernandes25@gmail.comToken gerado: c03f759abcdb7f27920d5535a0cf7082b7246d5773a717cb3064385666681923694c0f669181e840185f40f6ed8e36f0028fSenha descriptografada: 250200er25*Configurando PHPMailerDestinatário adicionado: antonioernandes25@gmail.comConteúdo do e-mail configuradoEmail enviado para: antonioernandes25@gmail.comSolicitação POST recebidaAção recebida: recuperar_senha_usuarioTentativa de recuperação de senha de usuário: email=antonioernandes25@gmail.comEmail encontrado: antonioernandes25@gmail.comToken gerado: 8abfdfef5b527df6999d7b0ad1c1ff1cac184225f3bb330e257aa7f6a1bafe170d8f791f62734c79a331a5c736bbbbda16b8Senha descriptografada: 250200er25*Configurando PHPMailerDestinatário adicionado: antonioernandes25@gmail.comConteúdo do e-mail configuradoEmail enviado para: antonioernandes25@gmail.comSolicitação POST recebidaAção recebida: recuperar_senha_usuarioTentativa de recuperação de senha de usuário: email=antonioernandes25@gmail.comEmail encontrado: antonioernandes25@gmail.comToken gerado: 074bb04163d4f73b14b80f39406341ea3ed345dc81fc10091f6a988ce6b63c63e2c28eaf9b43a882a876205ca044fa2cbe81Senha descriptografada: 250200er25*Configurando PHPMailerDestinatário adicionado: antonioernandes25@gmail.comConteúdo do e-mail configuradoEmail enviado para: antonioernandes25@gmail.comSolicitação POST recebidaAção recebida: recuperar_senha_usuarioTentativa de recuperação de senha de usuário: email=antonioernandes25@gmail.comEmail encontrado: antonioernandes25@gmail.comToken gerado: af28196c8d772d56b039bc74b00020d253e119856549917329c8cdb3c9a35556832c9fa4452b6d66dbcdfdf651973cdc9b77Senha descriptografada: 250200er25*Configurando PHPMailerDestinatário adicionado: antonioernandes25@gmail.comConteúdo do e-mail configuradoEmail enviado para: antonioernandes25@gmail.comSolicitação POST recebidaAção recebida: recuperar_senha_usuarioTentativa de recuperação de senha de usuário: email=antonioernandes25@gmail.comEmail encontrado: antonioernandes25@gmail.comToken gerado: 2d32b02183a4ee4e123480bda5ec8bc18081f390df8d16e8784dc8226e7cddab0a2a19806f6248a1e670ff92923693a61dacSenha descriptografada: 250200er25*Configurando PHPMailerDestinatário adicionado: antonioernandes25@gmail.comConteúdo do e-mail configuradoEmail enviado para: antonioernandes25@gmail.comSolicitação POST recebidaAção recebida: recuperar_senha_usuarioTentativa de recuperação de senha de usuário: email=antonioernandes25@gmail.comEmail encontrado: antonioernandes25@gmail.comToken gerado: 11e7ca57c62c7ff3e976e876055d402f7913f4b707c9b8b7f1f689c6c7367ce5830ff001a5c69d5032cfe3f481cb2683ca68Senha descriptografada: 250200er25*Configurando PHPMailerDestinatário adicionado: antonioernandes25@gmail.comConteúdo do e-mail configuradoEmail enviado para: antonioernandes25@gmail.comSolicitação POST recebidaAção recebida: recuperar_senha_usuarioTentativa de recuperação de senha de usuário: email=antonioernandes25@gmail.comEmail encontrado: antonioernandes25@gmail.comToken gerado: 68164b41e9dedb50e8e201a153bb6e1e23e9ab334c763ee30bba50039b54f6650588cd68afe0998baba70f4ba3a0986f071aSenha descriptografada: 250200er25*Configurando PHPMailerDestinatário adicionado: antonioernandes25@gmail.comConteúdo do e-mail configuradoEmail enviado para: antonioernandes25@gmail.comSolicitação POST recebidaAção recebida: recuperar_senha_usuarioTentativa de recuperação de senha de usuário: email=antonioernandes25@gmail.comEmail encontrado: antonioernandes25@gmail.comToken gerado: ec2986bb5f1acb0089ffd4396cf7f7f95066da2d88442bc0a422c540d0c41d9619b27416e66cb8377e30b9346079aeaf765cSenha descriptografada: 250200er25*Configurando PHPMailerDestinatário adicionado: antonioernandes25@gmail.comConteúdo do e-mail configuradoEmail enviado para: antonioernandes25@gmail.comSolicitação POST recebidaAção recebida: recuperar_senha_usuarioTentativa de recuperação de senha de usuário: email=antonioernandes25@gmail.comEmail encontrado: antonioernandes25@gmail.comToken gerado: 88f8defa3e66c9c80c1b2436911535965cb55b636da7dbdaf518778f232a234ddb09fa51fc3bc8b27e8e9d83eff81da88538Senha descriptografada: 250200er25*Configurando PHPMailerDestinatário adicionado: antonioernandes25@gmail.comConteúdo do e-mail configuradoEmail enviado para: antonioernandes25@gmail.comSolicitação POST recebidaAção recebida: recuperar_senha_usuarioTentativa de recuperação de senha de usuário: email=antonioernandes25@gmail.comEmail encontrado: antonioernandes25@gmail.comToken gerado: 247549d5c633ea311ffb90e0d3c9814a23b4e7233c7a2cf7d9c55bc50179f2cfa3cb52fe952f5a85cc717a18747696162e66Senha descriptografada: 250200er25*Configurando PHPMailerDestinatário adicionado: antonioernandes25@gmail.comConteúdo do e-mail configuradoEmail enviado para: antonioernandes25@gmail.comSolicitação POST recebidaAção recebida: recuperar_senha_usuarioTentativa de recuperação de senha de usuário: email=antonioernandes25@gmail.comEmail encontrado: antonioernandes25@gmail.comToken gerado: 0cfaf2a2d62c421bb028d5c8d668a36913c90b5d3eb577206b1546e0d5d7ecbf6b8335aa802586a398029f2fd0d07b7820a5Senha descriptografada: 250200er25*Configurando PHPMailerDestinatário adicionado: antonioernandes25@gmail.comConteúdo do e-mail configuradoEmail enviado para: antonioernandes25@gmail.comSolicitação POST recebidaAção recebida: recuperar_senhaTentativa de recuperação de senha: email=contato@ercont.com.brEmail encontrado: contato@ercont.com.brToken gerado: e751c25bd6775730ea182ae0732075cf844fdb04fe45dda90eed751cde3de94f1ca9e1d2bc49de76151b4338fdd1251ba4ddSenha descriptografada: 250200er25*Configurando PHPMailerDestinatário adicionado: contato@ercont.com.brConteúdo do e-mail configuradoEmail enviado para: contato@ercont.com.brSolicitação POST recebidaAção recebida: recuperar_senhaTentativa de recuperação de senha: email=contato@ercont.com.brEmail encontrado: contato@ercont.com.brToken gerado: 3e12d119adf93c6a0266f49cd0142590a70e1f8b2679760bab887ed2d5333ae5a883acc2cdb98f24d52866d1142315964538Senha descriptografada: 250200er25*Configurando PHPMailerDestinatário adicionado: contato@ercont.com.brConteúdo do e-mail configuradoEmail enviado para: contato@ercont.com.brSolicitação POST recebidaAção recebida: recuperar_senhaTentativa de recuperação de senha: email=contato@ercont.com.brEmail encontrado: contato@ercont.com.brToken gerado: 2e8458fda1f915d994da167b020fa0573adc84457b5c681e15b0d54b397d26b1e884d3676974855523cff8dc614fd1c6572eSenha descriptografada: 250200er25*Configurando PHPMailerDestinatário adicionado: contato@ercont.com.brConteúdo do e-mail configuradoEmail enviado para: contato@ercont.com.brSolicitação POST recebidaAção recebida: recuperar_senhaTentativa de recuperação de senha: email=contato@ercont.com.brEmail encontrado: contato@ercont.com.brToken gerado: 8b2ad59c4cd6219fdd2fdcb929e9903e8cef64f5938cc8758df6042cf55461795ba6dbdb4f6cc1f3c8b00fff162124556affSenha descriptografada: 250200er25*Configurando PHPMailerDestinatário adicionado: contato@ercont.com.brConteúdo do e-mail configuradoEmail enviado para: contato@ercont.com.brSolicitação POST recebidaAção recebida: recuperar_senha_usuarioTentativa de recuperação de senha de usuário: email=antonioernandes25@gmail.comEmail encontrado: antonioernandes25@gmail.comToken gerado: 19937c00db6fa51e6df350e0c073535ef8ddef8a84140deffd261574b589c8db5b562129c81770b492d795b718cd72b736d8Senha descriptografada: 250200er25*Configurando PHPMailerDestinatário adicionado: antonioernandes25@gmail.comConteúdo do e-mail configuradoEmail enviado para: antonioernandes25@gmail.comSolicitação POST recebidaAção recebida: recuperar_senha_usuarioTentativa de recuperação de senha de usuário: email=antonioernandes25@gmail.comEmail encontrado: antonioernandes25@gmail.comToken gerado: 438ab3ca584ceffbe3cf096e6a7e926f0d0632e2824816e4402fa26982f4678e5691bc07316698b82f31043fec18735e45f0Senha descriptografada: 250200er25*Configurando PHPMailerDestinatário adicionado: antonioernandes25@gmail.comConteúdo do e-mail configuradoEmail enviado para: antonioernandes25@gmail.comSolicitação POST recebidaAção recebida: recuperar_senhaTentativa de recuperação de senha: email=contato@gmail.com.brEmail não encontrado: contato@gmail.com.brSolicitação POST recebidaAção recebida: recuperar_senhaTentativa de recuperação de senha: email=contato@ercont.com.brEmail encontrado: contato@ercont.com.brToken gerado: 3abb922557a2086b022b347b93ab66437dfb34310d20ef4d8dcb322001b6c9342f31cb949f5db10be23a09fdd9125545bd9dSenha descriptografada: 250200er25*Configurando PHPMailerDestinatário adicionado: contato@ercont.com.brConteúdo do e-mail configuradoEmail enviado para: contato@ercont.com.brSolicitação POST recebidaAção recebida: recuperar_senhaTentativa de recuperação de senha: email=contato@ercont.com.brEmail encontrado: contato@ercont.com.brToken gerado: 688be9d6f674046030f16ede3ff488f11d9e804ec714bb0cde03dc894034a6d08097af291fd63e2de73b3bd2be7c3aa94116Senha descriptografada: 250200er25*Configurando PHPMailerDestinatário adicionado: contato@ercont.com.brConteúdo do e-mail configuradoEmail enviado para: contato@ercont.com.brSolicitação POST recebidaAção recebida: recuperar_senhaTentativa de recuperação de senha: email=contato@ercont.com.brEmail encontrado: contato@ercont.com.brToken gerado: 083b620e6a50b33af95d06cfb57c9fdb51a7e1f626cd9a8ddfdb62ecdde8daf71356782956d9bb5a2f0181f2c5cc05493c5fSenha descriptografada: 250200er25*Configurando PHPMailerDestinatário adicionado: contato@ercont.com.brConteúdo do e-mail configuradoEmail enviado para: contato@ercont.com.brSolicitação POST recebidaAção recebida: recuperar_senha_usuarioTentativa de recuperação de senha de usuário: email=antonioernandes25@gmail.comEmail encontrado: antonioernandes25@gmail.comToken gerado: 91d191a1ff67d8a92cc61dc6de7e116ee2d468f8097d4535e1e71c024224a916920f387380aa6dbcaca5e12e0e67871878f8Senha descriptografada: 250200er25*Configurando PHPMailerDestinatário adicionado: antonioernandes25@gmail.comConteúdo do e-mail configuradoEmail enviado para: antonioernandes25@gmail.comSolicitação POST recebidaAção recebida: recuperar_senha_usuarioTentativa de recuperação de senha de usuário: email=antonioernandes25@gmail.comEmail encontrado: antonioernandes25@gmail.comToken gerado: 058354d0f878479e890afa96c5c82ddb373e50d537fb5797dcd5e6faa6d706e0d1d3b25ac5165ec7ace8753cd91907f71e8bSenha descriptografada: 250200er25*Configurando PHPMailerDestinatário adicionado: antonioernandes25@gmail.comConteúdo do e-mail configuradoEmail enviado para: antonioernandes25@gmail.comSolicitação POST recebidaAção recebida: recuperar_senhaTentativa de recuperação de senha: email=contato@ercont.com.brEmail encontrado: contato@ercont.com.brToken gerado: c94eb328ac504743f57082cd9faf137be6d330ae1d095811b1f5993e1266c4a6c661fb7c126010faa0fffaf1101933d39f05Senha descriptografada: 250200er25*Configurando PHPMailerDestinatário adicionado: contato@ercont.com.brConteúdo do e-mail configuradoEmail enviado para: contato@ercont.com.brSolicitação POST recebidaAção recebida: recuperar_senha_usuarioTentativa de recuperação de senha de usuário: email=antonioernandes25@gmail.comEmail encontrado: antonioernandes25@gmail.comToken gerado: 1d8032ac93cdf1679dd5f03eb24bb07b4d4d0e314781a8263f5451d5539e37a85842ed4d916e891416f5576fdf05c7cc2283Senha descriptografada: 250200er25*Configurando PHPMailerDestinatário adicionado: antonioernandes25@gmail.comConteúdo do e-mail configuradoEmail enviado para: antonioernandes25@gmail.comSolicitação POST recebidaAção recebida: recuperar_senha_usuarioTentativa de recuperação de senha de usuário: email=antonioernandes25@gmail.comEmail encontrado: antonioernandes25@gmail.comToken gerado: d6535c19929ddeeffe83523a6f3557b5c26f84eaa420c4b4a56e5d3aa95481eaa6671f9b914530e816fe3093415f51e663f5Senha descriptografada: 250200er25*Configurando PHPMailerDestinatário adicionado: antonioernandes25@gmail.comConteúdo do e-mail configuradoEmail enviado para: antonioernandes25@gmail.comSolicitação POST recebidaAção recebida: recuperar_senhaTentativa de recuperação de senha: email=contato@ercont.com.brEmail encontrado: contato@ercont.com.brToken gerado: 2b92cb6824ad8a162633b22256134d2c211e32bdaf75425315df4980cf05bbcd7203f4202e567d6544d165f0aab4edb774f2Senha descriptografada: 250200er25*Configurando PHPMailerDestinatário adicionado: contato@ercont.com.brConteúdo do e-mail configuradoEmail enviado para: contato@ercont.com.brSolicitação POST recebidaAção recebida: recuperar_senha_usuarioTentativa de recuperação de senha de usuário: email=antonioernandes25@gmail.comEmail encontrado: antonioernandes25@gmail.comToken gerado: a16247df2f73610985b59a617f8f9e6ae98a2f87a0644ae36a8b6c8e3e9fb4d5ce7d0483599132bdfff0b3deb093cdff3100Senha descriptografada: 250200er25*Configurando PHPMailerDestinatário adicionado: antonioernandes25@gmail.comConteúdo do e-mail configuradoEmail enviado para: antonioernandes25@gmail.comSolicitação POST recebidaAção recebida: recuperar_senha_usuarioTentativa de recuperação de senha de usuário: email=antonioernandes25@gmail.comEmail encontrado: antonioernandes25@gmail.comToken gerado: 7dc989201e4a1a3d983a36b8418266d14a862b768015d43a4e3bcff194aaa31ee352633db237a05f22c5246c228985da4b09Senha descriptografada: 250200er25*Configurando PHPMailerDestinatário adicionado: antonioernandes25@gmail.comConteúdo do e-mail configuradoEmail enviado para: antonioernandes25@gmail.comSolicitação POST recebidaAção recebida: recuperar_senha_usuarioTentativa de recuperação de senha de usuário: email=antonioernandes25@gmail.comEmail encontrado: antonioernandes25@gmail.comToken gerado: c8ceef29d59c2891230b8a5c7a5ec136e53480f6332782760df24beb621d4978ea89eb4e14da5fe04952bac02cfe8536d630Senha descriptografada: 250200er25*Configurando PHPMailerDestinatário adicionado: antonioernandes25@gmail.comConteúdo do e-mail configuradoEmail enviado para: antonioernandes25@gmail.comSolicitação POST recebidaAção recebida: recuperar_senha_usuarioTentativa de recuperação de senha de usuário: email=antonioernandes25@gmail.comEmail encontrado: antonioernandes25@gmail.comToken gerado: 38015b185dc0b007c4f723656f8e107ccba4e6c567a61b611409980448621b78f84e10d0be447cae6921e04c8e152cff4fa4Senha descriptografada: 250200er25*Configurando PHPMailerDestinatário adicionado: antonioernandes25@gmail.comConteúdo do e-mail configuradoEmail enviado para: antonioernandes25@gmail.comSolicitação POST recebidaAção recebida: recuperar_senha_usuarioTentativa de recuperação de senha de usuário: email=antonioernandes25@gmail.comEmail encontrado: antonioernandes25@gmail.comToken gerado: 2e2e3c306922ce422fe4762fb0a1ca7e1f4b01859f5ad3e6193ffa72b092d43d2b3ddf0f81fa83adaf785b15e98acff88dd4Senha descriptografada: 250200er25*Configurando PHPMailerDestinatário adicionado: antonioernandes25@gmail.comConteúdo do e-mail configuradoEmail enviado para: antonioernandes25@gmail.comSolicitação POST recebidaAção recebida: recuperar_senha_usuarioTentativa de recuperação de senha de usuário: email=antonioernandes25@gmail.comEmail encontrado: antonioernandes25@gmail.comToken gerado: 1b75015f3a307b1a405e551d49e16dc46e41a6672a41daa32c65f560045bb59187eeafdc75a6588871a7cb1161a42da8d82dSenha descriptografada: 250200er25*Configurando PHPMailerDestinatário adicionado: antonioernandes25@gmail.comConteúdo do e-mail configuradoEmail enviado para: antonioernandes25@gmail.comSolicitação POST recebidaAção recebida: recuperar_senha_usuarioTentativa de recuperação de senha de usuário: email=antonioernandes25@gmail.comEmail encontrado: antonioernandes25@gmail.comToken gerado: 8f95ac709cc5dece9245afbfc164d74ba919ac297fb420dd13d8a6bf48ddb288711cb5f272659811f41fba79aa7c312d8d62Senha descriptografada: 250200er25*Configurando PHPMailerDestinatário adicionado: antonioernandes25@gmail.comConteúdo do e-mail configuradoEmail enviado para: antonioernandes25@gmail.comSolicitação POST recebidaAção recebida: recuperar_senha_usuarioTentativa de recuperação de senha de usuário: email=antonioernandes25@gmail.comEmail encontrado: antonioernandes25@gmail.comToken gerado: e1d168cc1f7e8a48fd2accbda9815295ae0347e028c836d315b091a051600f4822e86d46aab22e4df1316ab15ae5a21974dbSenha descriptografada: 250200er25*Configurando PHPMailerDestinatário adicionado: antonioernandes25@gmail.comConteúdo do e-mail configuradoEmail enviado para: antonioernandes25@gmail.comSolicitação POST recebidaAção recebida: recuperar_senha_usuarioTentativa de recuperação de senha de usuário: email=antonioernandes25@gmail.comEmail encontrado: antonioernandes25@gmail.comToken gerado: 37f45fa402799ceeaa784a2de32134fc1fe5e47b5c6b160a2c7f80282466aac90c8aeed077cf7c544095e164fb1601780e61Senha descriptografada: 250200er25*Configurando PHPMailerDestinatário adicionado: antonioernandes25@gmail.comConteúdo do e-mail configuradoEmail enviado para: antonioernandes25@gmail.comSolicitação POST recebidaAção recebida: recuperar_senhaTentativa de recuperação de senha: email=contato@ercont.com.brEmail encontrado: contato@ercont.com.brToken gerado: 1ff1ae78ffd8afed03a215a2e6eb4157590365739854a14fc32657454dc861e472de1b02382ea5341a4e36d08526508885f0Senha descriptografada: 250200er25*Configurando PHPMailerDestinatário adicionado: contato@ercont.com.brConteúdo do e-mail configuradoEmail enviado para: contato@ercont.com.brSolicitação POST recebidaAção recebida: recuperar_senhaTentativa de recuperação de senha: email=contato@ercont.com.brEmail encontrado: contato@ercont.com.brToken gerado: bc94f7ef0485b850bea03962fb598f840743f4e05dcdc01a8607d5d8493e492bccd192b0535845bac92d7d85b92dcbefa6e0Senha descriptografada: 250200er25*Configurando PHPMailerDestinatário adicionado: contato@ercont.com.brConteúdo do e-mail configuradoEmail enviado para: contato@ercont.com.brSolicitação POST recebidaAção recebida: recuperar_senhaTentativa de recuperação de senha: email=contato@ercont.com.brEmail encontrado: contato@ercont.com.brToken gerado: 8404b5a9bf41ad9976066f468aebc8e97fa64666c1576ec12e1fc02e9016d8655b054a4b3e62e89fbde7d1f671a0e800262aSenha descriptografada: 250200er25*Configurando PHPMailerDestinatário adicionado: contato@ercont.com.brConteúdo do e-mail configuradoEmail enviado para: contato@ercont.com.brSolicitação POST recebidaAção recebida: recuperar_senha_usuarioTentativa de recuperação de senha de usuário: email=antonioernandes25@gmail.comEmail encontrado: antonioernandes25@gmail.comToken gerado: 097b4ae457594731ff60bec4f789101813807ba869cb705b6058beb151846be442897289f9a0571634189a8e89571dc77b89Senha descriptografada: 250200er25*Configurando PHPMailerDestinatário adicionado: antonioernandes25@gmail.comConteúdo do e-mail configuradoEmail enviado para: antonioernandes25@gmail.comSolicitação POST recebidaAção recebida: recuperar_senha_usuarioTentativa de recuperação de senha de usuário: email=antonioernandes25@gmail.comEmail encontrado: antonioernandes25@gmail.comToken gerado: be2ce6a3932791acd5b48b262b6459738d11c6fc7c61ca5bcdcdfabaf6330b1e667a44fafd939d2b9eef49b118acfa7c2fa7Senha descriptografada: 250200er25*Configurando PHPMailerDestinatário adicionado: antonioernandes25@gmail.comConteúdo do e-mail configuradoEmail enviado para: antonioernandes25@gmail.comSolicitação POST recebidaAção recebida: recuperar_senha_usuarioTentativa de recuperação de senha de usuário: email=antonioernandes25@gmail.comEmail encontrado: antonioernandes25@gmail.comToken gerado: 41ff85ad87b4cb7ee07a1181b7b96efec5db2bf7d189a821655363852f24500ac30e7a61d59d28ad947bbeab9f9c8d61d426Senha descriptografada: 250200er25*Configurando PHPMailerDestinatário adicionado: antonioernandes25@gmail.comConteúdo do e-mail configuradoEmail enviado para: antonioernandes25@gmail.comSolicitação POST recebidaAção recebida: recuperar_senhaTentativa de recuperação de senha: email=contato@ercont.com.brEmail encontrado: contato@ercont.com.brToken gerado: c7e4cfe41f93e151e42dc589b5b7162883d73cb8494b3840f2d7a94d183e955ac1a6112985581999f3770a2177b905826470Senha descriptografada: 250200er25*Configurando PHPMailerDestinatário adicionado: contato@ercont.com.brConteúdo do e-mail configuradoEmail enviado para: contato@ercont.com.brSolicitação POST recebidaAção recebida: recuperar_senha_usuarioTentativa de recuperação de senha de usuário: email=antonioernandes25@gmail.comEmail encontrado: antonioernandes25@gmail.comToken gerado: f55814f98e14a4e46eb4553ef41566ddd32cb3159b0e9f7529d101b2d2f2badf3113821af44f11c927e88f30b0ab8365cc08Senha descriptografada: 250200er25*Configurando PHPMailerDestinatário adicionado: antonioernandes25@gmail.comConteúdo do e-mail configuradoEmail enviado para: antonioernandes25@gmail.comSolicitação POST recebidaAção recebida: recuperar_senha_usuarioTentativa de recuperação de senha de usuário: email=antonioernandes25@gmail.comEmail encontrado: antonioernandes25@gmail.comToken gerado: e42eb1c67e7cf2b4a366ddb2e1f8b458598f3b92b5e2299889e70b5cf13ab25c8ac359527b97916d4547bdaeb3c00c1fc630Senha descriptografada: 250200er25*Configurando PHPMailerDestinatário adicionado: antonioernandes25@gmail.comConteúdo do e-mail configuradoEmail enviado para: antonioernandes25@gmail.comSolicitação POST recebidaAção recebida: recuperar_senhaTentativa de recuperação de senha: email=contato@ercont.com.brEmail encontrado: contato@ercont.com.brToken gerado: 03e62008eaa55cff40565774d55bd17ef362f81ff9c7a0b9f91aaabd987cc9c37ccf4c1ff08ccc32e158be6b6b854792fc22Senha descriptografada: 250200er25*Configurando PHPMailerDestinatário adicionado: contato@ercont.com.brConteúdo do e-mail configuradoEmail enviado para: contato@ercont.com.brSolicitação POST recebidaAção recebida: cadastrar_email_admin
+Ação: cadastrar_email_adminSolicitação POST recebidaAção recebida: admin_loginTentativa de login do admin: email=contato@ercont.com.brSolicitação POST recebidaAção recebida: admin_loginTentativa de login do admin: email=contato@ercont.com.brSolicitação POST recebidaAção recebida: admin_loginTentativa de login do admin: email=contato@ercont.com.brSolicitação POST recebidaAção recebida: admin_loginTentativa de login do admin: email=contato@ercont.com.br

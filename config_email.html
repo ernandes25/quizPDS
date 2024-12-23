@@ -6,16 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Configuração de Email do Administrador</title>
     <link rel="stylesheet" href="style.css" />
-<!--     <script>
+    <script>
         document.addEventListener('DOMContentLoaded', function () {
             // Verificar se o administrador está logado
-            if (localStorage.getItem('admin')) {
-                alert("Você já está logado como administrador.");
-                window.location.href = 'admin_dashboard.php'; // Redireciona para o dashboard
+            if (!localStorage.getItem('admin')) {
+                alert("Acesso negado. Faça login como administrador.");
+                window.location.href = 'admin_login.html'; // Redireciona para a página de login do administrador
             }
         });
-    </script> -->
-
+    </script>
 </head>
 
 <body>
