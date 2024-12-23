@@ -9,56 +9,47 @@
     <script>
         document.addEventListener('DOMContentLoaded', function () {
             // Verificar se o administrador está logado
-            if (!localStorage.getItem('admin')) {
+            const adminEmail = localStorage.getItem('admin');
+            if (!adminEmail) {
                 alert("Acesso negado. Faça login como administrador.");
                 window.location.href = 'admin_login.html'; // Redireciona para a página de login do administrador
+            } else {
+                const userGreeting = document.getElementById('user-greeting');
+                const userGreetingContainer = document.getElementById('user-greeting-container');
+                userGreeting.innerHTML = `Você está logado como ADMINISTRADOR<br>Email: ${adminEmail}`;
+                userGreetingContainer.style.display = 'block';
+                document.getElementById('logout').style.display = 'block';
             }
         });
+
+        function adminLogout() {
+            localStorage.removeItem('admin');
+            window.location.href = 'admin_login.html';
+        }
     </script>
 </head>
 
 <body>
     <header>
         <nav>
-            <ul>
-                <img id="logo" src="logo.jpeg" />
-                
-            </ul>
-            <ul>
-                <a class="item" href="index.html">
-                    <li>Início</li>
-                </a>
-            </ul>
-            <ul>
-                <a class="item" href="sobre.html">
-                    <li>Sobre nós</li>
-                </a>
-            </ul>
-            <ul>
-                <a class="item" href="contato.html">
-                    <li>Contato</li>
-                </a>
-            </ul>
-            <ul>
-                <a class="item" href="cadastro.html">
-                    <li>Cadastro</li>
-                </a>
-            </ul>
-            <ul class="dropdown">
-                <a class="item" href="#">
-                  <li>Administração</li>
+            <!-- ...código existente... -->
+            <ul class="dropdown-item">
+                <a id="item" href="#">
+                    <li>Administração</li>
                 </a>
                 <div class="dropdown-content">
-                  <a class="cad-email-adm" href="config_email.html">Cadastrar Email</a>
-                  <a class="cad-email-adm" href="admin_login.html">Login do Administrador</a>
-        
-                  <a class="cad-email-adm" href="recover_password.html">Recuperar Senha do Administrador</a>
-        
-        
+                    <a class="cad-email-adm" href="config_email.html">Cadastrar Administrador</a>
+                    <a class="cad-email-adm" href="admin_login.html">Login do Administrador</a>
+                    <a class="cad-email-adm" href="recover_password.html">Recuperar Senha do Administrador</a>
                 </div>
-            <ul id="logout" style="display: none;">
-                <button onclick="logout()">Sair</button>
             </ul>
+            <ul id="user-greeting-container" style="display: none;">
+                <span id="user-greeting"></span>
+            </ul>
+            <ul id="logout" style="display: none;">
+                <button onclick="adminLogout()">Sair</button>
+            </ul>
+            <!-- ...código existente... -->
         </nav>
     </header>
 
@@ -73,6 +64,7 @@
             <input type="hidden" name="action" value="cadastrar_email_admin">
             <button class="button-cad-adm" type="submit">Cadastrar Email</button>
         </form>
+        <button onclick="adminLogout()">Sair</button> <!-- Botão de Sair -->
     </main>
 
     <footer>
