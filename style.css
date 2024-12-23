@@ -1796,3 +1796,29 @@ section {
     border: 1px solid #f5c6cb; /* Adicionar borda */
 }
 /* ...código existente... */
+.loading-animation {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 18px;
+    font-weight: bold;
+    color: #5A189A;
+    background-color: #f4a261;
+    padding: 20px;
+    border-radius: 50%; /* Torna a animação redonda */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    z-index: 1002; /* Garantir que a animação fique acima de outros elementos */
+    animation: spin 2s linear infinite; /* Adiciona a animação de rotação */
+}
+
+@keyframes spin {
+    0% {
+        transform: translate(-50%, -50%) rotate(0deg);
+    }
+    100% {
+        transform: translate(-50%, -50%) rotate(360deg);
+    }
+}
+/* ...código existente... */
