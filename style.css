@@ -997,18 +997,18 @@ a :hover {
 button {
     display: flex;
     animation: pulse 3s 3s ease-in-out infinite;
-    width: 200px;
-    height: 40px;
+    width: 100px;
+    height: 30px;
     background-color: #F4A261;
     border-radius: 10px;
-    font-size: 18px;
+    font-size: 12px;
     color: #5A189A;
     cursor: pointer;
     text-transform: uppercase;
-    margin-top: 30px;
-    margin-bottom: 40px;
+    margin-top: 5px;
+    margin-bottom: 20px;
     border: none;
-    padding: 6px 10px;
+    padding-top: 10px;
     text-align: center;
     /* Centraliza o texto dentro do botão */
     align-self: center;

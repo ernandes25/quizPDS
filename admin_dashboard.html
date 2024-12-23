@@ -25,8 +25,6 @@
             </ul>
             <ul id="user-greeting-container" style="display: none;">
                 <span id="user-greeting"></span>
-            </ul>
-            <ul id="logout" style="display: none;">
                 <button onclick="adminLogout()">Sair</button>
             </ul>
             <!-- ...código existente... -->
@@ -68,7 +66,6 @@
             if (adminEmail) {
                 userGreeting.innerHTML = `Você está logado como ADMINISTRADOR<br>Email: ${adminEmail}`;
                 userGreetingContainer.style.display = 'block';
-                document.getElementById('logout').style.display = 'block';
             }
 
             const loadUsersButton = document.getElementById('load-users');
