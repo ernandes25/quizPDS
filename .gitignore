@@ -1,2 +1,32 @@
 # Ignorar o arquivo admin_email.php
 admin_email.json
+
+
+# Ignorar arquivos de configuração sensíveis
+.env
+db_config.php
+
+# Ignorar diretórios específicos
+/vendor/
+node_modules/
+
+# Ignorar arquivos de log
+*.log
+
+# Ignorar arquivos de backup
+*.bak
+*.tmp
+# Ignorar arquivos de configuração sensíveis
+.env
+db_config.php
+
+# Ignorar diretórios específicos
+/vendor/
+node_modules/
+
+*.log
+
+# Ignorar arquivos de backup
+*.bak
+*.tmp
+# Ignorar arquivos de log

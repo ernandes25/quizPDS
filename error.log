@@ -10,4 +10,11 @@ Ação: loginTentativa de login: usuario=fifo@gmail.comSolicitação POST recebi
     [user] => fifo@gmail.com
     [score] => 180
 )
-Ação: save_quiz_resultSalvando resultado do quiz: user=fifo@gmail.com, score=180
+Ação: save_quiz_resultSalvando resultado do quiz: user=fifo@gmail.com, score=180Solicitação POST recebidaAção recebida: contatoSolicitação recebida: {"nome":"ANTONIO ERNANDES SILVA FILHO","email":"antonioernandes25@gmail.com","mensagem":"sdfgdsf","action":"contato"}Dados de formulário recebidos: Array
+(
+    [nome] => ANTONIO ERNANDES SILVA FILHO
+    [email] => antonioernandes25@gmail.com
+    [mensagem] => sdfgdsf
+    [action] => contato
+)
+Ação: contatoTentativa de contato: nome=ANTONIO ERNANDES SILVA FILHO, email=antonioernandes25@gmail.com
