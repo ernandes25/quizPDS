@@ -70,4 +70,57 @@ Ação: contatoTentativa de contato: nome=ANTONIO ERNANDES SILVA FILHO, email=do
 (
     [action] => get_users
 )
-Ação: get_usersSolicitação POST recebidaAção recebida: admin_loginTentativa de login do admin: email=contato@ercont.com.brSolicitação POST recebidaAção recebida: admin_loginTentativa de login do admin: email=contato@ercont.com.br
+Ação: get_usersSolicitação POST recebidaAção recebida: admin_loginTentativa de login do admin: email=contato@ercont.com.brSolicitação POST recebidaAção recebida: admin_loginTentativa de login do admin: email=contato@ercont.com.brSolicitação POST recebidaAção recebida: recuperar_senha_usuarioTentativa de recuperação de senha de usuário: email=antonioernandes25@gmail.comEmail encontrado: antonioernandes25@gmail.comToken gerado: 2a67a934953f3f2a1c748bb14da3027c64fbe8f2fb984bd31d75f472349856d6c2b0f72d124102674a58153652b494200ee7Senha descriptografada: 250200er25*Configurando PHPMailerDestinatário adicionado: antonioernandes25@gmail.comConteúdo do e-mail configuradoEmail enviado para: antonioernandes25@gmail.comSolicitação POST recebidaAção recebida: recuperar_senha_usuarioTentativa de recuperação de senha de usuário: email=antonioernandes25@gmail.comEmail encontrado: antonioernandes25@gmail.comToken gerado: acee63e70b62faf6f7684696af916e4fee5f1ba0ecb013b9fc44d10c88198ec06bbad178df133fd381e01dfb518d1c0e9682Senha descriptografada: 250200er25*Configurando PHPMailerDestinatário adicionado: antonioernandes25@gmail.comConteúdo do e-mail configuradoEmail enviado para: antonioernandes25@gmail.comSolicitação POST recebidaAção recebida: cadastroSolicitação recebida: {"nome":"ANTONIO ERNANDES SILVA FILHO","email":"asdasdf@gmail.com.br","telefone":"34998142525","nova_senha":"1234","action":"cadastro","novo_usuario":"asdasdf@gmail.com.br"}Dados de formulário recebidos: Array
+(
+    [nome] => ANTONIO ERNANDES SILVA FILHO
+    [email] => asdasdf@gmail.com.br
+    [telefone] => 34998142525
+    [nova_senha] => 1234
+    [action] => cadastro
+    [novo_usuario] => asdasdf@gmail.com.br
+)
+Ação: cadastroTentativa de cadastro: usuario=asdasdf@gmail.com.brSolicitação POST recebidaAção recebida: contatoSolicitação recebida: {"nome":"ANTONIO E S FILHO","email":"doricassia@gmail.com","mensagem":"asdf","action":"contato"}Dados de formulário recebidos: Array
+(
+    [nome] => ANTONIO E S FILHO
+    [email] => doricassia@gmail.com
+    [mensagem] => asdf
+    [action] => contato
+)
+Ação: contatoTentativa de contato: nome=ANTONIO E S FILHO, email=doricassia@gmail.comSolicitação POST recebidaAção recebida: contatoSolicitação recebida: {"nome":"ANTONIO ERNANDES SILVA FILHO","email":"doricassia@gmail.com","mensagem":"asdf","action":"contato"}Dados de formulário recebidos: Array
+(
+    [nome] => ANTONIO ERNANDES SILVA FILHO
+    [email] => doricassia@gmail.com
+    [mensagem] => asdf
+    [action] => contato
+)
+Ação: contatoTentativa de contato: nome=ANTONIO ERNANDES SILVA FILHO, email=doricassia@gmail.comSolicitação POST recebidaAção recebida: contatoSolicitação recebida: {"nome":"ANTONIO ERNANDES SILVA FILHO","email":"doricassia@gmail.com","mensagem":"asdfasd","action":"contato"}Dados de formulário recebidos: Array
+(
+    [nome] => ANTONIO ERNANDES SILVA FILHO
+    [email] => doricassia@gmail.com
+    [mensagem] => asdfasd
+    [action] => contato
+)
+Ação: contatoTentativa de contato: nome=ANTONIO ERNANDES SILVA FILHO, email=doricassia@gmail.comSolicitação POST recebidaAção recebida: contatoSolicitação recebida: {"nome":"ANTONIO E S FILHO","email":"doricassia@gmail.com","mensagem":"asdfasd","action":"contato"}Dados de formulário recebidos: Array
+(
+    [nome] => ANTONIO E S FILHO
+    [email] => doricassia@gmail.com
+    [mensagem] => asdfasd
+    [action] => contato
+)
+Ação: contatoTentativa de contato: nome=ANTONIO E S FILHO, email=doricassia@gmail.comSolicitação POST recebidaAção recebida: contatoSolicitação recebida: {"nome":"ANTONIO E S FILHO","email":"doricassia@gmail.com","mensagem":"tui","action":"contato"}Dados de formulário recebidos: Array
+(
+    [nome] => ANTONIO E S FILHO
+    [email] => doricassia@gmail.com
+    [mensagem] => tui
+    [action] => contato
+)
+Ação: contatoTentativa de contato: nome=ANTONIO E S FILHO, email=doricassia@gmail.comSolicitação POST recebidaAção recebida: cadastroSolicitação recebida: {"nome":"ANTONIO ERNANDES SILVA FILHO","email":"camila@gmail.com","telefone":"34998142525","nova_senha":"2502","action":"cadastro","novo_usuario":"camila@gmail.com"}Dados de formulário recebidos: Array
+(
+    [nome] => ANTONIO ERNANDES SILVA FILHO
+    [email] => camila@gmail.com
+    [telefone] => 34998142525
+    [nova_senha] => 2502
+    [action] => cadastro
+    [novo_usuario] => camila@gmail.com
+)
+Ação: cadastroTentativa de cadastro: usuario=camila@gmail.com

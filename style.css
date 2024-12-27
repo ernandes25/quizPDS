@@ -103,7 +103,7 @@ header nav ul a:hover {
 
     /* Alinhe verticalmente ao meio  */
 
-    padding-bottom: 20px;
+    padding-bottom: 25px;
 }
 
 #button-init:hover {
@@ -815,16 +815,16 @@ header nav ul li a {
     background-color: #F4A261;
     color: #5A189A;
     border: none;
-    padding: 10px 4px;
+    padding: 8px 4px;
     /* Reduz o padding */
     border-radius: 5px;
     cursor: pointer;
-    font-size: 12px;
+    font-size: 14px;
     /* Reduz o tamanho da fonte */
     text-align: center;
     align-self: center;
     justify-content: center;
-    margin-top: 20px;
+    
     width: 120px;
     /* Define uma largura menor */
     height: 30px;
