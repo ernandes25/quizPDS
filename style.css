@@ -216,7 +216,6 @@ header nav ul a:hover {
     height: 50px;
 }
 
-
 #main-admin-dashboard {
 
     border: solid;
@@ -230,6 +229,24 @@ header nav ul a:hover {
     width: auto;
     height: auto;
     margin: 20px auto 100px auto;
+    padding: 10px;
+
+}
+
+
+#main-contact-success {
+
+    border: solid;
+    border: #372991;
+    border-radius: 10px;
+    background-color: #d8d2e0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: auto;
+    height: auto;
+    margin: 100px auto;
     padding: 10px;
 
 }
@@ -580,8 +597,42 @@ header nav ul li a {
 }
 
 #button-contact {
-    height: 100px;
-    width: 200px;
+       
+    display: inline-block;
+    color: black;
+    padding: 10px 10px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 10px;
+    /* Adicione espaço superior se necessário */
+    height: auto;
+    display: flex;
+    animation: pulse 3s 3s ease-in-out infinite;
+    width: 300px;
+    
+    background-color: #F4A261;
+    border-radius: 10px;
+    font-size: 18px;
+    color: #5A189A;
+    cursor: pointer;
+    text-transform: uppercase;
+    margin: 20px 50px 10px;
+    
+    border: none;
+    padding: 10px 10px 5px 10px;
+    text-align: center;
+    /* Centraliza o texto dentro do botão */
+    align-self: center;
+    /* Centraliza o botão no formulário */
+    justify-content: center;
+
+}
+
+#button-contact:hover {
+    background-color: #D35FB7;
 
 }
 
@@ -1188,26 +1239,6 @@ padding-bottom: 10px;
 
 }
 
-
-#button-contact {
-    display: inline-block;
-    color: black;
-
-    padding: 10px 10px;
-    text-align: center;
-    text-decoration: none;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 16px;
-    margin-top: 10px;
-    /* Adicione espaço superior se necessário */
-    height: auto;
-}
-
-#button-contact:hover {
-    background-color: #D35FB7;
-
-}
 
 .container-quiz {
     display: flex;

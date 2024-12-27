@@ -17,4 +17,57 @@ Ação: save_quiz_resultSalvando resultado do quiz: user=fifo@gmail.com, score=1
     [mensagem] => sdfgdsf
     [action] => contato
 )
-Ação: contatoTentativa de contato: nome=ANTONIO ERNANDES SILVA FILHO, email=antonioernandes25@gmail.com
+Ação: contatoTentativa de contato: nome=ANTONIO ERNANDES SILVA FILHO, email=antonioernandes25@gmail.comSolicitação POST recebidaAção recebida: contatoSolicitação recebida: {"nome":"ANTONIO ERNANDES SILVA FILHO","email":"doricassia@gmail.com","mensagem":"asdfasdf","action":"contato"}Dados de formulário recebidos: Array
+(
+    [nome] => ANTONIO ERNANDES SILVA FILHO
+    [email] => doricassia@gmail.com
+    [mensagem] => asdfasdf
+    [action] => contato
+)
+Ação: contatoTentativa de contato: nome=ANTONIO ERNANDES SILVA FILHO, email=doricassia@gmail.comSolicitação POST recebidaAção recebida: contatoSolicitação recebida: {"nome":"ANTONIO ERNANDES SILVA FILHO","email":"doricassia@gmail.com","mensagem":"fsadfasdf","action":"contato"}Dados de formulário recebidos: Array
+(
+    [nome] => ANTONIO ERNANDES SILVA FILHO
+    [email] => doricassia@gmail.com
+    [mensagem] => fsadfasdf
+    [action] => contato
+)
+Ação: contatoTentativa de contato: nome=ANTONIO ERNANDES SILVA FILHO, email=doricassia@gmail.comSolicitação POST recebidaAção recebida: contatoSolicitação recebida: {"nome":"ANTONIO E S FILHO","email":"doricassia@gmail.com","mensagem":"asdfasd","action":"contato"}Dados de formulário recebidos: Array
+(
+    [nome] => ANTONIO E S FILHO
+    [email] => doricassia@gmail.com
+    [mensagem] => asdfasd
+    [action] => contato
+)
+Ação: contatoTentativa de contato: nome=ANTONIO E S FILHO, email=doricassia@gmail.comSolicitação POST recebidaAção recebida: contatoSolicitação recebida: {"nome":"ANTONIO E S FILHO","email":"doricassia@gmail.com","mensagem":"asdf","action":"contato"}Dados de formulário recebidos: Array
+(
+    [nome] => ANTONIO E S FILHO
+    [email] => doricassia@gmail.com
+    [mensagem] => asdf
+    [action] => contato
+)
+Ação: contatoTentativa de contato: nome=ANTONIO E S FILHO, email=doricassia@gmail.comSolicitação POST recebidaAção recebida: contatoSolicitação recebida: {"nome":"ANTONIO ERNANDES SILVA FILHO","email":"doricassia@gmail.com","mensagem":"dfgh","action":"contato"}Dados de formulário recebidos: Array
+(
+    [nome] => ANTONIO ERNANDES SILVA FILHO
+    [email] => doricassia@gmail.com
+    [mensagem] => dfgh
+    [action] => contato
+)
+Ação: contatoTentativa de contato: nome=ANTONIO ERNANDES SILVA FILHO, email=doricassia@gmail.comSolicitação POST recebidaAção recebida: contatoSolicitação recebida: {"nome":"ANTONIO E S FILHO","email":"doricassia@gmail.com","mensagem":"sdfg","action":"contato"}Dados de formulário recebidos: Array
+(
+    [nome] => ANTONIO E S FILHO
+    [email] => doricassia@gmail.com
+    [mensagem] => sdfg
+    [action] => contato
+)
+Ação: contatoTentativa de contato: nome=ANTONIO E S FILHO, email=doricassia@gmail.comSolicitação POST recebidaAção recebida: contatoSolicitação recebida: {"nome":"ANTONIO ERNANDES SILVA FILHO","email":"doricassia@gmail.com","mensagem":"dfghdfgh","action":"contato"}Dados de formulário recebidos: Array
+(
+    [nome] => ANTONIO ERNANDES SILVA FILHO
+    [email] => doricassia@gmail.com
+    [mensagem] => dfghdfgh
+    [action] => contato
+)
+Ação: contatoTentativa de contato: nome=ANTONIO ERNANDES SILVA FILHO, email=doricassia@gmail.comSolicitação POST recebidaAção recebida: admin_loginTentativa de login do admin: email=contato@ercont.com.brSolicitação POST recebidaAção recebida: admin_loginTentativa de login do admin: email=contato@ercont.com.brSolicitação POST recebidaAção recebida: Solicitação recebida: []JSON decodificado: Array
+(
+    [action] => get_users
+)
+Ação: get_usersSolicitação POST recebidaAção recebida: admin_loginTentativa de login do admin: email=contato@ercont.com.brSolicitação POST recebidaAção recebida: admin_loginTentativa de login do admin: email=contato@ercont.com.br
