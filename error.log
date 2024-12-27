@@ -131,4 +131,8 @@ Ação: get_usersSolicitação POST recebidaAção recebida: Solicitação receb
 (
     [action] => get_users
 )
+Ação: get_usersSolicitação POST recebidaAção recebida: admin_loginTentativa de login do admin: email=contato@ercont.com.brSolicitação POST recebidaAção recebida: admin_loginTentativa de login do admin: email=contato@ercont.com.brSolicitação POST recebidaAção recebida: Solicitação recebida: []JSON decodificado: Array
+(
+    [action] => get_users
+)
 Ação: get_users
