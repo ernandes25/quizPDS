@@ -11,7 +11,7 @@ function encryptPassword($password) {
 }
 
 // Exemplo de uso
-$senha = '250200er25*'; // Substitua pela senha que você deseja criptografar
+$senha = ''; // Substitua pela senha que você deseja criptografar
 $senhaCriptografada = encryptPassword($senha);
 echo "Senha criptografada: " . $senhaCriptografada;
 
